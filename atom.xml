@@ -43,6 +43,33 @@
   </entry>
   
   <entry>
+    <title>使用Vercel托管自己的网站</title>
+    <link href="https://gentletk.gitee.io/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+    <id>https://gentletk.gitee.io/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</id>
+    <published>2021-01-30T08:20:29.000Z</published>
+    <updated>2021-01-30T09:15:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p><div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p></div><h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure><p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p><p><img src="https://i.loli.net/2021/04/28/sJy5ui6IRS3tEYD.png" alt="image-20210428151329447"></p><p><img src="https://i.loli.net/2021/04/28/oEjkAV4LmOf2rP1.png" alt="image-20210428151530306"></p><h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure><p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p><p><img src="https://i.loli.net/2021/04/28/bG5kEYxLBpK284j.png" alt="image-20210428153114634"></p><p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p><p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p><p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p><h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure><p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p><p><img src="https://i.loli.net/2021/04/28/WFYuK7Gmn6jHq3f.png" alt="image-20210428164129202"></p><p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure><p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p><p><img src="https://i.loli.net/2021/04/28/wxmrazg2BkYcbUv.png" alt="image-20210428155853129"></p><p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p><p><img src="https://i.loli.net/2021/04/28/eNIToanWzl93GOM.png" alt="image-20210428164524093"></p><p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。&lt;/p&gt;
+&lt;div class=&quot;note info flat&quot;&gt;&lt;p&gt;注意，在使用Vercel前请确保你已安装&lt;code&gt;Git&lt;/code&gt;与&lt;code&gt;N</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://gentletk.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://gentletk.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Vercel" scheme="https://gentletk.gitee.io/tags/Vercel/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <link href="https://gentletk.gitee.io/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/"/>
     <id>https://gentletk.gitee.io/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</id>
