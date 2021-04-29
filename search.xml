@@ -137,6 +137,48 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(五)</title>
+    <url>/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制<code>PCB</code>图。</p>
+<h2 id="1-排版布局"><a href="#1-排版布局" class="headerlink" title="1 排版布局"></a>1 排版布局</h2><p>在<code>PCB</code>图中选中元器件，利用对齐工具进行排版布局：</p>
+<p><img src="https://i.loli.net/2021/04/28/qHTZbIGE5NYaQUA.png" alt="对元件进行布局"></p>
+<p>然后再添加四个焊盘作为铜柱通孔，点击焊盘后按一下<kbd>Tab</kbd>键，修改焊盘属性中的开孔尺寸为<code>3mm</code>，X、Y尺寸为<code>3.5mm</code>。</p>
+<p><img src="https://i.loli.net/2021/04/28/cirO52LBTKUxMGt.png" alt="铜柱焊盘"></p>
+<p><img src="https://i.loli.net/2021/04/28/Pisuthy6HAlrEZp.png" alt="放置四个铜柱焊盘"></p>
+<h2 id="2-定义板子形状"><a href="#2-定义板子形状" class="headerlink" title="2 定义板子形状"></a>2 定义板子形状</h2><p>在底部选择<code>Keep-Out Layer</code>，再点击顶部导航栏的画笔(放置线条)，将所有元件框起来后，按住<code>shift</code>键选中四根线条：</p>
+<p><img src="https://i.loli.net/2021/04/28/vl4gOo8nxQXNAde.png" alt="shift选中线条"></p>
+<p>然后点击顶部导航的设计，选择板子形状，点击按照选择对象定义：</p>
+<p><img src="https://i.loli.net/2021/04/28/oQJIAXR3gupLMtm.png" alt="框选后的板子形状"></p>
+<h2 id="3-电气走线"><a href="#3-电气走线" class="headerlink" title="3 电气走线"></a>3 电气走线</h2><p>下面就根据白色引导线去进行电气连接，在底部导航栏选择<code>Bottom Layer(底层)</code>，然后使用<code>PT</code>快捷键(英文键盘模式下，先按<kbd>P</kbd>再按<kbd>T</kbd>)进行走线(点击焊盘后按一下<kbd>Tab</kbd>键可以编辑线宽，设定最小线宽为<code>10mil</code>，优先线宽为<code>50mil</code>，最大线宽为<code>100mil</code>，一般来说走线越宽越好)：</p>
+<p><img src="https://i.loli.net/2021/04/28/RsjkFKyqTAcIrPU.png" alt="PCB图绘制完成"></p>
+<h2 id="4-铺铜操作"><a href="#4-铺铜操作" class="headerlink" title="4 铺铜操作"></a>4 铺铜操作</h2><p>为了方便腐蚀，我们一般会对电路板进行铺铜，这样能减小腐蚀面积，能更快地腐蚀完毕，首先单击选中一个铜柱焊盘，选择选项，编辑网络，添加一个<code>GND</code>网络标号，双击铜柱焊盘，把焊盘属性中的网络选择为<code>GND</code>(其余三个铜柱焊盘也需要选择为<code>GND</code>网络)：</p>
+<p><img src="https://i.loli.net/2021/04/28/TXsFeMNumrkUItY.png" alt="添加GND网络标号"></p>
+<p>然后点击顶部导航栏的放置多边形平面：</p>
+<p><img src="https://i.loli.net/2021/04/28/6CfG1lsMqIDO7xc.png" alt="放置多边形平面"></p>
+<p>直接点击确定后，依次点击板子四个边角，将板子整个框选起来：</p>
+<p><img src="https://i.loli.net/2021/04/28/UYzLE6XGjeA9qsd.png" alt="PCB铺完铜"></p>
+<h2 id="5-3D预览"><a href="#5-3D预览" class="headerlink" title="5 3D预览"></a>5 3D预览</h2><p>按<code>3</code>看一下<code>3D</code>预览效果：</p>
+<p><img src="https://i.loli.net/2021/04/28/AolkVOJEQ5rLvDi.png" alt="PCB的3D预览"></p>
+<h2 id="6-打印设置"><a href="#6-打印设置" class="headerlink" title="6 打印设置"></a>6 打印设置</h2><p>在顶部导航栏选择文件，页面设置，缩放模式选择<code>Scaled Print</code>，缩放比例为<code>1.00</code>：</p>
+<p><img src="https://i.loli.net/2021/04/28/JoAak14q2XIrMbn.png" alt="页面设置"></p>
+<p>然后点击高级，进入页面高级设置：</p>
+<p><img src="https://i.loli.net/2021/04/28/VvYs1LwEnlPpI3f.png" alt="页面高级设置"></p>
+<p>在这里可以删掉多余的层，只保留需要的，如果有焊盘，则需要勾选孔，由于我们绘制的矩阵键盘都是插件，所以无需勾选镜像，如果是有顶层贴片元件，则需要勾选镜像。</p>
+<p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
+<p>点击顶部导航栏的生成当前文件的打印预览：</p>
+<p><img src="https://i.loli.net/2021/04/28/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(四)</title>
     <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -279,48 +321,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(五)</title>
-    <url>/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制<code>PCB</code>图。</p>
-<h2 id="1-排版布局"><a href="#1-排版布局" class="headerlink" title="1 排版布局"></a>1 排版布局</h2><p>在<code>PCB</code>图中选中元器件，利用对齐工具进行排版布局：</p>
-<p><img src="https://i.loli.net/2021/04/28/qHTZbIGE5NYaQUA.png" alt="对元件进行布局"></p>
-<p>然后再添加四个焊盘作为铜柱通孔，点击焊盘后按一下<kbd>Tab</kbd>键，修改焊盘属性中的开孔尺寸为<code>3mm</code>，X、Y尺寸为<code>3.5mm</code>。</p>
-<p><img src="https://i.loli.net/2021/04/28/cirO52LBTKUxMGt.png" alt="铜柱焊盘"></p>
-<p><img src="https://i.loli.net/2021/04/28/Pisuthy6HAlrEZp.png" alt="放置四个铜柱焊盘"></p>
-<h2 id="2-定义板子形状"><a href="#2-定义板子形状" class="headerlink" title="2 定义板子形状"></a>2 定义板子形状</h2><p>在底部选择<code>Keep-Out Layer</code>，再点击顶部导航栏的画笔(放置线条)，将所有元件框起来后，按住<code>shift</code>键选中四根线条：</p>
-<p><img src="https://i.loli.net/2021/04/28/vl4gOo8nxQXNAde.png" alt="shift选中线条"></p>
-<p>然后点击顶部导航的设计，选择板子形状，点击按照选择对象定义：</p>
-<p><img src="https://i.loli.net/2021/04/28/oQJIAXR3gupLMtm.png" alt="框选后的板子形状"></p>
-<h2 id="3-电气走线"><a href="#3-电气走线" class="headerlink" title="3 电气走线"></a>3 电气走线</h2><p>下面就根据白色引导线去进行电气连接，在底部导航栏选择<code>Bottom Layer(底层)</code>，然后使用<code>PT</code>快捷键(英文键盘模式下，先按<kbd>P</kbd>再按<kbd>T</kbd>)进行走线(点击焊盘后按一下<kbd>Tab</kbd>键可以编辑线宽，设定最小线宽为<code>10mil</code>，优先线宽为<code>50mil</code>，最大线宽为<code>100mil</code>，一般来说走线越宽越好)：</p>
-<p><img src="https://i.loli.net/2021/04/28/RsjkFKyqTAcIrPU.png" alt="PCB图绘制完成"></p>
-<h2 id="4-铺铜操作"><a href="#4-铺铜操作" class="headerlink" title="4 铺铜操作"></a>4 铺铜操作</h2><p>为了方便腐蚀，我们一般会对电路板进行铺铜，这样能减小腐蚀面积，能更快地腐蚀完毕，首先单击选中一个铜柱焊盘，选择选项，编辑网络，添加一个<code>GND</code>网络标号，双击铜柱焊盘，把焊盘属性中的网络选择为<code>GND</code>(其余三个铜柱焊盘也需要选择为<code>GND</code>网络)：</p>
-<p><img src="https://i.loli.net/2021/04/28/TXsFeMNumrkUItY.png" alt="添加GND网络标号"></p>
-<p>然后点击顶部导航栏的放置多边形平面：</p>
-<p><img src="https://i.loli.net/2021/04/28/6CfG1lsMqIDO7xc.png" alt="放置多边形平面"></p>
-<p>直接点击确定后，依次点击板子四个边角，将板子整个框选起来：</p>
-<p><img src="https://i.loli.net/2021/04/28/UYzLE6XGjeA9qsd.png" alt="PCB铺完铜"></p>
-<h2 id="5-3D预览"><a href="#5-3D预览" class="headerlink" title="5 3D预览"></a>5 3D预览</h2><p>按<code>3</code>看一下<code>3D</code>预览效果：</p>
-<p><img src="https://i.loli.net/2021/04/28/AolkVOJEQ5rLvDi.png" alt="PCB的3D预览"></p>
-<h2 id="6-打印设置"><a href="#6-打印设置" class="headerlink" title="6 打印设置"></a>6 打印设置</h2><p>在顶部导航栏选择文件，页面设置，缩放模式选择<code>Scaled Print</code>，缩放比例为<code>1.00</code>：</p>
-<p><img src="https://i.loli.net/2021/04/28/JoAak14q2XIrMbn.png" alt="页面设置"></p>
-<p>然后点击高级，进入页面高级设置：</p>
-<p><img src="https://i.loli.net/2021/04/28/VvYs1LwEnlPpI3f.png" alt="页面高级设置"></p>
-<p>在这里可以删掉多余的层，只保留需要的，如果有焊盘，则需要勾选孔，由于我们绘制的矩阵键盘都是插件，所以无需勾选镜像，如果是有顶层贴片元件，则需要勾选镜像。</p>
-<p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
-<p>点击顶部导航栏的生成当前文件的打印预览：</p>
-<p><img src="https://i.loli.net/2021/04/28/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
       </tags>
   </entry>
   <entry>
