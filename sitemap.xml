@@ -86,6 +86,34 @@
   </url>
   
   <url>
+    <loc>https://gentletk.gitee.io/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</loc>
+    
+    <lastmod>2020-05-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2020-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/2020/05/08/C++%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%88%9D%E7%BA%A7%E5%AE%9A%E4%B9%89%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2020-05-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</loc>
+    
+    <lastmod>2020-05-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gentletk.gitee.io/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</loc>
     
     <lastmod>2020-04-30</lastmod>
@@ -172,7 +200,7 @@
 
   <url>
     <loc>https://gentletk.gitee.io/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,98 +208,105 @@
   
   <url>
     <loc>https://gentletk.gitee.io/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/AltiumDesigner/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/PCB/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Python/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/C/</loc>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Git/</loc>
-    <lastmod>2021-05-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/Hexo/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/MQTT/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/Hexo/</loc>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Markdown/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Vercel/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/GitHub/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/jsDelivr/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Keil/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -280,7 +315,7 @@
   
   <url>
     <loc>https://gentletk.gitee.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
