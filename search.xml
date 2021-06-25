@@ -6,20 +6,20 @@
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
 <p>本节主要教大家新建<code>PCB</code>工程，了解工程目录的基本结构。</p>
 <h2 id="1-1-新建PCB工程"><a href="#1-1-新建PCB工程" class="headerlink" title="1.1 新建PCB工程"></a>1.1 新建PCB工程</h2><p>打开<code>Altium Designer</code>，点击<code>File(文件)</code>，选择<code>Project(工程)</code>，点击<code>PCB Project</code>，新建<code>PCB</code>工程，命名为<code>matrixKeyboard</code>：</p>
-<p><img src="https://i.loli.net/2021/04/28/djaF7D84IiGMvkK.png" alt="创建PCB工程"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/djaF7D84IiGMvkK.png" alt="创建PCB工程"></p>
 <p>创建完工程后，在工程目录下新建<code>Lib</code>和<code>Doc</code>两个文件夹用于保存库文件和图文件。</p>
 <h2 id="1-2-添加原理图库"><a href="#1-2-添加原理图库" class="headerlink" title="1.2 添加原理图库"></a>1.2 添加原理图库</h2><p>选中<code>matrixKeyboard.PrjPcb</code>，鼠标单击右键，添加新的文件到工程，选择<code>schematic library</code>，命名为<code>matrixKeyboard.SchLib</code>保存到<code>Lib</code>文件夹下。</p>
-<p><img src="https://i.loli.net/2021/04/28/RUwQjfWT8i1LJME.png" alt="添加原理图库"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RUwQjfWT8i1LJME.png" alt="添加原理图库"></p>
 <h2 id="1-3-添加封装库"><a href="#1-3-添加封装库" class="headerlink" title="1.3 添加封装库"></a>1.3 添加封装库</h2><p>选中<code>matrixKeyboard.PrjPcb</code>，鼠标单击右键，添加新的文件到工程，选择<code>PCB library</code>，命名为为<code>matrixKeyboard.PcbLib</code>保存到<code>Lib</code>文件夹下。</p>
-<p><img src="https://i.loli.net/2021/04/28/VL7XgJPHwDMN49d.png" alt="添加封装库"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VL7XgJPHwDMN49d.png" alt="添加封装库"></p>
 <h2 id="1-4-添加电路原理图"><a href="#1-4-添加电路原理图" class="headerlink" title="1.4 添加电路原理图"></a>1.4 添加电路原理图</h2><p>选中<code>matrixKeyboard.PrjPcb</code>，鼠标单击右键，添加新的文件到工程，选择<code>shematic</code>，命名为<code>matrixKeyboard.SchDoc</code>保存到<code>Doc</code>文件夹下。</p>
-<p><img src="https://i.loli.net/2021/04/28/9tP3MHz2QCIVbA5.png" alt="添加电路原理图"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9tP3MHz2QCIVbA5.png" alt="添加电路原理图"></p>
 <h2 id="1-5-添加PCB图"><a href="#1-5-添加PCB图" class="headerlink" title="1.5 添加PCB图"></a>1.5 添加PCB图</h2><p>选中<code>matrixKeyboard.PrjPcb</code>，鼠标单击右键，添加新的文件到工程，选择<code>PCB</code>，命名为<code>matrixKeyboard.PcbDoc</code>保存到<code>Doc</code>文件夹下。</p>
-<p><img src="https://i.loli.net/2021/04/28/RBZ12aeFU7KbLyd.png" alt="添加PCB图"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RBZ12aeFU7KbLyd.png" alt="添加PCB图"></p>
 <p>创建好的<code>PCB</code>工作目录结构如下所示：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── Doc</span><br><span class="line">      ├── matrixKeyboard.SchDoc</span><br><span class="line">      ├── matrixKeyboard.PcbDoc</span><br><span class="line">├── History</span><br><span class="line">├── Lib</span><br><span class="line">      ├── matrixKeyboard.SchLib</span><br><span class="line">      ├── matrixKeyboard.PcbLib</span><br><span class="line">├── matrixKeyboard.PrjPcb</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://i.loli.net/2021/04/28/uNI4zbKlAaEeSoO.png" alt="创建好的PCB工程目录结构"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/uNI4zbKlAaEeSoO.png" alt="创建好的PCB工程目录结构"></p>
 <p>在一个PCB目录下一般包含五个文件(<code>History</code>除外)，以下是文件对应的描述：</p>
 <table>
 <thead>
@@ -66,29 +66,29 @@
 <p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
 <h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
 <h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
-<p><img src="https://i.loli.net/2021/04/28/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
 <p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
 <div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
 </div>
 
 <p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
-<p><img src="https://i.loli.net/2021/04/28/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
 <p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
-<p><img src="https://i.loli.net/2021/04/28/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
 <p>修改完成后，依次放置四个焊盘：</p>
-<p><img src="https://i.loli.net/2021/04/28/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
 <p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
-<p><img src="https://i.loli.net/2021/04/28/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
 <p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
-<p><img src="https://i.loli.net/2021/04/28/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
-<p><img src="https://i.loli.net/2021/04/28/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
-<p><img src="https://i.loli.net/2021/04/28/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
 <p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
-<p><img src="https://i.loli.net/2021/04/28/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
 <p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
-<p><img src="https://i.loli.net/2021/04/28/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
-<p><img src="https://i.loli.net/2021/04/28/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -106,26 +106,28 @@
 <p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
 <h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
 <h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://i.loli.net/2021/04/28/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://i.loli.net/2021/04/28/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gitee.com/gentletk/picbed/raw/master/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
 <p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://i.loli.net/2021/04/28/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
 <p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://i.loli.net/2021/04/28/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
 <p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://i.loli.net/2021/04/28/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
 <p>依次放置完四个管脚后如下所示：</p>
-<p>注意，如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-<p><img src="https://i.loli.net/2021/04/28/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
 <p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
 <p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://i.loli.net/2021/04/28/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
 <p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://i.loli.net/2021/04/28/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://i.loli.net/2021/04/28/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
 <p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://i.loli.net/2021/04/28/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -142,32 +144,32 @@
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
 <p>本节主要教大家绘制<code>PCB</code>图。</p>
 <h2 id="1-排版布局"><a href="#1-排版布局" class="headerlink" title="1 排版布局"></a>1 排版布局</h2><p>在<code>PCB</code>图中选中元器件，利用对齐工具进行排版布局：</p>
-<p><img src="https://i.loli.net/2021/04/28/qHTZbIGE5NYaQUA.png" alt="对元件进行布局"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/qHTZbIGE5NYaQUA.png" alt="对元件进行布局"></p>
 <p>然后再添加四个焊盘作为铜柱通孔，点击焊盘后按一下<kbd>Tab</kbd>键，修改焊盘属性中的开孔尺寸为<code>3mm</code>，X、Y尺寸为<code>3.5mm</code>。</p>
-<p><img src="https://i.loli.net/2021/04/28/cirO52LBTKUxMGt.png" alt="铜柱焊盘"></p>
-<p><img src="https://i.loli.net/2021/04/28/Pisuthy6HAlrEZp.png" alt="放置四个铜柱焊盘"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/cirO52LBTKUxMGt.png" alt="铜柱焊盘"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Pisuthy6HAlrEZp.png" alt="放置四个铜柱焊盘"></p>
 <h2 id="2-定义板子形状"><a href="#2-定义板子形状" class="headerlink" title="2 定义板子形状"></a>2 定义板子形状</h2><p>在底部选择<code>Keep-Out Layer</code>，再点击顶部导航栏的画笔(放置线条)，将所有元件框起来后，按住<code>shift</code>键选中四根线条：</p>
-<p><img src="https://i.loli.net/2021/04/28/vl4gOo8nxQXNAde.png" alt="shift选中线条"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/vl4gOo8nxQXNAde.png" alt="shift选中线条"></p>
 <p>然后点击顶部导航的设计，选择板子形状，点击按照选择对象定义：</p>
-<p><img src="https://i.loli.net/2021/04/28/oQJIAXR3gupLMtm.png" alt="框选后的板子形状"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/oQJIAXR3gupLMtm.png" alt="框选后的板子形状"></p>
 <h2 id="3-电气走线"><a href="#3-电气走线" class="headerlink" title="3 电气走线"></a>3 电气走线</h2><p>下面就根据白色引导线去进行电气连接，在底部导航栏选择<code>Bottom Layer(底层)</code>，然后使用<code>PT</code>快捷键(英文键盘模式下，先按<kbd>P</kbd>再按<kbd>T</kbd>)进行走线(点击焊盘后按一下<kbd>Tab</kbd>键可以编辑线宽，设定最小线宽为<code>10mil</code>，优先线宽为<code>50mil</code>，最大线宽为<code>100mil</code>，一般来说走线越宽越好)：</p>
-<p><img src="https://i.loli.net/2021/04/28/RsjkFKyqTAcIrPU.png" alt="PCB图绘制完成"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RsjkFKyqTAcIrPU.png" alt="PCB图绘制完成"></p>
 <h2 id="4-铺铜操作"><a href="#4-铺铜操作" class="headerlink" title="4 铺铜操作"></a>4 铺铜操作</h2><p>为了方便腐蚀，我们一般会对电路板进行铺铜，这样能减小腐蚀面积，能更快地腐蚀完毕，首先单击选中一个铜柱焊盘，选择选项，编辑网络，添加一个<code>GND</code>网络标号，双击铜柱焊盘，把焊盘属性中的网络选择为<code>GND</code>(其余三个铜柱焊盘也需要选择为<code>GND</code>网络)：</p>
-<p><img src="https://i.loli.net/2021/04/28/TXsFeMNumrkUItY.png" alt="添加GND网络标号"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TXsFeMNumrkUItY.png" alt="添加GND网络标号"></p>
 <p>然后点击顶部导航栏的放置多边形平面：</p>
-<p><img src="https://i.loli.net/2021/04/28/6CfG1lsMqIDO7xc.png" alt="放置多边形平面"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/6CfG1lsMqIDO7xc.png" alt="放置多边形平面"></p>
 <p>直接点击确定后，依次点击板子四个边角，将板子整个框选起来：</p>
-<p><img src="https://i.loli.net/2021/04/28/UYzLE6XGjeA9qsd.png" alt="PCB铺完铜"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/UYzLE6XGjeA9qsd.png" alt="PCB铺完铜"></p>
 <h2 id="5-3D预览"><a href="#5-3D预览" class="headerlink" title="5 3D预览"></a>5 3D预览</h2><p>按<code>3</code>看一下<code>3D</code>预览效果：</p>
 <p><img src="https://i.loli.net/2021/04/28/AolkVOJEQ5rLvDi.png" alt="PCB的3D预览"></p>
 <h2 id="6-打印设置"><a href="#6-打印设置" class="headerlink" title="6 打印设置"></a>6 打印设置</h2><p>在顶部导航栏选择文件，页面设置，缩放模式选择<code>Scaled Print</code>，缩放比例为<code>1.00</code>：</p>
-<p><img src="https://i.loli.net/2021/04/28/JoAak14q2XIrMbn.png" alt="页面设置"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JoAak14q2XIrMbn.png" alt="页面设置"></p>
 <p>然后点击高级，进入页面高级设置：</p>
-<p><img src="https://i.loli.net/2021/04/28/VvYs1LwEnlPpI3f.png" alt="页面高级设置"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VvYs1LwEnlPpI3f.png" alt="页面高级设置"></p>
 <p>在这里可以删掉多余的层，只保留需要的，如果有焊盘，则需要勾选孔，由于我们绘制的矩阵键盘都是插件，所以无需勾选镜像，如果是有顶层贴片元件，则需要勾选镜像。</p>
 <p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
 <p>点击顶部导航栏的生成当前文件的打印预览：</p>
-<p><img src="https://i.loli.net/2021/04/28/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -184,23 +186,23 @@
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
 <p>本节主要教大家绘制电路原理图。</p>
 <h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="https://i.loli.net/2021/04/28/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
-<p><img src="https://i.loli.net/2021/04/28/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
 <p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="https://i.loli.net/2021/04/28/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
-<p><img src="https://i.loli.net/2021/04/28/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
 <h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="https://i.loli.net/2021/04/28/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
 <p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="https://i.loli.net/2021/04/28/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
 <p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="https://i.loli.net/2021/04/28/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
 <h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="https://i.loli.net/2021/04/28/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
 <p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="https://i.loli.net/2021/04/28/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
 <p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="https://i.loli.net/2021/04/28/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -224,10 +226,10 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
 
 <p>遇到如下问题</p>
-<p><img src="https://i.loli.net/2020/02/26/bFIkV72TXKwZH6a.png" alt="image-20200225234947762.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
 <p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
 <p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://i.loli.net/2020/02/26/8kdh7YQUlROzbTt.png" alt="image-20200225234900049.png"></p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
 <h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
 ]]></content>
       <categories>
@@ -236,26 +238,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/P1QrqskjKveIfdC.png" alt="image-20210513161908584"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -308,6 +290,50 @@
       </tags>
   </entry>
   <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/P1QrqskjKveIfdC.png" alt="image-20210513161908584"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++输入输出使用</title>
+    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9yUWVzcA2rh8fMl.png" alt="image-20210513170814491"></p>
+<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/pbymCzL3suNFoAh.png" alt="image-20210513171002081"></p>
+<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/fDeMBF2aNlLT8As.png" alt="image-20210513171313777"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C++标准库介绍</title>
     <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
@@ -331,8 +357,9 @@
 <h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
 <li>工作区<br>电脑里能看到的目录。</li>
 <li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
-<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。<br><img src="https://i.loli.net/2021/04/26/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></li>
+<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
 </ol>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
 <h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
 <ol>
 <li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
@@ -342,9 +369,10 @@
 <li>管理者将合并后的修改推送到主仓库。</li>
 </ol>
 <h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
-<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://i.loli.net/2021/04/26/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://i.loli.net/2021/04/26/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://i.loli.net/2021/04/26/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://i.loli.net/2021/04/26/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
+<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
 <h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
-<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：<br><img src="https://i.loli.net/2021/04/26/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
+<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
 <ol>
 <li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
 <li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
@@ -359,47 +387,47 @@
 <li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
-<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://i.loli.net/2021/04/26/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://i.loli.net/2021/04/26/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
-<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://i.loli.net/2021/04/26/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
+<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
+<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
 <h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
-<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://i.loli.net/2021/04/26/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
-<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://i.loli.net/2021/04/26/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://i.loli.net/2021/04/26/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://i.loli.net/2021/04/26/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
-<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://i.loli.net/2021/04/26/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
-<li>从远程仓库获取变动<br><img src="https://i.loli.net/2021/04/26/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
-<li>本地合并变动<br><img src="https://i.loli.net/2021/04/26/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://i.loli.net/2021/04/26/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
+<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
+<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
+<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
+<li>从远程仓库获取变动<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
+<li>本地合并变动<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
 </ol>
 <h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
-<li>创建新的版本库<br><img src="https://i.loli.net/2021/04/26/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
-<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://i.loli.net/2021/04/26/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
+<li>创建新的版本库<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
+<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
 </ol>
 <h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
-<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://i.loli.net/2021/04/26/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://i.loli.net/2021/04/26/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://i.loli.net/2021/04/26/emuz63WFXGIZdLl.png" alt="localization"></li>
-<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://i.loli.net/2021/04/26/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
-这是为了记住用户名和密码：<br><img src="https://i.loli.net/2021/04/26/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
+<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/emuz63WFXGIZdLl.png" alt="localization"></li>
+<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
+这是为了记住用户名和密码：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
 </ol>
 <h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
-<li>新建项目文件夹<br><img src="https://i.loli.net/2021/04/26/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
-<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://i.loli.net/2021/04/26/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
+<li>新建项目文件夹<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
+<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
 </ol>
-<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://i.loli.net/2021/04/26/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
+<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
 <h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
-<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://i.loli.net/2021/04/26/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
-<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://i.loli.net/2021/04/26/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://i.loli.net/2021/04/27/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
-<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://i.loli.net/2021/04/26/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://i.loli.net/2021/04/26/VpAKINCqF95l6wh.png" alt="推送成功"></li>
+<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
+<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
+<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
 </ol>
 <h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
 <ol>
-<li>创建分支并切换到新分支<br><img src="https://i.loli.net/2021/04/26/mIblKvr18XaywqW.png" alt="创建分支"></li>
-<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://i.loli.net/2021/04/26/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
-<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://i.loli.net/2021/04/26/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://i.loli.net/2021/04/26/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
+<li>创建分支并切换到新分支<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
+<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
+<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
 </ol>
 <div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
 </div>
 
 <h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
 <h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
-<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://i.loli.net/2021/04/26/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
-<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://i.loli.net/2021/04/26/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
+<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
+<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gitee.com/gentletk/picbed/raw/master/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -534,7 +562,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
 
 <p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
-<p><img src="https://i.loli.net/2021/04/22/kUVxGXuBYgFZejm.png" alt="Hexo预览.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -542,30 +570,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++输入输出使用</title>
-    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9yUWVzcA2rh8fMl.png" alt="image-20210513170814491"></p>
-<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/pbymCzL3suNFoAh.png" alt="image-20210513171002081"></p>
-<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/fDeMBF2aNlLT8As.png" alt="image-20210513171313777"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -927,17 +931,17 @@
 </ol>
 </div>
 
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://i.loli.net/2020/02/26/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://i.loli.net/2020/02/26/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
 <h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
 <ol>
 <li><code>![图像Alt][图像标记]</code></li>
 <li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
 </ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://i.loli.net/2021/04/26/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://i.loli.net/2021/04/26/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://i.loli.net/2021/04/26/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://i.loli.net/2021/04/26/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://i.loli.net/2021/04/26/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://i.loli.net/2021/04/26/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
 <h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
 
@@ -984,6 +988,45 @@
       </tags>
   </entry>
   <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用Vercel托管自己的网站</title>
     <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
@@ -1026,80 +1069,41 @@
       </tags>
   </entry>
   <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://i.loli.net/2021/04/25/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://i.loli.net/2021/04/25/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://i.loli.net/2021/04/25/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://i.loli.net/2021/04/25/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://i.loli.net/2021/04/25/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://i.loli.net/2021/04/25/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://i.loli.net/2021/04/25/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://i.loli.net/2021/04/25/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://i.loli.net/2021/04/25/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://i.loli.net/2021/04/25/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://i.loli.net/2021/04/25/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://i.loli.net/2021/04/25/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://i.loli.net/2021/04/25/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://i.loli.net/2021/04/25/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://i.loli.net/2021/04/25/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://i.loli.net/2021/04/25/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://i.loli.net/2021/04/25/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
     <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
 <p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
-<p><img src="https://i.loli.net/2021/04/25/Iu72ALs4ZiQkM8z.png" alt="c51注册信息"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Iu72ALs4ZiQkM8z.png" alt="c51注册信息"></p>
 <p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/TbCexVgS2iRqfBU.png" alt="c51去掉勾选"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TbCexVgS2iRqfBU.png" alt="c51去掉勾选"></p>
 <h2 id="2-安装mdk514-exe"><a href="#2-安装mdk514-exe" class="headerlink" title="2 安装mdk514.exe"></a>2 安装mdk514.exe</h2><p>以管理员身份运行<code>mdk514.exe</code>文件,进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/5963AilzuDndVRe.png" alt="32选择路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/5963AilzuDndVRe.png" alt="32选择路径"></p>
 <p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
-<p><img src="https://i.loli.net/2021/04/25/TwKdVufLg5qI8UZ.png" alt="32注册信息"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TwKdVufLg5qI8UZ.png" alt="32注册信息"></p>
 <p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/7CnfM3cZ4mkLzFy.png" alt="32去掉勾选"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7CnfM3cZ4mkLzFy.png" alt="32去掉勾选"></p>
 <p>出现<code>Pack Installer</code>界面直接关掉即可(点击<code>OK</code>，出现弹窗后再点击<code>是</code>)</p>
-<p><img src="https://i.loli.net/2021/04/25/3c8yFMZuOQ2rDpT.png" alt="pack安装界面"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/3c8yFMZuOQ2rDpT.png" alt="pack安装界面"></p>
 <h2 id="3-C51与STM32共存"><a href="#3-C51与STM32共存" class="headerlink" title="3 C51与STM32共存"></a>3 C51与STM32共存</h2><p>打开<code>C51</code>安装路径，复制整个<code>C51</code>文件夹到<code>Keil_v5</code>下：</p>
-<p><img src="https://i.loli.net/2021/04/25/XZSqTLi2k4eH9A5.png" alt="c51文件夹"></p>
-<p><img src="https://i.loli.net/2021/04/25/ergNcRzdbuvEYlJ.png" alt="c51复制到keil5"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/XZSqTLi2k4eH9A5.png" alt="c51文件夹"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ergNcRzdbuvEYlJ.png" alt="c51复制到keil5"></p>
 <p>打开<code>C51</code>安装路径下的<code>UV4</code>文件夹，全选并复制，然后粘贴到<code>Keil_v5</code>下的<code>UV4</code>文件夹里，提示冲突的话就选择跳过，然后打开<code>C51</code>安装路径下的<code>TOOLS.INI</code>文件，复制里面所有内容，然后粘贴到<code>Keil_v5</code>下的<code>TOOLS.INI</code>最后一行，然后将复制过来的内容里的PATH改成当前的路径：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 未改动前</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\MDK\C51&quot;</span></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\Keil_v5\C51&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>改动完成后<code>Ctrl+s</code>保存文件。</p>
 <h2 id="4-破解"><a href="#4-破解" class="headerlink" title="4 破解"></a>4 破解</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，以管理员身份运行<code>UV4.exe</code>。</p>
-<p><img src="https://i.loli.net/2021/04/25/C3fJkO2mPdsbahq.png" alt="打开UV4"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C3fJkO2mPdsbahq.png" alt="打开UV4"></p>
 <p>点击左上角<code>File</code>-&gt;<code>License Management</code>，复制<code>CID</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/kptxfhXaewPKqy9.png" alt="licenseManagement"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/kptxfhXaewPKqy9.png" alt="licenseManagement"></p>
 <p>以管理员身份运行<code>keygen.exe</code>，将复制CID粘贴到里面点击<code>Generate</code></p>
-<p><img src="https://i.loli.net/2021/04/25/dcbi6E7Up8g4xyD.png" alt="c51keygen"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dcbi6E7Up8g4xyD.png" alt="c51keygen"></p>
 <p>将生成的序列号复制到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/695urvBjHZS8tkd.png" alt="c51注册成功"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/695urvBjHZS8tkd.png" alt="c51注册成功"></p>
 <p>然后将<code>Target</code>选择为<code>ARM</code>，再点击<code>Generate</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/Yt2p8cW1sMy7uiZ.png" alt="32keygen"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Yt2p8cW1sMy7uiZ.png" alt="32keygen"></p>
 <p>并将生成的序列号复制粘贴到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/tsE5eFuxcg6NOZJ.png" alt="32注册成功"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tsE5eFuxcg6NOZJ.png" alt="32注册成功"></p>
 <h2 id="5-添加快捷方式"><a href="#5-添加快捷方式" class="headerlink" title="5 添加快捷方式"></a>5 添加快捷方式</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，右键单击<code>UV4.exe</code>，选择发送到桌面快捷方式，将快捷方式命名为<code>Keil uVision5</code>即可。</p>
 ]]></content>
       <categories>
@@ -1116,7 +1120,7 @@
     <content><![CDATA[<h1 id="先聊聊Gitee和GitHub的Pages服务"><a href="#先聊聊Gitee和GitHub的Pages服务" class="headerlink" title="先聊聊Gitee和GitHub的Pages服务"></a>先聊聊Gitee和GitHub的Pages服务</h1><p>今天跟大家分享一下利用Hexo+Gitee Pages搭建个人网站的一些经验，之所以用Gitee Pages而不是GitHub Pages，完全是因为GitHub的服务器在国外，国内访问速度慢到令人发指！！不过GitHub虽然慢，但人家不要钱啊，而且你完全能在阿里花一块钱买个域名绑定一下，比如我的：gentletk.top这样你的网站就看起来就有私人定制的那种高端感了。至于Gitee，虽然快，但你每次都得手动部署，而且它不支持自定义域名，你要访问的话只有老老实实访问gentletk.gitee.io，这样一看就有种廉价感。当然，如果你愿意充钱，Gitee是很乐意为你推荐他们的Gitee Pages Pro服务的，这样一来自动更新部署和自定义域名都无需你操心了。我原先选择的是GitHub Pages，其实它没什么不好，慢是因为我在国内，所以我不打算放弃它，来个双管齐下，国内访问:gentletk.gitee.io，国外访问:gentletk.top。</p>
 <h1 id="1-Gitee相关"><a href="#1-Gitee相关" class="headerlink" title="1 Gitee相关"></a>1 Gitee相关</h1><h2 id="1-1-注册你的Gitee"><a href="#1-1-注册你的Gitee" class="headerlink" title="1.1 注册你的Gitee"></a>1.1 注册你的Gitee</h2><p><a href="https://gitee.com/">点我前往Gitee注册</a></p>
 <h2 id="2-1-创建你的仓库"><a href="#2-1-创建你的仓库" class="headerlink" title="2.1 创建你的仓库"></a>2.1 创建你的仓库</h2><p>登陆到Gitee后，点击右上角<code>+</code>，选择新建仓库，其中仓库名要设置成你注册Gitee时的用户名：</p>
-<p><img src="https://i.loli.net/2021/04/06/rzOSFmRnGsJdVML.png" alt="新建仓库.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="新建仓库"></p>
 <h1 id="2-Hexo相关"><a href="#2-Hexo相关" class="headerlink" title="2 Hexo相关"></a>2 Hexo相关</h1><h2 id="2-1-安装并配置Git"><a href="#2-1-安装并配置Git" class="headerlink" title="2.1 安装并配置Git"></a>2.1 安装并配置Git</h2><h3 id="2-1-1-安装"><a href="#2-1-1-安装" class="headerlink" title="2.1.1 安装"></a>2.1.1 安装</h3><p><a href="https://git-scm.com/downloads">点我前往下载</a></p>
 <p>安装适合你的版本</p>
 <h3 id="2-1-2-配置用户信息"><a href="#2-1-2-配置用户信息" class="headerlink" title="2.1.2 配置用户信息"></a>2.1.2 配置用户信息</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.email <span class="string">&quot;email address&quot;</span></span><br><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br></pre></td></tr></table></figure>
@@ -1131,7 +1135,7 @@
 <p>将复制内容填入key，title随便设置，保存即可。</p>
 <p>测试是否成功</p>
 <p><code>ssh -T git@github.com</code></p>
-<p><img src="https://i.loli.net/2020/02/26/baXWReYujlcVyOK.png" alt="image-20200225131448964.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/baXWReYujlcVyOK.png" alt="测试ssh配置是否成功"></p>
 <h2 id="2-2-安装Node-js"><a href="#2-2-安装Node-js" class="headerlink" title="2.2 安装Node.js"></a>2.2 安装Node.js</h2><p><a href="https://nodejs.org/en/">点我前往下载</a></p>
 <p>安装最新版即可</p>
 <h2 id="2-3-安装Hexo"><a href="#2-3-安装Hexo" class="headerlink" title="2.3 安装Hexo"></a>2.3 安装Hexo</h2><p>进入任意本地磁盘，右键Git Bash Here进入命令行输入</p>
@@ -1156,13 +1160,13 @@
 <p>如果本地预览没什么问题，那么可以试着部署到Gitee上</p>
 <p>在部署前唯一要注意的是Hexo文件夹下的<code>_config.yml</code></p>
 <p>repository填你刚刚创建的仓库地址</p>
-<p><img src="https://i.loli.net/2020/02/26/eDGWNOSJuhA1rBd.png" alt="image-20200225133051862.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/eDGWNOSJuhA1rBd.png" alt="复制仓库地址"></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repository:</span> <span class="string">https://gitee.com/gentletk/gentletk.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
 <p>在你创建的仓库里点击服务，选择Gitee Pages</p>
-<p><img src="https://i.loli.net/2020/02/26/4tCyHsjz3vxhbWp.png" alt="image-20200225133350133.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4tCyHsjz3vxhbWp.png" alt="选择Gitee Pages"></p>
 <p>勾选强制使用https，部署/更新，过一会就能看到</p>
-<p><img src="https://i.loli.net/2020/02/26/dJDabxZUi3k1BM2.png" alt="image-20200225133531380.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dJDabxZUi3k1BM2.png" alt="已开启 Gitee Pages 服务"></p>
 <h2 id="2-4-更换Hexo主题并修改"><a href="#2-4-更换Hexo主题并修改" class="headerlink" title="2.4 更换Hexo主题并修改"></a>2.4 更换Hexo主题并修改</h2><p>默认的主题不够酷炫狂霸拽？<a href="https://hexo.io/themes/">来这里逛逛</a></p>
 <p>我下载的是<code>Ayer</code>，这个主题看着挺干净，可以看看原作者博客。<a href="https://shen-yu.gitee.io/">点我查看</a></p>
 <p>下面说说怎么更换主题。</p>
@@ -1175,7 +1179,7 @@
 <h3 id="2-4-1-流量与运行时间统计"><a href="#2-4-1-流量与运行时间统计" class="headerlink" title="2.4.1 流量与运行时间统计"></a>2.4.1 流量与运行时间统计</h3><p><strong>(1) cnzz流量统计</strong></p>
 <p>先在<a href="https://www.umeng.com/">友盟+</a>注册个账号，选择网站统计，添加站点，填好相关信息就好</p>
 <p>添加成功后会看到</p>
-<p><img src="https://i.loli.net/2020/02/26/YvQFL8XiET6fmzb.png" alt="image-20200225140159338.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/YvQFL8XiET6fmzb.png" alt="注册友盟成功"></p>
 <p>点击统计代码，选一个好看的样式复制</p>
 <p>找到<code>Hexo/themes/ayer</code>下的<code>_config.yml</code>，开启cnzz统计：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 友盟cnzz统计(url填js代码src链接)</span></span><br><span class="line"><span class="attr">cnzz:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#url: </span></span><br></pre></td></tr></table></figure>
@@ -1193,7 +1197,7 @@
 <h3 id="2-4-2评论系统"><a href="#2-4-2评论系统" class="headerlink" title="2.4.2评论系统"></a>2.4.2评论系统</h3><p>我用的是<code>Valine + leancloud</code></p>
 <p>先在LeanCloud创建个应用，<a href="https://www.leancloud.cn/">点我去创建</a></p>
 <p>在创建好的应用中找到应用keys</p>
-<p><img src="https://i.loli.net/2020/02/26/mYcxoWD2EkdMLSF.png" alt="image-20200225141755409.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/mYcxoWD2EkdMLSF.png" alt="复制应用keys"></p>
 <p>在<code>Hexo/themes/ayer</code>下的<code>_config.yml</code>中找到leancloud</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Valine [一款快速、简洁且高效的无后端评论系统] (https://github.com/xCss/Valine)</span></span><br><span class="line"><span class="comment"># 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可</span></span><br><span class="line"><span class="attr">leancloud:</span>  </span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="string">your</span> <span class="string">app_id</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="string">your</span> <span class="string">app_key</span></span><br></pre></td></tr></table></figure>
 
@@ -1222,6 +1226,54 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
@@ -1278,54 +1330,6 @@
       </categories>
       <tags>
         <tag>树莓派</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://i.loli.net/2021/04/27/IQl75DGzUwhXtoJ.png" alt="image-20210427173025722"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://i.loli.net/2021/04/27/9lUzEBdCKLAj56F.png" alt="image-20210427173234061"></p>
-<p><img src="https://i.loli.net/2021/04/27/i2Jt5wgfre1hUFj.png" alt="image-20210427173334658"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/04/27/RolDteAfWsUTCzy.png" alt="image-20210427173516617"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://i.loli.net/2021/04/27/8S6KcLkfHqQstI9.png" alt="image-20210427173607514"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://i.loli.net/2021/04/27/cuamzEKbwksPMSW.png" alt="image-20210427173703992"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
@@ -1566,9 +1570,9 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 文章过期提醒设置</span></span><br><span class="line"><span class="comment"># limit_day: 距离更新时间多少天才显示提醒</span></span><br><span class="line"><span class="comment"># style: flat 样式(simple/flat)</span></span><br><span class="line"><span class="attr">noticeOutdate:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">flat</span> </span><br><span class="line">  <span class="attr">limit_day:</span> <span class="number">150</span> </span><br><span class="line">  <span class="attr">position:</span> <span class="string">top</span></span><br><span class="line">  <span class="attr">message_prev:</span> <span class="string">请注意，本文更新于</span></span><br><span class="line">  <span class="attr">message_next:</span> <span class="string">天前，其中某些内容可能已经过时。</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="5-8-评论系统配置"><a href="#5-8-评论系统配置" class="headerlink" title="5.8 评论系统配置"></a>5.8 评论系统配置</h3><p><code>Valine</code>是一款快速、简洁且高效的无后端评论系统，使用<code>Valine</code>需要前往<a href="https://www.leancloud.cn/">LeanCloud</a>进行注册并登陆，进入控制台后点击创建应用</p>
-<p><img src="https://i.loli.net/2021/04/23/kbLB3zo95dKHf8I.png" alt="LeanCloud创建应用.png"></p>
-<p>点击创建好的应用，在左侧导航栏选择设置，点击应用Keys查看<code>AppID</code>和<code>AppKey</code>。</p>
-<p><img src="https://i.loli.net/2021/04/23/co95naX3gdBDurp.png" alt="LeanCloud获取key.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210625150013397.png" alt="image-20210625150013397"></p>
+<p>点击创建好的应用，在左侧导航栏选择设置，点击应用凭证查看<code>AppID</code>和<code>AppKey</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210625150120739.png" alt="image-20210625150120739"></p>
 <p>获取<code>AppID</code>和<code>AppKey</code>后，对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置评论系统为<code>Valine</code>：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 评论系统设置</span></span><br><span class="line"><span class="comment"># use: 双评论系统设置，第一个为默认评论系统</span></span><br><span class="line"><span class="comment">#   -  评论系统选择: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo</span></span><br><span class="line"><span class="comment"># text: 按钮旁显示评论系统名称</span></span><br><span class="line"><span class="comment"># lazyload: 懒加载，开启后，只有滚动到评论位置时才会加载评论所需要的资源，评论数不显示</span></span><br><span class="line"><span class="comment"># count: 文章顶部显示评论数</span></span><br><span class="line"><span class="comment"># card_post_count: 主页文章卡片显示评论数</span></span><br><span class="line"><span class="attr">comments:</span></span><br><span class="line">  <span class="attr">use:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Valine</span></span><br><span class="line">    <span class="comment">#- Disqus</span></span><br><span class="line">  <span class="attr">text:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">lazyload:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">card_post_count:</span> <span class="literal">true</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># valine</span></span><br><span class="line"><span class="comment"># https://valine.js.org</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">appId:</span> 								                                  <span class="comment"># leancloud application app id</span></span><br><span class="line">  <span class="attr">appKey:</span> 							                                      <span class="comment"># leancloud application app key</span></span><br><span class="line">  <span class="attr">tagMeta:</span> <span class="string">博主,小伙伴,访客</span>                                               <span class="comment"># 评论者标识</span></span><br><span class="line">  <span class="attr">master:</span> 									                              <span class="comment"># 博主md5加密邮箱</span></span><br><span class="line">  <span class="attr">nickPlaceholder:</span> <span class="string">QQ号(输入QQ会自动补全邮箱)</span>                             <span class="comment"># 昵称占位符  </span></span><br><span class="line">  <span class="attr">mailPlaceholder:</span> <span class="string">邮箱</span>                                                   <span class="comment"># 邮箱占位符  </span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">填写QQ可以及时收到回复哦(●\&#x27;◡\&#x27;●)~</span>                         <span class="comment"># 评论区占位符</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">monsterid</span>                                                       <span class="comment"># 默认头像样式 https://valine.js.org/#/avatar</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail</span>                                                   <span class="comment"># 评论者信息(昵称，邮箱，链接)</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span>                                                            <span class="comment"># 评论列表每页最大数目</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-CN</span>                                                             <span class="comment"># 语言设置(zh-CN/zh-TW/en/ja)</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">true</span>                                                          <span class="comment"># 是否记录评论者IP</span></span><br><span class="line">  <span class="attr">bg:</span> 																	  <span class="comment"># 评论区背景图</span></span><br><span class="line">  <span class="attr">emojiCDN:</span> <span class="string">https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/emoji/</span> <span class="comment"># emoji CDN</span></span><br><span class="line">  <span class="attr">enableQQ:</span> <span class="literal">true</span>                                                          <span class="comment"># 允许获取QQ头像</span></span><br><span class="line">  <span class="attr">requiredFields:</span> <span class="string">nick,mail</span>                                               <span class="comment"># 必填项(nick/mail)</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span>                                                           <span class="comment"># 文章访问量统计</span></span><br><span class="line">  <span class="attr">option:</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># CDN</span></span><br><span class="line"><span class="comment"># 设置Valine的CDN为魔改后的</span></span><br><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment">#valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js</span></span><br><span class="line">  <span class="attr">valine:</span> <span class="string">https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/js/Valine.min.js</span></span><br></pre></td></tr></table></figure>
 
