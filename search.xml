@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AltiumDesigner绘制PCB(三)</title>
+    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
+<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
+<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
+</div>
+
+<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
+<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
+<p>修改完成后，依次放置四个焊盘：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
+<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
+<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
+<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
+<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(一)</title>
     <url>/2020/04/26/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -49,46 +89,6 @@
 <td align="left">PCB图文件</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(三)</title>
-    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
-<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
-<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
-</div>
-
-<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
-<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
-<p>修改完成后，依次放置四个焊盘：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
-<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
-<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
-<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
-<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -161,7 +161,7 @@
 <p>直接点击确定后，依次点击板子四个边角，将板子整个框选起来：</p>
 <p><img src="https://gitee.com/gentletk/picbed/raw/master/images/UYzLE6XGjeA9qsd.png" alt="PCB铺完铜"></p>
 <h2 id="5-3D预览"><a href="#5-3D预览" class="headerlink" title="5 3D预览"></a>5 3D预览</h2><p>按<code>3</code>看一下<code>3D</code>预览效果：</p>
-<p><img src="https://i.loli.net/2021/04/28/AolkVOJEQ5rLvDi.png" alt="PCB的3D预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AolkVOJEQ5rLvDi.png" alt="PCB的3D预览"></p>
 <h2 id="6-打印设置"><a href="#6-打印设置" class="headerlink" title="6 打印设置"></a>6 打印设置</h2><p>在顶部导航栏选择文件，页面设置，缩放模式选择<code>Scaled Print</code>，缩放比例为<code>1.00</code>：</p>
 <p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JoAak14q2XIrMbn.png" alt="页面设置"></p>
 <p>然后点击高级，进入页面高级设置：</p>
@@ -178,6 +178,75 @@
         <tag>技术</tag>
         <tag>AltiumDesigner</tag>
         <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++命名空间初级定义与使用</title>
+    <url>/2020/05/08/C++%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%88%9D%E7%BA%A7%E5%AE%9A%E4%B9%89%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-同一文件内使用namespace"><a href="#1-同一文件内使用namespace" class="headerlink" title="1 同一文件内使用namespace"></a>1 同一文件内使用namespace</h2><h3 id="1-1-方法一"><a href="#1-1-方法一" class="headerlink" title="1.1 方法一"></a>1.1 方法一</h3><p>通过加指定命名空间前缀来访问。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1 by method 1!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 方式一: 通过加指定命名空间前缀来访问</span></span><br><span class="line">	NS1::<span class="built_in">funcFromNS1</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QjrP8OK6AktaloT.png" alt="加指定命名空间前缀来访问的运行结果"></p>
+<h3 id="1-2-方法二"><a href="#1-2-方法二" class="headerlink" title="1.2 方法二"></a>1.2 方法二</h3><p>通过提前声明指定命名空间的方法名来访问。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1 by method 2!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明指定命名空间的函数</span></span><br><span class="line"><span class="keyword">using</span> NS1::funcFromNS1;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 方式二: 通过提前声明指定命名空间的方法名来访问</span></span><br><span class="line">	<span class="built_in">funcFromNS1</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gGJxocO21zwQE5C.png" alt="提前声明指定命名空间方法名来访问的运行结果"></p>
+<h3 id="1-3-方法三"><a href="#1-3-方法三" class="headerlink" title="1.3 方法三"></a>1.3 方法三</h3><p>通过提前指定命名空间来访问。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1 by method 3!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 指定使用命名空间NS1</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> NS1;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 方式三: 通过提前指定命名空间来访问</span></span><br><span class="line">	<span class="built_in">funcFromNS1</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PRyA7qp53zwv2YD.png" alt="提前指定命名空间来访问的运行结果"></p>
+<h2 id="2-不同文件内使用namespace"><a href="#2-不同文件内使用namespace" class="headerlink" title="2 不同文件内使用namespace"></a>2 不同文件内使用namespace</h2><h3 id="2-1-方法一"><a href="#2-1-方法一" class="headerlink" title="2.1 方法一"></a>2.1 方法一</h3><p>test4.cpp</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span>;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	NS2::<span class="built_in">funcFromNS2</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>test5.cpp</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS2 !\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/G4Qd7IlJwuRSnA6.png" alt="不同文件内使用namespace的运行结果1"></p>
+<h3 id="2-2-方法二"><a href="#2-2-方法二" class="headerlink" title="2.2 方法二"></a>2.2 方法二</h3><p>test4.cpp</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;<span class="function"><span class="keyword">extern</span> <span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span>;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	NS2::<span class="built_in">funcFromNS2</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>test5.cpp</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS2 by method 2!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GcZlzFXCoNsymeb.png" alt="不同文件内使用namespace的运行结果2"></p>
+<h2 id="3-默认命名空间使用"><a href="#3-默认命名空间使用" class="headerlink" title="3 默认命名空间使用"></a>3 默认命名空间使用</h2><p>默认命名空间又叫全局命名空间。</p>
+<h3 id="3-1-其他命名空间引用默认命名空间的方法"><a href="#3-1-其他命名空间引用默认命名空间的方法" class="headerlink" title="3.1 其他命名空间引用默认命名空间的方法"></a>3.1 其他命名空间引用默认命名空间的方法</h3><p>test6.cpp</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func2FromGlobal</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Called func2FromGlobal!\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1!\n&quot;</span>);</span><br><span class="line">		::<span class="built_in">func2FromGlobal</span>();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	NS1::<span class="built_in">funcFromNS1</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/vUVDPAsx6952kBp.png" alt="其他命名空间引用默认命名空间方法的运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -241,65 +310,13 @@
       </tags>
   </entry>
   <entry>
-    <title>C++命名空间初级定义与使用</title>
-    <url>/2020/05/08/C++%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%88%9D%E7%BA%A7%E5%AE%9A%E4%B9%89%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-同一文件内使用namespace"><a href="#1-同一文件内使用namespace" class="headerlink" title="1 同一文件内使用namespace"></a>1 同一文件内使用namespace</h2><h3 id="1-1-方法一"><a href="#1-1-方法一" class="headerlink" title="1.1 方法一"></a>1.1 方法一</h3><p>通过加指定命名空间前缀来访问。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1 by method 1!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 方式一: 通过加指定命名空间前缀来访问</span></span><br><span class="line">	NS1::<span class="built_in">funcFromNS1</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>C++标准库介绍</title>
+    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/QjrP8OK6AktaloT.png" alt="image-20210513141829928"></p>
-<h3 id="1-2-方法二"><a href="#1-2-方法二" class="headerlink" title="1.2 方法二"></a>1.2 方法二</h3><p>通过提前声明指定命名空间的方法名来访问。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1 by method 2!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明指定命名空间的函数</span></span><br><span class="line"><span class="keyword">using</span> NS1::funcFromNS1;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 方式二: 通过提前声明指定命名空间的方法名来访问</span></span><br><span class="line">	<span class="built_in">funcFromNS1</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/gGJxocO21zwQE5C.png" alt="image-20210513142002645"></p>
-<h3 id="1-3-方法三"><a href="#1-3-方法三" class="headerlink" title="1.3 方法三"></a>1.3 方法三</h3><p>通过提前指定命名空间来访问。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1 by method 3!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 指定使用命名空间NS1</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> NS1;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 方式三: 通过提前指定命名空间来访问</span></span><br><span class="line">	<span class="built_in">funcFromNS1</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/PRyA7qp53zwv2YD.png" alt="image-20210513142117417"></p>
-<h2 id="2-不同文件内使用namespace"><a href="#2-不同文件内使用namespace" class="headerlink" title="2 不同文件内使用namespace"></a>2 不同文件内使用namespace</h2><h3 id="2-1-方法一"><a href="#2-1-方法一" class="headerlink" title="2.1 方法一"></a>2.1 方法一</h3><p>test4.cpp</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span>;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	NS2::<span class="built_in">funcFromNS2</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>test5.cpp</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS2 !\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/G4Qd7IlJwuRSnA6.png" alt="image-20210513145658194"></p>
-<h3 id="2-2-方法二"><a href="#2-2-方法二" class="headerlink" title="2.2 方法二"></a>2.2 方法二</h3><p>test4.cpp</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;<span class="function"><span class="keyword">extern</span> <span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span>;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	NS2::<span class="built_in">funcFromNS2</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>test5.cpp</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS2</span></span><br><span class="line"><span class="keyword">namespace</span> NS2&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS2</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS2 by method 2!\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/GcZlzFXCoNsymeb.png" alt="image-20210513150004009"></p>
-<h2 id="3-默认命名空间使用"><a href="#3-默认命名空间使用" class="headerlink" title="3 默认命名空间使用"></a>3 默认命名空间使用</h2><p>默认命名空间又叫全局命名空间。</p>
-<h3 id="3-1-其他命名空间引用默认命名空间的方法"><a href="#3-1-其他命名空间引用默认命名空间的方法" class="headerlink" title="3.1 其他命名空间引用默认命名空间的方法"></a>3.1 其他命名空间引用默认命名空间的方法</h3><p>test6.cpp</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func2FromGlobal</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Called func2FromGlobal!\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义命名空间NS1</span></span><br><span class="line"><span class="keyword">namespace</span> NS1&#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">funcFromNS1</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Called funcFromNS1!\n&quot;</span>);</span><br><span class="line">		::<span class="built_in">func2FromGlobal</span>();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	NS1::<span class="built_in">funcFromNS1</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/vUVDPAsx6952kBp.png" alt="image-20210513151401961"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/P1QrqskjKveIfdC.png" alt="image-20210513161908584"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -315,15 +332,15 @@
     <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9yUWVzcA2rh8fMl.png" alt="image-20210513170814491"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
 <h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/pbymCzL3suNFoAh.png" alt="image-20210513171002081"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
 <h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/fDeMBF2aNlLT8As.png" alt="image-20210513171313777"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -334,20 +351,132 @@
       </tags>
   </entry>
   <entry>
-    <title>C++标准库介绍</title>
-    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>使用Vercel托管自己的网站</title>
+    <url>/2021/02/03/Doxygen%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p><strong>Doxygen</strong> 可以用来为项目生成帮助文档或者 <strong>SDK</strong>，输出格式可以为 <strong>HTML</strong>、<strong>CHM</strong> 等。</p>
+<h3 id="1-软件安装"><a href="#1-软件安装" class="headerlink" title="1 软件安装"></a>1 软件安装</h3><ul>
+<li><a href="https://sourceforge.net/projects/doxygen/">doxygen-1.9.1-setup.exe</a></li>
+<li><a href="https://www.graphviz.org/download/">stable_windows_10_cmake_Release_x64_graphviz-install-2.47.3-win64.exe</a></li>
+<li><a href="https://www.helpandmanual.com/download/htmlhelp.exe">htmlhelp.exe</a></li>
+</ul>
+<h3 id="2-Doxygen-注释规范"><a href="#2-Doxygen-注释规范" class="headerlink" title="2 Doxygen 注释规范"></a>2 Doxygen 注释规范</h3><h4 id="2-1-注释格式"><a href="#2-1-注释格式" class="headerlink" title="2.1 注释格式"></a>2.1 注释格式</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 块注释</span></span><br><span class="line">/**</span><br><span class="line">......</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 行注释</span></span><br><span class="line">///&lt; ......</span><br><span class="line">/** ...... */</span><br><span class="line">/**&lt; ...... */</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/PnB6sSvtuq8GpNK.png" alt="image-20210513171917047"></p>
+<table>
+<thead>
+<tr>
+<th>注释命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@brief</td>
+<td>概要信息</td>
+</tr>
+<tr>
+<td>@details</td>
+<td>详细描述</td>
+</tr>
+<tr>
+<td>@par</td>
+<td>开始一个段落，段名自定义</td>
+</tr>
+<tr>
+<td>@param</td>
+<td>标记参数意义</td>
+</tr>
+<tr>
+<td>@return</td>
+<td>描述返回意义</td>
+</tr>
+<tr>
+<td>@retval</td>
+<td>描述返回值意义</td>
+</tr>
+<tr>
+<td>@todo</td>
+<td>对将要做的事情进行注释</td>
+</tr>
+<tr>
+<td>@bug</td>
+<td>缺陷，链接到所有缺陷汇总的缺陷列表</td>
+</tr>
+<tr>
+<td>@since</td>
+<td>通常用来说明从什么版本、时间写此部分代码</td>
+</tr>
+<tr>
+<td>@pre</td>
+<td>用来说明代码项的前提条件</td>
+</tr>
+<tr>
+<td>@post</td>
+<td>用来说明代码项之后的使用条件</td>
+</tr>
+<tr>
+<td>@code</td>
+<td>在注释中开始说明一段代码，直到@endcode命令</td>
+</tr>
+<tr>
+<td>@endcode</td>
+<td>注释中代码段的结束</td>
+</tr>
+<tr>
+<td>@fn</td>
+<td>函数说明</td>
+</tr>
+<tr>
+<td>@include</td>
+<td>包含文件</td>
+</tr>
+<tr>
+<td>@var</td>
+<td>标注变量</td>
+</tr>
+<tr>
+<td>@enum</td>
+<td>标注枚举</td>
+</tr>
+<tr>
+<td>@struct</td>
+<td>标注结构体</td>
+</tr>
+<tr>
+<td>@class</td>
+<td>标注类</td>
+</tr>
+<tr>
+<td>@note</td>
+<td>描述一些注意事项</td>
+</tr>
+<tr>
+<td>@addtogroup</td>
+<td>添加到一个组</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-自动注释模板（VSCode-settings-json-配置）"><a href="#2-2-自动注释模板（VSCode-settings-json-配置）" class="headerlink" title="2.2 自动注释模板（VSCode settings.json 配置）"></a>2.2 自动注释模板（VSCode settings.json 配置）</h4><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Doxygen documentation generator set</span></span><br><span class="line">    <span class="comment">// 文件注释：版权信息模板</span></span><br><span class="line">    <span class="attr">&quot;doxdocgen.file.copyrightTag&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;@copyright Copyright (c) &#123;year&#125;  by 李云亮&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="comment">// 文件注释：自定义模块，这里我添加一个修改日志</span></span><br><span class="line">    <span class="attr">&quot;doxdocgen.file.customTag&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;@par 修改日志:&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;table&gt;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;tr&gt;&lt;th&gt;Date       &lt;th&gt;Version &lt;th&gt;Author  &lt;th&gt;Description&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;tr&gt;&lt;td&gt;&#123;date&#125;     &lt;td&gt;1.0     &lt;td&gt;李云亮   &lt;td&gt;内容&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;/table&gt;&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="comment">// 文件注释的组成及其排序</span></span><br><span class="line">    <span class="attr">&quot;doxdocgen.file.fileOrder&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;file&quot;</span>,		<span class="comment">// @file</span></span><br><span class="line">        <span class="string">&quot;brief&quot;</span>,	<span class="comment">// @brief 简介</span></span><br><span class="line">        <span class="string">&quot;author&quot;</span>,	<span class="comment">// 作者</span></span><br><span class="line">        <span class="string">&quot;version&quot;</span>,	<span class="comment">// 版本</span></span><br><span class="line">        <span class="string">&quot;date&quot;</span>,		<span class="comment">// 日期</span></span><br><span class="line">        <span class="string">&quot;empty&quot;</span>,	<span class="comment">// 空行</span></span><br><span class="line">        <span class="string">&quot;copyright&quot;</span>,<span class="comment">// 版权</span></span><br><span class="line">        <span class="string">&quot;empty&quot;</span>,    <span class="comment">// 空行</span></span><br><span class="line">        <span class="string">&quot;custom&quot;</span>	<span class="comment">// 自定义</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="comment">// 下面时设置上面标签tag的具体信息</span></span><br><span class="line">    <span class="attr">&quot;doxdocgen.file.fileTemplate&quot;</span>: <span class="string">&quot;@file &#123;name&#125;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.file.versionTag&quot;</span>: <span class="string">&quot;@version 1.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.authorEmail&quot;</span>: <span class="string">&quot;1144626145@qq.com&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.authorName&quot;</span>: <span class="string">&quot;李云亮&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.authorTag&quot;</span>: <span class="string">&quot;@author &#123;author&#125; (&#123;email&#125;)&quot;</span>,</span><br><span class="line">    <span class="comment">// 日期格式与模板</span></span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.dateFormat&quot;</span>: <span class="string">&quot;YYYY-MM-DD&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.dateTemplate&quot;</span>: <span class="string">&quot;@date &#123;date&#125;&quot;</span>,</span><br><span class="line">	</span><br><span class="line">    <span class="comment">// 根据自动生成的注释模板（目前主要体现在函数注释上）</span></span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.order&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;brief&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tparam&quot;</span>,</span><br><span class="line">        <span class="string">&quot;param&quot;</span>,</span><br><span class="line">        <span class="string">&quot;return&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.paramTemplate&quot;</span>: <span class="string">&quot;@param&#123;indent:8&#125;&#123;param&#125;&#123;indent:25&#125;MyParamDoc&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.returnTemplate&quot;</span>: <span class="string">&quot;@return &#123;type&#125; &quot;</span>,</span><br><span class="line">    <span class="attr">&quot;doxdocgen.generic.splitCasingSmartText&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;[json]&quot;</span>: &#123;</span><br><span class="line"></span><br><span class="line">        <span class="attr">&quot;editor.quickSuggestions&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;strings&quot;</span>: <span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;editor.suggest.insertMode&quot;</span>: <span class="string">&quot;replace&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-手动注释模板"><a href="#2-3-手动注释模板" class="headerlink" title="2.3 手动注释模板"></a>2.3 手动注释模板</h4><h5 id="2-3-1-文件注释模板"><a href="#2-3-1-文件注释模板" class="headerlink" title="2.3.1 文件注释模板"></a>2.3.1 文件注释模板</h5><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @file 文件名</span></span><br><span class="line"><span class="comment"> * @brief 文件概要信息描述</span></span><br><span class="line"><span class="comment"> * @author 作者</span></span><br><span class="line"><span class="comment"> * @version 版本</span></span><br><span class="line"><span class="comment"> * @date 日期</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * @copyright 版权信息</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * @par 修改日志:</span></span><br><span class="line"><span class="comment"> * &lt;table&gt;</span></span><br><span class="line"><span class="comment"> * &lt;tr&gt;&lt;th&gt;Date	 &lt;th&gt;Version  &lt;th&gt;Author  &lt;th&gt;Description</span></span><br><span class="line"><span class="comment"> * &lt;tr&gt;&lt;td&gt;日期 	&lt;td&gt;版本     &lt;td&gt;作者      &lt;td&gt;说明</span></span><br><span class="line"><span class="comment"> * &lt;/table&gt;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-2-函数注释模板"><a href="#2-3-2-函数注释模板" class="headerlink" title="2.3.2 函数注释模板"></a>2.3.2 函数注释模板</h5><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @brief  函数功能概要信息</span></span><br><span class="line"><span class="comment"> * @param[in]  输入参数       输入参数描述信息</span></span><br><span class="line"><span class="comment"> * @param[out] 输出参数       输出参数描述信息</span></span><br><span class="line"><span class="comment"> * @return 返回类型				</span></span><br><span class="line"><span class="comment"> * @retval 返回值	返回值意义描述信息 </span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-使用教程"><a href="#3-使用教程" class="headerlink" title="3 使用教程"></a>3 使用教程</h3><h4 id="3-1-Doxygen-Wizard-Project"><a href="#3-1-Doxygen-Wizard-Project" class="headerlink" title="3.1 Doxygen Wizard Project"></a>3.1 Doxygen Wizard Project</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenWizardProject.png" alt="DoxygenWizardProject"></p>
+<h4 id="3-2-Doxygen-Wizard-Mode"><a href="#3-2-Doxygen-Wizard-Mode" class="headerlink" title="3.2 Doxygen Wizard Mode"></a>3.2 Doxygen Wizard Mode</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenWizardMode.png" alt="DoxygenWizardMode"></p>
+<h4 id="3-3-Doxygen-Wizard-Output"><a href="#3-3-Doxygen-Wizard-Output" class="headerlink" title="3.3 Doxygen Wizard Output"></a>3.3 Doxygen Wizard Output</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenWizardOutput.png" alt="DoxygenWizardOutput"></p>
+<h4 id="3-4-Doxygen-Wizard-Diagrams"><a href="#3-4-Doxygen-Wizard-Diagrams" class="headerlink" title="3.4 Doxygen Wizard Diagrams"></a>3.4 Doxygen Wizard Diagrams</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenWizardDiagrams.png" alt="DoxygenWizardDiagrams"></p>
+<h4 id="3-5-Doxygen-Expert-Project"><a href="#3-5-Doxygen-Expert-Project" class="headerlink" title="3.5 Doxygen Expert Project"></a>3.5 Doxygen Expert Project</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenExpertProject.png" alt="DoxygenExpertProject"></p>
+<h4 id="3-6-Doxygen-Expert-HTML"><a href="#3-6-Doxygen-Expert-HTML" class="headerlink" title="3.6 Doxygen Expert HTML"></a>3.6 Doxygen Expert HTML</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenExpertHTML.png" alt="DoxygenExpertHTML"></p>
+<h4 id="3-7-Doxygen-Expert-Dot"><a href="#3-7-Doxygen-Expert-Dot" class="headerlink" title="3.7 Doxygen Expert Dot"></a>3.7 Doxygen Expert Dot</h4><p><img src="res/DoxygenExpertDot.png" alt="DoxygenExpertDot"></p>
+<h3 id="4-生成效果"><a href="#4-生成效果" class="headerlink" title="4 生成效果"></a>4 生成效果</h3><p>HTML 网页效果</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210628172948343.png" alt="image-20210628172948343"></p>
+<p>CHM 文档效果</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210628173041763.png" alt="image-20210628173041763"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>C++</tag>
+        <tag>Doxygen</tag>
       </tags>
   </entry>
   <entry>
@@ -438,146 +567,11 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo介绍</title>
-    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
-<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
-<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，输入以下命令检查安装是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>成功后则会显示具体版本号，大致如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
-<table>
-<thead>
-<tr>
-<th align="left">Hexo 版本</th>
-<th align="left">最低兼容 Node.js 版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">5.0+</td>
-<td align="left">10.13.0</td>
-</tr>
-<tr>
-<td align="left">4.1 - 4.2</td>
-<td align="left">8.10</td>
-</tr>
-<tr>
-<td align="left">4.0</td>
-<td align="left">8.6</td>
-</tr>
-<tr>
-<td align="left">3.3 - 3.9</td>
-<td align="left">6.9</td>
-</tr>
-<tr>
-<td align="left">3.2 - 3.3</td>
-<td align="left">0.12</td>
-</tr>
-<tr>
-<td align="left">3.0 - 3.1</td>
-<td align="left">0.10 or iojs</td>
-</tr>
-<tr>
-<td align="left">0.0.1 - 2.8</td>
-<td align="left">0.10</td>
-</tr>
-</tbody></table>
-<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>然后在终端输入如下命令进行初始化：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成后，提示信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-
-<p><code>HexoBlog</code>文件夹目录结构如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">文件/文件夹</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>node_modules</code></td>
-<td align="left">模块文件夹，存放下载的模块。</td>
-</tr>
-<tr>
-<td align="left"><code>scaffolds</code></td>
-<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
-</tr>
-<tr>
-<td align="left"><code>source</code></td>
-<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
-</tr>
-<tr>
-<td align="left"><code>themes</code></td>
-<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
-</tr>
-<tr>
-<td align="left"><code>.gitignore</code></td>
-<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
-</tr>
-<tr>
-<td align="left"><code>_config.landscape.yml</code></td>
-<td align="left">默认的主题配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>_config.yml</code></td>
-<td align="left">网站的配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
-</tr>
-</tbody></table>
-<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
-<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
-<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
-<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
-<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
-<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
-<p>终端输入如下命令进行编译、预览：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MQTT介绍</title>
     <url>/2021/04/01/MQTT%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
 <p>下面是一个简单的MQTT系统模型：</p>
-<p><img src="https://i.loli.net/2021/03/31/AUdtpuG5LBVJDFk.png" alt="MQTT系统模型.png"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AUdtpuG5LBVJDFk.png" alt="MQTT系统模型"></p>
 <h2 id="2-MQTT原理"><a href="#2-MQTT原理" class="headerlink" title="2 MQTT原理"></a>2 MQTT原理</h2><h3 id="2-1-组成部分"><a href="#2-1-组成部分" class="headerlink" title="2.1 组成部分"></a>2.1 组成部分</h3><p>可以将MQTT拆分为服务端和客户端两部分来理解：</p>
 <ol>
 <li><p><strong>服务端</strong><br> 负责处理客户端的请求以及消息推送。</p>
@@ -820,6 +814,141 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo介绍</title>
+    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
+<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
+<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，输入以下命令检查安装是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功后则会显示具体版本号，大致如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Hexo 版本</th>
+<th align="left">最低兼容 Node.js 版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">5.0+</td>
+<td align="left">10.13.0</td>
+</tr>
+<tr>
+<td align="left">4.1 - 4.2</td>
+<td align="left">8.10</td>
+</tr>
+<tr>
+<td align="left">4.0</td>
+<td align="left">8.6</td>
+</tr>
+<tr>
+<td align="left">3.3 - 3.9</td>
+<td align="left">6.9</td>
+</tr>
+<tr>
+<td align="left">3.2 - 3.3</td>
+<td align="left">0.12</td>
+</tr>
+<tr>
+<td align="left">3.0 - 3.1</td>
+<td align="left">0.10 or iojs</td>
+</tr>
+<tr>
+<td align="left">0.0.1 - 2.8</td>
+<td align="left">0.10</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>然后在终端输入如下命令进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，提示信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p><code>HexoBlog</code>文件夹目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件/文件夹</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>node_modules</code></td>
+<td align="left">模块文件夹，存放下载的模块。</td>
+</tr>
+<tr>
+<td align="left"><code>scaffolds</code></td>
+<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
+</tr>
+<tr>
+<td align="left"><code>themes</code></td>
+<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
+</tr>
+<tr>
+<td align="left"><code>.gitignore</code></td>
+<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
+</tr>
+<tr>
+<td align="left"><code>_config.landscape.yml</code></td>
+<td align="left">默认的主题配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>_config.yml</code></td>
+<td align="left">网站的配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
+<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
+<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
+<p>终端输入如下命令进行编译、预览：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法测试</title>
     <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -988,6 +1117,48 @@
       </tags>
   </entry>
   <entry>
+    <title>使用Vercel托管自己的网站</title>
+    <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
+<div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p>
+</div>
+
+<h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure>
+
+<p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/sJy5ui6IRS3tEYD.png" alt="Vercel确认邮件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/oEjkAV4LmOf2rP1.png" alt="登录Vercel"></p>
+<h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure>
+
+<p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/bG5kEYxLBpK284j.png" alt="合成大西瓜小游戏"></p>
+<p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p>
+<p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p>
+<p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p>
+<h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure>
+
+<p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/WFYuK7Gmn6jHq3f.png" alt="绑定自己的域名"></p>
+<p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
+
+<p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/wxmrazg2BkYcbUv.png" alt="添加记录集"></p>
+<p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/eNIToanWzl93GOM.png" alt="发布合成大西瓜应用"></p>
+<p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Vercel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Proteus 7 Professional安装</title>
     <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
@@ -1024,48 +1195,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Vercel托管自己的网站</title>
-    <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
-<div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p>
-</div>
-
-<h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure>
-
-<p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p>
-<p><img src="https://i.loli.net/2021/04/28/sJy5ui6IRS3tEYD.png" alt="image-20210428151329447"></p>
-<p><img src="https://i.loli.net/2021/04/28/oEjkAV4LmOf2rP1.png" alt="image-20210428151530306"></p>
-<h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure>
-
-<p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p>
-<p><img src="https://i.loli.net/2021/04/28/bG5kEYxLBpK284j.png" alt="image-20210428153114634"></p>
-<p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p>
-<p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p>
-<p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p>
-<h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure>
-
-<p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p>
-<p><img src="https://i.loli.net/2021/04/28/WFYuK7Gmn6jHq3f.png" alt="image-20210428164129202"></p>
-<p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
-
-<p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p>
-<p><img src="https://i.loli.net/2021/04/28/wxmrazg2BkYcbUv.png" alt="image-20210428155853129"></p>
-<p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p>
-<p><img src="https://i.loli.net/2021/04/28/eNIToanWzl93GOM.png" alt="image-20210428164524093"></p>
-<p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Vercel</tag>
       </tags>
   </entry>
   <entry>
