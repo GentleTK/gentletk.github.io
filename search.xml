@@ -465,7 +465,7 @@
 <h4 id="3-4-Doxygen-Wizard-Diagrams"><a href="#3-4-Doxygen-Wizard-Diagrams" class="headerlink" title="3.4 Doxygen Wizard Diagrams"></a>3.4 Doxygen Wizard Diagrams</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenWizardDiagrams.png" alt="DoxygenWizardDiagrams"></p>
 <h4 id="3-5-Doxygen-Expert-Project"><a href="#3-5-Doxygen-Expert-Project" class="headerlink" title="3.5 Doxygen Expert Project"></a>3.5 Doxygen Expert Project</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenExpertProject.png" alt="DoxygenExpertProject"></p>
 <h4 id="3-6-Doxygen-Expert-HTML"><a href="#3-6-Doxygen-Expert-HTML" class="headerlink" title="3.6 Doxygen Expert HTML"></a>3.6 Doxygen Expert HTML</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenExpertHTML.png" alt="DoxygenExpertHTML"></p>
-<h4 id="3-7-Doxygen-Expert-Dot"><a href="#3-7-Doxygen-Expert-Dot" class="headerlink" title="3.7 Doxygen Expert Dot"></a>3.7 Doxygen Expert Dot</h4><p><img src="res/DoxygenExpertDot.png" alt="DoxygenExpertDot"></p>
+<h4 id="3-7-Doxygen-Expert-Dot"><a href="#3-7-Doxygen-Expert-Dot" class="headerlink" title="3.7 Doxygen Expert Dot"></a>3.7 Doxygen Expert Dot</h4><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DoxygenExpertDot.png" alt="DoxygenExpertDot"></p>
 <h3 id="4-生成效果"><a href="#4-生成效果" class="headerlink" title="4 生成效果"></a>4 生成效果</h3><p>HTML 网页效果</p>
 <p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210628172948343.png" alt="image-20210628172948343"></p>
 <p>CHM 文档效果</p>
@@ -949,6 +949,45 @@
       </tags>
   </entry>
   <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法测试</title>
     <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -1114,45 +1153,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
