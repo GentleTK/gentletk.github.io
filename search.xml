@@ -60,46 +60,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(三)</title>
-    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
-<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
-<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
-</div>
-
-<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
-<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
-<p>修改完成后，依次放置四个焊盘：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
-<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
-<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
-<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
-<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(二)</title>
     <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -139,28 +99,35 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(四)</title>
-    <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
+    <title>AltiumDesigner绘制PCB(三)</title>
+    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制电路原理图。</p>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
-<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
-<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
-<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
-<p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
-<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
-<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
-<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
+<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
+<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
+<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
+</div>
+
+<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
+<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
+<p>修改完成后，依次放置四个焊盘：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
+<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
+<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
+<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
+<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -214,6 +181,59 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(四)</title>
+    <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制电路原理图。</p>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
+<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
+<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
+<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
+<p>按照矩阵键盘逻辑进行电气连线：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
+<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
+<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
+<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Anaconda下安装opencv</title>
     <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
     <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
@@ -238,26 +258,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -567,6 +567,141 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo介绍</title>
+    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
+<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
+<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，输入以下命令检查安装是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功后则会显示具体版本号，大致如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Hexo 版本</th>
+<th align="left">最低兼容 Node.js 版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">5.0+</td>
+<td align="left">10.13.0</td>
+</tr>
+<tr>
+<td align="left">4.1 - 4.2</td>
+<td align="left">8.10</td>
+</tr>
+<tr>
+<td align="left">4.0</td>
+<td align="left">8.6</td>
+</tr>
+<tr>
+<td align="left">3.3 - 3.9</td>
+<td align="left">6.9</td>
+</tr>
+<tr>
+<td align="left">3.2 - 3.3</td>
+<td align="left">0.12</td>
+</tr>
+<tr>
+<td align="left">3.0 - 3.1</td>
+<td align="left">0.10 or iojs</td>
+</tr>
+<tr>
+<td align="left">0.0.1 - 2.8</td>
+<td align="left">0.10</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>然后在终端输入如下命令进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，提示信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p><code>HexoBlog</code>文件夹目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件/文件夹</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>node_modules</code></td>
+<td align="left">模块文件夹，存放下载的模块。</td>
+</tr>
+<tr>
+<td align="left"><code>scaffolds</code></td>
+<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
+</tr>
+<tr>
+<td align="left"><code>themes</code></td>
+<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
+</tr>
+<tr>
+<td align="left"><code>.gitignore</code></td>
+<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
+</tr>
+<tr>
+<td align="left"><code>_config.landscape.yml</code></td>
+<td align="left">默认的主题配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>_config.yml</code></td>
+<td align="left">网站的配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
+<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
+<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
+<p>终端输入如下命令进行编译、预览：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MQTT介绍</title>
     <url>/2021/04/01/MQTT%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
@@ -811,141 +946,6 @@
       <tags>
         <tag>技术</tag>
         <tag>MQTT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo介绍</title>
-    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
-<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
-<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，输入以下命令检查安装是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>成功后则会显示具体版本号，大致如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
-<table>
-<thead>
-<tr>
-<th align="left">Hexo 版本</th>
-<th align="left">最低兼容 Node.js 版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">5.0+</td>
-<td align="left">10.13.0</td>
-</tr>
-<tr>
-<td align="left">4.1 - 4.2</td>
-<td align="left">8.10</td>
-</tr>
-<tr>
-<td align="left">4.0</td>
-<td align="left">8.6</td>
-</tr>
-<tr>
-<td align="left">3.3 - 3.9</td>
-<td align="left">6.9</td>
-</tr>
-<tr>
-<td align="left">3.2 - 3.3</td>
-<td align="left">0.12</td>
-</tr>
-<tr>
-<td align="left">3.0 - 3.1</td>
-<td align="left">0.10 or iojs</td>
-</tr>
-<tr>
-<td align="left">0.0.1 - 2.8</td>
-<td align="left">0.10</td>
-</tr>
-</tbody></table>
-<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>然后在终端输入如下命令进行初始化：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成后，提示信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-
-<p><code>HexoBlog</code>文件夹目录结构如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">文件/文件夹</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>node_modules</code></td>
-<td align="left">模块文件夹，存放下载的模块。</td>
-</tr>
-<tr>
-<td align="left"><code>scaffolds</code></td>
-<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
-</tr>
-<tr>
-<td align="left"><code>source</code></td>
-<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
-</tr>
-<tr>
-<td align="left"><code>themes</code></td>
-<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
-</tr>
-<tr>
-<td align="left"><code>.gitignore</code></td>
-<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
-</tr>
-<tr>
-<td align="left"><code>_config.landscape.yml</code></td>
-<td align="left">默认的主题配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>_config.yml</code></td>
-<td align="left">网站的配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
-</tr>
-</tbody></table>
-<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
-<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
-<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
-<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
-<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
-<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
-<p>终端输入如下命令进行编译、预览：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1198,36 +1198,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用批处理脚本修改hosts文件</title>
-    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<blockquote>
-<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
-</blockquote>
-<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
-<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
-<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
-<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
-<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
-<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>批处理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
     <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
@@ -1274,6 +1244,36 @@
       </tags>
   </entry>
   <entry>
+    <title>使用批处理脚本修改hosts文件</title>
+    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<blockquote>
+<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
+</blockquote>
+<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
+<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
+<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
+<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
+<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
+<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>批处理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于 Gitee + PicGo 的个人图床搭建</title>
     <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
@@ -1298,6 +1298,110 @@
         <tag>技术</tag>
         <tag>Gitee</tag>
         <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于树莓派的智能箱包开发环境搭建</title>
+    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
+
+<p>安装完毕，重启树莓派</p>
+<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
+<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Car和Home，我选的Home </li>
+<li>Device name和AirPlay Device Name，写PiMusic </li>
+<li>密码，不输入 </li>
+<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
+<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
+</ol>
+<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">登陆网址</th>
+<th align="left">用户名</th>
+<th align="left">默认密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">树莓派IP:8000</td>
+<td align="left">webiopi</td>
+<td align="left">raspberry</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -1412,110 +1516,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于树莓派的智能箱包开发环境搭建</title>
-    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
-
-<p>安装完毕，重启树莓派</p>
-<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
-<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Car和Home，我选的Home </li>
-<li>Device name和AirPlay Device Name，写PiMusic </li>
-<li>密码，不输入 </li>
-<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
-<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
-</ol>
-<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">登陆网址</th>
-<th align="left">用户名</th>
-<th align="left">默认密码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">树莓派IP:8000</td>
-<td align="left">webiopi</td>
-<td align="left">raspberry</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
