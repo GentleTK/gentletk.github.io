@@ -13,4 +13,4 @@ function show_runtime(){
     D=Math.floor((c-C)*60);
     runtime.innerHTML="和茵宝在一起的第"+A+"天"+B+"小时"+C+"分"+D+"秒";
 }
-show_runtime();
+window.onload = show_runtime();
