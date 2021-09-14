@@ -1,4 +1,5 @@
 function show_runtime(){
+	var runtime = document.getElementById('runtime');
     window.setTimeout("show_runtime()", 1000);
     X=new Date("08/15/2021 21:44:00");
     Y=new Date();
@@ -10,6 +11,6 @@ function show_runtime(){
     c=(b-B)*60;
     C=Math.floor((b-B)*60);
     D=Math.floor((c-C)*60);
-    document.getElementById('runtime').innerHTML="和茵宝在一起的第"+A+"天"+B+"小时"+C+"分"+D+"秒";
+    runtime.innerHTML="和茵宝在一起的第"+A+"天"+B+"小时"+C+"分"+D+"秒";
 }
 show_runtime();

@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gitee.com/gentletk/picbed/raw/master/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(一)</title>
     <url>/2020/04/26/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -89,45 +128,6 @@
 <p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
 <p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gitee.com/gentletk/picbed/raw/master/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -241,26 +241,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C++命名空间初级定义与使用</title>
     <url>/2020/05/08/C++%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%88%9D%E7%BA%A7%E5%AE%9A%E4%B9%89%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="1-同一文件内使用namespace"><a href="#1-同一文件内使用namespace" class="headerlink" title="1 同一文件内使用namespace"></a>1 同一文件内使用namespace</h2><h3 id="1-1-方法一"><a href="#1-1-方法一" class="headerlink" title="1.1 方法一"></a>1.1 方法一</h3><p>通过加指定命名空间前缀来访问。</p>
@@ -300,6 +280,26 @@
 
 <p>运行结果：</p>
 <p><img src="https://gitee.com/gentletk/picbed/raw/master/images/vUVDPAsx6952kBp.png" alt="其他命名空间引用默认命名空间方法的运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -949,45 +949,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法测试</title>
     <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -1153,6 +1114,45 @@
       <tags>
         <tag>技术</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
