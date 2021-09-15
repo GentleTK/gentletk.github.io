@@ -1,5 +1,5 @@
   div#runtime {
-    width: 220px;
+    width: 180px;
     margin: auto;
     color: #fff;
     border-radius: 10px;
@@ -19,8 +19,4 @@
 
   .loveTimeDiv {
     text-align: center;
-  }
-
-  .heart {
-      width: 20px;
   }
