@@ -29,5 +29,5 @@ setInterval(() => {
 
     currentTimeHtml ="<img class='avatar' src='https://tenapi.cn/qqimg/?qq=1144626145' title='云总'><img class='avatar' src='https://tenapi.cn/qqimg/?qq=1216624392' title='茵宝'><div id='runtime'>" + time[0] + ' 年 ' + time[1] + ' 天 ' + time[2] + ' 时 ' + time[3] + ' 分 ' + time[4] + ' 秒 ' + '</div>';
 
-    document.getElementById("loveTimeZone").innerHTML = currentTimeHtml;
+    document.getElementById("loveTimer").innerHTML = currentTimeHtml;
   }, 1000);

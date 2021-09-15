@@ -4,12 +4,6 @@
     color: #fff;
     border-radius: 10px;
     background-color: rgba(228, 41, 41, 0.7);
-    font-family: 'UnidreamLED';
-  }
-  [data-theme="dark"] div#runtime {
-    color: #28b4c8;
-    box-shadow: 0 0 5px rgba(28,69,218,0.71);
-    animation: flashlight 1s linear infinite alternate;
   }
 
   .avatar {
@@ -17,6 +11,6 @@
     border-radius: 100%;
   }
 
-  .loveTimeDiv {
+  .loveTimerDiv {
     text-align: center;
   }
