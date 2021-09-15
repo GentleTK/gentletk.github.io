@@ -60,6 +60,45 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gitee.com/gentletk/picbed/raw/master/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -100,34 +139,28 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <title>AltiumDesigner绘制PCB(四)</title>
+    <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gitee.com/gentletk/picbed/raw/master/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+<p>本节主要教大家绘制电路原理图。</p>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
+<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
+<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
+<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
+<p>按照矩阵键盘逻辑进行电气连线：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
+<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
+<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
+<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -181,39 +214,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(四)</title>
-    <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制电路原理图。</p>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
-<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
-<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
-<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
-<p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
-<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
-<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
-<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Anaconda下安装opencv</title>
     <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
     <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
@@ -251,6 +251,30 @@
 
 <p>运行结果：</p>
 <p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++输入输出使用</title>
+    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
+<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
+<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -310,44 +334,138 @@
       </tags>
   </entry>
   <entry>
-    <title>C++标准库介绍</title>
-    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Hexo介绍</title>
+    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
+<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
-<p>运行结果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
+<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
+<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，输入以下命令检查安装是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功后则会显示具体版本号，大致如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Hexo 版本</th>
+<th align="left">最低兼容 Node.js 版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">5.0+</td>
+<td align="left">10.13.0</td>
+</tr>
+<tr>
+<td align="left">4.1 - 4.2</td>
+<td align="left">8.10</td>
+</tr>
+<tr>
+<td align="left">4.0</td>
+<td align="left">8.6</td>
+</tr>
+<tr>
+<td align="left">3.3 - 3.9</td>
+<td align="left">6.9</td>
+</tr>
+<tr>
+<td align="left">3.2 - 3.3</td>
+<td align="left">0.12</td>
+</tr>
+<tr>
+<td align="left">3.0 - 3.1</td>
+<td align="left">0.10 or iojs</td>
+</tr>
+<tr>
+<td align="left">0.0.1 - 2.8</td>
+<td align="left">0.10</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>然后在终端输入如下命令进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，提示信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p><code>HexoBlog</code>文件夹目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件/文件夹</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>node_modules</code></td>
+<td align="left">模块文件夹，存放下载的模块。</td>
+</tr>
+<tr>
+<td align="left"><code>scaffolds</code></td>
+<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
+</tr>
+<tr>
+<td align="left"><code>themes</code></td>
+<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
+</tr>
+<tr>
+<td align="left"><code>.gitignore</code></td>
+<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
+</tr>
+<tr>
+<td align="left"><code>_config.landscape.yml</code></td>
+<td align="left">默认的主题配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>_config.yml</code></td>
+<td align="left">网站的配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
+<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
+<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
+<p>终端输入如下命令进行编译、预览：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++输入输出使用</title>
-    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
-<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
-<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -567,138 +685,20 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo介绍</title>
-    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
-<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+    <title>C++标准库介绍</title>
+    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
-<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，输入以下命令检查安装是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>成功后则会显示具体版本号，大致如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
-<table>
-<thead>
-<tr>
-<th align="left">Hexo 版本</th>
-<th align="left">最低兼容 Node.js 版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">5.0+</td>
-<td align="left">10.13.0</td>
-</tr>
-<tr>
-<td align="left">4.1 - 4.2</td>
-<td align="left">8.10</td>
-</tr>
-<tr>
-<td align="left">4.0</td>
-<td align="left">8.6</td>
-</tr>
-<tr>
-<td align="left">3.3 - 3.9</td>
-<td align="left">6.9</td>
-</tr>
-<tr>
-<td align="left">3.2 - 3.3</td>
-<td align="left">0.12</td>
-</tr>
-<tr>
-<td align="left">3.0 - 3.1</td>
-<td align="left">0.10 or iojs</td>
-</tr>
-<tr>
-<td align="left">0.0.1 - 2.8</td>
-<td align="left">0.10</td>
-</tr>
-</tbody></table>
-<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>然后在终端输入如下命令进行初始化：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成后，提示信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-
-<p><code>HexoBlog</code>文件夹目录结构如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">文件/文件夹</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>node_modules</code></td>
-<td align="left">模块文件夹，存放下载的模块。</td>
-</tr>
-<tr>
-<td align="left"><code>scaffolds</code></td>
-<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
-</tr>
-<tr>
-<td align="left"><code>source</code></td>
-<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
-</tr>
-<tr>
-<td align="left"><code>themes</code></td>
-<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
-</tr>
-<tr>
-<td align="left"><code>.gitignore</code></td>
-<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
-</tr>
-<tr>
-<td align="left"><code>_config.landscape.yml</code></td>
-<td align="left">默认的主题配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>_config.yml</code></td>
-<td align="left">网站的配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
-</tr>
-</tbody></table>
-<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
-<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
-<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
-<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
-<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
-<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
-<p>终端输入如下命令进行编译、预览：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
-
-<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
+<p>运行结果：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Hexo</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -949,6 +949,45 @@
       </tags>
   </entry>
   <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法测试</title>
     <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -1117,45 +1156,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用Vercel托管自己的网站</title>
     <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
@@ -1225,79 +1225,6 @@
       <tags>
         <tag>技术</tag>
         <tag>批处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>兼容C51与STM32的Keil5安装方法</title>
-    <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
-<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Iu72ALs4ZiQkM8z.png" alt="c51注册信息"></p>
-<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TbCexVgS2iRqfBU.png" alt="c51去掉勾选"></p>
-<h2 id="2-安装mdk514-exe"><a href="#2-安装mdk514-exe" class="headerlink" title="2 安装mdk514.exe"></a>2 安装mdk514.exe</h2><p>以管理员身份运行<code>mdk514.exe</code>文件,进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/5963AilzuDndVRe.png" alt="32选择路径"></p>
-<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TwKdVufLg5qI8UZ.png" alt="32注册信息"></p>
-<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7CnfM3cZ4mkLzFy.png" alt="32去掉勾选"></p>
-<p>出现<code>Pack Installer</code>界面直接关掉即可(点击<code>OK</code>，出现弹窗后再点击<code>是</code>)</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/3c8yFMZuOQ2rDpT.png" alt="pack安装界面"></p>
-<h2 id="3-C51与STM32共存"><a href="#3-C51与STM32共存" class="headerlink" title="3 C51与STM32共存"></a>3 C51与STM32共存</h2><p>打开<code>C51</code>安装路径，复制整个<code>C51</code>文件夹到<code>Keil_v5</code>下：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/XZSqTLi2k4eH9A5.png" alt="c51文件夹"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ergNcRzdbuvEYlJ.png" alt="c51复制到keil5"></p>
-<p>打开<code>C51</code>安装路径下的<code>UV4</code>文件夹，全选并复制，然后粘贴到<code>Keil_v5</code>下的<code>UV4</code>文件夹里，提示冲突的话就选择跳过，然后打开<code>C51</code>安装路径下的<code>TOOLS.INI</code>文件，复制里面所有内容，然后粘贴到<code>Keil_v5</code>下的<code>TOOLS.INI</code>最后一行，然后将复制过来的内容里的PATH改成当前的路径：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 未改动前</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\MDK\C51&quot;</span></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\Keil_v5\C51&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>改动完成后<code>Ctrl+s</code>保存文件。</p>
-<h2 id="4-破解"><a href="#4-破解" class="headerlink" title="4 破解"></a>4 破解</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，以管理员身份运行<code>UV4.exe</code>。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C3fJkO2mPdsbahq.png" alt="打开UV4"></p>
-<p>点击左上角<code>File</code>-&gt;<code>License Management</code>，复制<code>CID</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/kptxfhXaewPKqy9.png" alt="licenseManagement"></p>
-<p>以管理员身份运行<code>keygen.exe</code>，将复制CID粘贴到里面点击<code>Generate</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dcbi6E7Up8g4xyD.png" alt="c51keygen"></p>
-<p>将生成的序列号复制到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/695urvBjHZS8tkd.png" alt="c51注册成功"></p>
-<p>然后将<code>Target</code>选择为<code>ARM</code>，再点击<code>Generate</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Yt2p8cW1sMy7uiZ.png" alt="32keygen"></p>
-<p>并将生成的序列号复制粘贴到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tsE5eFuxcg6NOZJ.png" alt="32注册成功"></p>
-<h2 id="5-添加快捷方式"><a href="#5-添加快捷方式" class="headerlink" title="5 添加快捷方式"></a>5 添加快捷方式</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，右键单击<code>UV4.exe</code>，选择发送到桌面快捷方式，将快捷方式命名为<code>Keil uVision5</code>即可。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Keil</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -1412,6 +1339,79 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>兼容C51与STM32的Keil5安装方法</title>
+    <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
+<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Iu72ALs4ZiQkM8z.png" alt="c51注册信息"></p>
+<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TbCexVgS2iRqfBU.png" alt="c51去掉勾选"></p>
+<h2 id="2-安装mdk514-exe"><a href="#2-安装mdk514-exe" class="headerlink" title="2 安装mdk514.exe"></a>2 安装mdk514.exe</h2><p>以管理员身份运行<code>mdk514.exe</code>文件,进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/5963AilzuDndVRe.png" alt="32选择路径"></p>
+<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/TwKdVufLg5qI8UZ.png" alt="32注册信息"></p>
+<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7CnfM3cZ4mkLzFy.png" alt="32去掉勾选"></p>
+<p>出现<code>Pack Installer</code>界面直接关掉即可(点击<code>OK</code>，出现弹窗后再点击<code>是</code>)</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/3c8yFMZuOQ2rDpT.png" alt="pack安装界面"></p>
+<h2 id="3-C51与STM32共存"><a href="#3-C51与STM32共存" class="headerlink" title="3 C51与STM32共存"></a>3 C51与STM32共存</h2><p>打开<code>C51</code>安装路径，复制整个<code>C51</code>文件夹到<code>Keil_v5</code>下：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/XZSqTLi2k4eH9A5.png" alt="c51文件夹"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/ergNcRzdbuvEYlJ.png" alt="c51复制到keil5"></p>
+<p>打开<code>C51</code>安装路径下的<code>UV4</code>文件夹，全选并复制，然后粘贴到<code>Keil_v5</code>下的<code>UV4</code>文件夹里，提示冲突的话就选择跳过，然后打开<code>C51</code>安装路径下的<code>TOOLS.INI</code>文件，复制里面所有内容，然后粘贴到<code>Keil_v5</code>下的<code>TOOLS.INI</code>最后一行，然后将复制过来的内容里的PATH改成当前的路径：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 未改动前</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\MDK\C51&quot;</span></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\Keil_v5\C51&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>改动完成后<code>Ctrl+s</code>保存文件。</p>
+<h2 id="4-破解"><a href="#4-破解" class="headerlink" title="4 破解"></a>4 破解</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，以管理员身份运行<code>UV4.exe</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C3fJkO2mPdsbahq.png" alt="打开UV4"></p>
+<p>点击左上角<code>File</code>-&gt;<code>License Management</code>，复制<code>CID</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/kptxfhXaewPKqy9.png" alt="licenseManagement"></p>
+<p>以管理员身份运行<code>keygen.exe</code>，将复制CID粘贴到里面点击<code>Generate</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/dcbi6E7Up8g4xyD.png" alt="c51keygen"></p>
+<p>将生成的序列号复制到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/695urvBjHZS8tkd.png" alt="c51注册成功"></p>
+<p>然后将<code>Target</code>选择为<code>ARM</code>，再点击<code>Generate</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Yt2p8cW1sMy7uiZ.png" alt="32keygen"></p>
+<p>并将生成的序列号复制粘贴到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/tsE5eFuxcg6NOZJ.png" alt="32注册成功"></p>
+<h2 id="5-添加快捷方式"><a href="#5-添加快捷方式" class="headerlink" title="5 添加快捷方式"></a>5 添加快捷方式</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，右键单击<code>UV4.exe</code>，选择发送到桌面快捷方式，将快捷方式命名为<code>Keil uVision5</code>即可。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Keil</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>

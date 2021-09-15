@@ -5,12 +5,13 @@ function show_runtime(){
     Y=new Date();
     T=(Y.getTime()-X.getTime());
     M=24*60*60*1000;
-    a=T/M;A=Math.floor(a);
+    a=T/M;
+	A=Math.floor(a);
     b=(a-A)*24;
     B=Math.floor(b);
     c=(b-B)*60;
     C=Math.floor((b-B)*60);
     D=Math.floor((c-C)*60);
-    runtime_div.innerHTML="和茵宝在一起的第"+A+"天"+B+"小时"+C+"分"+D+"秒"
+    runtime_div.innerHTML="和茵宝在一起的第"+A+"天"
 }
 show_runtime();
