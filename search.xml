@@ -702,6 +702,213 @@
       </tags>
   </entry>
   <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown语法测试</title>
+    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>这是斜体样式</em></p>
+<p><em>这也是斜体样式</em></p>
+<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这是粗体样式</strong></p>
+<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>这是加粗斜体样式</strong></em></p>
+<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
+
+<p><del>这是删除线样式</del></p>
+<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
+<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
+<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
+<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
+<ol>
+<li><code>[链接文字][链接标记]</code></li>
+<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
+<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
+<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
+<p><code>[链接文字](#文章标记)</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
+
+<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
+<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一</li>
+<li>无序列表项二</li>
+<li>无序列表项三</li>
+</ul>
+<p>也可使用2个空格缩进来显示多级无序列表：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一<ul>
+<li>无序列表子项一</li>
+</ul>
+</li>
+<li>无序列表项二<ul>
+<li>无序列表子项二</li>
+</ul>
+</li>
+<li>无序列表项三<ul>
+<li>无序列表子项三</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>有序列表项一</li>
+<li>有序列表项二</li>
+<li>有序列表项三</li>
+</ol>
+<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这是引用。</p>
+</blockquote>
+<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
+<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
+<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
+<li>图片标题会在鼠标悬停时显示，也可不加。</li>
+</ol>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
+<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
+<ol>
+<li><code>![图像Alt][图像标记]</code></li>
+<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
+
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li><code>:-</code>表示单元格内容左对齐。</li>
+<li><code>:-:</code>表示单元格内容居中对齐。</li>
+<li><code>-:</code>表示单元格内容右对齐。</li>
+</ol>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="left">表头一</th>
+<th align="left">表头二</th>
+<th align="left">表头三</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格一</td>
+<td align="left">单元格二</td>
+<td align="left">单元格三</td>
+</tr>
+</tbody></table>
+<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
+
+<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
+<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">​<span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
+<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MQTT介绍</title>
     <url>/2021/04/01/MQTT%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
@@ -949,213 +1156,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown语法测试</title>
-    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
-
-<p><em>这是斜体样式</em></p>
-<p><em>这也是斜体样式</em></p>
-<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>这是粗体样式</strong></p>
-<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<p><em><strong>这是加粗斜体样式</strong></em></p>
-<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
-
-<p><del>这是删除线样式</del></p>
-<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
-<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
-<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
-<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
-<ol>
-<li><code>[链接文字][链接标记]</code></li>
-<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
-<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
-<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
-<p><code>[链接文字](#文章标记)</code></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
-
-<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
-<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一</li>
-<li>无序列表项二</li>
-<li>无序列表项三</li>
-</ul>
-<p>也可使用2个空格缩进来显示多级无序列表：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一<ul>
-<li>无序列表子项一</li>
-</ul>
-</li>
-<li>无序列表项二<ul>
-<li>无序列表子项二</li>
-</ul>
-</li>
-<li>无序列表项三<ul>
-<li>无序列表子项三</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>有序列表项一</li>
-<li>有序列表项二</li>
-<li>有序列表项三</li>
-</ol>
-<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这是引用。</p>
-</blockquote>
-<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
-<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
-<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
-<li>图片标题会在鼠标悬停时显示，也可不加。</li>
-</ol>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
-<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
-<ol>
-<li><code>![图像Alt][图像标记]</code></li>
-<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gitee.com/gentletk/picbed/raw/master/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gitee.com/gentletk/picbed/raw/master/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
-<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
-
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li><code>:-</code>表示单元格内容左对齐。</li>
-<li><code>:-:</code>表示单元格内容居中对齐。</li>
-<li><code>-:</code>表示单元格内容右对齐。</li>
-</ol>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="left">表头一</th>
-<th align="left">表头二</th>
-<th align="left">表头三</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格一</td>
-<td align="left">单元格二</td>
-<td align="left">单元格三</td>
-</tr>
-</tbody></table>
-<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
-
-<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
-<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">​<span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
-<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gitee.com/gentletk/picbed/raw/master/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用Vercel托管自己的网站</title>
     <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
@@ -1301,6 +1301,54 @@
       </tags>
   </entry>
   <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Hexo的免费个人网站</title>
     <url>/2020/02/23/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="先聊聊Gitee和GitHub的Pages服务"><a href="#先聊聊Gitee和GitHub的Pages服务" class="headerlink" title="先聊聊Gitee和GitHub的Pages服务"></a>先聊聊Gitee和GitHub的Pages服务</h1><p>今天跟大家分享一下利用Hexo+Gitee Pages搭建个人网站的一些经验，之所以用Gitee Pages而不是GitHub Pages，完全是因为GitHub的服务器在国外，国内访问速度慢到令人发指！！不过GitHub虽然慢，但人家不要钱啊，而且你完全能在阿里花一块钱买个域名绑定一下，比如我的：gentletk.top这样你的网站就看起来就有私人定制的那种高端感了。至于Gitee，虽然快，但你每次都得手动部署，而且它不支持自定义域名，你要访问的话只有老老实实访问gentletk.gitee.io，这样一看就有种廉价感。当然，如果你愿意充钱，Gitee是很乐意为你推荐他们的Gitee Pages Pro服务的，这样一来自动更新部署和自定义域名都无需你操心了。我原先选择的是GitHub Pages，其实它没什么不好，慢是因为我在国内，所以我不打算放弃它，来个双管齐下，国内访问:gentletk.gitee.io，国外访问:gentletk.top。</p>
@@ -1412,54 +1460,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://gitee.com/gentletk/picbed/raw/master/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
