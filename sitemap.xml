@@ -263,14 +263,14 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Doxygen/</loc>
+    <loc>https://gentletk.gitee.io/tags/Git/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Git/</loc>
+    <loc>https://gentletk.gitee.io/tags/Doxygen/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -298,6 +298,13 @@
   </url>
   
   <url>
+    <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
+    <lastmod>2022-06-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gentletk.gitee.io/tags/Vercel/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
@@ -312,7 +319,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
+    <loc>https://gentletk.gitee.io/tags/Keil/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -333,20 +340,6 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Keil/</loc>
-    <lastmod>2022-06-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
-    <lastmod>2022-06-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gentletk.gitee.io/tags/GitHub/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
@@ -355,6 +348,13 @@
   
   <url>
     <loc>https://gentletk.gitee.io/tags/jsDelivr/</loc>
+    <lastmod>2022-06-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
