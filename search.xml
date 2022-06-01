@@ -60,6 +60,45 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -142,42 +181,30 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
+    <title>Anaconda下安装opencv</title>
+    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+<p>遇到如下问题</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -211,53 +238,6 @@
         <tag>技术</tag>
         <tag>AltiumDesigner</tag>
         <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -327,20 +307,16 @@
       </tags>
   </entry>
   <entry>
-    <title>C++输入输出使用</title>
-    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
-<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
-<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -477,6 +453,30 @@
       <tags>
         <tag>技术</tag>
         <tag>Doxygen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++输入输出使用</title>
+    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
+<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
+<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
