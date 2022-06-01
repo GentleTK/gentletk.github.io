@@ -3451,7 +3451,7 @@ _:future,
   z-index: 22;
 }
 #vcomment textarea {
-  background: url("https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/background/comments_bg.webp") 100% 100% no-repeat;
+  background: url("https://gentletk.oss-cn-shenzhen.aliyuncs.com/background/comments_bg.webp") 100% 100% no-repeat;
 }
 #vcomment textarea:focus {
   background-image: none;

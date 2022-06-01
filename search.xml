@@ -100,45 +100,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <url>/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -170,6 +131,45 @@
 <p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
 <p>点击顶部导航栏的生成当前文件的打印预览：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -261,23 +261,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C++标准库介绍</title>
-    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C++命名空间初级定义与使用</title>
     <url>/2020/05/08/C++%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%88%9D%E7%BA%A7%E5%AE%9A%E4%B9%89%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="1-同一文件内使用namespace"><a href="#1-同一文件内使用namespace" class="headerlink" title="1 同一文件内使用namespace"></a>1 同一文件内使用namespace</h2><h3 id="1-1-方法一"><a href="#1-1-方法一" class="headerlink" title="1.1 方法一"></a>1.1 方法一</h3><p>通过加指定命名空间前缀来访问。</p>
@@ -317,6 +300,23 @@
 
 <p>运行结果：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vUVDPAsx6952kBp.png" alt="其他命名空间引用默认命名空间方法的运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++标准库介绍</title>
+    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -702,174 +702,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown语法测试</title>
-    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
-
-<p><em>这是斜体样式</em></p>
-<p><em>这也是斜体样式</em></p>
-<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>这是粗体样式</strong></p>
-<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<p><em><strong>这是加粗斜体样式</strong></em></p>
-<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
-
-<p><del>这是删除线样式</del></p>
-<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
-<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
-<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
-<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
-<ol>
-<li><code>[链接文字][链接标记]</code></li>
-<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
-<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
-<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
-<p><code>[链接文字](#文章标记)</code></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
-
-<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
-<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一</li>
-<li>无序列表项二</li>
-<li>无序列表项三</li>
-</ul>
-<p>也可使用2个空格缩进来显示多级无序列表：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一<ul>
-<li>无序列表子项一</li>
-</ul>
-</li>
-<li>无序列表项二<ul>
-<li>无序列表子项二</li>
-</ul>
-</li>
-<li>无序列表项三<ul>
-<li>无序列表子项三</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>有序列表项一</li>
-<li>有序列表项二</li>
-<li>有序列表项三</li>
-</ol>
-<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这是引用。</p>
-</blockquote>
-<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
-<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
-<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
-<li>图片标题会在鼠标悬停时显示，也可不加。</li>
-</ol>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
-<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
-<ol>
-<li><code>![图像Alt][图像标记]</code></li>
-<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
-<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
-
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li><code>:-</code>表示单元格内容左对齐。</li>
-<li><code>:-:</code>表示单元格内容居中对齐。</li>
-<li><code>-:</code>表示单元格内容右对齐。</li>
-</ol>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="left">表头一</th>
-<th align="left">表头二</th>
-<th align="left">表头三</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格一</td>
-<td align="left">单元格二</td>
-<td align="left">单元格三</td>
-</tr>
-</tbody></table>
-<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
-
-<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
-<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
-<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MQTT介绍</title>
     <url>/2021/04/01/MQTT%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
@@ -1114,6 +946,174 @@
       <tags>
         <tag>技术</tag>
         <tag>MQTT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown语法测试</title>
+    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>这是斜体样式</em></p>
+<p><em>这也是斜体样式</em></p>
+<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这是粗体样式</strong></p>
+<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>这是加粗斜体样式</strong></em></p>
+<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
+
+<p><del>这是删除线样式</del></p>
+<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
+<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
+<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
+<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
+<ol>
+<li><code>[链接文字][链接标记]</code></li>
+<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
+<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
+<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
+<p><code>[链接文字](#文章标记)</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
+
+<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
+<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一</li>
+<li>无序列表项二</li>
+<li>无序列表项三</li>
+</ul>
+<p>也可使用2个空格缩进来显示多级无序列表：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一<ul>
+<li>无序列表子项一</li>
+</ul>
+</li>
+<li>无序列表项二<ul>
+<li>无序列表子项二</li>
+</ul>
+</li>
+<li>无序列表项三<ul>
+<li>无序列表子项三</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>有序列表项一</li>
+<li>有序列表项二</li>
+<li>有序列表项三</li>
+</ol>
+<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这是引用。</p>
+</blockquote>
+<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
+<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
+<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
+<li>图片标题会在鼠标悬停时显示，也可不加。</li>
+</ol>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
+<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
+<ol>
+<li><code>![图像Alt][图像标记]</code></li>
+<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
+
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li><code>:-</code>表示单元格内容左对齐。</li>
+<li><code>:-:</code>表示单元格内容居中对齐。</li>
+<li><code>-:</code>表示单元格内容右对齐。</li>
+</ol>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="left">表头一</th>
+<th align="left">表头二</th>
+<th align="left">表头三</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格一</td>
+<td align="left">单元格二</td>
+<td align="left">单元格三</td>
+</tr>
+</tbody></table>
+<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
+
+<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
+<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
+<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
