@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gentletk.gitee.io/tags/index.html</loc>
+    
+    <lastmod>2022-06-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/music/index.html</loc>
+    
+    <lastmod>2022-06-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/link/index.html</loc>
+    
+    <lastmod>2022-06-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/categories/index.html</loc>
+    
+    <lastmod>2022-06-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/archives/index.html</loc>
+    
+    <lastmod>2022-06-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gentletk.gitee.io/about/index.html</loc>
     
-    <lastmod>2021-09-14</lastmod>
+    <lastmod>2022-06-01</lastmod>
     
   </url>
   
@@ -26,41 +61,6 @@
     <loc>https://gentletk.gitee.io/2020/04/26/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</loc>
     
     <lastmod>2021-04-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/music/index.html</loc>
-    
-    <lastmod>2021-04-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/link/index.html</loc>
-    
-    <lastmod>2021-04-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/categories/index.html</loc>
-    
-    <lastmod>2021-04-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/index.html</loc>
-    
-    <lastmod>2021-04-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/archives/index.html</loc>
-    
-    <lastmod>2021-04-23</lastmod>
     
   </url>
   
@@ -263,14 +263,14 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Git/</loc>
+    <loc>https://gentletk.gitee.io/tags/Doxygen/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Doxygen/</loc>
+    <loc>https://gentletk.gitee.io/tags/Git/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -284,14 +284,14 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/MQTT/</loc>
+    <loc>https://gentletk.gitee.io/tags/Markdown/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Markdown/</loc>
+    <loc>https://gentletk.gitee.io/tags/MQTT/</loc>
     <lastmod>2022-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
