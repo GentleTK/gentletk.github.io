@@ -60,45 +60,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -128,6 +89,45 @@
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -181,33 +181,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(四)</title>
     <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -238,6 +211,53 @@
         <tag>技术</tag>
         <tag>AltiumDesigner</tag>
         <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anaconda下安装opencv</title>
+    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+
+<p>遇到如下问题</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -307,16 +327,20 @@
       </tags>
   </entry>
   <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>C++输入输出使用</title>
+    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
+<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
+<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -453,30 +477,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Doxygen</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++输入输出使用</title>
-    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
-<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
-<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -699,253 +699,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MQTT介绍</title>
-    <url>/2021/04/01/MQTT%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
-<p>下面是一个简单的MQTT系统模型：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AUdtpuG5LBVJDFk.png" alt="MQTT系统模型"></p>
-<h2 id="2-MQTT原理"><a href="#2-MQTT原理" class="headerlink" title="2 MQTT原理"></a>2 MQTT原理</h2><h3 id="2-1-组成部分"><a href="#2-1-组成部分" class="headerlink" title="2.1 组成部分"></a>2.1 组成部分</h3><p>可以将MQTT拆分为服务端和客户端两部分来理解：</p>
-<ol>
-<li><p><strong>服务端</strong><br> 负责处理客户端的请求以及消息推送。</p>
-</li>
-<li><p><strong>客户端</strong><br> 在与服务器建立连接后，可以主动发布消息或订阅主题。</p>
-</li>
-</ol>
-<h3 id="2-2-消息推送"><a href="#2-2-消息推送" class="headerlink" title="2.2 消息推送"></a>2.2 消息推送</h3><ol>
-<li><strong>订阅主题</strong></li>
-</ol>
-<p>当客户端订阅了某个主题，且该主题有更新时，才会收到消息推送。</p>
-<ol start="2">
-<li><strong>发布主题</strong></li>
-</ol>
-<p>当客户端发布了某个主题，所有订阅该主题的客户端，在该主题更新时，都会收到推送。</p>
-<h3 id="2-3-服务质量"><a href="#2-3-服务质量" class="headerlink" title="2.3 服务质量"></a>2.3 服务质量</h3><p>MQTT有三种消息服务质量，可根据不同应用场景选择对应的服务质量，确保消息推送符合要求。</p>
-<ul>
-<li><strong>Qos0：最多一次</strong></li>
-<li><strong>Qos1：最少一次</strong></li>
-<li><strong>Qos2：只有一次</strong></li>
-</ul>
-<h2 id="3-MQTT协议格式"><a href="#3-MQTT协议格式" class="headerlink" title="3 MQTT协议格式"></a>3 MQTT协议格式</h2><p>MQTT数据包结构：固定头部+可变头部+有效载荷。</p>
-<p>下面以<a href="https://open.iot.10086.cn/">OneNET</a>的MQTT协议接入为例说明：</p>
-<h3 id="3-1-固定头部"><a href="#3-1-固定头部" class="headerlink" title="3.1 固定头部"></a>3.1 固定头部</h3><p>固定头部存在于所有MQTT数据包中，表示数据包类型。</p>
-<p>固定头部格式如下所示：</p>
-<table border="1" cellspacing="0" width="100%" cellpadding="2" style="text-align: center;">
-    <caption>MQTT固定头部格式</caption>
-    <thead>
-        <tr>
-            <th>Bit</th>
-            <th>7</th>
-            <th>6</th>
-            <th>5</th>
-            <th>4</th>
-            <th>3</th>
-            <th>2</th>
-            <th>1</th>
-            <th>0</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Byte 1</td>
-            <td colspan="4">MQTT Packet Type</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            </tr>
-            <tr>
-            <td>Byte 2-5</td>
-            <td colspan="8">Remaining Length（该字段占用1~4字节）</td>
-        </tr>
-    </tbody>
-</table>
-
-<p>其中Remaining Length是 剩余长度 ，表示后面还剩多少字节的数据，而剩余长度最大可占用4字节(剩余长度采用的128进制，所以理论上MQTT能发送的最大报文为2<sup>28</sup>=256M，但云平台往往会限制MQTT单个发布消息的最大长度，比如阿里云超过256KB的消息会被拒绝)。</p>
-<h3 id="3-2-可变头部"><a href="#3-2-可变头部" class="headerlink" title="3.2 可变头部"></a>3.2 可变头部</h3><p>可变头部只存在于部分MQTT数据包中，是否有可变头部由固定头部的数据包类型决定。</p>
-<p>下面以MQTT连接消息数据包的可变头部为例：</p>
-<table border="1" cellspacing="0" width="100%" cellpadding="2" style="text-align: center;">
-    <caption>MQTT可变头部格式</caption>
-    <thead>
-        <tr>
-            <th>Bytes\Bit</th>
-            <th>描述</th>
-            <th>7</th>
-            <th>6</th>
-            <th>5</th>
-            <th>4</th>
-            <th>3</th>
-            <th>2</th>
-            <th>1</th>
-            <th>0</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan="2">Byte 1-2</td>
-            <td rowspan="2">协议名<br>长度</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Byte 3</td>
-            <td>'M'</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Byte 4</td>
-            <td>'Q'</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Byte 5</td>
-            <td>'T'</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Byte 6</td>
-            <td>'T'</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Byte 7</td>
-            <td>协议版本</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Byte 8</td>
-            <td rowspan="2">连接标志</td>
-            <td>User</td>
-            <td>Password</td>
-            <td>Will<br>Retain</td>
-            <td colspan="2">WillQos</td>
-            <td>Will</td>
-            <td>Clean<br>Session</td>
-            <td>Reserve</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Byte 9-10</td>
-            <td rowspan="2">保活时间<br>300s</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-    </tbody>
-</table>
-
-<h3 id="3-3-有效载荷"><a href="#3-3-有效载荷" class="headerlink" title="3.3 有效载荷"></a>3.3 有效载荷</h3><p>有效载荷也叫消息体，存在于部分MQTT数据包中，是否存在由MQTT数据包类型决定。</p>
-<p>下面以MQTT连接消息数据包的有效载荷为例：</p>
-<table border="1" cellspacing="0" width="100%" cellpadding="2" style="text-align: center;">
-    <caption>MQTT有效载荷格式</caption>
-    <thead>
-        <tr>
-            <th>Bytes</th>
-            <th>描述</th>
-            <th>格式</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Byte 1</td>
-            <td>设备ID（ClientIdentifier）</td>
-            <td>2字节字符串长度<br>+字符串"ClientIdentifier"</td>
-        </tr>
-        <tr>
-            <td>Byte 2</td>
-            <td>产品ID（UserName）</td>
-            <td>2字节字符串长度<br>+字符串"UserName"</td>
-        </tr>
-        <tr>
-            <td>Byte 3</td>
-            <td>鉴权信息（UserPassword）</td>
-            <td>2字节字符串长度<br>+字符串"UserPassword"</td>
-        </tr>
-    </tbody>
-</table>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>MQTT</tag>
       </tags>
   </entry>
   <entry>
@@ -1746,6 +1499,357 @@
       </tags>
   </entry>
   <entry>
+    <title>MQTT介绍</title>
+    <url>/2021/04/01/MQTT%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
+<p>下面是一个简单的MQTT系统模型：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AUdtpuG5LBVJDFk.png" alt="MQTT系统模型"></p>
+<h2 id="2-MQTT原理"><a href="#2-MQTT原理" class="headerlink" title="2 MQTT原理"></a>2 MQTT原理</h2><h3 id="2-1-组成部分"><a href="#2-1-组成部分" class="headerlink" title="2.1 组成部分"></a>2.1 组成部分</h3><p>可以将MQTT拆分为服务端和客户端两部分来理解：</p>
+<ol>
+<li><p><strong>服务端</strong><br> 负责处理客户端的请求以及消息推送。</p>
+</li>
+<li><p><strong>客户端</strong><br> 在与服务器建立连接后，可以主动发布消息或订阅主题。</p>
+</li>
+</ol>
+<h3 id="2-2-消息推送"><a href="#2-2-消息推送" class="headerlink" title="2.2 消息推送"></a>2.2 消息推送</h3><ol>
+<li><strong>订阅主题</strong></li>
+</ol>
+<p>当客户端订阅了某个主题，且该主题有更新时，才会收到消息推送。</p>
+<ol start="2">
+<li><strong>发布主题</strong></li>
+</ol>
+<p>当客户端发布了某个主题，所有订阅该主题的客户端，在该主题更新时，都会收到推送。</p>
+<h3 id="2-3-服务质量"><a href="#2-3-服务质量" class="headerlink" title="2.3 服务质量"></a>2.3 服务质量</h3><p>MQTT有三种消息服务质量，可根据不同应用场景选择对应的服务质量，确保消息推送符合要求。</p>
+<ul>
+<li><strong>Qos0：最多一次</strong></li>
+<li><strong>Qos1：最少一次</strong></li>
+<li><strong>Qos2：只有一次</strong></li>
+</ul>
+<h2 id="3-MQTT协议格式"><a href="#3-MQTT协议格式" class="headerlink" title="3 MQTT协议格式"></a>3 MQTT协议格式</h2><p>MQTT数据包结构：固定头部+可变头部+有效载荷。</p>
+<p>下面以<a href="https://open.iot.10086.cn/">OneNET</a>的MQTT协议接入为例说明：</p>
+<h3 id="3-1-固定头部"><a href="#3-1-固定头部" class="headerlink" title="3.1 固定头部"></a>3.1 固定头部</h3><p>固定头部存在于所有MQTT数据包中，表示数据包类型。</p>
+<p>固定头部格式如下所示：</p>
+<table border="1" cellspacing="0" width="100%" cellpadding="2" style="text-align: center;">
+    <caption>MQTT固定头部格式</caption>
+    <thead>
+        <tr>
+            <th>Bit</th>
+            <th>7</th>
+            <th>6</th>
+            <th>5</th>
+            <th>4</th>
+            <th>3</th>
+            <th>2</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Byte 1</td>
+            <td colspan="4">MQTT Packet Type</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            </tr>
+            <tr>
+            <td>Byte 2-5</td>
+            <td colspan="8">Remaining Length（该字段占用1~4字节）</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>其中Remaining Length是 剩余长度 ，表示后面还剩多少字节的数据，而剩余长度最大可占用4字节(剩余长度采用的128进制，所以理论上MQTT能发送的最大报文为2<sup>28</sup>=256M，但云平台往往会限制MQTT单个发布消息的最大长度，比如阿里云超过256KB的消息会被拒绝)。</p>
+<h3 id="3-2-可变头部"><a href="#3-2-可变头部" class="headerlink" title="3.2 可变头部"></a>3.2 可变头部</h3><p>可变头部只存在于部分MQTT数据包中，是否有可变头部由固定头部的数据包类型决定。</p>
+<p>下面以MQTT连接消息数据包的可变头部为例：</p>
+<table border="1" cellspacing="0" width="100%" cellpadding="2" style="text-align: center;">
+    <caption>MQTT可变头部格式</caption>
+    <thead>
+        <tr>
+            <th>Bytes\Bit</th>
+            <th>描述</th>
+            <th>7</th>
+            <th>6</th>
+            <th>5</th>
+            <th>4</th>
+            <th>3</th>
+            <th>2</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Byte 1-2</td>
+            <td rowspan="2">协议名<br>长度</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Byte 3</td>
+            <td>'M'</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Byte 4</td>
+            <td>'Q'</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Byte 5</td>
+            <td>'T'</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Byte 6</td>
+            <td>'T'</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Byte 7</td>
+            <td>协议版本</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Byte 8</td>
+            <td rowspan="2">连接标志</td>
+            <td>User</td>
+            <td>Password</td>
+            <td>Will<br>Retain</td>
+            <td colspan="2">WillQos</td>
+            <td>Will</td>
+            <td>Clean<br>Session</td>
+            <td>Reserve</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Byte 9-10</td>
+            <td rowspan="2">保活时间<br>300s</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="3-3-有效载荷"><a href="#3-3-有效载荷" class="headerlink" title="3.3 有效载荷"></a>3.3 有效载荷</h3><p>有效载荷也叫消息体，存在于部分MQTT数据包中，是否存在由MQTT数据包类型决定。</p>
+<p>下面以MQTT连接消息数据包的有效载荷为例：</p>
+<table border="1" cellspacing="0" width="100%" cellpadding="2" style="text-align: center;">
+    <caption>MQTT有效载荷格式</caption>
+    <thead>
+        <tr>
+            <th>Bytes</th>
+            <th>描述</th>
+            <th>格式</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Byte 1</td>
+            <td>设备ID（ClientIdentifier）</td>
+            <td>2字节字符串长度<br>+字符串"ClientIdentifier"</td>
+        </tr>
+        <tr>
+            <td>Byte 2</td>
+            <td>产品ID（UserName）</td>
+            <td>2字节字符串长度<br>+字符串"UserName"</td>
+        </tr>
+        <tr>
+            <td>Byte 3</td>
+            <td>鉴权信息（UserPassword）</td>
+            <td>2字节字符串长度<br>+字符串"UserPassword"</td>
+        </tr>
+    </tbody>
+</table>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>MQTT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于树莓派的智能箱包开发环境搭建</title>
+    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
+
+<p>安装完毕，重启树莓派</p>
+<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
+<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Car和Home，我选的Home </li>
+<li>Device name和AirPlay Device Name，写PiMusic </li>
+<li>密码，不输入 </li>
+<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
+<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
+</ol>
+<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">登陆网址</th>
+<th align="left">用户名</th>
+<th align="left">默认密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">树莓派IP:8000</td>
+<td align="left">webiopi</td>
+<td align="left">raspberry</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Hexo的免费个人网站</title>
     <url>/2020/02/23/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="先聊聊Gitee和GitHub的Pages服务"><a href="#先聊聊Gitee和GitHub的Pages服务" class="headerlink" title="先聊聊Gitee和GitHub的Pages服务"></a>先聊聊Gitee和GitHub的Pages服务</h1><p>今天跟大家分享一下利用Hexo+Gitee Pages搭建个人网站的一些经验，之所以用Gitee Pages而不是GitHub Pages，完全是因为GitHub的服务器在国外，国内访问速度慢到令人发指！！不过GitHub虽然慢，但人家不要钱啊，而且你完全能在阿里花一块钱买个域名绑定一下，比如我的：gentletk.top这样你的网站就看起来就有私人定制的那种高端感了。至于Gitee，虽然快，但你每次都得手动部署，而且它不支持自定义域名，你要访问的话只有老老实实访问gentletk.gitee.io，这样一看就有种廉价感。当然，如果你愿意充钱，Gitee是很乐意为你推荐他们的Gitee Pages Pro服务的，这样一来自动更新部署和自定义域名都无需你操心了。我原先选择的是GitHub Pages，其实它没什么不好，慢是因为我在国内，所以我不打算放弃它，来个双管齐下，国内访问:gentletk.gitee.io，国外访问:gentletk.top。</p>
@@ -1857,110 +1961,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于树莓派的智能箱包开发环境搭建</title>
-    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
-
-<p>安装完毕，重启树莓派</p>
-<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
-<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Car和Home，我选的Home </li>
-<li>Device name和AirPlay Device Name，写PiMusic </li>
-<li>密码，不输入 </li>
-<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
-<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
-</ol>
-<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">登陆网址</th>
-<th align="left">用户名</th>
-<th align="left">默认密码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">树莓派IP:8000</td>
-<td align="left">webiopi</td>
-<td align="left">raspberry</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
 </search>
