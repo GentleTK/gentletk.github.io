@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gentletk.gitee.io/archives/index.html</loc>
+    
+    <lastmod>2022-06-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gentletk.gitee.io/about/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
@@ -31,13 +38,6 @@
   
   <url>
     <loc>https://gentletk.gitee.io/categories/index.html</loc>
-    
-    <lastmod>2022-06-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/archives/index.html</loc>
     
     <lastmod>2022-06-01</lastmod>
     
@@ -249,14 +249,14 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Python/</loc>
+    <loc>https://gentletk.gitee.io/tags/C/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/C/</loc>
+    <loc>https://gentletk.gitee.io/tags/Python/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -291,6 +291,13 @@
   </url>
   
   <url>
+    <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
+    <lastmod>2022-06-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gentletk.gitee.io/tags/Markdown/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
@@ -298,7 +305,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
+    <loc>https://gentletk.gitee.io/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -312,7 +319,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
+    <loc>https://gentletk.gitee.io/tags/Keil/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -327,13 +334,6 @@
   
   <url>
     <loc>https://gentletk.gitee.io/tags/PicGo/</loc>
-    <lastmod>2022-06-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/Keil/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
