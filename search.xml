@@ -100,6 +100,45 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <url>/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -131,45 +170,6 @@
 <p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
 <p>点击顶部导航栏的生成当前文件的打印预览：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -310,23 +310,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C++标准库介绍</title>
-    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C++输入输出使用</title>
     <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -341,6 +324,23 @@
 
 <p>运行结果：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++标准库介绍</title>
+    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -480,6 +480,93 @@
       </tags>
   </entry>
   <entry>
+    <title>Git使用教程</title>
+    <url>/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用<code>Markdown</code>编辑器<a href="https://www.typora.io/">Typora</a>编写。</p>
+<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
+<li>工作区<br>电脑里能看到的目录。</li>
+<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
+<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
+</ol>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
+<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
+<ol>
+<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
+<li>克隆自己的仓库到本地，做出修改并推送。</li>
+<li>请求拉取自己的更新。</li>
+<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
+<li>管理者将合并后的修改推送到主仓库。</li>
+</ol>
+<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
+<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
+<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
+<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
+<ol>
+<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
+<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
+<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
+<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
+<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
+<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
+<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
+<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
+<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
+<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
+<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
+<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
+<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
+<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
+<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
+<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
+<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
+<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
+</ol>
+<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
+<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
+<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
+</ol>
+<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
+<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
+<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
+这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
+</ol>
+<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
+<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
+<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
+</ol>
+<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
+<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
+<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
+<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
+<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
+</ol>
+<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
+<ol>
+<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
+<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
+<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
+</ol>
+<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
+</div>
+
+<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
+<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
+<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
+<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo介绍</title>
     <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -612,93 +699,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git使用教程</title>
-    <url>/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用<code>Markdown</code>编辑器<a href="https://www.typora.io/">Typora</a>编写。</p>
-<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
-<li>工作区<br>电脑里能看到的目录。</li>
-<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
-<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
-</ol>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
-<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
-<ol>
-<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
-<li>克隆自己的仓库到本地，做出修改并推送。</li>
-<li>请求拉取自己的更新。</li>
-<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
-<li>管理者将合并后的修改推送到主仓库。</li>
-</ol>
-<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
-<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
-<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
-<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
-<ol>
-<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
-<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
-<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
-<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
-<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
-<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
-<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
-<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
-<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
-<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
-<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
-<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
-<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
-<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
-<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
-<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
-<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
-<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
-</ol>
-<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
-<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
-<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
-</ol>
-<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
-<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
-<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
-这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
-</ol>
-<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
-<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
-<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
-</ol>
-<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
-<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
-<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
-<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
-<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
-</ol>
-<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
-<ol>
-<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
-<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
-<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
-</ol>
-<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
-</div>
-
-<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
-<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
-<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
-<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1114,6 +1114,45 @@
       <tags>
         <tag>技术</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
@@ -1559,45 +1598,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
