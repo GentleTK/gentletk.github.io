@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AltiumDesigner绘制PCB(三)</title>
+    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
+<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
+<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
+</div>
+
+<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
+<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
+<p>修改完成后，依次放置四个焊盘：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
+<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
+<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
+<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
+<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(一)</title>
     <url>/2020/04/26/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -49,46 +89,6 @@
 <td align="left">PCB图文件</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(三)</title>
-    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
-<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
-<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
-</div>
-
-<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
-<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
-<p>修改完成后，依次放置四个焊盘：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
-<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
-<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
-<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
-<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -334,23 +334,6 @@
       </tags>
   </entry>
   <entry>
-    <title>C++标准库介绍</title>
-    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Doxygen使用教程</title>
     <url>/2021/02/03/Doxygen%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p><strong>Doxygen</strong> 可以用来为项目生成帮助文档或者 <strong>SDK</strong>，输出格式可以为 <strong>HTML</strong>、<strong>CHM</strong> 等。</p>
@@ -477,6 +460,23 @@
       <tags>
         <tag>技术</tag>
         <tag>Doxygen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++标准库介绍</title>
+    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -1673,6 +1673,33 @@
       </tags>
   </entry>
   <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
     <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
@@ -1716,33 +1743,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Keil</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
