@@ -351,93 +351,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git使用教程</title>
-    <url>/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用<code>Markdown</code>编辑器<a href="https://www.typora.io/">Typora</a>编写。</p>
-<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
-<li>工作区<br>电脑里能看到的目录。</li>
-<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
-<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
-</ol>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
-<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
-<ol>
-<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
-<li>克隆自己的仓库到本地，做出修改并推送。</li>
-<li>请求拉取自己的更新。</li>
-<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
-<li>管理者将合并后的修改推送到主仓库。</li>
-</ol>
-<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
-<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
-<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
-<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
-<ol>
-<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
-<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
-<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
-<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
-<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
-<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
-<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
-<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
-<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
-<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
-<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
-<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
-<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
-<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
-<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
-<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
-<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
-<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
-</ol>
-<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
-<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
-<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
-</ol>
-<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
-<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
-<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
-这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
-</ol>
-<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
-<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
-<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
-</ol>
-<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
-<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
-<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
-<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
-<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
-</ol>
-<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
-<ol>
-<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
-<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
-<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
-</ol>
-<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
-</div>
-
-<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
-<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
-<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
-<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Doxygen使用教程</title>
     <url>/2021/02/03/Doxygen%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p><strong>Doxygen</strong> 可以用来为项目生成帮助文档或者 <strong>SDK</strong>，输出格式可以为 <strong>HTML</strong>、<strong>CHM</strong> 等。</p>
@@ -564,6 +477,93 @@
       <tags>
         <tag>技术</tag>
         <tag>Doxygen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git使用教程</title>
+    <url>/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用<code>Markdown</code>编辑器<a href="https://www.typora.io/">Typora</a>编写。</p>
+<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
+<li>工作区<br>电脑里能看到的目录。</li>
+<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
+<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
+</ol>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
+<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
+<ol>
+<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
+<li>克隆自己的仓库到本地，做出修改并推送。</li>
+<li>请求拉取自己的更新。</li>
+<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
+<li>管理者将合并后的修改推送到主仓库。</li>
+</ol>
+<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
+<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
+<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
+<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
+<ol>
+<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
+<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
+<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
+<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
+<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
+<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
+<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
+<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
+<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
+<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
+<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
+<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
+<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
+<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
+<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
+<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
+<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
+<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
+</ol>
+<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
+<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
+<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
+</ol>
+<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
+<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
+<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
+这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
+</ol>
+<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
+<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
+<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
+</ol>
+<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
+<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
+<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
+<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
+<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
+</ol>
+<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
+<ol>
+<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
+<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
+<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
+</ol>
+<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
+</div>
+
+<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
+<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
+<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
+<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -699,48 +699,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Vercel托管自己的网站</title>
-    <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
-<div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p>
-</div>
-
-<h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure>
-
-<p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sJy5ui6IRS3tEYD.png" alt="Vercel确认邮件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oEjkAV4LmOf2rP1.png" alt="登录Vercel"></p>
-<h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure>
-
-<p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bG5kEYxLBpK284j.png" alt="合成大西瓜小游戏"></p>
-<p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p>
-<p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p>
-<p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p>
-<h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure>
-
-<p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WFYuK7Gmn6jHq3f.png" alt="绑定自己的域名"></p>
-<p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
-
-<p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wxmrazg2BkYcbUv.png" alt="添加记录集"></p>
-<p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/eNIToanWzl93GOM.png" alt="发布合成大西瓜应用"></p>
-<p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Vercel</tag>
       </tags>
   </entry>
   <entry>
@@ -991,6 +949,174 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown语法测试</title>
+    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>这是斜体样式</em></p>
+<p><em>这也是斜体样式</em></p>
+<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这是粗体样式</strong></p>
+<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>这是加粗斜体样式</strong></em></p>
+<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
+
+<p><del>这是删除线样式</del></p>
+<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
+<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
+<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
+<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
+<ol>
+<li><code>[链接文字][链接标记]</code></li>
+<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
+<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
+<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
+<p><code>[链接文字](#文章标记)</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
+
+<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
+<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一</li>
+<li>无序列表项二</li>
+<li>无序列表项三</li>
+</ul>
+<p>也可使用2个空格缩进来显示多级无序列表：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一<ul>
+<li>无序列表子项一</li>
+</ul>
+</li>
+<li>无序列表项二<ul>
+<li>无序列表子项二</li>
+</ul>
+</li>
+<li>无序列表项三<ul>
+<li>无序列表子项三</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>有序列表项一</li>
+<li>有序列表项二</li>
+<li>有序列表项三</li>
+</ol>
+<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这是引用。</p>
+</blockquote>
+<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
+<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
+<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
+<li>图片标题会在鼠标悬停时显示，也可不加。</li>
+</ol>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
+<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
+<ol>
+<li><code>![图像Alt][图像标记]</code></li>
+<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
+
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li><code>:-</code>表示单元格内容左对齐。</li>
+<li><code>:-:</code>表示单元格内容居中对齐。</li>
+<li><code>-:</code>表示单元格内容右对齐。</li>
+</ol>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="left">表头一</th>
+<th align="left">表头二</th>
+<th align="left">表头三</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格一</td>
+<td align="left">单元格二</td>
+<td align="left">单元格三</td>
+</tr>
+</tbody></table>
+<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
+
+<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
+<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
+<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Proteus 7 Professional安装</title>
     <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
@@ -1027,6 +1153,78 @@
       <tags>
         <tag>技术</tag>
         <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用批处理脚本修改hosts文件</title>
+    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<blockquote>
+<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
+</blockquote>
+<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
+<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
+<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
+<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
+<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
+<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>批处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Vercel托管自己的网站</title>
+    <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
+<div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p>
+</div>
+
+<h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure>
+
+<p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sJy5ui6IRS3tEYD.png" alt="Vercel确认邮件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oEjkAV4LmOf2rP1.png" alt="登录Vercel"></p>
+<h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure>
+
+<p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bG5kEYxLBpK284j.png" alt="合成大西瓜小游戏"></p>
+<p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p>
+<p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p>
+<p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p>
+<h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure>
+
+<p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WFYuK7Gmn6jHq3f.png" alt="绑定自己的域名"></p>
+<p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
+
+<p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wxmrazg2BkYcbUv.png" alt="添加记录集"></p>
+<p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/eNIToanWzl93GOM.png" alt="发布合成大西瓜应用"></p>
+<p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Vercel</tag>
       </tags>
   </entry>
   <entry>
@@ -1475,174 +1673,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown语法测试</title>
-    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
-
-<p><em>这是斜体样式</em></p>
-<p><em>这也是斜体样式</em></p>
-<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>这是粗体样式</strong></p>
-<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<p><em><strong>这是加粗斜体样式</strong></em></p>
-<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
-
-<p><del>这是删除线样式</del></p>
-<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
-<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
-<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
-<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
-<ol>
-<li><code>[链接文字][链接标记]</code></li>
-<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
-<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
-<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
-<p><code>[链接文字](#文章标记)</code></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
-
-<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
-<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一</li>
-<li>无序列表项二</li>
-<li>无序列表项三</li>
-</ul>
-<p>也可使用2个空格缩进来显示多级无序列表：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一<ul>
-<li>无序列表子项一</li>
-</ul>
-</li>
-<li>无序列表项二<ul>
-<li>无序列表子项二</li>
-</ul>
-</li>
-<li>无序列表项三<ul>
-<li>无序列表子项三</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>有序列表项一</li>
-<li>有序列表项二</li>
-<li>有序列表项三</li>
-</ol>
-<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这是引用。</p>
-</blockquote>
-<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
-<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
-<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
-<li>图片标题会在鼠标悬停时显示，也可不加。</li>
-</ol>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
-<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
-<ol>
-<li><code>![图像Alt][图像标记]</code></li>
-<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
-<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
-
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li><code>:-</code>表示单元格内容左对齐。</li>
-<li><code>:-:</code>表示单元格内容居中对齐。</li>
-<li><code>-:</code>表示单元格内容右对齐。</li>
-</ol>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="left">表头一</th>
-<th align="left">表头二</th>
-<th align="left">表头三</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格一</td>
-<td align="left">单元格二</td>
-<td align="left">单元格三</td>
-</tr>
-</tbody></table>
-<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
-
-<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
-<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
-<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
     <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
@@ -1686,6 +1716,33 @@
       <tags>
         <tag>技术</tag>
         <tag>Keil</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -1800,63 +1857,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用批处理脚本修改hosts文件</title>
-    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<blockquote>
-<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
-</blockquote>
-<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
-<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
-<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
-<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
-<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
-<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>批处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
