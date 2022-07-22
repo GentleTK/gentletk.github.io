@@ -60,6 +60,45 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -89,45 +128,6 @@
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -214,6 +214,26 @@
       </tags>
   </entry>
   <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Anaconda下安装opencv</title>
     <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
     <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
@@ -238,26 +258,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -300,47 +300,6 @@
 
 <p>运行结果：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vUVDPAsx6952kBp.png" alt="其他命名空间引用默认命名空间方法的运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++标准库介绍</title>
-    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++输入输出使用</title>
-    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
-<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
-<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -567,6 +526,47 @@
       </tags>
   </entry>
   <entry>
+    <title>C++输入输出使用</title>
+    <url>/2020/05/09/C++%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-c-输入使用"><a href="#1-c-输入使用" class="headerlink" title="1 c++输入使用"></a>1 c++输入使用</h2><h3 id="1-1-测试数字输入"><a href="#1-1-测试数字输入" class="headerlink" title="1.1 测试数字输入"></a>1.1 测试数字输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testNumInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a num: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; val;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The num is &quot;</span> &lt;&lt; val &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试数字输入</span></span><br><span class="line">	<span class="built_in">testNumInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9yUWVzcA2rh8fMl.png" alt="测试数字输入运行结果"></p>
+<h3 id="1-2-测试字符串输入"><a href="#1-2-测试字符串输入" class="headerlink" title="1.2 测试字符串输入"></a>1.2 测试字符串输入</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testStringInput</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s1, s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Please input a string: &quot;</span> &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;The string is &quot;</span> &lt;&lt; s1 &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; s2 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 测试字符串输入</span></span><br><span class="line">	<span class="built_in">testStringInput</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pbymCzL3suNFoAh.png" alt="测试字符串输入运行结果"></p>
+<h2 id="2-c-输出使用"><a href="#2-c-输出使用" class="headerlink" title="2 c++输出使用"></a>2 c++输出使用</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iomanip&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> dl = <span class="number">1234.56789</span>;	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 测试输出</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Hello World &quot;</span> &lt;&lt; <span class="number">2021</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 设置精度</span></span><br><span class="line">	cout &lt;&lt; <span class="built_in">setprecision</span>(<span class="number">9</span>) &lt;&lt; dl &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fDeMBF2aNlLT8As.png" alt="c++输出使用运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++标准库介绍</title>
+    <url>/2020/05/07/C++%E6%A0%87%E5%87%86%E5%BA%93%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>如果定义了<code>__cplusplus</code>符号，则说明是c++ 环境。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> USECPP	0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (USECPP)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, hello c++!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;USECPP=%d, not CPP env!\n&quot;</span>, USECPP);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PnB6sSvtuq8GpNK.png" alt="加入__cplusplus的运行结果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo介绍</title>
     <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -699,6 +699,213 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown语法测试</title>
+    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>这是斜体样式</em></p>
+<p><em>这也是斜体样式</em></p>
+<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这是粗体样式</strong></p>
+<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>这是加粗斜体样式</strong></em></p>
+<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
+
+<p><del>这是删除线样式</del></p>
+<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
+<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
+<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
+<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
+<ol>
+<li><code>[链接文字][链接标记]</code></li>
+<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
+<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
+<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
+<p><code>[链接文字](#文章标记)</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
+
+<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
+<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一</li>
+<li>无序列表项二</li>
+<li>无序列表项三</li>
+</ul>
+<p>也可使用2个空格缩进来显示多级无序列表：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>无序列表项一<ul>
+<li>无序列表子项一</li>
+</ul>
+</li>
+<li>无序列表项二<ul>
+<li>无序列表子项二</li>
+</ul>
+</li>
+<li>无序列表项三<ul>
+<li>无序列表子项三</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>有序列表项一</li>
+<li>有序列表项二</li>
+<li>有序列表项三</li>
+</ol>
+<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这是引用。</p>
+</blockquote>
+<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
+<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
+<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
+<li>图片标题会在鼠标悬停时显示，也可不加。</li>
+</ol>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
+<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
+<ol>
+<li><code>![图像Alt][图像标记]</code></li>
+<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
+
+<div class="note warning flat"><p>注意：</p>
+<ol>
+<li><code>:-</code>表示单元格内容左对齐。</li>
+<li><code>:-:</code>表示单元格内容居中对齐。</li>
+<li><code>-:</code>表示单元格内容右对齐。</li>
+</ol>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="left">表头一</th>
+<th align="left">表头二</th>
+<th align="left">表头三</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格一</td>
+<td align="left">单元格二</td>
+<td align="left">单元格三</td>
+</tr>
+</tbody></table>
+<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
+
+<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
+<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
+<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -946,285 +1153,6 @@
       <tags>
         <tag>技术</tag>
         <tag>MQTT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown语法测试</title>
-    <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="2-字体样式"><a href="#2-字体样式" class="headerlink" title="2 字体样式"></a>2 字体样式</h2><h3 id="2-1-斜体样式"><a href="#2-1-斜体样式" class="headerlink" title="2.1 斜体样式"></a>2.1 斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体样式*</span></span><br><span class="line"><span class="emphasis">_这也是斜体样式_</span></span><br></pre></td></tr></table></figure>
-
-<p><em>这是斜体样式</em></p>
-<p><em>这也是斜体样式</em></p>
-<h3 id="2-2-粗体样式"><a href="#2-2-粗体样式" class="headerlink" title="2.2 粗体样式"></a>2.2 粗体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是粗体样式**</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>这是粗体样式</strong></p>
-<h3 id="2-3-加粗斜体样式"><a href="#2-3-加粗斜体样式" class="headerlink" title="2.3 加粗斜体样式"></a>2.3 加粗斜体样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*这是加速斜体样式<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<p><em><strong>这是加粗斜体样式</strong></em></p>
-<h3 id="2-4-删除线样式"><a href="#2-4-删除线样式" class="headerlink" title="2.4 删除线样式"></a>2.4 删除线样式</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是删除线样式~~</span><br></pre></td></tr></table></figure>
-
-<p><del>这是删除线样式</del></p>
-<h3 id="2-5-分隔线样式"><a href="#2-5-分隔线样式" class="headerlink" title="2.5 分隔线样式"></a>2.5 分隔线样式</h3><p>你可以使用三个以上的<code>*</code>、<code>-</code>、’_’来建立分隔线，中间可以插入空格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">- - -</span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">__<span class="emphasis">_</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">_</span> <span class="emphasis">_ _</span></span></span></span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3 超链接"></a>3 超链接</h2><h3 id="3-1-行内式超链接"><a href="#3-1-行内式超链接" class="headerlink" title="3.1 行内式超链接"></a>3.1 行内式超链接</h3><p>行内式一般使用较多，语法说明如下：</p>
-<p><code>[链接文字](链接地址 &quot;链接标题&quot;)</code></p>
-<div class="note warning flat"><p>注意，链接标题会在鼠标悬停时显示，也可不加。</p>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com &quot;百度一下，你就知道&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.baidu.com/" title="百度一下，你就知道">百度</a></p>
-<h3 id="3-2-参考式超链接"><a href="#3-2-参考式超链接" class="headerlink" title="3.2 参考式超链接"></a>3.2 参考式超链接</h3><p>参考式一般用于学术论文，或者某些链接在文章中被反复使用，这时使用参考式就可以很方便地对链接进行管理，参考式语法说明如下：</p>
-<ol>
-<li><code>[链接文字][链接标记]</code></li>
-<li><code>[链接标记]:链接地址 &quot;链接标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">GitHub</span>][<span class="symbol">link1</span>]</span><br><span class="line">[<span class="string">Gitee</span>][<span class="symbol">link2</span>]</span><br><span class="line">[<span class="string">我的博客</span>][<span class="symbol">link3</span>]</span><br><span class="line">[<span class="symbol">link1</span>]:<span class="link">https://www.github.com &quot;GitHub&quot;</span></span><br><span class="line">[<span class="symbol">link2</span>]:<span class="link">https://www.gitee.com &quot;码云&quot;</span></span><br><span class="line">[<span class="symbol">link3</span>]:<span class="link">https://gentletk.gitee.io &quot;云&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.github.com/" title="GitHub">GitHub</a><br><a href="https://www.gitee.com/" title="码云">Gitee</a><br><a href="https://gentletk.gitee.io/" title="云">我的博客</a></p>
-<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3 自动链接"></a>3.3 自动链接</h3><p><code>Markdown</code>同样支持简短的自动链接，语法也非常简单，只需要用<code>&lt;&gt;</code>把链接包起来就行。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml">&lt;https://cn.bing.com/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="https://cn.bing.com/">https://cn.bing.com/</a></p>
-<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4 锚点"></a>4 锚点</h2><p>在网页中，锚点可以实现页内跳转，而<code>Markdown</code>同样支持这一点，语法说明如下：</p>
-<p><code>[链接文字](#文章标记)</code></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">跳转到[<span class="string">一级标题</span>](<span class="link">#一级标题</span>)</span><br></pre></td></tr></table></figure>
-
-<p>跳转到<a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>。</p>
-<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5 列表"></a>5 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1 无序列表"></a>5.1 无序列表</h3><p>在<code>Markdown</code>中，可以使用<code>*</code>,<code>+</code>,<code>-</code>来表示无序列表。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一</li>
-<li>无序列表项二</li>
-<li>无序列表项三</li>
-</ul>
-<p>也可使用2个空格缩进来显示多级无序列表：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项一</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项一</span><br><span class="line"><span class="bullet">-</span> 无序列表项二</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项二</span><br><span class="line"><span class="bullet">-</span> 无序列表项三</span><br><span class="line"><span class="bullet">  -</span> 无序列表子项三</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>无序列表项一<ul>
-<li>无序列表子项一</li>
-</ul>
-</li>
-<li>无序列表项二<ul>
-<li>无序列表子项二</li>
-</ul>
-</li>
-<li>无序列表项三<ul>
-<li>无序列表子项三</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2 有序列表"></a>5.2 有序列表</h3><p>有序列表只需要使用数字紧跟一个英文句点，然后在空格后输入列表项即可。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项一</span><br><span class="line"><span class="bullet">2.</span> 有序列表项二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项三</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>有序列表项一</li>
-<li>有序列表项二</li>
-<li>有序列表项三</li>
-</ol>
-<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><p>引用只需在前面加上<code>&gt;</code>。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是引用。</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这是引用。</p>
-</blockquote>
-<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7 插入图像"></a>7 插入图像</h2><p>插入图像的方法和超链接类似，都支持行内式和参考式。</p>
-<h3 id="7-1-行内式插入图像"><a href="#7-1-行内式插入图像" class="headerlink" title="7.1 行内式插入图像"></a>7.1 行内式插入图像</h3><p>一般使用行内式插入图像，行内式语法说明：<code>![图片Alt](图片地址 &quot;图片标题&quot;)</code></p>
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li>图片Alt为图片无法显示时的替换文字，用于描述图片。</li>
-<li>图片地址可以为网络地址也可以为本地绝对/相对地址。</li>
-<li>图片标题会在鼠标悬停时显示，也可不加。</li>
-</ol>
-</div>
-
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">我的头像</span>](<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png &quot;头像&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7qQOR2Lrdu4AZJc.png" alt="我的头像" title="头像"></p>
-<h3 id="7-2-参考式插入图像"><a href="#7-2-参考式插入图像" class="headerlink" title="7.2 参考式插入图像"></a>7.2 参考式插入图像</h3><p>参考式插入图像语法说明如下：</p>
-<ol>
-<li><code>![图像Alt][图像标记]</code></li>
-<li><code>[图像标记]:图像地址 &quot;图像标题&quot;</code></li>
-</ol>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">黑白pic</span>][<span class="symbol">1</span>]</span><br><span class="line">![<span class="string">橙色pic</span>][<span class="symbol">2</span>]</span><br><span class="line">![<span class="string">绿色pic</span>][<span class="symbol">3</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png &quot;黑白pic&quot;</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png &quot;橙色pic&quot;</span></span><br><span class="line">[<span class="symbol">3</span>]:<span class="link">https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png &quot;绿色pic&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/keAljdWQU1rzNvm.png" alt="黑白pic" title="黑白pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jbsHEnOC6MmoqzW.png" alt="橙色pic" title="橙色pic"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9A6dXSjJ3iaqE5P.png" alt="绿色pic" title="绿色pic"></p>
-<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p><code>Markdown</code>支持简单的表格显示，如果需要复杂表格，可以使用<code>HTML</code>中的表格。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">表头一|表头二|表头三</span><br><span class="line">:-|:-|:-</span><br><span class="line">单元格一|单元格二|单元格三</span><br></pre></td></tr></table></figure>
-
-<div class="note warning flat"><p>注意：</p>
-<ol>
-<li><code>:-</code>表示单元格内容左对齐。</li>
-<li><code>:-:</code>表示单元格内容居中对齐。</li>
-<li><code>-:</code>表示单元格内容右对齐。</li>
-</ol>
-</div>
-
-<table>
-<thead>
-<tr>
-<th align="left">表头一</th>
-<th align="left">表头二</th>
-<th align="left">表头三</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格一</td>
-<td align="left">单元格二</td>
-<td align="left">单元格三</td>
-</tr>
-</tbody></table>
-<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9 代码"></a>9 代码</h2><h3 id="9-1-单行代码"><a href="#9-1-单行代码" class="headerlink" title="9.1 单行代码"></a>9.1 单行代码</h3><p>单行代码使用一对反引号(反引号键一般在键盘ESC键下面)括起来。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`printf(&quot;这是一行代码!\n&quot;);`</span></span><br></pre></td></tr></table></figure>
-
-<p><code>printf(&quot;这是一行代码!\n&quot;);</code></p>
-<h3 id="9-2-多行代码"><a href="#9-2-多行代码" class="headerlink" title="9.2 多行代码"></a>9.2 多行代码</h3><p>多行代码一般以三个反引号开头，再以三个反引号结尾。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```C</span></span><br><span class="line"><span class="code">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="code">int main(void)</span></span><br><span class="line"><span class="code">&#123;</span></span><br><span class="line"><span class="code">    printf(&quot;这是一段代码!\n&quot;);</span></span><br><span class="line"><span class="code">    return 0</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">​```</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是一段代码!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-HTML元素"><a href="#10-HTML元素" class="headerlink" title="10 HTML元素"></a>10 HTML元素</h2><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;i&gt;</code>、 <code>&lt;em&gt;</code>、 <code>&lt;sup&gt;</code>、 <code>&lt;sub&gt;</code>、 <code>&lt;br&gt;</code>等。</p>
-<p>最常用的电脑快捷键：<kbd>Ctrl</kbd>+<kbd>C</kbd>，<kbd>Ctrl</kbd>+<kbd>V</kbd>。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用批处理脚本修改hosts文件</title>
-    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<blockquote>
-<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
-</blockquote>
-<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
-<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
-<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
-<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
-<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
-<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>批处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Vercel托管自己的网站</title>
-    <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
-<div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p>
-</div>
-
-<h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure>
-
-<p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sJy5ui6IRS3tEYD.png" alt="Vercel确认邮件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oEjkAV4LmOf2rP1.png" alt="登录Vercel"></p>
-<h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure>
-
-<p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bG5kEYxLBpK284j.png" alt="合成大西瓜小游戏"></p>
-<p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p>
-<p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p>
-<p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p>
-<h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure>
-
-<p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WFYuK7Gmn6jHq3f.png" alt="绑定自己的域名"></p>
-<p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
-
-<p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wxmrazg2BkYcbUv.png" alt="添加记录集"></p>
-<p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/eNIToanWzl93GOM.png" alt="发布合成大西瓜应用"></p>
-<p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Vercel</tag>
       </tags>
   </entry>
   <entry>
@@ -1673,6 +1601,48 @@
       </tags>
   </entry>
   <entry>
+    <title>使用Vercel托管自己的网站</title>
+    <url>/2021/01/30/%E4%BD%BF%E7%94%A8Vercel%E6%89%98%E7%AE%A1%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p>无论你是想要有一个自己的博客，还是想将自己的小项目发布到外网，给所有人访问，Vercel绝对是一个经济实惠的选择。</p>
+<div class="note info flat"><p>注意，在使用Vercel前请确保你已安装<code>Git</code>与<code>Node.js</code>。</p>
+</div>
+
+<h2 id="1-注册并安装"><a href="#1-注册并安装" class="headerlink" title="1 注册并安装"></a>1 注册并安装</h2><p>首先前往<a href="https://vercel.com/">Vercel官网</a>注册一个账号，现在注册新用户必须使用<code>GitHub</code>、<code>GitLab</code>或者<code>BitBucket</code>的账户进行授权，并绑定手机号，注册完成后可以在配置页面修改自己的邮箱。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装Vercel</span></span><br><span class="line">npm i -g vercel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登陆Vercel，vc是Vercel的简写，也可使用Vercel代替</span></span><br><span class="line">vc login YourEmailAddress</span><br></pre></td></tr></table></figure>
+
+<p><code>Vercel</code>会向你的邮箱发送一封邮件，确认后即可登陆：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sJy5ui6IRS3tEYD.png" alt="Vercel确认邮件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oEjkAV4LmOf2rP1.png" alt="登录Vercel"></p>
+<h2 id="2-发布你的网站-项目"><a href="#2-发布你的网站-项目" class="headerlink" title="2 发布你的网站/项目"></a>2 发布你的网站/项目</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 发布网站/项目</span></span><br><span class="line">vc --prod</span><br></pre></td></tr></table></figure>
+
+<p>项目配置基本上一路回车就行，我这里的项目是一个合成大西瓜的小游戏：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bG5kEYxLBpK284j.png" alt="合成大西瓜小游戏"></p>
+<p>发布后会得到两个个网址，随便打开一个就可以进入游戏了，但是这个网址看上去并不是特别优雅，如果你有域名的话，不妨和我一起设置一下。</p>
+<p><a href="https://daxigua-3lndp9zw9-gentletk.vercel.app/">合成大西瓜网址1</a></p>
+<p><a href="https://daxigua-kappa-gules.vercel.app/">合成大西瓜网址2</a></p>
+<h2 id="3-绑定你的域名"><a href="#3-绑定你的域名" class="headerlink" title="3 绑定你的域名"></a>3 绑定你的域名</h2><p>如果你有域名的话，可以把它绑定到<code>Vercel</code>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绑定自己的域名</span></span><br><span class="line">vc domains add YourDomains</span><br></pre></td></tr></table></figure>
+
+<p>运行命令后，有可能会提示你输入项目名称(我这里的项目名称为<code>daxigua</code>)：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WFYuK7Gmn6jHq3f.png" alt="绑定自己的域名"></p>
+<p>根据提示信息来看，<code>Vercel</code>让我们改一下DNS解析的服务器地址并且会发一封邮件给我们，根据邮件提示，有两种方式可以达到目的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">@ A 76.76.21.21</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
+
+<p>我这里直接选第一种，首先在购买域名的地方进入控制台，然后找到DNS解析服务，添加记录集：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wxmrazg2BkYcbUv.png" alt="添加记录集"></p>
+<p>配置完成后，会收到一封邮件，提示你在终端使用<code>vc --prod</code>命令再次发布一下：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/eNIToanWzl93GOM.png" alt="发布合成大西瓜应用"></p>
+<p>发现可以通过自己的域名访问<a href="https://daxigua.liyunliang.com/">合成大西瓜</a>了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Vercel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
     <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
@@ -1719,30 +1689,33 @@
       </tags>
   </entry>
   <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+    <title>使用批处理脚本修改hosts文件</title>
+    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<blockquote>
+<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
+</blockquote>
+<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
+<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
+<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
+<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
+<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
+<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
+        <tag>批处理</tag>
       </tags>
   </entry>
   <entry>
@@ -1857,6 +1830,33 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
