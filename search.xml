@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AltiumDesigner绘制PCB(三)</title>
+    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
+<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
+<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
+</div>
+
+<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
+<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
+<p>修改完成后，依次放置四个焊盘：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
+<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
+<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
+<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
+<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(一)</title>
     <url>/2020/04/26/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -49,46 +89,6 @@
 <td align="left">PCB图文件</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(三)</title>
-    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
-<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
-<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
-</div>
-
-<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
-<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
-<p>修改完成后，依次放置四个焊盘：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
-<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
-<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
-<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
-<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -241,6 +241,26 @@
       </tags>
   </entry>
   <entry>
+    <title>C++使用fstream读写文件</title>
+    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
+<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AnyCAD使用</title>
     <url>/2021/05/17/AnyCAD%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
@@ -282,26 +302,6 @@
       <tags>
         <tag>技术</tag>
         <tag>AnyCAD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++使用fstream读写文件</title>
-    <url>/2020/05/10/C++%E4%BD%BF%E7%94%A8fstream%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-方式一"><a href="#1-方式一" class="headerlink" title="1 方式一"></a>1 方式一</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文件写入</span></span><br><span class="line">	fs.<span class="built_in">write</span>(str, <span class="built_in"><span class="keyword">sizeof</span></span>(str));</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs.<span class="built_in">read</span>(rStr, <span class="built_in"><span class="keyword">sizeof</span></span>(rStr));</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/P1QrqskjKveIfdC.png" alt="方式一运行结果"></p>
-<h2 id="2-方式二"><a href="#2-方式二" class="headerlink" title="2 方式二"></a>2 方式二</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">// 定义fs对象</span></span><br><span class="line">	fstream fs;</span><br><span class="line">	<span class="keyword">char</span> str[] = <span class="string">&quot;test write!&quot;</span>;</span><br><span class="line">	<span class="keyword">char</span> rStr[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">char</span> rStr2[<span class="number">20</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以写的方式打开</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::out);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;write open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 流写入</span></span><br><span class="line">	fs &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 写入后关闭文件</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 以读的方式打开文件</span></span><br><span class="line">	fs.<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>, ios_base::in);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 检验状态</span></span><br><span class="line">	<span class="keyword">if</span> (fs.<span class="built_in">is_open</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open success&quot;</span> &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;read open failed&quot;</span> &lt;&lt; endl;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件读出</span></span><br><span class="line">	fs &gt;&gt; rStr &gt;&gt; rStr2;</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;read content: &quot;</span> &lt;&lt; rStr &lt;&lt; <span class="string">&quot;--&quot;</span> &lt;&lt; rStr2 &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 文件关闭</span></span><br><span class="line">	fs.<span class="built_in">close</span>();</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<p><img src="https://i.loli.net/2021/05/13/9Sozr6Oi2nyIT5l.png" alt="image-20210513162725497"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -392,32 +392,6 @@
       <tags>
         <tag>技术</tag>
         <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chocolatey安装与使用</title>
-    <url>/2022/05/06/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
-</blockquote>
-<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure>
-
-<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Chocolatey</tag>
       </tags>
   </entry>
   <entry>
@@ -550,90 +524,29 @@
       </tags>
   </entry>
   <entry>
-    <title>Git使用教程</title>
-    <url>/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用<code>Markdown</code>编辑器<a href="https://www.typora.io/">Typora</a>编写。</p>
-<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
-<li>工作区<br>电脑里能看到的目录。</li>
-<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
-<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
-</ol>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
-<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
-<ol>
-<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
-<li>克隆自己的仓库到本地，做出修改并推送。</li>
-<li>请求拉取自己的更新。</li>
-<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
-<li>管理者将合并后的修改推送到主仓库。</li>
-</ol>
-<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
-<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
-<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
-<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
-<ol>
-<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
-<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
-<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
-<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
-<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
-<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
-<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
-<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
-<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
-<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
-<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
-<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
-<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
-<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
-<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
-<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
-<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
-<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
-</ol>
-<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
-<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
-<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
-</ol>
-<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
-<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
-<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
-这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
-</ol>
-<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
-<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
-<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
-</ol>
-<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
-<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
-<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
-<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
-<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
-</ol>
-<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
-<ol>
-<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
-<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
-<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
-</ol>
-<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
-</div>
+    <title>Chocolatey安装与使用</title>
+    <url>/2022/05/06/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
+</blockquote>
+<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
-<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
-<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
-<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
+<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Git</tag>
+        <tag>Chocolatey</tag>
       </tags>
   </entry>
   <entry>
@@ -772,95 +685,90 @@
       </tags>
   </entry>
   <entry>
-    <title>MQTT剩余长度计算</title>
-    <url>/2022/01/21/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256</code><em><code>1024</code></em><code>1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
-<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
-<thead>
-<tr>
-<th>bit7</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>进位标志</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-</tr>
-</tbody></table>
-<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
-<table>
-<thead>
-<tr>
-<th>进位标志</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1(有进位)</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
-<table>
-<thead>
-<tr>
-<th>bit14</th>
-<th>bit13</th>
-<th>bit12</th>
-<th>bit11</th>
-<th>bit10</th>
-<th>bit9</th>
-<th>bit8</th>
-<th>bit7</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
+    <title>Git使用教程</title>
+    <url>/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用<code>Markdown</code>编辑器<a href="https://www.typora.io/">Typora</a>编写。</p>
+<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
+<li>工作区<br>电脑里能看到的目录。</li>
+<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
+<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
+</ol>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
+<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
+<ol>
+<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
+<li>克隆自己的仓库到本地，做出修改并推送。</li>
+<li>请求拉取自己的更新。</li>
+<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
+<li>管理者将合并后的修改推送到主仓库。</li>
+</ol>
+<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
+<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
+<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
+<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
+<ol>
+<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
+<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
+<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
+<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git rm [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
+<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
+<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
+<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
+<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
+<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
+<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
+<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
+<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
+<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
+<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
+<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
+<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
+<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
+<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
+</ol>
+<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
+<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
+<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
+</ol>
+<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
+<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
+<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
+这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
+</ol>
+<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
+<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
+<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
+</ol>
+<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
+<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
+<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
+<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
+<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
+</ol>
+<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
+<ol>
+<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
+<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
+<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
+</ol>
+<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
+</div>
 
-<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> int32 <span class="title">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
+<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
+<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
+<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>MQTT</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1111,6 +1019,98 @@
       </tags>
   </entry>
   <entry>
+    <title>MQTT剩余长度计算</title>
+    <url>/2022/01/21/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256</code><em><code>1024</code></em><code>1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
+<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
+<thead>
+<tr>
+<th>bit7</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>进位标志</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+</tr>
+</tbody></table>
+<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
+<table>
+<thead>
+<tr>
+<th>进位标志</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1(有进位)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
+<table>
+<thead>
+<tr>
+<th>bit14</th>
+<th>bit13</th>
+<th>bit12</th>
+<th>bit11</th>
+<th>bit10</th>
+<th>bit9</th>
+<th>bit8</th>
+<th>bit7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> int32 <span class="title">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>MQTT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法测试</title>
     <url>/2020/04/05/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -1315,97 +1315,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora使用</title>
-    <url>/2021/05/20/Typora%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
-<thead>
-<tr>
-<th>功能</th>
-<th>快捷键</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>无序列表</td>
-<td>输入<code>-</code>，<code>+</code>后空格</td>
-</tr>
-<tr>
-<td>有序列表</td>
-<td>输入数字再输入<code>.</code>后空格</td>
-</tr>
-<tr>
-<td>任务列表</td>
-<td>- [空格]空格 任务描述</td>
-</tr>
-<tr>
-<td>标题</td>
-<td><kbd>Ctrl</kbd> + 数字</td>
-</tr>
-<tr>
-<td>表格</td>
-<td><kbd>Ctrl</kbd> + <kbd>t</kbd></td>
-</tr>
-<tr>
-<td>目录</td>
-<td>输入[TOC]后回车</td>
-</tr>
-<tr>
-<td>引用</td>
-<td>输入&gt;后空格</td>
-</tr>
-<tr>
-<td>加粗</td>
-<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
-</tr>
-<tr>
-<td>倾斜</td>
-<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
-</tr>
-<tr>
-<td>下划线</td>
-<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
-</tr>
-</tbody></table>
-<h2 id="2-Pandoc使用"><a href="#2-Pandoc使用" class="headerlink" title="2 Pandoc使用"></a>2 Pandoc使用</h2><p><a href="https://github.com/jgm/pandoc/releases">下载Pandoc</a></p>
-<h2 id="3-Windows右键新建md文件"><a href="#3-Windows右键新建md文件" class="headerlink" title="3 Windows右键新建md文件"></a>3 Windows右键新建md文件</h2><h3 id="3-1-打开注册表"><a href="#3-1-打开注册表" class="headerlink" title="3.1 打开注册表"></a>3.1 打开注册表</h3><p>按<kbd>Win</kbd>+<kbd>R</kbd>打开运行对话框，输入 <code>rededit</code> 打开注册表。</p>
-<h3 id="3-2-修改注册表"><a href="#3-2-修改注册表" class="headerlink" title="3.2 修改注册表"></a>3.2 修改注册表</h3><p>在计算机下选中 <code>HKEY_CLASSES_ROOT</code>，右键选择查找，输入 <code>Typora</code>，取消勾选值和数据。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GK5QkbaT6eV2Elg.png" alt="image-20210520094737444"></p>
-<h3 id="3-3-新建注册表文件"><a href="#3-3-新建注册表文件" class="headerlink" title="3.3 新建注册表文件"></a>3.3 新建注册表文件</h3><p>新建一个 <code>newmd.reg</code> 文件，内容如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=<span class="string">&quot;Typora.exe&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=<span class="string">&quot;Markdown&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>双击运行 <code>newmd.reg</code> 即可。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-        <tag>Typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xilinx静态库制作与使用</title>
-    <url>/2021/07/08/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
-<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
-<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
-<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
-<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
-<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
-<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Xilinx</tag>
       </tags>
   </entry>
   <entry>
@@ -1624,6 +1533,75 @@
       </tags>
   </entry>
   <entry>
+    <title>Typora使用</title>
+    <url>/2021/05/20/Typora%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无序列表</td>
+<td>输入<code>-</code>，<code>+</code>后空格</td>
+</tr>
+<tr>
+<td>有序列表</td>
+<td>输入数字再输入<code>.</code>后空格</td>
+</tr>
+<tr>
+<td>任务列表</td>
+<td>- [空格]空格 任务描述</td>
+</tr>
+<tr>
+<td>标题</td>
+<td><kbd>Ctrl</kbd> + 数字</td>
+</tr>
+<tr>
+<td>表格</td>
+<td><kbd>Ctrl</kbd> + <kbd>t</kbd></td>
+</tr>
+<tr>
+<td>目录</td>
+<td>输入[TOC]后回车</td>
+</tr>
+<tr>
+<td>引用</td>
+<td>输入&gt;后空格</td>
+</tr>
+<tr>
+<td>加粗</td>
+<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
+</tr>
+<tr>
+<td>倾斜</td>
+<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
+</tr>
+<tr>
+<td>下划线</td>
+<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
+</tr>
+</tbody></table>
+<h2 id="2-Pandoc使用"><a href="#2-Pandoc使用" class="headerlink" title="2 Pandoc使用"></a>2 Pandoc使用</h2><p><a href="https://github.com/jgm/pandoc/releases">下载Pandoc</a></p>
+<h2 id="3-Windows右键新建md文件"><a href="#3-Windows右键新建md文件" class="headerlink" title="3 Windows右键新建md文件"></a>3 Windows右键新建md文件</h2><h3 id="3-1-打开注册表"><a href="#3-1-打开注册表" class="headerlink" title="3.1 打开注册表"></a>3.1 打开注册表</h3><p>按<kbd>Win</kbd>+<kbd>R</kbd>打开运行对话框，输入 <code>rededit</code> 打开注册表。</p>
+<h3 id="3-2-修改注册表"><a href="#3-2-修改注册表" class="headerlink" title="3.2 修改注册表"></a>3.2 修改注册表</h3><p>在计算机下选中 <code>HKEY_CLASSES_ROOT</code>，右键选择查找，输入 <code>Typora</code>，取消勾选值和数据。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GK5QkbaT6eV2Elg.png" alt="image-20210520094737444"></p>
+<h3 id="3-3-新建注册表文件"><a href="#3-3-新建注册表文件" class="headerlink" title="3.3 新建注册表文件"></a>3.3 新建注册表文件</h3><p>新建一个 <code>newmd.reg</code> 文件，内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=<span class="string">&quot;Typora.exe&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=<span class="string">&quot;Markdown&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>双击运行 <code>newmd.reg</code> 即可。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue基础</title>
     <url>/2021/08/20/Vue%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<blockquote>
@@ -1834,6 +1812,28 @@
       <tags>
         <tag>技术</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xilinx静态库制作与使用</title>
+    <url>/2021/07/08/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
+<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
+<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
+<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
+<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
+<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
+<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Xilinx</tag>
       </tags>
   </entry>
   <entry>
@@ -2476,6 +2476,33 @@
       </tags>
   </entry>
   <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
     <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
@@ -2519,33 +2546,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Keil</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -2663,54 +2663,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于树莓派的智能箱包开发环境搭建</title>
     <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
@@ -2764,6 +2716,54 @@
       </categories>
       <tags>
         <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
