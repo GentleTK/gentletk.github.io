@@ -382,20 +382,6 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/IoT/</loc>
-    <lastmod>2022-07-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/OneNET/</loc>
-    <lastmod>2022-07-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
     <lastmod>2022-07-22</lastmod>
     <changefreq>daily</changefreq>
@@ -417,14 +403,14 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/uni-app/</loc>
+    <loc>https://gentletk.gitee.io/tags/IoT/</loc>
     <lastmod>2022-07-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
+    <loc>https://gentletk.gitee.io/tags/OneNET/</loc>
     <lastmod>2022-07-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -438,7 +424,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Keil/</loc>
+    <loc>https://gentletk.gitee.io/tags/uni-app/</loc>
     <lastmod>2022-07-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -446,6 +432,20 @@
   
   <url>
     <loc>https://gentletk.gitee.io/tags/Vercel/</loc>
+    <lastmod>2022-07-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2022-07-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/Keil/</loc>
     <lastmod>2022-07-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
