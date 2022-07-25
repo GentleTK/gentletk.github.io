@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>AltiumDesigner绘制PCB(三)</title>
-    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
-<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
-<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
-</div>
-
-<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
-<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
-<p>修改完成后，依次放置四个焊盘：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
-<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
-<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
-<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
-<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(一)</title>
     <url>/2020/04/26/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -89,6 +49,46 @@
 <td align="left">PCB图文件</td>
 </tr>
 </tbody></table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(三)</title>
+    <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制封装图，了解器件封装图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的封装图相当于器件的”衣服“，必须要做到合乎标准，不然的话，无论是插件和贴片元件都无法焊接到电路板上。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制封装，由于按键属于插件，只需要根据按键四个引脚的距离即可放置对应的焊盘，在左侧导航栏点击<code>matrixKeyboard.PcbLib</code>进入PCB封装绘制界面，在左侧导航栏下方点击<code>PCB Library</code>进入封装器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Gzn4ZljJS29WsOP.png" alt="封装器件列表"></p>
+<p>单击<code>PCBCOMPONENT_1</code>进入编辑，如果没有卡尺去测量按键引脚距离，可以把按键安装在洞洞板上，洞洞板两个孔之间的距离刚好为<code>100mil</code>。</p>
+<div class="note warning flat"><p>注意，<code>1mil=0.0254cm</code>。</p>
+</div>
+
+<p>经过在洞洞板上的测试，按键横向的两个引脚距离为<code>300mil</code>，纵向的两个引脚距离为<code>200mil</code>，在顶部导航栏点击放置焊盘：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/84tSXv9bxVd3GIz.png" alt="点击放置焊盘"></p>
+<p>当出现焊盘时，按一下<kbd>Tab</kbd>键，进入焊盘属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fFN5VJqt2AIM1TX.png" alt="修改焊盘属性"></p>
+<p>修改完成后，依次放置四个焊盘：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jUyZdILwVkbrOQK.png" alt="放置四个焊盘"></p>
+<p>然后为它绘制一个丝印轮廓，在底部选择<code>Top Overlay(丝印层)</code>，再点击顶部导航栏的画笔(放置线条)，绘制一个矩形丝印：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/K4own37IlBZ68vb.png" alt="绘制矩形丝印"></p>
+<p>如果有<code>3D</code>模型文件，还可以在顶部导航栏点击放置，选择<code>3D</code>元件体：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mPLG7zHjrNX5RfF.png" alt="放置3D元件体"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/ugAXDtFB3bkILmK.png" alt="添加通用3D模型文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4tnG6WO5DY1Ahgw.png" alt="放置好3D模型"></p>
+<p>按下数字键<code>3</code>可进入<code>3D</code>模式预览(按<code>2</code>可返回<code>2D</code>模式)，查看器件的<code>3D</code>模型是否与焊盘匹配：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NA6gzTiucZyUs1W.png" alt="3D模型预览"></p>
+<p>在左侧导航栏的<code>PCB Library</code>中双击<code>PCBCOMPONENT_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -267,6 +267,50 @@
       </tags>
   </entry>
   <entry>
+    <title>AnyCAD使用</title>
+    <url>/2021/05/17/AnyCAD%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p><code>C#</code> + <code>AnyCAD</code> 实现画点、线、圆及三维模型展示。</p>
+</blockquote>
+<h3 id="一-anycad-net-sdk-2020-09-30"><a href="#一-anycad-net-sdk-2020-09-30" class="headerlink" title="(一) anycad.net.sdk.2020.09.30"></a>(一) anycad.net.sdk.2020.09.30</h3><h4 id="1-1-准备引用"><a href="#1-1-准备引用" class="headerlink" title="1.1 准备引用"></a>1.1 准备引用</h4><p>去<a href="http://www.anycad.net/">AnyCAD官网</a>下载 <code>.net SDK</code>包，解压后复制所有bin文件夹下的dll文件到项目对应目录。</p>
+<p>这里以 <code>x64CPU</code> 的 <code>Release</code> 版本为例。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dO5GFEov2P6AWIl.png" alt="添加dll文件"></p>
+<h4 id="1-2-添加引用"><a href="#1-2-添加引用" class="headerlink" title="1.2 添加引用"></a>1.2 添加引用</h4><p>在解决方案资源管理器选中引用，单击右键添加引用，将 <code>AnyCAD.Exchange.Net</code>、<code>AnyCAD.Foundation.Net</code>、<code>AnyCAD.Presentation.Net</code> 这三个主要的添加进来。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oP3xtYrGmRXasKi.png" alt="添加引用"></p>
+<h4 id="1-3-界面设计"><a href="#1-3-界面设计" class="headerlink" title="1.3 界面设计"></a>1.3 界面设计</h4><p>界面设计暂时包含一个菜单栏和一个 <code>3D</code> 显示面板，菜单栏提供 <code>STEP</code>、<code>STL</code> 等 <code>3D</code> 模型文件的加载，模型显示、画点、线、圆的测试以及图形清除功能：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vr8D3qEV9SHWmgZ.png" alt="界面设计"></p>
+<h4 id="1-4-效果预览"><a href="#1-4-效果预览" class="headerlink" title="1.4 效果预览"></a>1.4 效果预览</h4><p>先看看运行效果预览：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/13Zdf9zsgFhjcyi.png" alt="运行效果预览"></p>
+<p>尝试导入一个 <code>STEP</code> 文件：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AOj28CSxFZs9ywo.png" alt="导入STEP文件效果"></p>
+<h4 id="1-5-三轴刀具轨迹"><a href="#1-5-三轴刀具轨迹" class="headerlink" title="1.5 三轴刀具轨迹"></a>1.5 三轴刀具轨迹</h4><p><img src="https://i.loli.net/2021/05/14/QualgLJE2OfKR4G.gif" alt="三轴刀具轨迹"></p>
+<h3 id="二-anycad-rapid-net-sample"><a href="#二-anycad-rapid-net-sample" class="headerlink" title="(二) anycad.rapid.net.sample"></a>(二) anycad.rapid.net.sample</h3><h4 id="2-1-下载vc-redist"><a href="#2-1-下载vc-redist" class="headerlink" title="2.1 下载vc_redist"></a>2.1 下载vc_redist</h4><p>在 <code>Windows</code>下，<code>AnyCAD Rapid</code> 使用基于 <code>VC++</code> 编译，运行时候依赖 <code>Vistual C++</code> 运行时库。因此，<code>64</code>位版本需要在客户机上安装<code>VC_Redist/x64/VC_redist.x64.exe</code>，<code>32</code> 位版本需要安装 <code>VC_Redist/x86/VC_redist.x86.exe</code>。</p>
+<h4 id="2-2-使用nuget添加程序集引用"><a href="#2-2-使用nuget添加程序集引用" class="headerlink" title="2.2 使用nuget添加程序集引用"></a>2.2 使用nuget添加程序集引用</h4><p><a href="https://www.nuget.org/packages/AnyCAD.Rapid.Net/">官网下载最新nuget</a>（<code>AnyCAD.Rapid.Net.2020.10.27.nupkg</code>）。</p>
+<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 程序包管理器设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/D9sxPKNbaZQneHv.png" alt="程序包管理器设置"></p>
+<p>编辑程序包源</p>
+<p>名称：<code>nuget</code><br>源：包含 <code>nupkg</code> 的本地路径</p>
+<p>点击更新后，确定</p>
+<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 管理解决方案的<code>NuGet</code>程序包</p>
+<p>在联机栏点击<code>nuget</code>，安装 <code>AnyCAD.Rapid.Net</code>，安装完成后如下图所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B7J1kIVKNaSUW8u.png" alt="管理NuGet程序包"></p>
+<h4 id="2-3-设置工程项目属性"><a href="#2-3-设置工程项目属性" class="headerlink" title="2.3 设置工程项目属性"></a>2.3 设置工程项目属性</h4><p>为满足三维应用程序的高性能要求，建议设置项目首选 <code>64</code> 位环境，即禁用首选 <code>32</code> 位选项，如下图所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/iH1mMKTjaoFXrCe.png" alt="设置工程项目属性"></p>
+<h4 id="2-4-SDK初始化"><a href="#2-4-SDK初始化" class="headerlink" title="2.4 SDK初始化"></a>2.4 SDK初始化</h4><p>在窗体设计中添加一个 <code>panel</code> 容器用来显示三维内容，只要在窗体的构造函数后添加几行代码就可以将三维控件添加到窗体容器中。</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">FormMain</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    <span class="comment">// 初始化, 指定三维控件的容器</span></span><br><span class="line">    <span class="keyword">this</span>.renderView = <span class="keyword">new</span> RenderControl();</span><br><span class="line">    <span class="keyword">this</span>.renderView.TabIndex = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">this</span>.panel1.Controls.Add(<span class="keyword">this</span>.renderView);</span><br><span class="line">    <span class="keyword">this</span>.renderView.Dock = DockStyle.Fill;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>三维界面渲染效果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5eW9blyVoKrcZx1.png" alt="三维渲染效果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AnyCAD</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Doxygen使用教程</title>
     <url>/2021/06/22/Doxygen%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p><strong>Doxygen</strong> 可以用来为项目生成帮助文档或者 <strong>SDK</strong>，输出格式可以为 <strong>HTML</strong>、<strong>CHM</strong> 等。</p>
@@ -396,47 +440,100 @@
       </tags>
   </entry>
   <entry>
-    <title>AnyCAD使用</title>
-    <url>/2021/05/17/AnyCAD%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>C#</code> + <code>AnyCAD</code> 实现画点、线、圆及三维模型展示。</p>
-</blockquote>
-<h3 id="一-anycad-net-sdk-2020-09-30"><a href="#一-anycad-net-sdk-2020-09-30" class="headerlink" title="(一) anycad.net.sdk.2020.09.30"></a>(一) anycad.net.sdk.2020.09.30</h3><h4 id="1-1-准备引用"><a href="#1-1-准备引用" class="headerlink" title="1.1 准备引用"></a>1.1 准备引用</h4><p>去<a href="http://www.anycad.net/">AnyCAD官网</a>下载 <code>.net SDK</code>包，解压后复制所有bin文件夹下的dll文件到项目对应目录。</p>
-<p>这里以 <code>x64CPU</code> 的 <code>Release</code> 版本为例。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dO5GFEov2P6AWIl.png" alt="添加dll文件"></p>
-<h4 id="1-2-添加引用"><a href="#1-2-添加引用" class="headerlink" title="1.2 添加引用"></a>1.2 添加引用</h4><p>在解决方案资源管理器选中引用，单击右键添加引用，将 <code>AnyCAD.Exchange.Net</code>、<code>AnyCAD.Foundation.Net</code>、<code>AnyCAD.Presentation.Net</code> 这三个主要的添加进来。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oP3xtYrGmRXasKi.png" alt="添加引用"></p>
-<h4 id="1-3-界面设计"><a href="#1-3-界面设计" class="headerlink" title="1.3 界面设计"></a>1.3 界面设计</h4><p>界面设计暂时包含一个菜单栏和一个 <code>3D</code> 显示面板，菜单栏提供 <code>STEP</code>、<code>STL</code> 等 <code>3D</code> 模型文件的加载，模型显示、画点、线、圆的测试以及图形清除功能：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vr8D3qEV9SHWmgZ.png" alt="界面设计"></p>
-<h4 id="1-4-效果预览"><a href="#1-4-效果预览" class="headerlink" title="1.4 效果预览"></a>1.4 效果预览</h4><p>先看看运行效果预览：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/13Zdf9zsgFhjcyi.png" alt="运行效果预览"></p>
-<p>尝试导入一个 <code>STEP</code> 文件：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AOj28CSxFZs9ywo.png" alt="导入STEP文件效果"></p>
-<h4 id="1-5-三轴刀具轨迹"><a href="#1-5-三轴刀具轨迹" class="headerlink" title="1.5 三轴刀具轨迹"></a>1.5 三轴刀具轨迹</h4><p><img src="https://i.loli.net/2021/05/14/QualgLJE2OfKR4G.gif" alt="三轴刀具轨迹"></p>
-<h3 id="二-anycad-rapid-net-sample"><a href="#二-anycad-rapid-net-sample" class="headerlink" title="(二) anycad.rapid.net.sample"></a>(二) anycad.rapid.net.sample</h3><h4 id="2-1-下载vc-redist"><a href="#2-1-下载vc-redist" class="headerlink" title="2.1 下载vc_redist"></a>2.1 下载vc_redist</h4><p>在 <code>Windows</code>下，<code>AnyCAD Rapid</code> 使用基于 <code>VC++</code> 编译，运行时候依赖 <code>Vistual C++</code> 运行时库。因此，<code>64</code>位版本需要在客户机上安装<code>VC_Redist/x64/VC_redist.x64.exe</code>，<code>32</code> 位版本需要安装 <code>VC_Redist/x86/VC_redist.x86.exe</code>。</p>
-<h4 id="2-2-使用nuget添加程序集引用"><a href="#2-2-使用nuget添加程序集引用" class="headerlink" title="2.2 使用nuget添加程序集引用"></a>2.2 使用nuget添加程序集引用</h4><p><a href="https://www.nuget.org/packages/AnyCAD.Rapid.Net/">官网下载最新nuget</a>（<code>AnyCAD.Rapid.Net.2020.10.27.nupkg</code>）。</p>
-<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 程序包管理器设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/D9sxPKNbaZQneHv.png" alt="程序包管理器设置"></p>
-<p>编辑程序包源</p>
-<p>名称：<code>nuget</code><br>源：包含 <code>nupkg</code> 的本地路径</p>
-<p>点击更新后，确定</p>
-<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 管理解决方案的<code>NuGet</code>程序包</p>
-<p>在联机栏点击<code>nuget</code>，安装 <code>AnyCAD.Rapid.Net</code>，安装完成后如下图所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B7J1kIVKNaSUW8u.png" alt="管理NuGet程序包"></p>
-<h4 id="2-3-设置工程项目属性"><a href="#2-3-设置工程项目属性" class="headerlink" title="2.3 设置工程项目属性"></a>2.3 设置工程项目属性</h4><p>为满足三维应用程序的高性能要求，建议设置项目首选 <code>64</code> 位环境，即禁用首选 <code>32</code> 位选项，如下图所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/iH1mMKTjaoFXrCe.png" alt="设置工程项目属性"></p>
-<h4 id="2-4-SDK初始化"><a href="#2-4-SDK初始化" class="headerlink" title="2.4 SDK初始化"></a>2.4 SDK初始化</h4><p>在窗体设计中添加一个 <code>panel</code> 容器用来显示三维内容，只要在窗体的构造函数后添加几行代码就可以将三维控件添加到窗体容器中。</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">FormMain</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    <span class="comment">// 初始化, 指定三维控件的容器</span></span><br><span class="line">    <span class="keyword">this</span>.renderView = <span class="keyword">new</span> RenderControl();</span><br><span class="line">    <span class="keyword">this</span>.renderView.TabIndex = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">this</span>.panel1.Controls.Add(<span class="keyword">this</span>.renderView);</span><br><span class="line">    <span class="keyword">this</span>.renderView.Dock = DockStyle.Fill;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Flutter使用</title>
+    <url>/2021/08/12/Flutter%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
+<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
+</ul>
+<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
+<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
+<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
+<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
 
-<p>三维界面渲染效果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5eW9blyVoKrcZx1.png" alt="三维渲染效果"></p>
+<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+
+<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
+<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
+
+<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
+
+<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>再次运行<code>flutter doctor</code>。</p>
+<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
+<p>（2）选择Flutter SDK Path。</p>
+<p>（3）填写工程名。</p>
+<p>（4）填写工程路径。</p>
+<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
+<p>Application：应用名称</p>
+<p>User-permission：使用权限，必须包含网络访问权限。</p>
+<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
+<p>（2）查看构建配置</p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
+<p>defaultConfig:</p>
+<p>applicationId:指定始终唯一的appid</p>
+<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
+<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
+<p>（3）添加启动图标</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
+<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
+<p>（4）APP签名</p>
+<p><strong>创建keystore</strong></p>
+<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
+<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725133511680.png" alt="image-20220725133511680"></p>
+<p><strong>引用应用程序中的keystore</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
+<p>storePassword=密钥库口令</p>
+<p>keyPassword=key的密钥口令</p>
+<p>keyAlias=key</p>
+<p>storeFile=<app_dir>/key.jks</p>
+<p><strong>在gradle中配置签名</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
+<p>在<code>”android &#123;“</code>前加上如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
+
+<p>将</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>替换为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（5）开启混淆</p>
+<p><strong>配置混淆</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>开启混淆压缩</strong></p>
+<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
+<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
+<p>修改后的<code>buildTypes</code>如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>（6）构建发布版apk</p>
+<p>进入应用程序目录</p>
+<p><code>cd &lt;app_dir&gt;</code></p>
+<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
+<p><code>flutter build apk</code></p>
+<p>安装<code>apk</code></p>
+<p><code>flutter install</code></p>
+<p>构建<code>apk</code>结果如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725134059854.png" alt="image-20220725134059854"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>AnyCAD</tag>
+        <tag>Flutter</tag>
       </tags>
   </entry>
   <entry>
@@ -524,6 +621,141 @@
       <tags>
         <tag>技术</tag>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo介绍</title>
+    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
+<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
+<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，输入以下命令检查安装是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功后则会显示具体版本号，大致如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Hexo 版本</th>
+<th align="left">最低兼容 Node.js 版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">5.0+</td>
+<td align="left">10.13.0</td>
+</tr>
+<tr>
+<td align="left">4.1 - 4.2</td>
+<td align="left">8.10</td>
+</tr>
+<tr>
+<td align="left">4.0</td>
+<td align="left">8.6</td>
+</tr>
+<tr>
+<td align="left">3.3 - 3.9</td>
+<td align="left">6.9</td>
+</tr>
+<tr>
+<td align="left">3.2 - 3.3</td>
+<td align="left">0.12</td>
+</tr>
+<tr>
+<td align="left">3.0 - 3.1</td>
+<td align="left">0.10 or iojs</td>
+</tr>
+<tr>
+<td align="left">0.0.1 - 2.8</td>
+<td align="left">0.10</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>然后在终端输入如下命令进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，提示信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p><code>HexoBlog</code>文件夹目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件/文件夹</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>node_modules</code></td>
+<td align="left">模块文件夹，存放下载的模块。</td>
+</tr>
+<tr>
+<td align="left"><code>scaffolds</code></td>
+<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
+</tr>
+<tr>
+<td align="left"><code>themes</code></td>
+<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
+</tr>
+<tr>
+<td align="left"><code>.gitignore</code></td>
+<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
+</tr>
+<tr>
+<td align="left"><code>_config.landscape.yml</code></td>
+<td align="left">默认的主题配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>_config.yml</code></td>
+<td align="left">网站的配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
+<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
+<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
+<p>终端输入如下命令进行编译、预览：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -775,138 +1007,96 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo介绍</title>
-    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
-<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
-<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，输入以下命令检查安装是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>成功后则会显示具体版本号，大致如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
-<table>
+    <title>MQTT剩余长度计算</title>
+    <url>/2022/01/21/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256</code><em><code>1024</code></em><code>1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
+<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
 <thead>
 <tr>
-<th align="left">Hexo 版本</th>
-<th align="left">最低兼容 Node.js 版本</th>
+<th>bit7</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">5.0+</td>
-<td align="left">10.13.0</td>
-</tr>
-<tr>
-<td align="left">4.1 - 4.2</td>
-<td align="left">8.10</td>
-</tr>
-<tr>
-<td align="left">4.0</td>
-<td align="left">8.6</td>
-</tr>
-<tr>
-<td align="left">3.3 - 3.9</td>
-<td align="left">6.9</td>
-</tr>
-<tr>
-<td align="left">3.2 - 3.3</td>
-<td align="left">0.12</td>
-</tr>
-<tr>
-<td align="left">3.0 - 3.1</td>
-<td align="left">0.10 or iojs</td>
-</tr>
-<tr>
-<td align="left">0.0.1 - 2.8</td>
-<td align="left">0.10</td>
+<td>进位标志</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
 </tr>
 </tbody></table>
-<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>然后在终端输入如下命令进行初始化：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成后，提示信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-
-<p><code>HexoBlog</code>文件夹目录结构如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
-
+<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
 <table>
 <thead>
 <tr>
-<th align="left">文件/文件夹</th>
-<th align="left">描述</th>
+<th>进位标志</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>node_modules</code></td>
-<td align="left">模块文件夹，存放下载的模块。</td>
-</tr>
-<tr>
-<td align="left"><code>scaffolds</code></td>
-<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
-</tr>
-<tr>
-<td align="left"><code>source</code></td>
-<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
-</tr>
-<tr>
-<td align="left"><code>themes</code></td>
-<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
-</tr>
-<tr>
-<td align="left"><code>.gitignore</code></td>
-<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
-</tr>
-<tr>
-<td align="left"><code>_config.landscape.yml</code></td>
-<td align="left">默认的主题配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>_config.yml</code></td>
-<td align="left">网站的配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+<td>1(有进位)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody></table>
-<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
-<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
-<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
-<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
-<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
-<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
-<p>终端输入如下命令进行编译、预览：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
+<table>
+<thead>
+<tr>
+<th>bit14</th>
+<th>bit13</th>
+<th>bit12</th>
+<th>bit11</th>
+<th>bit10</th>
+<th>bit9</th>
+<th>bit8</th>
+<th>bit7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
 
-<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
+<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> int32 <span class="title">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Hexo</tag>
+        <tag>MQTT</tag>
+        <tag>IoT</tag>
       </tags>
   </entry>
   <entry>
@@ -1078,96 +1268,42 @@
       </tags>
   </entry>
   <entry>
-    <title>MQTT剩余长度计算</title>
-    <url>/2022/01/21/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256</code><em><code>1024</code></em><code>1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
-<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
-<thead>
-<tr>
-<th>bit7</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>进位标志</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-</tr>
-</tbody></table>
-<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
-<table>
-<thead>
-<tr>
-<th>进位标志</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1(有进位)</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
-<table>
-<thead>
-<tr>
-<th>bit14</th>
-<th>bit13</th>
-<th>bit12</th>
-<th>bit11</th>
-<th>bit10</th>
-<th>bit9</th>
-<th>bit8</th>
-<th>bit7</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> int32 <span class="title">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>MQTT</tag>
-        <tag>IoT</tag>
+        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
@@ -1383,45 +1519,6 @@
         <tag>技术</tag>
         <tag>IoT</tag>
         <tag>OneNET</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
@@ -2338,33 +2435,23 @@
       </tags>
   </entry>
   <entry>
-    <title>使用批处理脚本修改hosts文件</title>
-    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<blockquote>
-<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
-</blockquote>
-<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
-<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
-<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
-<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
-<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
-<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
+    <title>倍福ET2000侦听器使用</title>
+    <url>/2022/02/14/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
+<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
+<p>Uplink X5——电脑网口(WireShark)</p>
+<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214113727262.png" alt="image-20220214113727262"></p>
+<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114512693.png" alt="image-20220214114512693"></p>
+<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114641411.png" alt="image-20220214114641411"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114110642.png" alt="image-20220214114110642"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>批处理</tag>
+        <tag>WireShark</tag>
       </tags>
   </entry>
   <entry>
@@ -2411,147 +2498,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Keil</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>倍福ET2000侦听器使用</title>
-    <url>/2022/02/14/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
-<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
-<p>Uplink X5——电脑网口(WireShark)</p>
-<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214113727262.png" alt="image-20220214113727262"></p>
-<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114512693.png" alt="image-20220214114512693"></p>
-<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114641411.png" alt="image-20220214114641411"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114110642.png" alt="image-20220214114110642"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>WireShark</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博达工业云与阿里云对比</title>
-    <url>/2021/03/31/%E5%8D%9A%E8%BE%BE%E5%B7%A5%E4%B8%9A%E4%BA%91%E4%B8%8E%E9%98%BF%E9%87%8C%E4%BA%91%E5%AF%B9%E6%AF%94/</url>
-    <content><![CDATA[<h2 id="1-博达工业云"><a href="#1-博达工业云" class="headerlink" title="1. 博达工业云"></a>1. 博达工业云</h2><h3 id="1-1-平台概况"><a href="#1-1-平台概况" class="headerlink" title="1.1 平台概况"></a>1.1 平台概况</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B9%B3%E5%8F%B0%E6%A6%82%E5%86%B5.png" alt="平台概况"></p>
-<h3 id="1-2-监控大屏"><a href="#1-2-监控大屏" class="headerlink" title="1.2 监控大屏"></a>1.2 监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="监控大屏"></p>
-<h3 id="1-3-云组态"><a href="#1-3-云组态" class="headerlink" title="1.3 云组态"></a>1.3 云组态</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E7%BB%84%E6%80%81.png" alt="云组态"></p>
-<h3 id="1-4-设备监测"><a href="#1-4-设备监测" class="headerlink" title="1.4  设备监测"></a>1.4  设备监测</h3><p><img src="res/%E8%AE%BE%E5%A4%87%E7%9B%91%E6%B5%8B.png" alt="设备监测"></p>
-<h3 id="1-5-报警中心"><a href="#1-5-报警中心" class="headerlink" title="1.5 报警中心"></a>1.5 报警中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%8A%A5%E8%AD%A6%E4%B8%AD%E5%BF%83.png" alt="报警中心"></p>
-<h3 id="1-6-数据中心"><a href="#1-6-数据中心" class="headerlink" title="1.6 数据中心"></a>1.6 数据中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.png" alt="数据中心"></p>
-<h3 id="1-7-项目管理"><a href="#1-7-项目管理" class="headerlink" title="1.7 项目管理"></a>1.7 项目管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86.png" alt="项目管理"></p>
-<h3 id="1-8-设备管理"><a href="#1-8-设备管理" class="headerlink" title="1.8 设备管理"></a>1.8 设备管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.png" alt="设备管理"></p>
-<h3 id="1-9-OTA管理"><a href="#1-9-OTA管理" class="headerlink" title="1.9 OTA管理"></a>1.9 OTA管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OTA%E7%AE%A1%E7%90%86.png" alt="OTA管理"></p>
-<h3 id="1-10-视频监控"><a href="#1-10-视频监控" class="headerlink" title="1.10 视频监控"></a>1.10 视频监控</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%A7%86%E9%A2%91%E7%9B%91%E6%8E%A7.png" alt="视频监控"></p>
-<h3 id="1-11-用户中心"><a href="#1-11-用户中心" class="headerlink" title="1.11 用户中心"></a>1.11 用户中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%94%A8%E6%88%B7%E4%B8%AD%E5%BF%83.png" alt="用户中心"></p>
-<h2 id="2-阿里云"><a href="#2-阿里云" class="headerlink" title="2. 阿里云"></a>2. 阿里云</h2><h3 id="2-1-温室监控大屏"><a href="#2-1-温室监控大屏" class="headerlink" title="2.1 温室监控大屏"></a>2.1 温室监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%B8%A9%E5%AE%A4%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="温室监控大屏"></p>
-<h3 id="2-2-树莓派搭建机房监控应用"><a href="#2-2-树莓派搭建机房监控应用" class="headerlink" title="2.2 树莓派搭建机房监控应用"></a>2.2 树莓派搭建机房监控应用</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
-<h2 id="3-对比与分析"><a href="#3-对比与分析" class="headerlink" title="3. 对比与分析"></a>3. 对比与分析</h2><h3 id="3-1-关于应用开发"><a href="#3-1-关于应用开发" class="headerlink" title="3.1 关于应用开发"></a>3.1 关于应用开发</h3><p>博达工业云与阿里云都提供web可视化开发，都需要将组件绑定对应的数据流。</p>
-<p>阿里云提供移动可视化开发，支持生成HTML5应用并绑定域名发布，但部分手机存在兼容性问题。</p>
-<p>博达工业云提供微信公众号、Android/IOS APP，需要了解博达的APP开发方式。</p>
-<p>阿里云提供个人组件开发，博达工业云可能需要开放相关接口才能进行个人组件开发。</p>
-<h3 id="3-2-关于设备接入"><a href="#3-2-关于设备接入" class="headerlink" title="3.2 关于设备接入"></a>3.2 关于设备接入</h3><p>阿里云物联网平台目前支持MQTT、CoAP、HTTP接入，如果要使用modbus，需要使用边缘计算平台并创建对应实例。</p>
-<p>目前还不了解博达工业云的设备接入方式，是否必须使用物联网硬件？是否提供设备接入相关API？</p>
-<h3 id="3-3-关于设备安全认证"><a href="#3-3-关于设备安全认证" class="headerlink" title="3.3 关于设备安全认证"></a>3.3 关于设备安全认证</h3><p>阿里云提供IoT设备身份认证ID²（Internet Device ID）。</p>
-<p>ID²是一种物联网设备的可信身份标识，具备不可篡改、不可伪造、全球唯一的安全属性。</p>
-<p>目前还不了解博达工业云的设备安全认证方面的功能，是否能实现设备自注册，以及由平台来自动分配设备ID，保证设备ID唯一。</p>
-<p>关于设备安全认证，最好是能烧录到设备的一个固定地址，设置为只读。</p>
-<h3 id="3-4-关于角色管理"><a href="#3-4-关于角色管理" class="headerlink" title="3.4 关于角色管理"></a>3.4 关于角色管理</h3><p>博达工业云提供详细的角色权限管理，包含平台概况、监控大屏、云组态、在线监测等等。</p>
-<p>阿里云需要开通账号功能才可以进行权限管理，目前暂不了解其是否具有更详细的权限管理功能。</p>
-<h3 id="3-5-关于网站应用"><a href="#3-5-关于网站应用" class="headerlink" title="3.5 关于网站应用"></a>3.5 关于网站应用</h3><p>阿里云为个人开发者和企业用户提供了物联网应用开发以及后台项目管理，界面具有普适性。</p>
-<p>博达工业云提供私有化部署，界面可定制。</p>
-<p>考虑到数据的可迁移性，最好是能采用类似博达的后台前端管理方案，当需要更换服务器时，能更好地迁移网站数据。</p>
-<h3 id="3-6-关于云平台选择及兼容性"><a href="#3-6-关于云平台选择及兼容性" class="headerlink" title="3.6 关于云平台选择及兼容性"></a>3.6 关于云平台选择及兼容性</h3><p>目前云平台众多，虽然数据传输方面采用的协议都大同小异，但是在接入平台时，各家云平台是互不兼容的，这是由于各家云平台服务器地址不同、设备认证方式不同。</p>
-<p>而如果要使用某一家云平台自带的可视化开发时，那么必须先创建对应的产品，设备接入方面也必须要与这家云平台做适配。</p>
-<h3 id="3-7-关于边缘计算"><a href="#3-7-关于边缘计算" class="headerlink" title="3.7 关于边缘计算"></a>3.7 关于边缘计算</h3><p>博达暂不支持边缘计算。</p>
-<p>阿里云提供边缘计算服务。</p>
-<h3 id="3-8-关于文件管理"><a href="#3-8-关于文件管理" class="headerlink" title="3.8 关于文件管理"></a>3.8 关于文件管理</h3><p>博达不支持文件传输，OTA固件升级仅针对智能网关。</p>
-<p>阿里云支持文件传输，一个账号下的总容量上限为1G。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
@@ -2635,6 +2581,109 @@
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%8F%90%E4%BA%A4%E5%87%BA%E5%B7%AE.png" alt="提交出差"></p>
 <h3 id="3-2-主管审批出差申请"><a href="#3-2-主管审批出差申请" class="headerlink" title="3.2 主管审批出差申请"></a>3.2 主管审批出差申请</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%B8%BB%E7%AE%A1%E5%AE%A1%E6%89%B9.png" alt="主管审批"></p>
 <h3 id="3-3-审批通过"><a href="#3-3-审批通过" class="headerlink" title="3.3 审批通过"></a>3.3 审批通过</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%AE%A1%E6%89%B9%E9%80%9A%E8%BF%87.png" alt="审批通过"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用批处理脚本修改hosts文件</title>
+    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<blockquote>
+<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
+</blockquote>
+<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
+<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
+<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
+<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
+<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
+<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>批处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博达工业云与阿里云对比</title>
+    <url>/2021/03/31/%E5%8D%9A%E8%BE%BE%E5%B7%A5%E4%B8%9A%E4%BA%91%E4%B8%8E%E9%98%BF%E9%87%8C%E4%BA%91%E5%AF%B9%E6%AF%94/</url>
+    <content><![CDATA[<h2 id="1-博达工业云"><a href="#1-博达工业云" class="headerlink" title="1. 博达工业云"></a>1. 博达工业云</h2><h3 id="1-1-平台概况"><a href="#1-1-平台概况" class="headerlink" title="1.1 平台概况"></a>1.1 平台概况</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B9%B3%E5%8F%B0%E6%A6%82%E5%86%B5.png" alt="平台概况"></p>
+<h3 id="1-2-监控大屏"><a href="#1-2-监控大屏" class="headerlink" title="1.2 监控大屏"></a>1.2 监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="监控大屏"></p>
+<h3 id="1-3-云组态"><a href="#1-3-云组态" class="headerlink" title="1.3 云组态"></a>1.3 云组态</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E7%BB%84%E6%80%81.png" alt="云组态"></p>
+<h3 id="1-4-设备监测"><a href="#1-4-设备监测" class="headerlink" title="1.4  设备监测"></a>1.4  设备监测</h3><p><img src="res/%E8%AE%BE%E5%A4%87%E7%9B%91%E6%B5%8B.png" alt="设备监测"></p>
+<h3 id="1-5-报警中心"><a href="#1-5-报警中心" class="headerlink" title="1.5 报警中心"></a>1.5 报警中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%8A%A5%E8%AD%A6%E4%B8%AD%E5%BF%83.png" alt="报警中心"></p>
+<h3 id="1-6-数据中心"><a href="#1-6-数据中心" class="headerlink" title="1.6 数据中心"></a>1.6 数据中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.png" alt="数据中心"></p>
+<h3 id="1-7-项目管理"><a href="#1-7-项目管理" class="headerlink" title="1.7 项目管理"></a>1.7 项目管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86.png" alt="项目管理"></p>
+<h3 id="1-8-设备管理"><a href="#1-8-设备管理" class="headerlink" title="1.8 设备管理"></a>1.8 设备管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.png" alt="设备管理"></p>
+<h3 id="1-9-OTA管理"><a href="#1-9-OTA管理" class="headerlink" title="1.9 OTA管理"></a>1.9 OTA管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OTA%E7%AE%A1%E7%90%86.png" alt="OTA管理"></p>
+<h3 id="1-10-视频监控"><a href="#1-10-视频监控" class="headerlink" title="1.10 视频监控"></a>1.10 视频监控</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%A7%86%E9%A2%91%E7%9B%91%E6%8E%A7.png" alt="视频监控"></p>
+<h3 id="1-11-用户中心"><a href="#1-11-用户中心" class="headerlink" title="1.11 用户中心"></a>1.11 用户中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%94%A8%E6%88%B7%E4%B8%AD%E5%BF%83.png" alt="用户中心"></p>
+<h2 id="2-阿里云"><a href="#2-阿里云" class="headerlink" title="2. 阿里云"></a>2. 阿里云</h2><h3 id="2-1-温室监控大屏"><a href="#2-1-温室监控大屏" class="headerlink" title="2.1 温室监控大屏"></a>2.1 温室监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%B8%A9%E5%AE%A4%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="温室监控大屏"></p>
+<h3 id="2-2-树莓派搭建机房监控应用"><a href="#2-2-树莓派搭建机房监控应用" class="headerlink" title="2.2 树莓派搭建机房监控应用"></a>2.2 树莓派搭建机房监控应用</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
+<h2 id="3-对比与分析"><a href="#3-对比与分析" class="headerlink" title="3. 对比与分析"></a>3. 对比与分析</h2><h3 id="3-1-关于应用开发"><a href="#3-1-关于应用开发" class="headerlink" title="3.1 关于应用开发"></a>3.1 关于应用开发</h3><p>博达工业云与阿里云都提供web可视化开发，都需要将组件绑定对应的数据流。</p>
+<p>阿里云提供移动可视化开发，支持生成HTML5应用并绑定域名发布，但部分手机存在兼容性问题。</p>
+<p>博达工业云提供微信公众号、Android/IOS APP，需要了解博达的APP开发方式。</p>
+<p>阿里云提供个人组件开发，博达工业云可能需要开放相关接口才能进行个人组件开发。</p>
+<h3 id="3-2-关于设备接入"><a href="#3-2-关于设备接入" class="headerlink" title="3.2 关于设备接入"></a>3.2 关于设备接入</h3><p>阿里云物联网平台目前支持MQTT、CoAP、HTTP接入，如果要使用modbus，需要使用边缘计算平台并创建对应实例。</p>
+<p>目前还不了解博达工业云的设备接入方式，是否必须使用物联网硬件？是否提供设备接入相关API？</p>
+<h3 id="3-3-关于设备安全认证"><a href="#3-3-关于设备安全认证" class="headerlink" title="3.3 关于设备安全认证"></a>3.3 关于设备安全认证</h3><p>阿里云提供IoT设备身份认证ID²（Internet Device ID）。</p>
+<p>ID²是一种物联网设备的可信身份标识，具备不可篡改、不可伪造、全球唯一的安全属性。</p>
+<p>目前还不了解博达工业云的设备安全认证方面的功能，是否能实现设备自注册，以及由平台来自动分配设备ID，保证设备ID唯一。</p>
+<p>关于设备安全认证，最好是能烧录到设备的一个固定地址，设置为只读。</p>
+<h3 id="3-4-关于角色管理"><a href="#3-4-关于角色管理" class="headerlink" title="3.4 关于角色管理"></a>3.4 关于角色管理</h3><p>博达工业云提供详细的角色权限管理，包含平台概况、监控大屏、云组态、在线监测等等。</p>
+<p>阿里云需要开通账号功能才可以进行权限管理，目前暂不了解其是否具有更详细的权限管理功能。</p>
+<h3 id="3-5-关于网站应用"><a href="#3-5-关于网站应用" class="headerlink" title="3.5 关于网站应用"></a>3.5 关于网站应用</h3><p>阿里云为个人开发者和企业用户提供了物联网应用开发以及后台项目管理，界面具有普适性。</p>
+<p>博达工业云提供私有化部署，界面可定制。</p>
+<p>考虑到数据的可迁移性，最好是能采用类似博达的后台前端管理方案，当需要更换服务器时，能更好地迁移网站数据。</p>
+<h3 id="3-6-关于云平台选择及兼容性"><a href="#3-6-关于云平台选择及兼容性" class="headerlink" title="3.6 关于云平台选择及兼容性"></a>3.6 关于云平台选择及兼容性</h3><p>目前云平台众多，虽然数据传输方面采用的协议都大同小异，但是在接入平台时，各家云平台是互不兼容的，这是由于各家云平台服务器地址不同、设备认证方式不同。</p>
+<p>而如果要使用某一家云平台自带的可视化开发时，那么必须先创建对应的产品，设备接入方面也必须要与这家云平台做适配。</p>
+<h3 id="3-7-关于边缘计算"><a href="#3-7-关于边缘计算" class="headerlink" title="3.7 关于边缘计算"></a>3.7 关于边缘计算</h3><p>博达暂不支持边缘计算。</p>
+<p>阿里云提供边缘计算服务。</p>
+<h3 id="3-8-关于文件管理"><a href="#3-8-关于文件管理" class="headerlink" title="3.8 关于文件管理"></a>3.8 关于文件管理</h3><p>博达不支持文件传输，OTA固件升级仅针对智能网关。</p>
+<p>阿里云支持文件传输，一个账号下的总容量上限为1G。</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -2756,6 +2805,110 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于树莓派的智能箱包开发环境搭建</title>
+    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
+
+<p>安装完毕，重启树莓派</p>
+<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
+<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Car和Home，我选的Home </li>
+<li>Device name和AirPlay Device Name，写PiMusic </li>
+<li>密码，不输入 </li>
+<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
+<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
+</ol>
+<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">登陆网址</th>
+<th align="left">用户名</th>
+<th align="left">默认密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">树莓派IP:8000</td>
+<td align="left">webiopi</td>
+<td align="left">raspberry</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -3227,62 +3380,6 @@
       <tags>
         <tag>技术</tag>
         <tag>EtherCAT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于树莓派的智能箱包开发环境搭建</title>
-    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
-
-<p>安装完毕，重启树莓派</p>
-<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
-<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Car和Home，我选的Home </li>
-<li>Device name和AirPlay Device Name，写PiMusic </li>
-<li>密码，不输入 </li>
-<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
-<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
-</ol>
-<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">登陆网址</th>
-<th align="left">用户名</th>
-<th align="left">默认密码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">树莓派IP:8000</td>
-<td align="left">webiopi</td>
-<td align="left">raspberry</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
