@@ -60,45 +60,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/2020/04/28/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -128,6 +89,45 @@
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/pImieX1fORoVF4c.png" alt="封装图修改器件属性"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tUdA57sG6MQpLNe.png" alt="8Pin排针封装"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/2020/04/27/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -181,33 +181,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(四)</title>
     <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -238,6 +211,59 @@
         <tag>技术</tag>
         <tag>AltiumDesigner</tag>
         <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anaconda下安装opencv</title>
+    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+
+<p>遇到如下问题</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chocolatey安装与使用</title>
+    <url>/2022/05/06/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
+</blockquote>
+<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Chocolatey</tag>
       </tags>
   </entry>
   <entry>
@@ -411,32 +437,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Doxygen</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chocolatey安装与使用</title>
-    <url>/2022/05/06/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
-</blockquote>
-<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure>
-
-<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Chocolatey</tag>
       </tags>
   </entry>
   <entry>
@@ -624,96 +624,138 @@
       </tags>
   </entry>
   <entry>
-    <title>MQTT剩余长度计算</title>
-    <url>/2022/01/21/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256</code><em><code>1024</code></em><code>1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
-<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
-<thead>
-<tr>
-<th>bit7</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>进位标志</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-</tr>
-</tbody></table>
-<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
+    <title>Hexo介绍</title>
+    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
+<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
+<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，输入以下命令检查安装是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功后则会显示具体版本号，大致如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
 <table>
 <thead>
 <tr>
-<th>进位标志</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
+<th align="left">Hexo 版本</th>
+<th align="left">最低兼容 Node.js 版本</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1(有进位)</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
+<td align="left">5.0+</td>
+<td align="left">10.13.0</td>
+</tr>
+<tr>
+<td align="left">4.1 - 4.2</td>
+<td align="left">8.10</td>
+</tr>
+<tr>
+<td align="left">4.0</td>
+<td align="left">8.6</td>
+</tr>
+<tr>
+<td align="left">3.3 - 3.9</td>
+<td align="left">6.9</td>
+</tr>
+<tr>
+<td align="left">3.2 - 3.3</td>
+<td align="left">0.12</td>
+</tr>
+<tr>
+<td align="left">3.0 - 3.1</td>
+<td align="left">0.10 or iojs</td>
+</tr>
+<tr>
+<td align="left">0.0.1 - 2.8</td>
+<td align="left">0.10</td>
 </tr>
 </tbody></table>
-<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
+<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>然后在终端输入如下命令进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，提示信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p><code>HexoBlog</code>文件夹目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
+
 <table>
 <thead>
 <tr>
-<th>bit14</th>
-<th>bit13</th>
-<th>bit12</th>
-<th>bit11</th>
-<th>bit10</th>
-<th>bit9</th>
-<th>bit8</th>
-<th>bit7</th>
+<th align="left">文件/文件夹</th>
+<th align="left">描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
+<td align="left"><code>node_modules</code></td>
+<td align="left">模块文件夹，存放下载的模块。</td>
+</tr>
+<tr>
+<td align="left"><code>scaffolds</code></td>
+<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
+</tr>
+<tr>
+<td align="left"><code>themes</code></td>
+<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
+</tr>
+<tr>
+<td align="left"><code>.gitignore</code></td>
+<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
+</tr>
+<tr>
+<td align="left"><code>_config.landscape.yml</code></td>
+<td align="left">默认的主题配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>_config.yml</code></td>
+<td align="left">网站的配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
 </tr>
 </tbody></table>
-<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
+<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
+<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
+<p>终端输入如下命令进行编译、预览：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> int32 <span class="title">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>MQTT</tag>
-        <tag>IoT</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -965,138 +1007,135 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo介绍</title>
-    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
-<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
-<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，输入以下命令检查安装是否成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>成功后则会显示具体版本号，大致如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
-<table>
+    <title>MQTT剩余长度计算</title>
+    <url>/2022/01/21/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256</code><em><code>1024</code></em><code>1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
+<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
 <thead>
 <tr>
-<th align="left">Hexo 版本</th>
-<th align="left">最低兼容 Node.js 版本</th>
+<th>bit7</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">5.0+</td>
-<td align="left">10.13.0</td>
-</tr>
-<tr>
-<td align="left">4.1 - 4.2</td>
-<td align="left">8.10</td>
-</tr>
-<tr>
-<td align="left">4.0</td>
-<td align="left">8.6</td>
-</tr>
-<tr>
-<td align="left">3.3 - 3.9</td>
-<td align="left">6.9</td>
-</tr>
-<tr>
-<td align="left">3.2 - 3.3</td>
-<td align="left">0.12</td>
-</tr>
-<tr>
-<td align="left">3.0 - 3.1</td>
-<td align="left">0.10 or iojs</td>
-</tr>
-<tr>
-<td align="left">0.0.1 - 2.8</td>
-<td align="left">0.10</td>
+<td>进位标志</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
 </tr>
 </tbody></table>
-<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>然后在终端输入如下命令进行初始化：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成后，提示信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-
-<p><code>HexoBlog</code>文件夹目录结构如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
-
+<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
 <table>
 <thead>
 <tr>
-<th align="left">文件/文件夹</th>
-<th align="left">描述</th>
+<th>进位标志</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>node_modules</code></td>
-<td align="left">模块文件夹，存放下载的模块。</td>
-</tr>
-<tr>
-<td align="left"><code>scaffolds</code></td>
-<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
-</tr>
-<tr>
-<td align="left"><code>source</code></td>
-<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
-</tr>
-<tr>
-<td align="left"><code>themes</code></td>
-<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
-</tr>
-<tr>
-<td align="left"><code>.gitignore</code></td>
-<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
-</tr>
-<tr>
-<td align="left"><code>_config.landscape.yml</code></td>
-<td align="left">默认的主题配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>_config.yml</code></td>
-<td align="left">网站的配置信息</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
-</tr>
-<tr>
-<td align="left"><code>package.json</code></td>
-<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+<td>1(有进位)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody></table>
-<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
-<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
-<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
-<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
-<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
-<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
-<p>终端输入如下命令进行编译、预览：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
+<table>
+<thead>
+<tr>
+<th>bit14</th>
+<th>bit13</th>
+<th>bit12</th>
+<th>bit11</th>
+<th>bit10</th>
+<th>bit9</th>
+<th>bit8</th>
+<th>bit7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
 
-<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hexo%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C.png" alt="预览效果"></p>
+<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> int32 <span class="title">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Hexo</tag>
+        <tag>MQTT</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
@@ -1483,45 +1522,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Typora使用</title>
     <url>/2021/05/20/Typora%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
@@ -1588,28 +1588,6 @@
         <tag>技术</tag>
         <tag>Markdown</tag>
         <tag>Typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xilinx静态库制作与使用</title>
-    <url>/2021/07/08/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
-<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
-<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
-<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
-<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
-<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
-<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Xilinx</tag>
       </tags>
   </entry>
   <entry>
@@ -1826,81 +1804,25 @@
       </tags>
   </entry>
   <entry>
-    <title>uniCloud通讯录实战</title>
-    <url>/2021/07/23/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/</url>
-    <content><![CDATA[<h3 id="1-新建uni-app项目——通讯录"><a href="#1-新建uni-app项目——通讯录" class="headerlink" title="1 新建uni-app项目——通讯录"></a>1 新建uni-app项目——通讯录</h3><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有HBuilder账户，可以根据提示去注册）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150057300.png" alt="image-20210723150057300"></p>
-<h3 id="2-创建云服务空间并关联项目"><a href="#2-创建云服务空间并关联项目" class="headerlink" title="2 创建云服务空间并关联项目"></a>2 创建云服务空间并关联项目</h3><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150241790.png" alt="image-20210723150241790"></p>
-<p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150453854.png" alt="image-20210723150453854"></p>
-<h3 id="3-创建数据表"><a href="#3-创建数据表" class="headerlink" title="3 创建数据表"></a>3 创建数据表</h3><p>在Web控制台的云数据库下点击<kbd>创建数据表</kbd>：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150749770.png" alt="image-20210723150749770"></p>
-<p>点击表结构，编辑 <code>read</code> 属性值为 <code>true</code>：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150946596.png" alt="image-20210723150946596"></p>
-<h3 id="4-录入数据"><a href="#4-录入数据" class="headerlink" title="4 录入数据"></a>4 录入数据</h3><p>点击 <kbd>添加记录</kbd>：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723151345693.png" alt="image-20210723151345693"></p>
-<p>添加记录后的数据列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723151613854.png" alt="image-20210723151613854"></p>
-<h3 id="5-前端创建组件，读取数据表"><a href="#5-前端创建组件，读取数据表" class="headerlink" title="5 前端创建组件，读取数据表"></a>5 前端创建组件，读取数据表</h3><p>在 <code>pages</code> 目录上单击右键，点击<kbd>新建页面</kbd>，新建 <code>list</code> 页面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723151857950.png" alt="image-20210723151857950"></p>
-<p>点击预览，运行当前项目，然后修改 <code>list.vue</code> 如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&#123;&#123;data&#125;&#125;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>运行出现如下错误：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QQ%E5%9B%BE%E7%89%8720210723153401.png" alt="QQ图片20210723153401"></p>
-<p>在 <code>database</code> 目录上单击右键，点击<kbd>下载所有DB schema及扩展校验函数</kbd>，刷新后即可看到查询到的数据：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723153725630.png" alt="image-20210723153725630"></p>
-<p>在 <a href="https://ext.dcloud.net.cn/">DCloud 插件市场</a>中搜索 <code>uni-ui</code> ，点击<kbd>使用HBuilderX 导入插件</kbd>：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723154745197.png" alt="image-20210723154745197"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723154926104.png" alt="image-20210723154926104"></p>
-<p>修改 <code>list.vue</code> 如下，实现通讯录列表：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&lt;uni-list&gt;</span><br><span class="line">					&lt;uni-list-item v-for&#x3D;&quot;item in data&quot; :key&#x3D;&quot;item._id&quot; :title&#x3D;&quot;item.name&quot; :note&#x3D;&quot;item.phone&quot; link&gt;&lt;&#x2F;uni-list-item&gt;</span><br><span class="line">				&lt;&#x2F;uni-list&gt;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>点击预览，出现scss/sass编译插件未安装的错误，按照提示去安装即可：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723155633815.png" alt="image-20210723155633815"></p>
-<p>修改 <code>list.vue</code> 如下，实现长按删除记录：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db ref&#x3D;&quot;udb&quot; v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&lt;uni-list&gt;</span><br><span class="line">					&lt;uni-list-item v-for&#x3D;&quot;item in data&quot; @longpress.native&#x3D;&quot;rmItem(item._id)&quot; :key&#x3D;&quot;item._id&quot; :title&#x3D;&quot;item.name&quot; :note&#x3D;&quot;item.phone&quot; link&gt;&lt;&#x2F;uni-list-item&gt;</span><br><span class="line">				&lt;&#x2F;uni-list&gt;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			rmItem(id) &#123;</span><br><span class="line">				this.$refs.udb.remove(id)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>长按后效果如下：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723160718919.png" alt="image-20210723160718919"></p>
-<p>点击确定会提示权限校验未通过：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723160753134.png" alt="image-20210723160753134"></p>
-<p>可以修改 <code>database/contacts.schema.json</code> 文件的 <code>delete</code> 字段值为 <code>true</code>，然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，然后再点击确定就可以删除，删除后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723161036613.png" alt="image-20210723161036613"></p>
-<p>在 <code>pages</code> 目录上单击右键，点击<kbd>新建页面</kbd>，新建 <code>add</code> 页面，修改 <code>add.vue</code> 如下，实现新增记录功能：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.name&quot; placeholder&#x3D;&quot;姓名&quot; &#x2F;&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.phone&quot; placeholder&#x3D;&quot;电话&quot; &#x2F;&gt;</span><br><span class="line">		&lt;button type&#x3D;&quot;default&quot; @click&#x3D;&quot;submit&quot;&gt;提交&lt;&#x2F;button&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				item:&#123;</span><br><span class="line">					&quot;name&quot;:&quot;&quot;,</span><br><span class="line">					&quot;phone&quot;:&quot;&quot;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			submit() &#123;</span><br><span class="line">				const db &#x3D; uniCloud.database();</span><br><span class="line">				db.collection(&#39;contacts&#39;).add(this.item).then(e&#x3D;&gt;&#123;</span><br><span class="line">					console.log(e)</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>运行效果如下：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723163530115.png" alt="image-20210723163530115"></p>
-<p>出现权限校验未通过，只需修改 <code>database/contacts.schema.json</code> 文件的 <code>create</code> 字段值为 <code>true</code>，然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，然后再点击确定就可以添加，添加后出现错误：数据库验证失败：提交的字段[&quot;name&quot;,&quot;phone&quot;]在本地数据表的schema文件中不存在”。</p>
-<p>修改 <code>database/contacts.schema.json</code> 文件如下所示：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;bsonType&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">	<span class="attr">&quot;required&quot;</span>: [],</span><br><span class="line">	<span class="attr">&quot;permission&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;read&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;create&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;update&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">		<span class="attr">&quot;delete&quot;</span>: <span class="literal">true</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">&quot;properties&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;_id&quot;</span>: &#123;</span><br><span class="line">			<span class="attr">&quot;description&quot;</span>: <span class="string">&quot;ID，系统自动生成&quot;</span></span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>:&#123;&#125;,</span><br><span class="line">		<span class="attr">&quot;phone&quot;</span>:&#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，再次提交后效果如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723164158113.png" alt="image-20210723164158113"></p>
-<p>回到列表页，发现已经添加成功了：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723164248820.png" alt="image-20210723164248820"></p>
-<p>在 <code>pages</code> 目录上单击右键，点击<kbd>新建页面</kbd>，新建 <code>update</code> 页面，修改 <code>update.vue</code> 如下，实现更新记录功能：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.name&quot; placeholder&#x3D;&quot;姓名&quot; &#x2F;&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.phone&quot; placeholder&#x3D;&quot;电话&quot; &#x2F;&gt;</span><br><span class="line">		&lt;button type&#x3D;&quot;default&quot; @click&#x3D;&quot;submit&quot;&gt;更新&lt;&#x2F;button&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				item:&#123;</span><br><span class="line">					&quot;_id&quot;:&quot;&quot;,</span><br><span class="line">					&quot;name&quot;:&quot;&quot;,</span><br><span class="line">					&quot;phone&quot;:&quot;&quot;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad(&#123;item&#125;) &#123;</span><br><span class="line">			this.item &#x3D; JSON.parse(item)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			submit() &#123;</span><br><span class="line">				const db &#x3D; uniCloud.database();</span><br><span class="line">				let item &#x3D; &#123;...this.item&#125;</span><br><span class="line">				delete item._id</span><br><span class="line">				db.collection(&#39;contacts&#39;).doc(this.item._id).update(item).then(e&#x3D;&gt;&#123;</span><br><span class="line">					console.log(e)</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>修改 <code>list.vue</code> 如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db ref&#x3D;&quot;udb&quot; v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&lt;uni-list&gt;</span><br><span class="line">					&lt;uni-list-item v-for&#x3D;&quot;item in data&quot; @click.native&#x3D;&quot;updateFn(item)&quot; @longpress.native&#x3D;&quot;rmItem(item._id)&quot; :key&#x3D;&quot;item._id&quot; :title&#x3D;&quot;item.name&quot; :note&#x3D;&quot;item.phone&quot; link&gt;&lt;&#x2F;uni-list-item&gt;</span><br><span class="line">				&lt;&#x2F;uni-list&gt;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			updateFn(item)&#123;</span><br><span class="line">				uni.navigateTo(&#123;</span><br><span class="line">					url: &#39;..&#x2F;update&#x2F;update?item&#x3D;&#39;+JSON.stringify(item),</span><br><span class="line">					success: res &#x3D;&gt; &#123;&#125;,</span><br><span class="line">					fail: () &#x3D;&gt; &#123;&#125;,</span><br><span class="line">					complete: () &#x3D;&gt; &#123;&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;,</span><br><span class="line">			rmItem(id) &#123;</span><br><span class="line">				this.$refs.udb.remove(id)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>修改 <code>database/contacts.schema.json</code> 文件如下所示：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;bsonType&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">	<span class="attr">&quot;required&quot;</span>: [],</span><br><span class="line">	<span class="attr">&quot;permission&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;read&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;create&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;update&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;delete&quot;</span>: <span class="literal">true</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">&quot;properties&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;_id&quot;</span>: &#123;</span><br><span class="line">			<span class="attr">&quot;description&quot;</span>: <span class="string">&quot;ID，系统自动生成&quot;</span></span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>:&#123;&#125;,</span><br><span class="line">		<span class="attr">&quot;phone&quot;</span>:&#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，预览运行后，在list页面单击联系人即可进入修改页面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723170745238.png" alt="image-20210723170745238"></p>
-<p>点击更新后，回到list页面刷新后：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723170827335.png" alt="image-20210723170827335"></p>
+    <title>Xilinx静态库制作与使用</title>
+    <url>/2021/07/08/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
+<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
+<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
+<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
+<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
+<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
+<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>uni-app</tag>
+        <tag>Xilinx</tag>
       </tags>
   </entry>
   <entry>
@@ -2349,40 +2271,74 @@
       </tags>
   </entry>
   <entry>
-    <title>uniCloud使用</title>
-    <url>/2021/07/22/uniCloud%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
-</blockquote>
-<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
-<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
-<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
-<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
-<p>编辑云函数内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.main = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+    <title>uniCloud通讯录实战</title>
+    <url>/2021/07/23/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/</url>
+    <content><![CDATA[<h3 id="1-新建uni-app项目——通讯录"><a href="#1-新建uni-app项目——通讯录" class="headerlink" title="1 新建uni-app项目——通讯录"></a>1 新建uni-app项目——通讯录</h3><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有HBuilder账户，可以根据提示去注册）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150057300.png" alt="image-20210723150057300"></p>
+<h3 id="2-创建云服务空间并关联项目"><a href="#2-创建云服务空间并关联项目" class="headerlink" title="2 创建云服务空间并关联项目"></a>2 创建云服务空间并关联项目</h3><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150241790.png" alt="image-20210723150241790"></p>
+<p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150453854.png" alt="image-20210723150453854"></p>
+<h3 id="3-创建数据表"><a href="#3-创建数据表" class="headerlink" title="3 创建数据表"></a>3 创建数据表</h3><p>在Web控制台的云数据库下点击<kbd>创建数据表</kbd>：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150749770.png" alt="image-20210723150749770"></p>
+<p>点击表结构，编辑 <code>read</code> 属性值为 <code>true</code>：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723150946596.png" alt="image-20210723150946596"></p>
+<h3 id="4-录入数据"><a href="#4-录入数据" class="headerlink" title="4 录入数据"></a>4 录入数据</h3><p>点击 <kbd>添加记录</kbd>：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723151345693.png" alt="image-20210723151345693"></p>
+<p>添加记录后的数据列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723151613854.png" alt="image-20210723151613854"></p>
+<h3 id="5-前端创建组件，读取数据表"><a href="#5-前端创建组件，读取数据表" class="headerlink" title="5 前端创建组件，读取数据表"></a>5 前端创建组件，读取数据表</h3><p>在 <code>pages</code> 目录上单击右键，点击<kbd>新建页面</kbd>，新建 <code>list</code> 页面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723151857950.png" alt="image-20210723151857950"></p>
+<p>点击预览，运行当前项目，然后修改 <code>list.vue</code> 如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&#123;&#123;data&#125;&#125;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
-<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
-<p>可以在web控制台查看上传的云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
-<p>修改 <code>pages/index/index.vue</code> ：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class&#x3D;&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class&#x3D;&quot;logo&quot; src&#x3D;&quot;&#x2F;static&#x2F;logo.png&quot;&gt;&lt;&#x2F;image&gt;</span><br><span class="line">		&lt;view class&#x3D;&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class&#x3D;&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;&#x2F;text&gt;</span><br><span class="line">		&lt;&#x2F;view&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#39;Hello&#39;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) &#x3D;&gt; &#123;</span><br><span class="line">					this.title &#x3D; e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+<p>运行出现如下错误：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QQ%E5%9B%BE%E7%89%8720210723153401.png" alt="QQ图片20210723153401"></p>
+<p>在 <code>database</code> 目录上单击右键，点击<kbd>下载所有DB schema及扩展校验函数</kbd>，刷新后即可看到查询到的数据：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723153725630.png" alt="image-20210723153725630"></p>
+<p>在 <a href="https://ext.dcloud.net.cn/">DCloud 插件市场</a>中搜索 <code>uni-ui</code> ，点击<kbd>使用HBuilderX 导入插件</kbd>：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723154745197.png" alt="image-20210723154745197"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723154926104.png" alt="image-20210723154926104"></p>
+<p>修改 <code>list.vue</code> 如下，实现通讯录列表：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&lt;uni-list&gt;</span><br><span class="line">					&lt;uni-list-item v-for&#x3D;&quot;item in data&quot; :key&#x3D;&quot;item._id&quot; :title&#x3D;&quot;item.name&quot; :note&#x3D;&quot;item.phone&quot; link&gt;&lt;&#x2F;uni-list-item&gt;</span><br><span class="line">				&lt;&#x2F;uni-list&gt;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
 
-<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
-<p><code>uni.callFunction</code> 的好处：</p>
-<ul>
-<li>更安全，黑客攻击都找不到URL入口。</li>
-<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
-<li>自带 <code>uni-id</code> 的token。</li>
-</ul>
+<p>点击预览，出现scss/sass编译插件未安装的错误，按照提示去安装即可：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723155633815.png" alt="image-20210723155633815"></p>
+<p>修改 <code>list.vue</code> 如下，实现长按删除记录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db ref&#x3D;&quot;udb&quot; v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&lt;uni-list&gt;</span><br><span class="line">					&lt;uni-list-item v-for&#x3D;&quot;item in data&quot; @longpress.native&#x3D;&quot;rmItem(item._id)&quot; :key&#x3D;&quot;item._id&quot; :title&#x3D;&quot;item.name&quot; :note&#x3D;&quot;item.phone&quot; link&gt;&lt;&#x2F;uni-list-item&gt;</span><br><span class="line">				&lt;&#x2F;uni-list&gt;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			rmItem(id) &#123;</span><br><span class="line">				this.$refs.udb.remove(id)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>长按后效果如下：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723160718919.png" alt="image-20210723160718919"></p>
+<p>点击确定会提示权限校验未通过：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723160753134.png" alt="image-20210723160753134"></p>
+<p>可以修改 <code>database/contacts.schema.json</code> 文件的 <code>delete</code> 字段值为 <code>true</code>，然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，然后再点击确定就可以删除，删除后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723161036613.png" alt="image-20210723161036613"></p>
+<p>在 <code>pages</code> 目录上单击右键，点击<kbd>新建页面</kbd>，新建 <code>add</code> 页面，修改 <code>add.vue</code> 如下，实现新增记录功能：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.name&quot; placeholder&#x3D;&quot;姓名&quot; &#x2F;&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.phone&quot; placeholder&#x3D;&quot;电话&quot; &#x2F;&gt;</span><br><span class="line">		&lt;button type&#x3D;&quot;default&quot; @click&#x3D;&quot;submit&quot;&gt;提交&lt;&#x2F;button&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				item:&#123;</span><br><span class="line">					&quot;name&quot;:&quot;&quot;,</span><br><span class="line">					&quot;phone&quot;:&quot;&quot;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			submit() &#123;</span><br><span class="line">				const db &#x3D; uniCloud.database();</span><br><span class="line">				db.collection(&#39;contacts&#39;).add(this.item).then(e&#x3D;&gt;&#123;</span><br><span class="line">					console.log(e)</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运行效果如下：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723163530115.png" alt="image-20210723163530115"></p>
+<p>出现权限校验未通过，只需修改 <code>database/contacts.schema.json</code> 文件的 <code>create</code> 字段值为 <code>true</code>，然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，然后再点击确定就可以添加，添加后出现错误：数据库验证失败：提交的字段[&quot;name&quot;,&quot;phone&quot;]在本地数据表的schema文件中不存在”。</p>
+<p>修改 <code>database/contacts.schema.json</code> 文件如下所示：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;bsonType&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">	<span class="attr">&quot;required&quot;</span>: [],</span><br><span class="line">	<span class="attr">&quot;permission&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;read&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;create&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;update&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">		<span class="attr">&quot;delete&quot;</span>: <span class="literal">true</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">&quot;properties&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;_id&quot;</span>: &#123;</span><br><span class="line">			<span class="attr">&quot;description&quot;</span>: <span class="string">&quot;ID，系统自动生成&quot;</span></span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>:&#123;&#125;,</span><br><span class="line">		<span class="attr">&quot;phone&quot;</span>:&#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，再次提交后效果如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723164158113.png" alt="image-20210723164158113"></p>
+<p>回到列表页，发现已经添加成功了：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723164248820.png" alt="image-20210723164248820"></p>
+<p>在 <code>pages</code> 目录上单击右键，点击<kbd>新建页面</kbd>，新建 <code>update</code> 页面，修改 <code>update.vue</code> 如下，实现更新记录功能：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.name&quot; placeholder&#x3D;&quot;姓名&quot; &#x2F;&gt;</span><br><span class="line">		&lt;uni-easyinput  v-model&#x3D;&quot;item.phone&quot; placeholder&#x3D;&quot;电话&quot; &#x2F;&gt;</span><br><span class="line">		&lt;button type&#x3D;&quot;default&quot; @click&#x3D;&quot;submit&quot;&gt;更新&lt;&#x2F;button&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				item:&#123;</span><br><span class="line">					&quot;_id&quot;:&quot;&quot;,</span><br><span class="line">					&quot;name&quot;:&quot;&quot;,</span><br><span class="line">					&quot;phone&quot;:&quot;&quot;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad(&#123;item&#125;) &#123;</span><br><span class="line">			this.item &#x3D; JSON.parse(item)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			submit() &#123;</span><br><span class="line">				const db &#x3D; uniCloud.database();</span><br><span class="line">				let item &#x3D; &#123;...this.item&#125;</span><br><span class="line">				delete item._id</span><br><span class="line">				db.collection(&#39;contacts&#39;).doc(this.item._id).update(item).then(e&#x3D;&gt;&#123;</span><br><span class="line">					console.log(e)</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>修改 <code>list.vue</code> 如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view&gt;</span><br><span class="line">		&lt;unicloud-db ref&#x3D;&quot;udb&quot; v-slot:default&#x3D;&quot;&#123;data, loading, error, options&#125;&quot; collection&#x3D;&quot;contacts&quot;&gt;</span><br><span class="line">			&lt;view v-if&#x3D;&quot;error&quot;&gt;&#123;&#123;error.message&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">			&lt;view v-else&gt;</span><br><span class="line">				&lt;uni-list&gt;</span><br><span class="line">					&lt;uni-list-item v-for&#x3D;&quot;item in data&quot; @click.native&#x3D;&quot;updateFn(item)&quot; @longpress.native&#x3D;&quot;rmItem(item._id)&quot; :key&#x3D;&quot;item._id&quot; :title&#x3D;&quot;item.name&quot; :note&#x3D;&quot;item.phone&quot; link&gt;&lt;&#x2F;uni-list-item&gt;</span><br><span class="line">				&lt;&#x2F;uni-list&gt;</span><br><span class="line">			&lt;&#x2F;view&gt;</span><br><span class="line">		&lt;&#x2F;unicloud-db&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line">			updateFn(item)&#123;</span><br><span class="line">				uni.navigateTo(&#123;</span><br><span class="line">					url: &#39;..&#x2F;update&#x2F;update?item&#x3D;&#39;+JSON.stringify(item),</span><br><span class="line">					success: res &#x3D;&gt; &#123;&#125;,</span><br><span class="line">					fail: () &#x3D;&gt; &#123;&#125;,</span><br><span class="line">					complete: () &#x3D;&gt; &#123;&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;,</span><br><span class="line">			rmItem(id) &#123;</span><br><span class="line">				this.$refs.udb.remove(id)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>修改 <code>database/contacts.schema.json</code> 文件如下所示：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;bsonType&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">	<span class="attr">&quot;required&quot;</span>: [],</span><br><span class="line">	<span class="attr">&quot;permission&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;read&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;create&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;update&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">&quot;delete&quot;</span>: <span class="literal">true</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">&quot;properties&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;_id&quot;</span>: &#123;</span><br><span class="line">			<span class="attr">&quot;description&quot;</span>: <span class="string">&quot;ID，系统自动生成&quot;</span></span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="attr">&quot;name&quot;</span>:&#123;&#125;,</span><br><span class="line">		<span class="attr">&quot;phone&quot;</span>:&#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在 <code>contacts.schema.json</code> 上单击右键，点击<kbd>上传DB Schema</kbd>，预览运行后，在list页面单击联系人即可进入修改页面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723170745238.png" alt="image-20210723170745238"></p>
+<p>点击更新后，回到list页面刷新后：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723170827335.png" alt="image-20210723170827335"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -2435,33 +2391,67 @@
       </tags>
   </entry>
   <entry>
-    <title>使用批处理脚本修改hosts文件</title>
-    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
+    <title>uniCloud使用</title>
+    <url>/2021/07/22/uniCloud%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
-<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
+<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
 </blockquote>
-<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
+<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
+<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
+<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
+<p>编辑云函数内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.main = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
-<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
-<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
-<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
-<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
-<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
+<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
+<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
+<p>可以在web控制台查看上传的云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
+<p>修改 <code>pages/index/index.vue</code> ：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class&#x3D;&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class&#x3D;&quot;logo&quot; src&#x3D;&quot;&#x2F;static&#x2F;logo.png&quot;&gt;&lt;&#x2F;image&gt;</span><br><span class="line">		&lt;view class&#x3D;&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class&#x3D;&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;&#x2F;text&gt;</span><br><span class="line">		&lt;&#x2F;view&gt;</span><br><span class="line">	&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#39;Hello&#39;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) &#x3D;&gt; &#123;</span><br><span class="line">					this.title &#x3D; e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
+<p><code>uni.callFunction</code> 的好处：</p>
+<ul>
+<li>更安全，黑客攻击都找不到URL入口。</li>
+<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
+<li>自带 <code>uni-id</code> 的token。</li>
+</ul>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>批处理</tag>
+        <tag>uni-app</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>倍福ET2000侦听器使用</title>
+    <url>/2022/02/14/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
+<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
+<p>Uplink X5——电脑网口(WireShark)</p>
+<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214113727262.png" alt="image-20220214113727262"></p>
+<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114512693.png" alt="image-20220214114512693"></p>
+<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114641411.png" alt="image-20220214114641411"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114110642.png" alt="image-20220214114110642"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>WireShark</tag>
       </tags>
   </entry>
   <entry>
@@ -2511,23 +2501,33 @@
       </tags>
   </entry>
   <entry>
-    <title>倍福ET2000侦听器使用</title>
-    <url>/2022/02/14/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
-<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
-<p>Uplink X5——电脑网口(WireShark)</p>
-<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214113727262.png" alt="image-20220214113727262"></p>
-<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114512693.png" alt="image-20220214114512693"></p>
-<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114641411.png" alt="image-20220214114641411"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114110642.png" alt="image-20220214114110642"></p>
+    <title>使用批处理脚本修改hosts文件</title>
+    <url>/2021/07/07/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<blockquote>
+<p>最近公司有个项目需要对本地hosts文件进行修改，添加一条本地域名解析记录，如果让客户去操作，很容易破坏掉原先的hosts文件，最好是能封装成一个批处理脚本，用户只需要以管理员权限运行，然后根据菜单选择需要执行的功能即可。</p>
+</blockquote>
+<h3 id="1-批处理脚本"><a href="#1-批处理脚本" class="headerlink" title="1 批处理脚本"></a>1 批处理脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:: 关闭命令的回显</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">:: 设置hosts文件路径</span><br><span class="line"><span class="built_in">set</span> HOSTS=C:\Windows\System32\drivers\etc\hosts</span><br><span class="line">:: 判断当前路径是否存在 hosts.init 文件, 不存在则备份</span><br><span class="line"><span class="keyword">if</span> not exist %HOSTS%.init (</span><br><span class="line">    copy /y %HOSTS% %HOSTS%.init &amp;&amp; <span class="built_in">echo</span> 系统hosts文件备份完成!</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">:: %date%=2021年07月07日</span><br><span class="line">:: %time%= 9:12:38:96</span><br><span class="line">:: 年 yyyy = %date:~0,4% 表示指针从左到右偏移 0 位, 然后提取 4 字符</span><br><span class="line">:: 月 mm   = %date:~5,2% 表示指针从左到右偏移 5 位, 然后提取 2 字符</span><br><span class="line">:: 日 dd   = %date:~8,2% 表示指针从左到右偏移 8 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%-%date:~5,2%-%date:~8,2%</span><br><span class="line">:: 时 hh   = %time:~0,2% 表示指针从左到右偏移 0 位, 然后提取 2 字符</span><br><span class="line">:: 分 mm   = %time:~3,2% 表示指针从左到右偏移 3 位, 然后提取 2 字符</span><br><span class="line">:: 秒 ss   = %time:~6,2% 表示指针从左到右偏移 6 位, 然后提取 2 字符</span><br><span class="line"><span class="built_in">set</span> hh=%time:~0,2%</span><br><span class="line"><span class="built_in">set</span> mm=%time:~3,2%</span><br><span class="line"><span class="built_in">set</span> ss=%time:~6,2%</span><br><span class="line">:: 当 hh 小于等于 9 时, 在前面补 0</span><br><span class="line"><span class="keyword">if</span> %hh% leq 9 (<span class="built_in">set</span> hh=0%hh:~1,1%)</span><br><span class="line"></span><br><span class="line">GOTO MENU</span><br><span class="line">:MENU</span><br><span class="line">ECHO.</span><br><span class="line">ECHO.<span class="comment">############################## 修改系统hosts解析文件 ##############################</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 1.添加域名解析</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 2.编辑hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 3.备份hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 4.还原hosts文件</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment"># 5.刷新dns缓存并退出</span></span><br><span class="line">ECHO.<span class="comment">#</span></span><br><span class="line">ECHO.<span class="comment">############################### %yyyymmdd% %hh%:%mm%:%ss% ###############################</span></span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入您要操作的序号：&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  sel=</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;1&quot;</span>  goto add_ipdomain</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;2&quot;</span>  goto edit_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;3&quot;</span>  goto backup_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;4&quot;</span>  goto reset_hosts</span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;%sel%&quot;</span>==<span class="string">&quot;5&quot;</span>  goto refresh_dns</span><br><span class="line">PAUSE</span><br><span class="line">:add_ipdomain</span><br><span class="line"><span class="built_in">set</span> /p=<span class="string">&quot;请输入IP地址和域名（中间以空格分隔）:&quot;</span>&lt;nul</span><br><span class="line">@<span class="built_in">set</span> /p  ip_domain=</span><br><span class="line"><span class="built_in">type</span> %HOSTS% |findstr /v <span class="string">&quot;^#&quot;</span>| findstr /i <span class="string">&quot;%ip_domain%\&gt;&quot;</span></span><br><span class="line"><span class="keyword">if</span> %errorlevel% == 0 ( </span><br><span class="line">  <span class="built_in">echo</span> %ip_domain% 已存在,请重新添加！&amp;&amp; goto MENU </span><br><span class="line"> ) <span class="keyword">else</span> ( </span><br><span class="line">  <span class="built_in">echo</span>.%ip_domain% &gt;&gt; %HOSTS% &amp;&amp; <span class="built_in">echo</span> %ip_domain% 添加成功,请按任意键返回菜单！&amp;&amp; pause &gt;nul </span><br><span class="line"> ) </span><br><span class="line">goto MENU</span><br><span class="line">:edit_hosts</span><br><span class="line">title 编辑hosts本地域名解析文件</span><br><span class="line">notepad %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> 按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:backup_hosts</span><br><span class="line">title 备份hosts文件</span><br><span class="line"><span class="built_in">set</span> yyyymmdd=%date:~0,4%%date:~5,2%%date:~8,2%</span><br><span class="line">copy /y %HOSTS% %HOSTS%.%yyyymmdd%%hh%%mm%</span><br><span class="line"><span class="built_in">echo</span> (<span class="string">&quot;%HOSTS%.%yyyymmdd%%hh%%mm%&quot;</span>) 备份完毕,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">pause</span><br><span class="line">:reset_hosts</span><br><span class="line">title 还原hosts文件</span><br><span class="line">copy /y %HOSTS%.init %HOSTS%</span><br><span class="line"><span class="built_in">echo</span> hosts文件已还原至初始状态,按任意键返回菜单！</span><br><span class="line">pause &gt;nul</span><br><span class="line">goto MENU</span><br><span class="line">:refresh_dns</span><br><span class="line">title 刷新本地dns缓存并退出</span><br><span class="line"><span class="built_in">echo</span> 查看修改后的hosts文件内容,5秒后退出!</span><br><span class="line"><span class="built_in">type</span> <span class="string">&quot;%HOSTS%&quot;</span> |findstr /v <span class="string">&quot;^#&quot;</span>|findstr <span class="string">&quot;[0-9]&quot;</span></span><br><span class="line">ping -n 5 127.0.0.1&gt;nul</span><br><span class="line">ipconfig /flushdns</span><br><span class="line"><span class="built_in">echo</span> 刷新本地缓存成功，即将退出!</span><br><span class="line">ping -n 3 127.0.0.1&gt;nul</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2 使用方法"></a>2 使用方法</h3><h4 id="2-1-功能菜单"><a href="#2-1-功能菜单" class="headerlink" title="2.1 功能菜单"></a>2.1 功能菜单</h4><p>第一次以管理员权限运行脚本会备份一份<code>hosts.init</code>文件，作为<code>hosts</code>初始文件，方便以后还原。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110118620.png" alt="image-20210707110118620"></p>
+<h4 id="2-2-添加域名解析"><a href="#2-2-添加域名解析" class="headerlink" title="2.2 添加域名解析"></a>2.2 添加域名解析</h4><p>添加域名解析这里采用的是手动输入 <code>IP</code> 地址 + 域名，并且会检索<code>hosts</code>文件里是否已经存在对应的 <code>IP</code> 地址和域名，如果存在，则提示用户重新添加。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110214077.png" alt="image-20210707110214077"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110319484.png" alt="image-20210707110319484"></p>
+<h4 id="2-3-编辑-hosts-文件"><a href="#2-3-编辑-hosts-文件" class="headerlink" title="2.3 编辑 hosts 文件"></a>2.3 编辑 hosts 文件</h4><p>这里其实就是调用记事本来打开hosts文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110418796.png" alt="image-20210707110418796"></p>
+<h4 id="2-4-备份-hosts文件"><a href="#2-4-备份-hosts文件" class="headerlink" title="2.4 备份 hosts文件"></a>2.4 备份 hosts文件</h4><p>这里的备份文件是以<code>hosts.日期时间</code>的文件名格式来备份的。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110456765.png" alt="image-20210707110456765"></p>
+<h4 id="2-5-还原-hosts文件"><a href="#2-5-还原-hosts文件" class="headerlink" title="2.5 还原 hosts文件"></a>2.5 还原 hosts文件</h4><p>还原其实就是将 <code>hosts.init</code> 去掉后缀名，替换掉原先的 <code>hosts</code> 文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110540412.png" alt="image-20210707110540412"></p>
+<h4 id="2-6-刷新-dns-缓存并退出"><a href="#2-6-刷新-dns-缓存并退出" class="headerlink" title="2.6 刷新 dns 缓存并退出"></a>2.6 刷新 dns 缓存并退出</h4><p>在刷新 <code>dns</code> 前，会先将 <code>hosts</code> 文件中的内容打印一下，然后执行刷新 <code>dns</code> 命令后退出脚本。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210707110618166.png" alt="image-20210707110618166"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>WireShark</tag>
+        <tag>批处理</tag>
       </tags>
   </entry>
   <entry>
@@ -2574,6 +2574,33 @@
       <tags>
         <tag>技术</tag>
         <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -2664,81 +2691,6 @@
       <tags>
         <tag>技术</tag>
         <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/2021/06/25/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -2853,6 +2805,54 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="创建公有仓库"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IQl75DGzUwhXtoJ.png" alt="复制仓库地址"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/i2Jt5wgfre1hUFj.png" alt="克隆仓库到本地"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/RolDteAfWsUTCzy.png" alt="提交并推送到仓库"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8S6KcLkfHqQstI9.png" alt="创建发布版本"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cuamzEKbwksPMSW.png" alt="点击 Publish release 进行发布"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
@@ -3538,6 +3538,91 @@
       </tags>
   </entry>
   <entry>
+    <title>物联网方案</title>
+    <url>/2020/11/19/%E7%89%A9%E8%81%94%E7%BD%91%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="1-阿里云——机床设备管理解决方案"><a href="#1-阿里云——机床设备管理解决方案" class="headerlink" title="1. 阿里云——机床设备管理解决方案"></a>1. 阿里云——机床设备管理解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/aliyunlogo.png" alt="阿里云"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>采集机床体检数据，抽取共振点的转速-振幅，通过ET工业大脑对历史数据训练预测模型，预测机床运行中的异常设置和故障，适用于广泛的机械设备。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p>通过数控机床转速和主轴振幅数据的实时或定时采集，抽取共振点的转速-振幅，通过对历史数据训练预测模型，预测机床运行中的异常设置和故障。指导规避缺陷转速排产，减少次品率的发生、对主轴和道具的损耗。分析共振转速趋势，评估机床耗损情况，及时检修，减少经济损失。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%BA%8A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84.png" alt="机床设备管理解决方案架构"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>预警缺陷转速，指导排产</li>
+<li>预测异常设与故障</li>
+<li>分析评估耗损</li>
+</ul>
+<h2 id="2-华为云——工业互联网解决方案"><a href="#2-华为云——工业互联网解决方案" class="headerlink" title="2. 华为云——工业互联网解决方案"></a>2. 华为云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/huaweilogo.png" alt="huaweilogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>华为工业互联网平台FusionPlant，包含联接管理平台、工业智能体、工业应用平台三大部分。定位于做企业增量的智能决策系统，实现业务在云上敏捷开发，边缘可信运行。赋能行业合作伙伴深耕工业核心业务流，持续释放潜在业务价值</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网业务架构"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网技术架构"></p>
+<ul>
+<li>云网协同：依托华为领先的联接方案，如5G、NB-IoT、TSN、工业PON，满足企业在工厂内、外网络各类场景的连接需求</li>
+<li>边云协同：提供纳管海量分布式边缘节点，并能够将云上的丰富的服务、生态伙伴和客户的应用部署到边缘节点运行的能力</li>
+<li>工业数据湖：提供数据全生命周期一站式开发运营平台，提供数据集成、开发、治理、服务等功能，帮助企业快速构建全局数据运营能力</li>
+<li>全栈AI：提供从芯片、硬件、算子库、AI框架、通用AI开发平台、工业智能体的全栈方案，实现协同优化和多点创新</li>
+<li>安全可信：华为工业互联网整体方案在设备认证、隐私数据加密保护、业务运行的可靠性和可用性、安全启动等多个方面提供全方位保障</li>
+</ul>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>面向全要素、多类型的数据，实现数万级测点秒级实时采集</li>
+<li>云上敏捷开发，边缘可信运行</li>
+<li>围绕工业核心业务流，构建全局数据运营平台</li>
+<li>工艺机理结合数据智能，沉淀4大行业场景化模型</li>
+</ul>
+<h2 id="3-腾讯云——工业互联网助力平台"><a href="#3-腾讯云——工业互联网助力平台" class="headerlink" title="3. 腾讯云——工业互联网助力平台"></a>3. 腾讯云——工业互联网助力平台</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tencentlogo.png" alt="tencentlogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>提供云基础设施，公有云/专有云/混合云多种部署方式，集成物联网接入，中间件，微服务架构，开发工具套件，人工智能及大数据平台，运维平台，模型管理，企业微信，移动应用平台，安全，业务运营支撑系统等，助力工业互联网平台企业快速搭建工业互联网平台，聚焦工业 PaaS 及 SaaS，利用行业优势，推动应用业务创新，更多赋能中小企业。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E5%8A%9B%E5%B9%B3%E5%8F%B0.svg" alt="工业互联网助力平台"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>整合腾讯优势输出</li>
+<li>高度集成助推落地</li>
+<li>生态开放集结优选</li>
+<li>行业合作业务创新</li>
+</ul>
+<h2 id="4-百度智能云——工业互联网解决方案"><a href="#4-百度智能云——工业互联网解决方案" class="headerlink" title="4. 百度智能云——工业互联网解决方案"></a>4. 百度智能云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/baiducloudlogo.png" alt="baiducloudlogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>促进中小企业数字化转型，助力先进企业实现数据价值挖掘及工艺持续优化。百度联合行业生态伙伴共同赋能平台建设，百度提供PaaS能力，实现“使能支撑、资源支撑、生态支撑”，帮助形成工业APP生态体系、正向循环的双边效应。联合生态伙伴的行业实践经验，提供切实可行的行业SaaS服务，最终打造可落地的、有效的、先进的工业互联网平台</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84.png" alt="百度云工业互联网架构"></p>
+<h2 id="5-OneNET——工业物联网解决方案"><a href="#5-OneNET——工业物联网解决方案" class="headerlink" title="5. OneNET——工业物联网解决方案"></a>5. OneNET——工业物联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/onenetlogo.png" alt="OneNET"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>OneNET工业物联网平台为生产设备资产管理提供E2E工业物联网方案，从核心资产管理入手，通过传感器、大数据等能力为核心资产提供实时监控、产能管理、资产定位等能力，让企业管理更加清晰透明。同时提供资产购置、资产处理等资产管理的基本功能，涵盖了从资产开始到结束的整个管理流程，有效的结合了资产物联网和互联网两个信息维度，并提供管理能力。</p>
+<p><strong>(2) 场景设计</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E7%89%A9%E8%81%94%E7%BD%91%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1.jpg" alt="工业物联网场景设计"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>标准数据模型，安全稳固</li>
+<li>扩展性高，即插即用</li>
+<li>支持OPC UA框架</li>
+</ul>
+<h2 id="6-机智云——工业设备上云解决方案"><a href="#6-机智云——工业设备上云解决方案" class="headerlink" title="6. 机智云——工业设备上云解决方案"></a>6. 机智云——工业设备上云解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gizwitslogo.png" alt="gizwitslogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>实现设备物联和实时数据采集，为生产计划、设备运维、绩效管理、工艺改进等提供基础数据支撑和深入分析。对售后工业装备进行远程监控、在线运维和预测性维护需求，支持设备物联、设备管理、数据分析、远程维护、故障告警、工单管理等装备全生命周期信息化管理和售后服务流程化与信息化；开放API，支持集成自有管理系统，提供多维度数据统计分析，设备历史数据查看、统计分析，可基于数据挖掘和大数据建模（企业核心指标和业务逻辑）分析，实现故障预测、易损件更换提醒、运维方案智能推荐、耗能优化等，提供工业互联网边缘网关系统。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E5%A4%87%E4%B8%8A%E4%BA%91%E6%9E%B6%E6%9E%84.png" alt="工业设备上云架构"></p>
+<p><strong>(3) 方案优势</strong></p>
+<p>兼容多种工业协议、提供端到端设备上云一站式解决方案、低成本快速实现设备数据采集及应用</p>
+<ul>
+<li>平台应用：远程控制、实时监测、数据存储、数据分析、在线OTA、故障报警、语音接入、远程管理</li>
+<li>业务应用：预测维护、设备调度、定位跟踪、数据展示（BI）、智能决策、资产租赁、售后管理</li>
+<li>软硬兼容：RS485、RS232、CAN；ModBus、自定义类；iOS 、Android、微信、BS/CS系统</li>
+<li>增值服务：私有协议转换、系统对接、业务云开发、私有云部署、BI系统等定制开发，咨询培训</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>移动云物联网预研及阿里云开发对比分析</title>
     <url>/2021/03/30/%E7%A7%BB%E5%8A%A8%E4%BA%91%E7%89%A9%E8%81%94%E7%BD%91%E9%A2%84%E7%A0%94%E5%8F%8A%E9%98%BF%E9%87%8C%E4%BA%91%E5%BC%80%E5%8F%91%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h2 id="1-移动云物联网预研总体架构"><a href="#1-移动云物联网预研总体架构" class="headerlink" title="1 移动云物联网预研总体架构"></a>1 移动云物联网预研总体架构</h2><p>本方案采用Layui作为前端框架，选用了华为云耀云服务器存储网站应用，用户可通过访问公网IP的方式浏览网站，网站页面根据用户选择的功能定时与OneNET云端进行数据交互。</p>
@@ -3643,91 +3728,6 @@
 <h3 id="4-2-开发难度"><a href="#4-2-开发难度" class="headerlink" title="4.2 开发难度"></a>4.2 开发难度</h3><p>从开发难度方面来看，考虑到阿里云能根据用户需要的功能模块提供可裁剪的设备接入SDK，移植起来比移动云要更为方便快捷，而且阿里云提供了详尽的服务文档以及丰富的应用案例，在一定程度上提高了开发效率。</p>
 <h3 id="4-3-应用开发"><a href="#4-3-应用开发" class="headerlink" title="4.3 应用开发"></a>4.3 应用开发</h3><p>从应用开发方面来看，阿里云提供了丰富的网页组件及相关控件，还有简洁易用的网页模板，大大降低了开发难度以及工作量，不需要额外租用服务器对网站应用进行托管，而移动云的网站应用托管服务已经不再进行维护和更新，不建议使用。</p>
 <p>综上所述，个人认为阿里云在各方面都有着优异的表现，而且阿里云在云平台市场占有率上也是遥遥领先，相当于移动云来说，阿里云无疑是更好的选择。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网方案</title>
-    <url>/2020/11/19/%E7%89%A9%E8%81%94%E7%BD%91%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h2 id="1-阿里云——机床设备管理解决方案"><a href="#1-阿里云——机床设备管理解决方案" class="headerlink" title="1. 阿里云——机床设备管理解决方案"></a>1. 阿里云——机床设备管理解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/aliyunlogo.png" alt="阿里云"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>采集机床体检数据，抽取共振点的转速-振幅，通过ET工业大脑对历史数据训练预测模型，预测机床运行中的异常设置和故障，适用于广泛的机械设备。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p>通过数控机床转速和主轴振幅数据的实时或定时采集，抽取共振点的转速-振幅，通过对历史数据训练预测模型，预测机床运行中的异常设置和故障。指导规避缺陷转速排产，减少次品率的发生、对主轴和道具的损耗。分析共振转速趋势，评估机床耗损情况，及时检修，减少经济损失。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%BA%8A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84.png" alt="机床设备管理解决方案架构"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>预警缺陷转速，指导排产</li>
-<li>预测异常设与故障</li>
-<li>分析评估耗损</li>
-</ul>
-<h2 id="2-华为云——工业互联网解决方案"><a href="#2-华为云——工业互联网解决方案" class="headerlink" title="2. 华为云——工业互联网解决方案"></a>2. 华为云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/huaweilogo.png" alt="huaweilogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>华为工业互联网平台FusionPlant，包含联接管理平台、工业智能体、工业应用平台三大部分。定位于做企业增量的智能决策系统，实现业务在云上敏捷开发，边缘可信运行。赋能行业合作伙伴深耕工业核心业务流，持续释放潜在业务价值</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网业务架构"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网技术架构"></p>
-<ul>
-<li>云网协同：依托华为领先的联接方案，如5G、NB-IoT、TSN、工业PON，满足企业在工厂内、外网络各类场景的连接需求</li>
-<li>边云协同：提供纳管海量分布式边缘节点，并能够将云上的丰富的服务、生态伙伴和客户的应用部署到边缘节点运行的能力</li>
-<li>工业数据湖：提供数据全生命周期一站式开发运营平台，提供数据集成、开发、治理、服务等功能，帮助企业快速构建全局数据运营能力</li>
-<li>全栈AI：提供从芯片、硬件、算子库、AI框架、通用AI开发平台、工业智能体的全栈方案，实现协同优化和多点创新</li>
-<li>安全可信：华为工业互联网整体方案在设备认证、隐私数据加密保护、业务运行的可靠性和可用性、安全启动等多个方面提供全方位保障</li>
-</ul>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>面向全要素、多类型的数据，实现数万级测点秒级实时采集</li>
-<li>云上敏捷开发，边缘可信运行</li>
-<li>围绕工业核心业务流，构建全局数据运营平台</li>
-<li>工艺机理结合数据智能，沉淀4大行业场景化模型</li>
-</ul>
-<h2 id="3-腾讯云——工业互联网助力平台"><a href="#3-腾讯云——工业互联网助力平台" class="headerlink" title="3. 腾讯云——工业互联网助力平台"></a>3. 腾讯云——工业互联网助力平台</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tencentlogo.png" alt="tencentlogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>提供云基础设施，公有云/专有云/混合云多种部署方式，集成物联网接入，中间件，微服务架构，开发工具套件，人工智能及大数据平台，运维平台，模型管理，企业微信，移动应用平台，安全，业务运营支撑系统等，助力工业互联网平台企业快速搭建工业互联网平台，聚焦工业 PaaS 及 SaaS，利用行业优势，推动应用业务创新，更多赋能中小企业。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E5%8A%9B%E5%B9%B3%E5%8F%B0.svg" alt="工业互联网助力平台"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>整合腾讯优势输出</li>
-<li>高度集成助推落地</li>
-<li>生态开放集结优选</li>
-<li>行业合作业务创新</li>
-</ul>
-<h2 id="4-百度智能云——工业互联网解决方案"><a href="#4-百度智能云——工业互联网解决方案" class="headerlink" title="4. 百度智能云——工业互联网解决方案"></a>4. 百度智能云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/baiducloudlogo.png" alt="baiducloudlogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>促进中小企业数字化转型，助力先进企业实现数据价值挖掘及工艺持续优化。百度联合行业生态伙伴共同赋能平台建设，百度提供PaaS能力，实现“使能支撑、资源支撑、生态支撑”，帮助形成工业APP生态体系、正向循环的双边效应。联合生态伙伴的行业实践经验，提供切实可行的行业SaaS服务，最终打造可落地的、有效的、先进的工业互联网平台</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84.png" alt="百度云工业互联网架构"></p>
-<h2 id="5-OneNET——工业物联网解决方案"><a href="#5-OneNET——工业物联网解决方案" class="headerlink" title="5. OneNET——工业物联网解决方案"></a>5. OneNET——工业物联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/onenetlogo.png" alt="OneNET"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>OneNET工业物联网平台为生产设备资产管理提供E2E工业物联网方案，从核心资产管理入手，通过传感器、大数据等能力为核心资产提供实时监控、产能管理、资产定位等能力，让企业管理更加清晰透明。同时提供资产购置、资产处理等资产管理的基本功能，涵盖了从资产开始到结束的整个管理流程，有效的结合了资产物联网和互联网两个信息维度，并提供管理能力。</p>
-<p><strong>(2) 场景设计</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E7%89%A9%E8%81%94%E7%BD%91%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1.jpg" alt="工业物联网场景设计"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>标准数据模型，安全稳固</li>
-<li>扩展性高，即插即用</li>
-<li>支持OPC UA框架</li>
-</ul>
-<h2 id="6-机智云——工业设备上云解决方案"><a href="#6-机智云——工业设备上云解决方案" class="headerlink" title="6. 机智云——工业设备上云解决方案"></a>6. 机智云——工业设备上云解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gizwitslogo.png" alt="gizwitslogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>实现设备物联和实时数据采集，为生产计划、设备运维、绩效管理、工艺改进等提供基础数据支撑和深入分析。对售后工业装备进行远程监控、在线运维和预测性维护需求，支持设备物联、设备管理、数据分析、远程维护、故障告警、工单管理等装备全生命周期信息化管理和售后服务流程化与信息化；开放API，支持集成自有管理系统，提供多维度数据统计分析，设备历史数据查看、统计分析，可基于数据挖掘和大数据建模（企业核心指标和业务逻辑）分析，实现故障预测、易损件更换提醒、运维方案智能推荐、耗能优化等，提供工业互联网边缘网关系统。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E5%A4%87%E4%B8%8A%E4%BA%91%E6%9E%B6%E6%9E%84.png" alt="工业设备上云架构"></p>
-<p><strong>(3) 方案优势</strong></p>
-<p>兼容多种工业协议、提供端到端设备上云一站式解决方案、低成本快速实现设备数据采集及应用</p>
-<ul>
-<li>平台应用：远程控制、实时监测、数据存储、数据分析、在线OTA、故障报警、语音接入、远程管理</li>
-<li>业务应用：预测维护、设备调度、定位跟踪、数据展示（BI）、智能决策、资产租赁、售后管理</li>
-<li>软硬兼容：RS485、RS232、CAN；ModBus、自定义类；iOS 、Android、微信、BS/CS系统</li>
-<li>增值服务：私有协议转换、系统对接、业务云开发、私有云部署、BI系统等定制开发，咨询培训</li>
-</ul>
 ]]></content>
       <categories>
         <category>技术</category>
