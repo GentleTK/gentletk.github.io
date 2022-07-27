@@ -490,13 +490,6 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Git/</loc>
-    <lastmod>2022-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gentletk.gitee.io/tags/Hexo/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -518,7 +511,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Markdown/</loc>
+    <loc>https://gentletk.gitee.io/tags/Git/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -532,7 +525,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
+    <loc>https://gentletk.gitee.io/tags/Markdown/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -546,7 +539,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Vue/</loc>
+    <loc>https://gentletk.gitee.io/tags/Proteus/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -561,6 +554,13 @@
   
   <url>
     <loc>https://gentletk.gitee.io/tags/uni-app/</loc>
+    <lastmod>2022-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/Vue/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
