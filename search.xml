@@ -139,39 +139,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(四)</title>
-    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制电路原理图。</p>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
-<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
-<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
-<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
-<p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
-<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
-<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
-<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -214,6 +181,39 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(四)</title>
+    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制电路原理图。</p>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
+<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
+<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
+<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
+<p>按照矩阵键盘逻辑进行电气连线：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
+<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
+<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
+<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Anaconda下安装opencv</title>
     <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
     <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
@@ -238,32 +238,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chocolatey安装与使用</title>
-    <url>/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
-</blockquote>
-<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure>
-
-<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Chocolatey</tag>
       </tags>
   </entry>
   <entry>
@@ -308,6 +282,32 @@
       <tags>
         <tag>技术</tag>
         <tag>AnyCAD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chocolatey安装与使用</title>
+    <url>/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
+</blockquote>
+<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Chocolatey</tag>
       </tags>
   </entry>
   <entry>
@@ -1268,6 +1268,136 @@
       </tags>
   </entry>
   <entry>
+    <title>Proteus 7 Professional安装</title>
+    <url>/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Proteus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora使用</title>
+    <url>/Typora%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无序列表</td>
+<td>输入<code>-</code>，<code>+</code>后空格</td>
+</tr>
+<tr>
+<td>有序列表</td>
+<td>输入数字再输入<code>.</code>后空格</td>
+</tr>
+<tr>
+<td>任务列表</td>
+<td>- [空格]空格 任务描述</td>
+</tr>
+<tr>
+<td>标题</td>
+<td><kbd>Ctrl</kbd> + 数字</td>
+</tr>
+<tr>
+<td>表格</td>
+<td><kbd>Ctrl</kbd> + <kbd>t</kbd></td>
+</tr>
+<tr>
+<td>目录</td>
+<td>输入[TOC]后回车</td>
+</tr>
+<tr>
+<td>引用</td>
+<td>输入&gt;后空格</td>
+</tr>
+<tr>
+<td>加粗</td>
+<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
+</tr>
+<tr>
+<td>倾斜</td>
+<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
+</tr>
+<tr>
+<td>下划线</td>
+<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
+</tr>
+</tbody></table>
+<h2 id="2-Pandoc使用"><a href="#2-Pandoc使用" class="headerlink" title="2 Pandoc使用"></a>2 Pandoc使用</h2><p><a href="https://github.com/jgm/pandoc/releases">下载Pandoc</a></p>
+<h2 id="3-Windows右键新建md文件"><a href="#3-Windows右键新建md文件" class="headerlink" title="3 Windows右键新建md文件"></a>3 Windows右键新建md文件</h2><h3 id="3-1-打开注册表"><a href="#3-1-打开注册表" class="headerlink" title="3.1 打开注册表"></a>3.1 打开注册表</h3><p>按<kbd>Win</kbd>+<kbd>R</kbd>打开运行对话框，输入 <code>rededit</code> 打开注册表。</p>
+<h3 id="3-2-修改注册表"><a href="#3-2-修改注册表" class="headerlink" title="3.2 修改注册表"></a>3.2 修改注册表</h3><p>在计算机下选中 <code>HKEY_CLASSES_ROOT</code>，右键选择查找，输入 <code>Typora</code>，取消勾选值和数据。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GK5QkbaT6eV2Elg.png" alt="image-20210520094737444"></p>
+<h3 id="3-3-新建注册表文件"><a href="#3-3-新建注册表文件" class="headerlink" title="3.3 新建注册表文件"></a>3.3 新建注册表文件</h3><p>新建一个 <code>newmd.reg</code> 文件，内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=<span class="string">&quot;Typora.exe&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=<span class="string">&quot;Markdown&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>双击运行 <code>newmd.reg</code> 即可。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xilinx静态库制作与使用</title>
+    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
+<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
+<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
+<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
+<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
+<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
+<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Xilinx</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>OneNET Studio与IoT Studio对比分析</title>
     <url>/OneNET%20Studio%E4%B8%8EIoT%20Studio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h2 id="1-OneNET-Studio"><a href="#1-OneNET-Studio" class="headerlink" title="1 OneNET Studio"></a>1 OneNET Studio</h2><h3 id="1-1-平台架构"><a href="#1-1-平台架构" class="headerlink" title="1.1 平台架构"></a>1.1 平台架构</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OneNET%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNET Studio 架构图"></p>
@@ -1480,114 +1610,6 @@
         <tag>技术</tag>
         <tag>IoT</tag>
         <tag>OneNET</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora使用</title>
-    <url>/Typora%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
-<thead>
-<tr>
-<th>功能</th>
-<th>快捷键</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>无序列表</td>
-<td>输入<code>-</code>，<code>+</code>后空格</td>
-</tr>
-<tr>
-<td>有序列表</td>
-<td>输入数字再输入<code>.</code>后空格</td>
-</tr>
-<tr>
-<td>任务列表</td>
-<td>- [空格]空格 任务描述</td>
-</tr>
-<tr>
-<td>标题</td>
-<td><kbd>Ctrl</kbd> + 数字</td>
-</tr>
-<tr>
-<td>表格</td>
-<td><kbd>Ctrl</kbd> + <kbd>t</kbd></td>
-</tr>
-<tr>
-<td>目录</td>
-<td>输入[TOC]后回车</td>
-</tr>
-<tr>
-<td>引用</td>
-<td>输入&gt;后空格</td>
-</tr>
-<tr>
-<td>加粗</td>
-<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
-</tr>
-<tr>
-<td>倾斜</td>
-<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
-</tr>
-<tr>
-<td>下划线</td>
-<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
-</tr>
-</tbody></table>
-<h2 id="2-Pandoc使用"><a href="#2-Pandoc使用" class="headerlink" title="2 Pandoc使用"></a>2 Pandoc使用</h2><p><a href="https://github.com/jgm/pandoc/releases">下载Pandoc</a></p>
-<h2 id="3-Windows右键新建md文件"><a href="#3-Windows右键新建md文件" class="headerlink" title="3 Windows右键新建md文件"></a>3 Windows右键新建md文件</h2><h3 id="3-1-打开注册表"><a href="#3-1-打开注册表" class="headerlink" title="3.1 打开注册表"></a>3.1 打开注册表</h3><p>按<kbd>Win</kbd>+<kbd>R</kbd>打开运行对话框，输入 <code>rededit</code> 打开注册表。</p>
-<h3 id="3-2-修改注册表"><a href="#3-2-修改注册表" class="headerlink" title="3.2 修改注册表"></a>3.2 修改注册表</h3><p>在计算机下选中 <code>HKEY_CLASSES_ROOT</code>，右键选择查找，输入 <code>Typora</code>，取消勾选值和数据。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GK5QkbaT6eV2Elg.png" alt="image-20210520094737444"></p>
-<h3 id="3-3-新建注册表文件"><a href="#3-3-新建注册表文件" class="headerlink" title="3.3 新建注册表文件"></a>3.3 新建注册表文件</h3><p>新建一个 <code>newmd.reg</code> 文件，内容如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=<span class="string">&quot;Typora.exe&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=<span class="string">&quot;Markdown&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>双击运行 <code>newmd.reg</code> 即可。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-        <tag>Typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
@@ -2249,72 +2271,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Xilinx静态库制作与使用</title>
-    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
-<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
-<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
-<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
-<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
-<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
-<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Xilinx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>uniCloud使用</title>
-    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
-</blockquote>
-<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
-<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
-<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
-<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
-<p>编辑云函数内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
-<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
-<p>可以在web控制台查看上传的云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
-<p>修改 <code>pages/index/index.vue</code> ：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
-<p><code>uni.callFunction</code> 的好处：</p>
-<ul>
-<li>更安全，黑客攻击都找不到URL入口。</li>
-<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
-<li>自带 <code>uni-id</code> 的token。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>uni-app</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>uniCloud通讯录实战</title>
     <url>/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/</url>
     <content><![CDATA[<h3 id="1-新建uni-app项目——通讯录"><a href="#1-新建uni-app项目——通讯录" class="headerlink" title="1 新建uni-app项目——通讯录"></a>1 新建uni-app项目——通讯录</h3><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有HBuilder账户，可以根据提示去注册）：</p>
@@ -2383,6 +2339,50 @@
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723170745238.png" alt="image-20210723170745238"></p>
 <p>点击更新后，回到list页面刷新后：</p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723170827335.png" alt="image-20210723170827335"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>uni-app</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>uniCloud使用</title>
+    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
+</blockquote>
+<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
+<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
+<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
+<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
+<p>编辑云函数内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
+<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
+<p>可以在web控制台查看上传的云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
+<p>修改 <code>pages/index/index.vue</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
+<p><code>uni.callFunction</code> 的好处：</p>
+<ul>
+<li>更安全，黑客攻击都找不到URL入口。</li>
+<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
+<li>自带 <code>uni-id</code> 的token。</li>
+</ul>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -2667,6 +2667,33 @@
       </tags>
   </entry>
   <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Hexo的免费个人网站</title>
     <url>/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="先聊聊Gitee和GitHub的Pages服务"><a href="#先聊聊Gitee和GitHub的Pages服务" class="headerlink" title="先聊聊Gitee和GitHub的Pages服务"></a>先聊聊Gitee和GitHub的Pages服务</h1><p>今天跟大家分享一下利用Hexo+Gitee Pages搭建个人网站的一些经验，之所以用Gitee Pages而不是GitHub Pages，完全是因为GitHub的服务器在国外，国内访问速度慢到令人发指！！不过GitHub虽然慢，但人家不要钱啊，而且你完全能在阿里花一块钱买个域名绑定一下，比如我的：gentletk.top这样你的网站就看起来就有私人定制的那种高端感了。至于Gitee，虽然快，但你每次都得手动部署，而且它不支持自定义域名，你要访问的话只有老老实实访问gentletk.gitee.io，这样一看就有种廉价感。当然，如果你愿意充钱，Gitee是很乐意为你推荐他们的Gitee Pages Pro服务的，这样一来自动更新部署和自定义域名都无需你操心了。我原先选择的是GitHub Pages，其实它没什么不好，慢是因为我在国内，所以我不打算放弃它，来个双管齐下，国内访问:gentletk.gitee.io，国外访问:gentletk.top。</p>
@@ -2781,33 +2808,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于jsDelivr+GitHub的免费CDN</title>
     <url>/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
     <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
@@ -2853,6 +2853,62 @@
         <tag>技术</tag>
         <tag>GitHub</tag>
         <tag>jsDelivr</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于树莓派的智能箱包开发环境搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
+
+<p>安装完毕，重启树莓派</p>
+<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
+<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Car和Home，我选的Home </li>
+<li>Device name和AirPlay Device Name，写PiMusic </li>
+<li>密码，不输入 </li>
+<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
+<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
+</ol>
+<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">登陆网址</th>
+<th align="left">用户名</th>
+<th align="left">默认密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">树莓派IP:8000</td>
+<td align="left">webiopi</td>
+<td align="left">raspberry</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -3479,62 +3535,6 @@
       <tags>
         <tag>技术</tag>
         <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于树莓派的智能箱包开发环境搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
-
-<p>安装完毕，重启树莓派</p>
-<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
-<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Car和Home，我选的Home </li>
-<li>Device name和AirPlay Device Name，写PiMusic </li>
-<li>密码，不输入 </li>
-<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
-<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
-</ol>
-<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">登陆网址</th>
-<th align="left">用户名</th>
-<th align="left">默认密码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">树莓派IP:8000</td>
-<td align="left">webiopi</td>
-<td align="left">raspberry</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
