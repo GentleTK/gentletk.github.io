@@ -455,13 +455,6 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Python/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://gentletk.gitee.io/tags/AnyCAD/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,28 +462,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Chocolatey/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/Hexo/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/Doxygen/</loc>
-    <lastmod>2022-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/tags/Git/</loc>
+    <loc>https://gentletk.gitee.io/tags/Python/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -504,14 +476,42 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/IoT/</loc>
+    <loc>https://gentletk.gitee.io/tags/Chocolatey/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/OneNET/</loc>
+    <loc>https://gentletk.gitee.io/tags/Git/</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/Doxygen/</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/Hexo/</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/MQTT/</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/tags/IoT/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -525,7 +525,7 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/MQTT/</loc>
+    <loc>https://gentletk.gitee.io/tags/OneNET/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -546,14 +546,14 @@
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Vue/</loc>
+    <loc>https://gentletk.gitee.io/tags/Xilinx/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gentletk.gitee.io/tags/Xilinx/</loc>
+    <loc>https://gentletk.gitee.io/tags/Vue/</loc>
     <lastmod>2022-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
