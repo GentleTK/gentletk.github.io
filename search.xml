@@ -104,47 +104,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<blockquote>
-<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-</blockquote>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<blockquote>
@@ -224,6 +183,74 @@
       </tags>
   </entry>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<blockquote>
+<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+</blockquote>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ak6T1Loav7pwCeM.png" alt="器件列表"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OoD2ecpvxLwJ1Xk.png" alt="绘图工具"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PjRWET5muaNZJMe.png" alt="放置矩形"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Hb9TnQvqxljZPRf.png" alt="放置管脚"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g9b5HVcyjaoYwz2.png" alt="设置管脚属性"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlexgSWCA5Zrj8J.png" alt="放置完管脚"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OKLRxamBQgvJ3eb.png" alt="原理图修改器件属性"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/exGT4ZkXwQpYJmr.png" alt="查看原理图库"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/NH6Tb25f7DjKGny.png" alt="添加8Pin排针"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zRvOnoSQKArIxkU.png" alt="Pin原理图"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anaconda下安装opencv</title>
+    <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+
+<p>遇到如下问题</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AnyCAD使用</title>
     <url>/AnyCAD%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
@@ -268,33 +295,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/bFIkV72TXKwZH6a.png" alt="遇到的问题"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8kdh7YQUlROzbTt.png" alt="命令行输入如下命令"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chocolatey安装与使用</title>
     <url>/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
@@ -318,6 +318,193 @@
       <tags>
         <tag>技术</tag>
         <tag>Chocolatey</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Flutter使用</title>
+    <url>/Flutter%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
+</blockquote>
+<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
+<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
+</ul>
+<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
+<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
+<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
+<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
+
+<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+
+<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
+<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
+
+<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
+
+<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>再次运行<code>flutter doctor</code>。</p>
+<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
+<p>（2）选择Flutter SDK Path。</p>
+<p>（3）填写工程名。</p>
+<p>（4）填写工程路径。</p>
+<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
+<p>Application：应用名称</p>
+<p>User-permission：使用权限，必须包含网络访问权限。</p>
+<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
+<p>（2）查看构建配置</p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
+<p>defaultConfig:</p>
+<p>applicationId:指定始终唯一的appid</p>
+<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
+<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
+<p>（3）添加启动图标</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
+<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
+<p>（4）APP签名</p>
+<p><strong>创建keystore</strong></p>
+<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
+<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725133511680.png" alt="image-20220725133511680"></p>
+<p><strong>引用应用程序中的keystore</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
+<p>storePassword=密钥库口令</p>
+<p>keyPassword=key的密钥口令</p>
+<p>keyAlias=key</p>
+<p>storeFile=<app_dir>/key.jks</p>
+<p><strong>在gradle中配置签名</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
+<p>在<code>”android &#123;“</code>前加上如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
+
+<p>将</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>替换为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（5）开启混淆</p>
+<p><strong>配置混淆</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>开启混淆压缩</strong></p>
+<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
+<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
+<p>修改后的<code>buildTypes</code>如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#x27;proguard-android.txt&#x27;), &#x27;proguard-rules.pro&#x27;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>（6）构建发布版apk</p>
+<p>进入应用程序目录</p>
+<p><code>cd &lt;app_dir&gt;</code></p>
+<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
+<p><code>flutter build apk</code></p>
+<p>安装<code>apk</code></p>
+<p><code>flutter install</code></p>
+<p>构建<code>apk</code>结果如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725134059854.png" alt="image-20220725134059854"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Flutter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git使用教程</title>
+    <url>/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用的图片部分来自<a href="https://www.runoob.com/">菜鸟教程</a>、<a href="https://www.liaoxuefeng.com/">廖雪峰的官方网站</a>以及<a href="http://www.ruanyifeng.com/blog/">阮一峰日志</a>。</p>
+<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
+<li>工作区<br>电脑里能看到的目录。</li>
+<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
+<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
+</ol>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
+<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
+<ol>
+<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
+<li>克隆自己的仓库到本地，做出修改并推送。</li>
+<li>请求拉取自己的更新。</li>
+<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
+<li>管理者将合并后的修改推送到主仓库。</li>
+</ol>
+<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
+<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
+<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
+<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
+<ol>
+<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
+<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
+<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
+<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git <span class="built_in">rm</span> [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
+<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
+<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
+<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
+<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
+<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
+<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
+<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
+<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
+<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
+<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
+<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
+<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
+<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
+<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
+<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
+</ol>
+<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
+<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
+<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
+</ol>
+<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
+<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
+<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
+这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
+</ol>
+<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
+<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
+<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
+</ol>
+<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
+<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
+<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
+<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
+<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
+</ol>
+<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
+<ol>
+<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
+<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
+<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
+</ol>
+<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
+</div>
+
+<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
+<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
+<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
+<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -587,193 +774,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git使用教程</title>
-    <url>/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h2><p>本教程简单介绍了<code>GitGUI</code>、<code>GitBash</code>、<code>TortoiseGit</code>使用<code>HTTP</code>方式克隆/推送版本库以及<code>SSH</code>添加密钥的方法。<br>本教程使用的图片部分来自<a href="https://www.runoob.com/">菜鸟教程</a>、<a href="https://www.liaoxuefeng.com/">廖雪峰的官方网站</a>以及<a href="http://www.ruanyifeng.com/blog/">阮一峰日志</a>。</p>
-<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2 基本概念"></a>2 基本概念</h2><ol>
-<li>工作区<br>电脑里能看到的目录。</li>
-<li>暂存区<br>存放于隐藏文件夹<code>.git</code>中的<code>index</code>文件，也叫作索引区。</li>
-<li>版本库<br>隐藏文件夹<code>.git</code>，<code>.git</code>不属于工作区，而是<code>Git</code>的版本库。</li>
-</ol>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VQ5Il3zE4cfg2J6.png" alt="基本概念图"></p>
-<h2 id="3-分布式工作流程"><a href="#3-分布式工作流程" class="headerlink" title="3 分布式工作流程"></a>3 分布式工作流程</h2><h3 id="3-1-集成管理者工作流"><a href="#3-1-集成管理者工作流" class="headerlink" title="3.1 集成管理者工作流"></a>3.1 集成管理者工作流</h3><p>有一个主仓库和若干个公开仓库，每个开发者需要先从主仓库克隆出自己的公开仓库，然后将自己的修改推送上去，然后可以请求主仓库的管理者拉取更新并合并到主仓库，流程如下：</p>
-<ol>
-<li>开发者派生主仓库，此时开发者有自己的远程仓库。</li>
-<li>克隆自己的仓库到本地，做出修改并推送。</li>
-<li>请求拉取自己的更新。</li>
-<li>管理者在自己的本地仓库中，将开发者仓库加为远程仓库并合并修改。</li>
-<li>管理者将合并后的修改推送到主仓库。</li>
-</ol>
-<h3 id="3-2-分支开发工作流"><a href="#3-2-分支开发工作流" class="headerlink" title="3.2 分支开发工作流"></a>3.2 分支开发工作流</h3><p>只有一个中心仓库，但是有很多分支。只在主分支上保留完全稳定的代码，还可以有一些类似develop或者next的平行分支，可以用来做后续开发或者测试功能稳定性，等这些分支一旦达到稳定状态，就可以合并到主分支了。</p>
-<h4 id="3-2-1-创建与合并分支的概念"><a href="#3-2-1-创建与合并分支的概念" class="headerlink" title="3.2.1 创建与合并分支的概念"></a>3.2.1 创建与合并分支的概念</h4><p>在<code>Git</code>中，你的每一次提交都被<code>Git</code>串成一条时间线，一般来说，这条时间线就是主分支<code>master</code>，<code>Git</code>用<code>HEAD</code>指向你当前工作在哪个分支，再用<code>master</code>指向你的当前提交版本，这样就可以确定你的当前分支以及当前分支的提交版本，每次提交<code>master</code>就会向前移动，指向当前提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GcumqIbF1wiQjPs.png" alt="master与HEAD"><br>当创建一个新分支<code>dev</code>时，其实是新建了一个<code>dev</code>指针，指向<code>master</code>相同的提交，要切换到<code>dev</code>分支就只需要将<code>HEAD</code>指针指向<code>dev</code>就行。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRvMIa1KcQxp3gu.png" alt="dev指针"><br>从现在起，你对工作区的修改和提交都是针对<code>dev</code>分支，每次提交，都是由<code>dev</code>指针向前移动，指向当前的提交版本。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/SedP2Z9C6XwQ5Lm.png" alt="dev提交"><br>如果要合并，只需要将<code>master</code>指向<code>dev</code>的当前提交版本就可以了，合并完可以删除<code>dev</code>指针，这样就只剩一条主分支。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/sr6AtMvUQlPg2Rk.png" alt="dev合并"><br>当<code>Git</code>无法自动合并分支时，会提示冲突，此时必须首先解决冲突，将合并失败的文件内容编辑为希望的内容，然后再提交，最后合并完成。</p>
-<h2 id="4-使用方法"><a href="#4-使用方法" class="headerlink" title="4 使用方法"></a>4 使用方法</h2><h3 id="4-1-Git-Bash"><a href="#4-1-Git-Bash" class="headerlink" title="4.1 Git Bash"></a>4.1 Git Bash</h3><p><code>Git Bash</code>是通过命令行终端进行项目开发，<code>GitGUI</code>和<code>TortoiseGit</code>的本质就是用图形化界面对这些命令进行了封装，有些时候还是得通过命令行的方式进行操作。</p>
-<h4 id="4-1-1-命令清单"><a href="#4-1-1-命令清单" class="headerlink" title="4.1.1 命令清单"></a>4.1.1 命令清单</h4><p>一般来说，日常使用只需要以下6个命令：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tnX3lc2zh5WgdYq.png" alt="日常命令"></p>
-<ol>
-<li>新建版本库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录下新建一个Git版本库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录其初始化为Git版本库</span></span><br><span class="line">git init [project_directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆一个Git版本库</span></span><br><span class="line">git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure></li>
-<li>Git配置<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前Git配置信息</span></span><br><span class="line">git config -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置Git用户信息</span></span><br><span class="line">git config --global user.email <span class="string">&quot;E-mail_Address&quot;</span></span><br><span class="line">git config --global user.name  <span class="string">&quot;User_Name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特殊文件，需要编写.gitnore文件，并放入版本库</span></span><br><span class="line"><span class="comment"># 忽略原则</span></span><br><span class="line"><span class="comment"># 1.忽略操作系统自动生成的文件，比如缩略图</span></span><br><span class="line"><span class="comment"># 2.忽略编译产生的中间文件、可执行文件等</span></span><br><span class="line"><span class="comment"># 3.忽略存放有敏感信息的个人配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查gitnore配置文件的问题</span></span><br><span class="line">git check-ignore</span><br></pre></td></tr></table></figure>
-<a href="https://github.com/github/gitignore">点我浏览gitnore配置文件</a></li>
-<li>增删文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件添加到暂存区</span></span><br><span class="line">git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录添加到暂存区，包括子目录</span></span><br><span class="line">git add [directory]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并将此次删除放入暂存区</span></span><br><span class="line">git <span class="built_in">rm</span> [file1] [file2] ...</span><br></pre></td></tr></table></figure></li>
-<li>提交代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到版本库</span></span><br><span class="line">git commit -m [commit_message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到暂存区</span></span><br><span class="line">git commit [file1] [file2] ... -m [commit_message]</span><br></pre></td></tr></table></figure></li>
-<li>分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但仍处于当前分支</span></span><br><span class="line">git branch [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建分支并切换到新分支</span></span><br><span class="line">git checkout -b [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到指定分支</span></span><br><span class="line">git checkout [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除指定分支(使用-D来强制删除一个未被合并的分支)</span></span><br><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure></li>
-<li>标签<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为当前提交的版本创建标签</span></span><br><span class="line">git tag [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建标签</span></span><br><span class="line">git tag [tag_name] [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为指定版本创建带有说明的标签</span></span><br><span class="line">git tag -a [tag_name] -m <span class="string">&quot;tag_description&quot;</span> [commit_id]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地标签到远程</span></span><br><span class="line">git push [remote_name] [tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有未推送的本地标签</span></span><br><span class="line">git push [remote_name] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个指定的远程标签</span></span><br><span class="line">git push [remote_name] :refs/tags/[tag_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地标签</span></span><br><span class="line">git tag -d [tag_name]</span><br></pre></td></tr></table></figure></li>
-<li>查看信息<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看所有变更文件</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支的版本历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看命令历史</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区和工作区差异</span></span><br><span class="line">git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本之间的改动</span></span><br><span class="line">git diff [commit_id1] [commit_id2]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看任意两个版本的src文件夹的差异</span></span><br><span class="line">git diff [commit_id1] [commit_id2] src</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看远程仓库信息，显示可以拉取和推送的地址，如果没有推送权限就看不到推送地址</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li>
-<li>远程同步<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 关联一个远程仓库</span></span><br><span class="line">git remote add [remote_name] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载远程仓库所有变动(到版本库)，可以先查看远程仓库的变动再选择是否合并到本地</span></span><br><span class="line">git fetch [remote_name]</span><br><span class="line">git <span class="built_in">log</span> -p FETCH_HEAD</span><br><span class="line">git merge [remote_name]/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取指定远程分支的变化并与指定的本地分支合并(不推荐)</span></span><br><span class="line">git pull [remote_name] [remote_branch]:[local_branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送本地指定分支到远程仓库</span></span><br><span class="line">git push [remote_name] [branch_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">git push [remote_name] -f</span><br></pre></td></tr></table></figure></li>
-<li>撤销<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件还未添加到暂存区)</span></span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 丢弃工作区文件的修改(文件已添加到暂存区)，先撤销暂存区的修改再丢弃</span></span><br><span class="line">git reset HEAD [file]</span><br><span class="line">git checkout -- [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次提交保持一致，但工作区不变</span></span><br><span class="line">git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区和工作区，与上一次提交保持一致</span></span><br><span class="line">git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退到指定版本</span></span><br><span class="line">git reset --hard [commit_id]</span><br></pre></td></tr></table></figure></li>
-<li>发布版本<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将master分支最新节点打包</span></span><br><span class="line">git archive --format zip --output [release_name].zip master</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="4-2-Git-GUI"><a href="#4-2-Git-GUI" class="headerlink" title="4.2 Git GUI"></a>4.2 Git GUI</h3><p>安装<code>Windows</code>版本的<code>Git</code>时，会默认安装一个简单的<code>GUI</code>工具，提供图形化界面。</p>
-<h4 id="4-2-1-Git-GUI汉化"><a href="#4-2-1-Git-GUI汉化" class="headerlink" title="4.2.1 Git GUI汉化"></a>4.2.1 Git GUI汉化</h4><p><a href="https://github.com/stayor/git-gui-zh.git">GitGui汉化项目</a><br>将汉化文件拷贝到<code>Git</code>安装目录下的<code>\mingw64\share\git-gui\lib\msgs</code>，<code>lib</code>下没有<code>msgs</code>文件夹则需要新建一个。<br>汉化后的<code>GUI</code>界面如下所示：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5KvJwNIGPmongdh.png" alt="GitGui汉化界面1"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QcsAFSB3ifxHaGl.png" alt="GitGui汉化界面2"></p>
-<h4 id="4-2-2-Git-GUI配置"><a href="#4-2-2-Git-GUI配置" class="headerlink" title="4.2.2 Git GUI配置"></a>4.2.2 Git GUI配置</h4><p>点击编辑，选项，更改文件内容编码为<code>UTF-8</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fqDVCPNwF2Abeph.png" alt="编辑GitGui"></p>
-<h4 id="4-2-3-Git-GUI使用"><a href="#4-2-3-Git-GUI使用" class="headerlink" title="4.2.3 Git GUI使用"></a>4.2.3 Git GUI使用</h4><h5 id="4-2-3-1-克隆已有的远程仓库"><a href="#4-2-3-1-克隆已有的远程仓库" class="headerlink" title="4.2.3.1 克隆已有的远程仓库"></a>4.2.3.1 克隆已有的远程仓库</h5><ol>
-<li>单击右键<code>Git GUI Here</code>，克隆一个已有的远程仓库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/j2oZTFngAHLqsGE.png" alt="克隆已有版本库"></li>
-<li>缓存改动到暂存区，然后提交到版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/48EWr3spbuC7gSR.png" alt="未缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/IkVtFc38QLziqyh.png" alt="缓存改动"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7MBJmOIPA5SiulW.png" alt="提交修改"></li>
-<li>上传到远程仓库(默认是<code>origin</code>)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/elkWSd4DOb9cEhZ.png" alt="上传到远程仓库"></li>
-<li>从远程仓库获取变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/A5c4QbgVhFlR78I.png" alt="获取远程变动"></li>
-<li>本地合并变动<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/kIKZhJYzOloNMF8.png" alt="本地合并"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/cHdDa2mhqvkUuV7.png" alt="本地合并成功"></li>
-</ol>
-<h5 id="4-2-3-2-本地上传新的版本库"><a href="#4-2-3-2-本地上传新的版本库" class="headerlink" title="4.2.3.2 本地上传新的版本库"></a>4.2.3.2 本地上传新的版本库</h5><ol>
-<li>创建新的版本库<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PeDA1C4Nls3t7Sf.png" alt="创建新的版本库"></li>
-<li>上传本地版本库(可填写地址直接上传，无需去远程创建)<br>HTTP:<code>http://192.168.3.179/[User_Name]/[Project_Name].git</code><br>SSH:<code>git@192.168.3.179:[User_Name]/[Project_Name].git</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6FsYQrqBoXGTb3v.png" alt="直接上传本地版本库"></li>
-</ol>
-<h3 id="4-3-TortoiseGit"><a href="#4-3-TortoiseGit" class="headerlink" title="4.3 TortoiseGit"></a>4.3 TortoiseGit</h3><h4 id="4-3-1-HTTP方式克隆-推送版本库"><a href="#4-3-1-HTTP方式克隆-推送版本库" class="headerlink" title="4.3.1 HTTP方式克隆/推送版本库"></a>4.3.1 HTTP方式克隆/推送版本库</h4><h5 id="4-3-1-1-GitLab及TortoiseGit配置说明"><a href="#4-3-1-1-GitLab及TortoiseGit配置说明" class="headerlink" title="4.3.1.1 GitLab及TortoiseGit配置说明"></a>4.3.1.1 GitLab及TortoiseGit配置说明</h5><ol>
-<li>GitLab设置中文<br>点击<code>settings</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DhE7MlnGy6VQ5Uj.png" alt="setting"><br>选择<code>preference</code>：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/CZMasfR4bwBgSuq.png" alt="preference"><br>找到<code>Localization</code>并修改<code>Language</code>为简体中文：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/emuz63WFXGIZdLl.png" alt="localization"></li>
-<li>TortoiseGit设置<br>项目文件夹里单击右键选择<code>TortoiseGit(T)</code> –&gt; <code>设置</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7axLu8fB6l915oO.png" alt="Git设置"><br>点击编辑全局<code>.git/config</code>，配置自己的信息，加入：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">	helper = store</span><br></pre></td></tr></table></figure>
-这是为了记住用户名和密码：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/xFMrjaEJqDSlQY4.png" alt="Git全局配置"></li>
-</ol>
-<h5 id="4-3-1-2-创建本地版本库"><a href="#4-3-1-2-创建本地版本库" class="headerlink" title="4.3.1.2 创建本地版本库"></a>4.3.1.2 创建本地版本库</h5><ol>
-<li>新建项目文件夹<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpUmEDeICg2zTfZ.png" alt="项目文件夹"></li>
-<li>在项目文件夹里单击右键选择<code>Git在这里创建版本库</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7AQqspx2kK85IMX.png" alt="创建版本库"></li>
-</ol>
-<h5 id="4-3-1-3-创建远程仓库"><a href="#4-3-1-3-创建远程仓库" class="headerlink" title="4.3.1.3 创建远程仓库"></a>4.3.1.3 创建远程仓库</h5><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B2qrHydJnigzSY8.png" alt="创建远程仓库"></p>
-<h5 id="4-3-1-4-绑定远程仓库并提交"><a href="#4-3-1-4-绑定远程仓库并提交" class="headerlink" title="4.3.1.4 绑定远程仓库并提交"></a>4.3.1.4 绑定远程仓库并提交</h5><ol>
-<li>克隆仓库地址(使用<code>HTTP</code>克隆)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mLay7qDvbknHXrT.png" alt="克隆仓库地址"></li>
-<li>单击右键选择<code>Git提交</code><br>(1) 填写日志信息，描述项目文件改动。<br>(2) 勾选未受版本控制的文件，即未提交的文件。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dlZab19yTUVHmBO.png" alt="提交"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/HgxBhywA2XTUVbe.png" alt="提交成功"></li>
-<li>点击推送(<code>URL</code>为克隆的仓库地址)<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/jv9TRHxd7wDIhnZ.png" alt="推送"><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VpAKINCqF95l6wh.png" alt="推送成功"></li>
-</ol>
-<h5 id="4-3-1-5-新建分支与合并"><a href="#4-3-1-5-新建分支与合并" class="headerlink" title="4.3.1.5 新建分支与合并"></a>4.3.1.5 新建分支与合并</h5><p>新建一个分支相当于新建了一份备份，比如要添加新功能时，可以在新建的分支里进行测试，测试成功后再合并到主分支，新分支的修改不影响主分支。</p>
-<ol>
-<li>创建分支并切换到新分支<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mIblKvr18XaywqW.png" alt="创建分支"></li>
-<li>创建<code>newFunction.txt</code>文件用于测试修改<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tSPTF5ixmjoYA9h.png" alt="新功能测试文件"></li>
-<li>提交修改并推送到新分支<code>v1.0.0</code><br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JZAemwHnDR34F8G.png" alt="提交到新分支"><br>查看远端仓库可以发现，主分支没有变化，但是有新的分支可以合并：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/lPrbsS9E1tThqxi.png" alt="查看远端合并请求"></li>
-</ol>
-<div class="note warning flat"><p><strong>注意：</strong><br>合并新分支到主分支，一般是由项目管理者去合并分支，项目开发者克隆原始版本到本地后，可以新建分支进行开发测试，测试无误后可将此分支提交到远程仓库，由管理者审核后可合并到项目主分支。</p>
-</div>
-
-<h4 id="4-3-2-SSH添加密钥"><a href="#4-3-2-SSH添加密钥" class="headerlink" title="4.3.2 SSH添加密钥"></a>4.3.2 SSH添加密钥</h4><p>只有添加了密钥才能使用<code>SSH URL</code>克隆仓库。</p>
-<h5 id="4-3-2-1-检查本机已存在的SSH密钥"><a href="#4-3-2-1-检查本机已存在的SSH密钥" class="headerlink" title="4.3.2.1 检查本机已存在的SSH密钥"></a>4.3.2.1 检查本机已存在的<code>SSH</code>密钥</h5><p>右键单击<code>git bash here</code>，输入<code>cd ~/.ssh</code><br>提示<code>No such file or directory</code>说明是第一次使用。</p>
-<h5 id="4-3-2-2-创建SSH密钥"><a href="#4-3-2-2-创建SSH密钥" class="headerlink" title="4.3.2.2 创建SSH密钥"></a>4.3.2.2 创建<code>SSH</code>密钥</h5><p><code>ssh-keygen -t rsa -C &quot;e-mail address&quot;</code><br>持续三次回车，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/F5r3sk2RvZUf1jY.png" alt="创建SSH密钥"></p>
-<h5 id="4-3-2-3-添加SSH密钥"><a href="#4-3-2-3-添加SSH密钥" class="headerlink" title="4.3.2.3 添加SSH密钥"></a>4.3.2.3 添加<code>SSH</code>密钥</h5><p>复制<code>id_rsa.pub</code>内容粘贴到密钥文本框：<br><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/g5WvBNEmxGMysib.png" alt="添加密钥"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Flutter使用</title>
-    <url>/Flutter%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
-</blockquote>
-<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
-<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
-<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
-</ul>
-<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
-<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
-<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
-<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
-
-<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
-
-<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
-<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
-
-<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
-
-<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>再次运行<code>flutter doctor</code>。</p>
-<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
-<p>（2）选择Flutter SDK Path。</p>
-<p>（3）填写工程名。</p>
-<p>（4）填写工程路径。</p>
-<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
-<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
-<p>Application：应用名称</p>
-<p>User-permission：使用权限，必须包含网络访问权限。</p>
-<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
-<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
-<p>（2）查看构建配置</p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
-<p>defaultConfig:</p>
-<p>applicationId:指定始终唯一的appid</p>
-<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
-<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
-<p>（3）添加启动图标</p>
-<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
-<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
-<p>（4）APP签名</p>
-<p><strong>创建keystore</strong></p>
-<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
-<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725133511680.png" alt="image-20220725133511680"></p>
-<p><strong>引用应用程序中的keystore</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
-<p>storePassword=密钥库口令</p>
-<p>keyPassword=key的密钥口令</p>
-<p>keyAlias=key</p>
-<p>storeFile=<app_dir>/key.jks</p>
-<p><strong>在gradle中配置签名</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
-<p>在<code>”android &#123;“</code>前加上如下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
-
-<p>将</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>替换为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>（5）开启混淆</p>
-<p><strong>配置混淆</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>开启混淆压缩</strong></p>
-<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
-<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
-<p>修改后的<code>buildTypes</code>如下所示：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#x27;proguard-android.txt&#x27;), &#x27;proguard-rules.pro&#x27;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>（6）构建发布版apk</p>
-<p>进入应用程序目录</p>
-<p><code>cd &lt;app_dir&gt;</code></p>
-<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
-<p><code>flutter build apk</code></p>
-<p>安装<code>apk</code></p>
-<p><code>flutter install</code></p>
-<p>构建<code>apk</code>结果如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725134059854.png" alt="image-20220725134059854"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Flutter</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MQTT介绍</title>
     <url>/MQTT%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-MQTT定义"><a href="#1-MQTT定义" class="headerlink" title="1 MQTT定义"></a>1 MQTT定义</h2><p>MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一个基于<strong>发布/订阅式</strong>的通讯协议。它的固定头部只有2字节，开销很小，具有轻量、简单、开放和易于实现的特点，这些特点使得它应用广泛，它的最大优点是，只需占用极少的带宽即可为远程设备的连接提供可靠的实时消息服务，用户还可以使用预留标志位，按照自己的系统需求进行扩展。</p>
@@ -1022,99 +1022,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MQTT剩余长度计算</title>
-    <url>/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256*1024*1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
-<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
-<thead>
-<tr>
-<th>bit7</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>进位标志</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-</tr>
-</tbody></table>
-<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
-<table>
-<thead>
-<tr>
-<th>进位标志</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1(有进位)</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
-<table>
-<thead>
-<tr>
-<th>bit14</th>
-<th>bit13</th>
-<th>bit12</th>
-<th>bit11</th>
-<th>bit10</th>
-<th>bit9</th>
-<th>bit8</th>
-<th>bit7</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="type">static</span> int32 <span class="title function_">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span><br><span class="line">&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>MQTT</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法测试</title>
     <url>/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -1280,6 +1187,99 @@
       <tags>
         <tag>技术</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MQTT剩余长度计算</title>
+    <url>/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256*1024*1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
+<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
+<thead>
+<tr>
+<th>bit7</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>进位标志</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+</tr>
+</tbody></table>
+<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
+<table>
+<thead>
+<tr>
+<th>进位标志</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1(有进位)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
+<table>
+<thead>
+<tr>
+<th>bit14</th>
+<th>bit13</th>
+<th>bit12</th>
+<th>bit11</th>
+<th>bit10</th>
+<th>bit9</th>
+<th>bit8</th>
+<th>bit7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="type">static</span> int32 <span class="title function_">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span><br><span class="line">&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>MQTT</tag>
+        <tag>IoT</tag>
       </tags>
   </entry>
   <entry>
@@ -1495,75 +1495,6 @@
         <tag>技术</tag>
         <tag>IoT</tag>
         <tag>OneNET</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora使用</title>
-    <url>/Typora%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
-<thead>
-<tr>
-<th>功能</th>
-<th>快捷键</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>无序列表</td>
-<td>输入<code>-</code>，<code>+</code>后空格</td>
-</tr>
-<tr>
-<td>有序列表</td>
-<td>输入数字再输入<code>.</code>后空格</td>
-</tr>
-<tr>
-<td>任务列表</td>
-<td>- [空格]空格 任务描述</td>
-</tr>
-<tr>
-<td>标题</td>
-<td><kbd>Ctrl</kbd> + 数字</td>
-</tr>
-<tr>
-<td>表格</td>
-<td><kbd>Ctrl</kbd> + <kbd>t</kbd></td>
-</tr>
-<tr>
-<td>目录</td>
-<td>输入[TOC]后回车</td>
-</tr>
-<tr>
-<td>引用</td>
-<td>输入&gt;后空格</td>
-</tr>
-<tr>
-<td>加粗</td>
-<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
-</tr>
-<tr>
-<td>倾斜</td>
-<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
-</tr>
-<tr>
-<td>下划线</td>
-<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
-</tr>
-</tbody></table>
-<h2 id="2-Pandoc使用"><a href="#2-Pandoc使用" class="headerlink" title="2 Pandoc使用"></a>2 Pandoc使用</h2><p><a href="https://github.com/jgm/pandoc/releases">下载Pandoc</a></p>
-<h2 id="3-Windows右键新建md文件"><a href="#3-Windows右键新建md文件" class="headerlink" title="3 Windows右键新建md文件"></a>3 Windows右键新建md文件</h2><h3 id="3-1-打开注册表"><a href="#3-1-打开注册表" class="headerlink" title="3.1 打开注册表"></a>3.1 打开注册表</h3><p>按<kbd>Win</kbd>+<kbd>R</kbd>打开运行对话框，输入 <code>rededit</code> 打开注册表。</p>
-<h3 id="3-2-修改注册表"><a href="#3-2-修改注册表" class="headerlink" title="3.2 修改注册表"></a>3.2 修改注册表</h3><p>在计算机下选中 <code>HKEY_CLASSES_ROOT</code>，右键选择查找，输入 <code>Typora</code>，取消勾选值和数据。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GK5QkbaT6eV2Elg.png" alt="image-20210520094737444"></p>
-<h3 id="3-3-新建注册表文件"><a href="#3-3-新建注册表文件" class="headerlink" title="3.3 新建注册表文件"></a>3.3 新建注册表文件</h3><p>新建一个 <code>newmd.reg</code> 文件，内容如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=<span class="string">&quot;Typora.exe&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=<span class="string">&quot;Markdown&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>双击运行 <code>newmd.reg</code> 即可。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Markdown</tag>
-        <tag>Typora</tag>
       </tags>
   </entry>
   <entry>
@@ -1816,6 +1747,141 @@
       <tags>
         <tag>技术</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora使用</title>
+    <url>/Typora%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-常用快捷键"><a href="#1-常用快捷键" class="headerlink" title="1 常用快捷键"></a>1 常用快捷键</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无序列表</td>
+<td>输入<code>-</code>，<code>+</code>后空格</td>
+</tr>
+<tr>
+<td>有序列表</td>
+<td>输入数字再输入<code>.</code>后空格</td>
+</tr>
+<tr>
+<td>任务列表</td>
+<td>- [空格]空格 任务描述</td>
+</tr>
+<tr>
+<td>标题</td>
+<td><kbd>Ctrl</kbd> + 数字</td>
+</tr>
+<tr>
+<td>表格</td>
+<td><kbd>Ctrl</kbd> + <kbd>t</kbd></td>
+</tr>
+<tr>
+<td>目录</td>
+<td>输入[TOC]后回车</td>
+</tr>
+<tr>
+<td>引用</td>
+<td>输入&gt;后空格</td>
+</tr>
+<tr>
+<td>加粗</td>
+<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
+</tr>
+<tr>
+<td>倾斜</td>
+<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
+</tr>
+<tr>
+<td>下划线</td>
+<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
+</tr>
+</tbody></table>
+<h2 id="2-Pandoc使用"><a href="#2-Pandoc使用" class="headerlink" title="2 Pandoc使用"></a>2 Pandoc使用</h2><p><a href="https://github.com/jgm/pandoc/releases">下载Pandoc</a></p>
+<h2 id="3-Windows右键新建md文件"><a href="#3-Windows右键新建md文件" class="headerlink" title="3 Windows右键新建md文件"></a>3 Windows右键新建md文件</h2><h3 id="3-1-打开注册表"><a href="#3-1-打开注册表" class="headerlink" title="3.1 打开注册表"></a>3.1 打开注册表</h3><p>按<kbd>Win</kbd>+<kbd>R</kbd>打开运行对话框，输入 <code>rededit</code> 打开注册表。</p>
+<h3 id="3-2-修改注册表"><a href="#3-2-修改注册表" class="headerlink" title="3.2 修改注册表"></a>3.2 修改注册表</h3><p>在计算机下选中 <code>HKEY_CLASSES_ROOT</code>，右键选择查找，输入 <code>Typora</code>，取消勾选值和数据。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GK5QkbaT6eV2Elg.png" alt="image-20210520094737444"></p>
+<h3 id="3-3-新建注册表文件"><a href="#3-3-新建注册表文件" class="headerlink" title="3.3 新建注册表文件"></a>3.3 新建注册表文件</h3><p>新建一个 <code>newmd.reg</code> 文件，内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=<span class="string">&quot;Typora.exe&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line"><span class="string">&quot;NullFile&quot;</span>=<span class="string">&quot;&quot;</span></span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=<span class="string">&quot;Markdown&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>双击运行 <code>newmd.reg</code> 即可。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
+        <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xilinx静态库制作与使用</title>
+    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
+<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
+<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
+<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
+<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
+<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
+<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Xilinx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>uniCloud使用</title>
+    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
+</blockquote>
+<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
+<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
+<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
+<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
+<p>编辑云函数内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
+<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
+<p>可以在web控制台查看上传的云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
+<p>修改 <code>pages/index/index.vue</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
+<p><code>uni.callFunction</code> 的好处：</p>
+<ul>
+<li>更安全，黑客攻击都找不到URL入口。</li>
+<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
+<li>自带 <code>uni-id</code> 的token。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>uni-app</tag>
       </tags>
   </entry>
   <entry>
@@ -2267,72 +2333,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Xilinx静态库制作与使用</title>
-    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
-<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
-<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
-<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
-<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
-<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
-<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Xilinx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>uniCloud使用</title>
-    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
-</blockquote>
-<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
-<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
-<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
-<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
-<p>编辑云函数内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
-<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
-<p>可以在web控制台查看上传的云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
-<p>修改 <code>pages/index/index.vue</code> ：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
-<p><code>uni.callFunction</code> 的好处：</p>
-<ul>
-<li>更安全，黑客攻击都找不到URL入口。</li>
-<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
-<li>自带 <code>uni-id</code> 的token。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>uni-app</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>uniCloud通讯录实战</title>
     <url>/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/</url>
     <content><![CDATA[<h3 id="1-新建uni-app项目——通讯录"><a href="#1-新建uni-app项目——通讯录" class="headerlink" title="1 新建uni-app项目——通讯录"></a>1 新建uni-app项目——通讯录</h3><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有HBuilder账户，可以根据提示去注册）：</p>
@@ -2551,6 +2551,35 @@
       </tags>
   </entry>
   <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+</blockquote>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>出差电子流应用实战</title>
     <url>/%E5%87%BA%E5%B7%AE%E7%94%B5%E5%AD%90%E6%B5%81%E5%BA%94%E7%94%A8%E5%AE%9E%E6%88%98/</url>
     <content><![CDATA[<blockquote>
@@ -2687,35 +2716,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-</blockquote>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于Hexo的免费个人网站</title>
     <url>/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="先聊聊Gitee和GitHub的Pages服务"><a href="#先聊聊Gitee和GitHub的Pages服务" class="headerlink" title="先聊聊Gitee和GitHub的Pages服务"></a>先聊聊Gitee和GitHub的Pages服务</h1><blockquote>
@@ -2832,6 +2832,62 @@
       </tags>
   </entry>
   <entry>
+    <title>基于树莓派的智能箱包开发环境搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
+
+<p>替换内容为:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
+
+<p>安装完毕，重启树莓派</p>
+<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
+<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Car和Home，我选的Home </li>
+<li>Device name和AirPlay Device Name，写PiMusic </li>
+<li>密码，不输入 </li>
+<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
+<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
+</ol>
+<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">登陆网址</th>
+<th align="left">用户名</th>
+<th align="left">默认密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">树莓派IP:8000</td>
+<td align="left">webiopi</td>
+<td align="left">raspberry</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于jsDelivr+GitHub的免费CDN</title>
     <url>/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
     <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
@@ -2915,62 +2971,6 @@
         <tag>技术</tag>
         <tag>PicGo</tag>
         <tag>OSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于树莓派的智能箱包开发环境搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2编辑系统更新源文件"><a href="#1-2编辑系统更新源文件" class="headerlink" title="1.2编辑系统更新源文件"></a>1.2编辑系统更新源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑raspi.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list.d/raspi.list</span><br></pre></td></tr></table></figure>
-
-<p>替换内容为:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-安装输入法"><a href="#2-安装输入法" class="headerlink" title="2.安装输入法"></a>2.安装输入法</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin</span><br></pre></td></tr></table></figure>
-
-<p>安装完毕，重启树莓派</p>
-<h1 id="3-安装pybluez"><a href="#3-安装pybluez" class="headerlink" title="3.安装pybluez"></a>3.安装pybluez</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/karulis/pybluez</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项目</span></span><br><span class="line">sudo python setup.py build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装plbluez</span></span><br><span class="line">sudo python setup.py install</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-安装GPS库"><a href="#4-安装GPS库" class="headerlink" title="4.安装GPS库"></a>4.安装GPS库</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装gps相关库</span></span><br><span class="line">sudo apt-get install gpsd gpsd-clients python-gps</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-安装yagmail"><a href="#5-安装yagmail" class="headerlink" title="5.安装yagmail"></a>5.安装yagmail</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装yagmail</span></span><br><span class="line">pip install yagmail</span><br></pre></td></tr></table></figure>
-<h1 id="6-安装蓝牙驱动与A2DP支持"><a href="#6-安装蓝牙驱动与A2DP支持" class="headerlink" title="6.安装蓝牙驱动与A2DP支持"></a>6.安装蓝牙驱动与A2DP支持</h1><h2 id="6-1蓝牙驱动"><a href="#6-1蓝牙驱动" class="headerlink" title="6.1蓝牙驱动"></a>6.1蓝牙驱动</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装蓝牙驱动及配置相关</span></span><br><span class="line">sudo apt-get install pi-bluetooth bluez bluez-firmware blueman</span><br><span class="line">sudo usermod -G bluetooth -a pi</span><br><span class="line">sudo systemctl start bluetooth</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-2A2DP支持"><a href="#6-2A2DP支持" class="headerlink" title="6.2A2DP支持"></a>6.2A2DP支持</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> super-simple-raspberry-pi-audio-receiver-install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout stretch-fix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行安装脚本</span></span><br><span class="line">sudo ./install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Car和Home，我选的Home </li>
-<li>Device name和AirPlay Device Name，写PiMusic </li>
-<li>密码，不输入 </li>
-<li>Do you want all the Devices to use the same name? (y/n) : Choose y or n，选n</li>
-<li>Which Sound Card are you using? (0/1/2/3/4/5/6/7/8/9/10/11)，写0</li>
-</ol>
-<h1 id="7-安装Webiopi"><a href="#7-安装Webiopi" class="headerlink" title="7.安装Webiopi"></a>7.安装Webiopi</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/thortex/rpi3-webiopi</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开对应目录</span></span><br><span class="line"><span class="built_in">cd</span> rpi3-webiopi/webiopi_0.7.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行配置脚本</span></span><br><span class="line">sudo ./setup.sh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">sudo webiopi-passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动webiopi</span></span><br><span class="line">sudo webiopi 8000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 让webopio后台运行，否则按ctarl+c就会断掉</span></span><br><span class="line">sudo /etc/init.d/webiopi start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置webopio随系统启动</span></span><br><span class="line">sudo update-rc.d webiopi defaults</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">登陆网址</th>
-<th align="left">用户名</th>
-<th align="left">默认密码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">树莓派IP:8000</td>
-<td align="left">webiopi</td>
-<td align="left">raspberry</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -3445,272 +3445,6 @@
       </tags>
   </entry>
   <entry>
-    <title>网站开发方案研究</title>
-    <url>/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<p><strong>任务描述</strong></p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> <ol>
-<li>了解建站的基本概念及流程。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="2">
-<li>了解云服务器的选择。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="3">
-<li>了解开源网站系统(Discuz、WordPress)。 </li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="4">
-<li>了解本地建站，并基于WordPress+phpStudy搭建本地网站。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="5">
-<li>购买华为云耀云服务器(免费试用30天)，搭建服务器端环境。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="6">
-<li>参照本地建站，移植到服务器端，通过公网IP即可访问。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="7">
-<li>以管理员身份登陆后台，安装插件，设置用户注册、登陆后才可浏览。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="8">
-<li>了解HTML、CSS、JavaScript基础以及PHP语法特性。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="9">
-<li>设计平台体验页面的表单及样式，实现设备管理功能(设备列表、数据查询、命令下发)。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="10">
-<li>服务器端添加自定义页面模板，移植平台体验页面到服务器。</li>
-</ol>
-</li>
-<li><input checked="" disabled="" type="checkbox"> <ol start="11">
-<li>了解基于Layui的前端框架。</li>
-</ol>
-</li>
-<li><input disabled="" type="checkbox"> <ol start="12">
-<li>了解基于vue框架的后台前端解决方案。</li>
-</ol>
-</li>
-</ul>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h2><p><strong>建站基本流程</strong></p>
-<ul>
-<li>购买域名</li>
-<li>域名备案</li>
-<li>购买云服务器</li>
-<li>搭建网站</li>
-<li>域名解析</li>
-</ul>
-<h3 id="1-1-网站搭建——域名"><a href="#1-1-网站搭建——域名" class="headerlink" title="1.1 网站搭建——域名"></a>1.1 网站搭建——域名</h3><p>域名就是浏览器中输入的网址，如<code>www.baidu.com</code>，一般来说www开头的为一级域名，也就是主域，每一个主域可以对应无数个子域名。域名和IP地址本身是没有关系的，而如果要绑定，就得用到DNS解析。当在浏览器输入网址访问时，浏览器首先会将域名解析为对应的IP地址，然后浏览器再发出字节的数据请求，服务器端收到数据请求后，再返回网站相关的数据代码(HTML)，浏览器接收后再将这些代码转化成我们可以浏览的网页格式。</p>
-<h3 id="2-1-网站搭建——服务器"><a href="#2-1-网站搭建——服务器" class="headerlink" title="2.1 网站搭建——服务器"></a>2.1 网站搭建——服务器</h3><p>服务器，是提供计算服务的设备，相当于一台长时间不关机且性能极其稳定的电脑，网站程序一直运行在这台电脑上，等待各个访问这台服务器的客户端的数据访问请求，服务器收到请求后会按一定数据格式返回网页数据代码(一般是HTML以及CSS和JavaScript等代码)，客户端的浏览器收到数据后，再将数据解析渲染成可供人浏览的网页数据。</p>
-<h4 id="2-1-1-虚拟空间"><a href="#2-1-1-虚拟空间" class="headerlink" title="2.1.1 虚拟空间"></a>2.1.1 虚拟空间</h4><p>虚拟主机是在服务器硬盘上划分出一部分存储空间，它共享的是服务器的IP和带宽，没有独立的资源和独立的操作系统，没有远程桌面功能，通常虚拟主机所支持的网站程序也是默认分配好的，没有办法由用户自己配置环境，功能相对单一。</p>
-<h4 id="2-1-2-云服务ECS-Elastic-Compute-Services"><a href="#2-1-2-云服务ECS-Elastic-Compute-Services" class="headerlink" title="2.1.2 云服务ECS(Elastic Compute Services)"></a>2.1.2 云服务ECS(Elastic Compute Services)</h4><p>云服务器ECS是阿里云提供的一种基础云计算服务，它是在集群服务器上划分出来的独立的内存、硬盘、带宽等资源搭建而成的一个虚拟服务器，有独立的IP和带宽，可以根据需求安装各版本操作系统以及配置各种网站运行环境，有远程桌面连接东西，是完全独立的。（虚拟主机是没有的）。</p>
-<p><strong>如何选择适合自己的云服务配置？</strong></p>
-<p>(1)服务器节点所在地域的选择</p>
-<p>建站需要考虑网站用户的访问速度，而影响网站访问速度的一个重要因素是服务器节点所在地域。也就是说如果服务器节点地域选的离你目标客户群地区越接近，那么你网站的访问速度就会越快。</p>
-<p>(2) 云服务器实例规格的选择</p>
-<p>普通企业网站，性能比较均衡的，可以选择通用型，通用网络增强型即可，推荐2核4G或8G以上配置</p>
-<p>(3) 云服务器操作系统的选择</p>
-<p>根据建站程序使用的语言选择对应系统</p>
-<p>Windows：asp、asp.net<br>Linux：php</p>
-<p>通过镜像市场，选择已经配置好的镜像，可以省去我们装服务器系统环境的时间。</p>
-<p>(4) 云服务器硬盘的选择</p>
-<p>一般会默认配置有40G系统盘，最好单独购买一块数据盘（20-50G），将网站程序部署在数据盘，防止系统盘出故障时，丢失网站数据。</p>
-<p>(5) 云服务器带宽的选择</p>
-<p>以日均两三百人访问为例，一般选择1-2M左右的带宽。</p>
-<p>云服务器的流量与带宽换算：</p>
-<p>带宽：流量 = 1：150，即1M带宽=150M流量</p>
-<h2 id="2-基于WordPress的本地网站搭建"><a href="#2-基于WordPress的本地网站搭建" class="headerlink" title="2. 基于WordPress的本地网站搭建"></a>2. 基于WordPress的本地网站搭建</h2><p><a href="https://cn.wordpress.org/download/">下载WordPress</a></p>
-<p><a href="https://www.xp.cn/download.html">下载phpStudy</a></p>
-<p>下载完成后，安装phpStudy，将下载好的WordPress解压后存放到phpStudy安装路径下的WWW文件夹下。</p>
-<h3 id="2-1-创建网站"><a href="#2-1-创建网站" class="headerlink" title="2.1 创建网站"></a>2.1 创建网站</h3><p>打开phpStudy，先启动web服务，再点击创建网站，填写基本信息</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99.png" alt="创建网站"></p>
-<p>填写完成后等待服务重启，然后点击管理，选择打开网站</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%82%B9%E5%87%BB%E7%AE%A1%E7%90%86.png" alt="点击管理"></p>
-<p>进入WordPress安装界面</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WordPress%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A2.png" alt="WordPress安装界面"></p>
-<p>先在phpStudy里创建一个数据库(首先把默认的root密码修改才能创建)</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="创建数据库"></p>
-<p>填写数据库信息</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%A1%AB%E5%86%99%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="填写数据库信息"></p>
-<p>点击提交</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%8E%B0%E5%9C%A8%E5%AE%89%E8%A3%85.png" alt="现在安装"></p>
-<p>填写网站基本信息</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%A1%AB%E5%86%99%E7%BD%91%E7%AB%99%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF.png" alt="填写网站基本信息"></p>
-<p>WordPress安装成功</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WordPress%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="WordPress安装成功"></p>
-<p>点击登陆</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%82%B9%E5%87%BB%E7%99%BB%E9%99%86.png" alt="点击登陆"></p>
-<p>进入后台管理仪表盘</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E4%BB%AA%E8%A1%A8%E7%9B%98.png" alt="后台管理仪表盘"></p>
-<h1 id="华为云耀云服务器网站搭建"><a href="#华为云耀云服务器网站搭建" class="headerlink" title="华为云耀云服务器网站搭建"></a>华为云耀云服务器网站搭建</h1><h2 id="1-购买华为云耀云服务器"><a href="#1-购买华为云耀云服务器" class="headerlink" title="1.购买华为云耀云服务器"></a>1.购买华为云耀云服务器</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%95%E7%94%A8.png" alt="华为云耀云服务器"></p>
-<p>云耀云服务器控制台</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A7%E5%88%B6%E5%8F%B0.png" alt="云耀云服务器控制台"></p>
-<p>首先通过远程连接，连接到华为云耀云服务器。</p>
-<table>
-<thead>
-<tr>
-<th>IPAddress</th>
-<th>Password</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>121.36.201.57</td>
-<td>Adtech123456</td>
-</tr>
-</tbody></table>
-<p>在控制台点击公网IP，在访问控制中点击安全组，设置一下安全组规则</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E7%BD%AE%E5%AE%89%E5%85%A8%E7%BB%84%E8%A7%84%E5%88%99.png" alt="设置安全组规则"></p>
-<p>在服务器上安装phpStudy，放一个测试页面看下效果，记得把网站首页设置为测试的html文件</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/helloworld%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2.png" alt="helloworld测试页面"></p>
-<p>此时在服务器上的浏览器输入helloworld:802即可打开网站</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%8D%E5%8A%A1%E5%99%A8helloworld.png" alt="服务器helloworld"></p>
-<p>外网访问需要通过输入服务器地址:端口号的方式</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AEhelloworld.png" alt="外网访问helloworld"></p>
-<h2 id="2-搭建服务器上的WordPress"><a href="#2-搭建服务器上的WordPress" class="headerlink" title="2.搭建服务器上的WordPress"></a>2.搭建服务器上的WordPress</h2><p>将下载好的WordPress解压后得到的wordpress文件夹存放到phpStudy安装路径下的WWW文件夹下，重命名为adtechiot。</p>
-<h3 id="2-1-进入数据库管理"><a href="#2-1-进入数据库管理" class="headerlink" title="2.1 进入数据库管理"></a>2.1 进入数据库管理</h3><p>在phpStudy中安装phpMyadmin管理工具，安装完成后点击管理进入数据库管理登陆界面，用户名和密码为创建数据库时所设。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BB%E9%99%86%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86.png" alt="登陆数据库管理"></p>
-<p>将iot数据库下wp_options的siteurl和home的值修改为公网IP(121.36.201.57)</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BF%AE%E6%94%B9siteurl%E5%92%8Chome.png" alt="修改siteurl和home"></p>
-<h3 id="2-2-进入WordPress后台管理"><a href="#2-2-进入WordPress后台管理" class="headerlink" title="2.2 进入WordPress后台管理"></a>2.2 进入WordPress后台管理</h3><p>浏览器输入121.36.201.57/wp-admin可进入网站后台管理界面</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BB%E9%99%86%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86.png" alt="登陆后台管理"></p>
-<p>在设置的成员资格旁边勾选</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 任何人都可以注册</li>
-</ul>
-<p>新用户默认角色设置为订阅者。</p>
-<p>下载插件Registered Users Only，这是确保用户必须登陆后才能访问，安装后记得点击启用。</p>
-<p>下载插件WP SMTP，这是为了注册或忘记密码后能向用户发送邮件，安装完成后记得点击启用。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E7%BD%AESMTP.png" alt="设置SMTP"></p>
-<p>设置完后可以发一封测试邮件验证一下。</p>
-<p>现在可以直接在浏览器输入公网IP进行登陆或注册</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BC%97%E4%B8%BA%E5%85%B4%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0%E7%99%BB%E9%99%86%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png" alt="众为兴物联网平台登陆注册页面"></p>
-<p>尝试注册一个新用户</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%B3%A8%E5%86%8C%E6%96%B0%E7%94%A8%E6%88%B7.png" alt="注册新用户"></p>
-<p>收到确认邮件</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%94%B6%E5%88%B0%E7%A1%AE%E8%AE%A4%E9%82%AE%E4%BB%B6.png" alt="收到确认邮件"></p>
-<p>点击链接设置登陆密码就可以登陆了。</p>
-<table>
-<thead>
-<tr>
-<th align="left">用户名</th>
-<th align="left">登陆密码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">user</td>
-<td align="left">adt123456</td>
-</tr>
-</tbody></table>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/user%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.png" alt="user登陆后界面"></p>
-<h2 id="3-设计平台体验页面"><a href="#3-设计平台体验页面" class="headerlink" title="3. 设计平台体验页面"></a>3. 设计平台体验页面</h2><p>平台体验页面的设备管理共包含设备列表、数据查询、下发命令三个功能。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B9%B3%E5%8F%B0%E4%BD%93%E9%AA%8C%E9%A1%B5%E9%9D%A2.png" alt="平台体验页面"></p>
-<h3 id="3-1-设备列表"><a href="#3-1-设备列表" class="headerlink" title="3.1 设备列表"></a>3.1 设备列表</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择设备列表即可查看该产品下所有设备的信息，包括设备名称、设备ID、设备状态以及最后在线时间。</p>
-<p>(1) mqtt设备列表</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="mqtt设备列表"></p>
-<p>(2)modbus设备列表</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="modbus设备列表"></p>
-<h3 id="3-2-数据查询"><a href="#3-2-数据查询" class="headerlink" title="3.2 数据查询"></a>3.2 数据查询</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择数据查询即可进入数据查询页面，用户通过选择要查询的设备名称-ID来查询该设备的数据列表，包括数据名称、数据值、创建时间以及最后更新时间(Modbus设备可以查看平台下发的命令)。</p>
-<p>(1) mqtt查询</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2.png" alt="mqtt数据查询"></p>
-<p>(2) modbus查询</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2.png" alt="modbus数据查询"></p>
-<h3 id="3-3-下发命令"><a href="#3-3-下发命令" class="headerlink" title="3.3 下发命令"></a>3.3 下发命令</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择数据查询即可进入下发命令页面。</p>
-<p>(1) MQTT产品</p>
-<p>用户通过选择设备名称-ID、消息质量(默认Qos0)、命令有效时间(默认为0)，输入要发送的命令来实现命令下发功能。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E5%91%BD%E4%BB%A4%E4%B8%8B%E5%8F%91%E7%95%8C%E9%9D%A2.png" alt="mqtt命令下发界面"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%B8%8B%E5%8F%91.png" alt="mqtt命令已下发"></p>
-<p>(2) MODBUS产品</p>
-<p>用户通过选择设备名称-ID、输入从机地址(01-ff)、功能号(01-04)、数据地址(0000-ffff)、数据长度(0001-ffff)来下发命令(命令经过CRC校验)。</p>
-<p>下发命令010300010001(此命令设备端已做处理，会响应)</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.png" alt="modbus下发命令界面"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E5%91%BD%E4%BB%A4%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="modbus命令已响应"></p>
-<p>下发命令010300030001(此命令设备端未做处理，命令状态为已下发)</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%B8%8B%E5%8F%91.png" alt="modbus命令已下发"></p>
-<p>下发命令给离线设备会出现离线提示</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF.png" alt="设备已离线"></p>
-<h2 id="4-添自定义页面模板"><a href="#4-添自定义页面模板" class="headerlink" title="4. 添自定义页面模板"></a>4. 添自定义页面模板</h2><p>在Wordpress的主题文件夹下，新建pages文件夹，将OneNetApi.php放到该文件夹下，<br>新建一个OneNetModel.php文件，内容如下：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="comment">/* template name: 你的页面模板命名 </span></span><br><span class="line"><span class="comment">description: template for Git theme </span></span><br><span class="line"><span class="comment">*/</span> </span><br><span class="line"><span class="title function_ invoke__">get_header</span>();<span class="comment">//网站头部 可注释</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!--这里放自定义php页面的内容--&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?</span></span><br><span class="line">php <span class="title function_ invoke__">get_footer</span>(); <span class="comment">//这是网站底部 可注释</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="OneNET应用托管服务-不建议使用，官方已停止维护"><a href="#OneNET应用托管服务-不建议使用，官方已停止维护" class="headerlink" title="OneNET应用托管服务(不建议使用，官方已停止维护)"></a>OneNET应用托管服务(不建议使用，官方已停止维护)</h1><p><strong>前提条件</strong></p>
-<p>在创建实例前，确保完成以下工作：</p>
-<ul>
-<li>注册平台账号并登陆。</li>
-<li>创建一个VPC专有网络，并在VPC下创建一个子网。</li>
-<li>创建弹性公网IP并进行对应云服务器的绑定。</li>
-<li>若云服务器的登陆凭证采用密钥对则需先创建密钥对。</li>
-</ul>
-<h2 id="1-创建VPC专有网络"><a href="#1-创建VPC专有网络" class="headerlink" title="1. 创建VPC专有网络"></a>1. 创建VPC专有网络</h2><p>填写基本信息，选择一个VPC网段，DNS暂不设置。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C.png" alt="创建专有网络"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C%E8%AF%A6%E6%83%85.png" alt="专有网络详情"></p>
-<h2 id="2-创建实例——云服务器"><a href="#2-创建实例——云服务器" class="headerlink" title="2. 创建实例——云服务器"></a>2. 创建实例——云服务器</h2><p>登陆凭证: Adtech123456</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B7%B2%E9%80%89%E4%BF%A1%E6%81%AF.png" alt="云服务器已选信息"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E5%A5%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E4%BE%8B.png" alt="创建好云服务器实例"></p>
-<h2 id="3-创建弹性公网IP并绑定云服务器"><a href="#3-创建弹性公网IP并绑定云服务器" class="headerlink" title="3. 创建弹性公网IP并绑定云服务器"></a>3. 创建弹性公网IP并绑定云服务器</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E5%85%AC%E7%BD%91IP-1.png" alt="创建公网IP-1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%82%B9%E5%87%BB%E7%BB%91%E5%AE%9A.png" alt="点击绑定"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%BB%91%E5%AE%9A%E5%BC%B9%E6%80%A7%E5%85%AC%E7%BD%91IP.png" alt="绑定弹性公网IP"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%B2%E7%BB%91%E5%AE%9A%E5%85%AC%E7%BD%91IP.png" alt="已绑定公网IP"></p>
-<p>弹性公网IP:36.155.105.33</p>
-<h1 id="基于Layui的前端框架"><a href="#基于Layui的前端框架" class="headerlink" title="基于Layui的前端框架"></a>基于Layui的前端框架</h1><p>**layui(谐音: 类UI)**是一款采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写与组织形式，门槛极低，拿来即用。</p>
-<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h2><p><a href="http://www.layui.com/">官网首页</a></p>
-<p><a href="https://github.com/sentsin/layui/">Github</a></p>
-<p><a href="https://gitee.com/sentsin/layui">Gitee</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># npm安装		一般用于WebPack管理</span></span><br><span class="line">npm -i layui-src</span><br></pre></td></tr></table></figure>
-<h2 id="2-目录结构"><a href="#2-目录结构" class="headerlink" title="2 目录结构"></a>2 目录结构</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">├─css 			//css目录</span><br><span class="line">│  │─modules 		//模块css目录（一般如果模块相对较大，我们会单独提取，比如下面三个：）</span><br><span class="line">│  │  ├─laydate</span><br><span class="line">│  │  ├─layer</span><br><span class="line">│  │  └─layim</span><br><span class="line">│  └─layui.css 	//核心样式文件</span><br><span class="line">├─font  			//字体图标目录</span><br><span class="line">├─images 			//图片资源目录（目前只有layim和编辑器用到的GIF表情）</span><br><span class="line">│─lay 			//模块核心目录</span><br><span class="line">│  └─modules 		//各模块组件</span><br><span class="line">│─layui.js 		//基础核心库</span><br><span class="line">└─layui.all.js 	//包含layui.js和所有模块的合并文件</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-机器人设备列表"><a href="#3-机器人设备列表" class="headerlink" title="3 机器人设备列表"></a>3 机器人设备列表</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="机器人设备列表"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%9C%A8%E7%BA%BF.png" alt="机器人设备在线"></p>
-<h2 id="4-机器人设备详情"><a href="#4-机器人设备详情" class="headerlink" title="4 机器人设备详情"></a>4 机器人设备详情</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png" alt="机器人设备详情"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85%E5%9C%A8%E7%BA%BF.png" alt="机器人设备详情在线"></p>
-<h2 id="5-机器人数据流"><a href="#5-机器人数据流" class="headerlink" title="5 机器人数据流"></a>5 机器人数据流</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="机器人数据流"></p>
-<h2 id="6-机器人下发命令"><a href="#6-机器人下发命令" class="headerlink" title="6 机器人下发命令"></a>6 机器人下发命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4.png" alt="机器人下发命令"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="设备已响应"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%BB%A5%E4%B8%8B%E5%8F%91.png" alt="命令已以下发"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF(layui).png" alt="设备已离线"></p>
-<h2 id="7-设备历史数据导出"><a href="#7-设备历史数据导出" class="headerlink" title="7 设备历史数据导出"></a>7 设备历史数据导出</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81%E5%88%97%E8%A1%A8.png" alt="机器人数据流列表"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA.png" alt="机器人数据导出"></p>
-<h1 id="基于Vue框架的后台前端解决方案"><a href="#基于Vue框架的后台前端解决方案" class="headerlink" title="基于Vue框架的后台前端解决方案"></a>基于Vue框架的后台前端解决方案</h1><p><strong>vue-element-admin</strong>是一个后台前端解决方案，基于vue和element-ui实现，它使用了最新的前端技术栈，内置了 i18n 国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。</p>
-<p><strong>建议</strong></p>
-<p>**<code>vue-element-admin</code>**的定位是一个后台集成方案，不太适合当基础模板来进行二次开发。因为本项目集成了很多你可能用不到的功能，会造成不少的代码冗余。可以把 **<code>vue-element-admin</code>**当做工具箱或者集成方案仓库，在 **<code>vue-admin-template</code>**的基础上进行二次开发，想要什么功能或者组件就去 vue-element-admin 那里复制过来。</p>
-<p><strong>前提条件</strong></p>
-<p>需要在本地安装<a href="https://nodejs.org/dist/v12.16.2/">node</a>和<a href="https://git-scm.com/">git</a>。</p>
-<p><strong>安装</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/PanJiaChen/vue-element-admin.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> vue-element-admin</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建议不要用 cnpm 安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题</span></span><br><span class="line">npm install --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地开发 启动项目</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
-
-<p>(1) 登陆界面</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vue%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2.png" alt="vue登陆界面"></p>
-<p>(2) 后台界面</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vue%E6%95%B0%E6%8D%AE%E9%9D%A2%E6%9D%BF.png" alt="vue数据面板"></p>
-<p><strong>了解vue生态圈</strong></p>
-<ul>
-<li><a href="https://router.vuejs.org/">Vue Router</a>是vue官方的路由。可以帮你快速构建一个单页面或者多页面的项目</li>
-<li><a href="https://vuex.vuejs.org/">Vuex</a>是一个专为Vue.js应用程序开发的状态管理模式。采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。它能解决很多全局状态或者组件之间通信的问题。</li>
-<li><a href="https://vue-loader.vuejs.org/">Vue Loader</a> 是为 vue 文件定制的一个 webpack 的 loader，它允许你以一种名为单文件组件 (SFCs)的格式撰写 Vue 组件。它能在开发过程中使用热重载来保持状态，为每个组件模拟出 scoped CSS 等等功能。不过大部分情况下你不需要对它直接进行配置，脚手架都帮你封装好了。</li>
-<li><a href="https://vue-test-utils.vuejs.org/">Vue Test Utils</a> 是官方提供的一个单元测试工具。它能让你更方便的写单元测试。</li>
-<li><a href="https://github.com/vuejs/vue-devtools">Vue Dev-Tools Vue</a> 在浏览器下的调试工具。写 vue 必备的一个浏览器插件，能大大的提高你调试的效率。</li>
-<li><a href="https://cli.vuejs.org/">Vue CLI</a>是官方提供的一个 vue 项目脚手架，本项目也是基于它进行构建的。它帮你封装了大量的 webpack、babel 等其它配置，让你能花更少的精力在搭建环境上，从而能更专注于页面代码的编写。不过所有的脚手架都是针对大部分情况的，所以一些特殊的需求还是需要自己进行配置。建议先阅读一遍它的文档，对一些配置有一些基本的了解。</li>
-</ul>
-<h2 id="1-目录结构"><a href="#1-目录结构" class="headerlink" title="1. 目录结构"></a>1. 目录结构</h2><p>先从基础模板<strong>vue-admin-template</strong>开始。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">├── build                      // 构建相关  </span><br><span class="line">├── config                     // 配置相关</span><br><span class="line">├── src                        // 源代码</span><br><span class="line">│   ├── api                    // 所有请求</span><br><span class="line">│   ├── assets                 // 主题 字体等静态资源</span><br><span class="line">│   ├── components             // 全局公用组件</span><br><span class="line">│   ├── directive              // 全局指令</span><br><span class="line">│   ├── filtres                // 全局 filter</span><br><span class="line">│   ├── icons                  // 项目所有 svg icons</span><br><span class="line">│   ├── lang                   // 国际化 language</span><br><span class="line">│   ├── mock                   // 项目mock 模拟数据</span><br><span class="line">│   ├── router                 // 路由</span><br><span class="line">│   ├── store                  // 全局 store管理</span><br><span class="line">│   ├── styles                 // 全局样式</span><br><span class="line">│   ├── utils                  // 全局公用方法</span><br><span class="line">│   ├── vendor                 // 公用vendor</span><br><span class="line">│   ├── views                   // view</span><br><span class="line">│   ├── App.vue                // 入口页面</span><br><span class="line">│   ├── main.js                // 入口 加载组件 初始化等</span><br><span class="line">│   └── permission.js          // 权限管理</span><br><span class="line">├── static                     // 第三方不打包资源</span><br><span class="line">│   └── Tinymce                // 富文本</span><br><span class="line">├── .babelrc                   // babel-loader 配置</span><br><span class="line">├── eslintrc.js                // eslint 配置项</span><br><span class="line">├── .gitignore                 // git 忽略项</span><br><span class="line">├── favicon.ico                // favicon图标</span><br><span class="line">├── index.html                 // html模板</span><br><span class="line">└── package.json               // package.json</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-1-api和views"><a href="#1-1-api和views" class="headerlink" title="1.1 api和views"></a>1.1 api和views</h3><p>随着业务迭代，后台的api模块会越来越多，最好是根据业务模块来划分views，并将views和api模块一一对应，从而方便维护。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/api%E5%92%8Cviews.png" alt="api和views"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>物联网应用开发调研</title>
     <url>/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/</url>
     <content><![CDATA[<h2 id="阿里云——IoT-Studio"><a href="#阿里云——IoT-Studio" class="headerlink" title="阿里云——IoT Studio"></a>阿里云——IoT Studio</h2><h3 id="1-产品简介"><a href="#1-产品简介" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>物联网应用开发（IoT Studio）是阿里云针对物联网场景提供的生产力工具，提供了Web可视化开发、业务逻辑开发与物联网数据分析等一系列便捷的物联网开发工具，可覆盖各个物联网行业核心应用场景，加速物联网SaaS(Software-as-a-Service， 软件即服务)构建。</p>
@@ -3812,91 +3546,6 @@
 <h3 id="3-场景应用案例——设备预测性维护解决方案"><a href="#3-场景应用案例——设备预测性维护解决方案" class="headerlink" title="3. 场景应用案例——设备预测性维护解决方案"></a>3. 场景应用案例——设备预测性维护解决方案</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="设备预测性维护解决方案"></p>
 <h2 id="移动云——View"><a href="#移动云——View" class="headerlink" title="移动云——View"></a>移动云——View</h2><p><a href="https://open.iot.10086.cn/app_editor/#/view?pid=291489&id=72560&is_model=0">智能家居应用</a></p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/view%E4%BA%A7%E5%93%81%E4%BB%B7%E6%A0%BC.png" alt="view产品价格"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网方案</title>
-    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h2 id="1-阿里云——机床设备管理解决方案"><a href="#1-阿里云——机床设备管理解决方案" class="headerlink" title="1. 阿里云——机床设备管理解决方案"></a>1. 阿里云——机床设备管理解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/aliyunlogo.png" alt="阿里云"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>采集机床体检数据，抽取共振点的转速-振幅，通过ET工业大脑对历史数据训练预测模型，预测机床运行中的异常设置和故障，适用于广泛的机械设备。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p>通过数控机床转速和主轴振幅数据的实时或定时采集，抽取共振点的转速-振幅，通过对历史数据训练预测模型，预测机床运行中的异常设置和故障。指导规避缺陷转速排产，减少次品率的发生、对主轴和道具的损耗。分析共振转速趋势，评估机床耗损情况，及时检修，减少经济损失。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%BA%8A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84.png" alt="机床设备管理解决方案架构"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>预警缺陷转速，指导排产</li>
-<li>预测异常设与故障</li>
-<li>分析评估耗损</li>
-</ul>
-<h2 id="2-华为云——工业互联网解决方案"><a href="#2-华为云——工业互联网解决方案" class="headerlink" title="2. 华为云——工业互联网解决方案"></a>2. 华为云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/huaweilogo.png" alt="huaweilogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>华为工业互联网平台FusionPlant，包含联接管理平台、工业智能体、工业应用平台三大部分。定位于做企业增量的智能决策系统，实现业务在云上敏捷开发，边缘可信运行。赋能行业合作伙伴深耕工业核心业务流，持续释放潜在业务价值</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网业务架构"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网技术架构"></p>
-<ul>
-<li>云网协同：依托华为领先的联接方案，如5G、NB-IoT、TSN、工业PON，满足企业在工厂内、外网络各类场景的连接需求</li>
-<li>边云协同：提供纳管海量分布式边缘节点，并能够将云上的丰富的服务、生态伙伴和客户的应用部署到边缘节点运行的能力</li>
-<li>工业数据湖：提供数据全生命周期一站式开发运营平台，提供数据集成、开发、治理、服务等功能，帮助企业快速构建全局数据运营能力</li>
-<li>全栈AI：提供从芯片、硬件、算子库、AI框架、通用AI开发平台、工业智能体的全栈方案，实现协同优化和多点创新</li>
-<li>安全可信：华为工业互联网整体方案在设备认证、隐私数据加密保护、业务运行的可靠性和可用性、安全启动等多个方面提供全方位保障</li>
-</ul>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>面向全要素、多类型的数据，实现数万级测点秒级实时采集</li>
-<li>云上敏捷开发，边缘可信运行</li>
-<li>围绕工业核心业务流，构建全局数据运营平台</li>
-<li>工艺机理结合数据智能，沉淀4大行业场景化模型</li>
-</ul>
-<h2 id="3-腾讯云——工业互联网助力平台"><a href="#3-腾讯云——工业互联网助力平台" class="headerlink" title="3. 腾讯云——工业互联网助力平台"></a>3. 腾讯云——工业互联网助力平台</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tencentlogo.png" alt="tencentlogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>提供云基础设施，公有云/专有云/混合云多种部署方式，集成物联网接入，中间件，微服务架构，开发工具套件，人工智能及大数据平台，运维平台，模型管理，企业微信，移动应用平台，安全，业务运营支撑系统等，助力工业互联网平台企业快速搭建工业互联网平台，聚焦工业 PaaS 及 SaaS，利用行业优势，推动应用业务创新，更多赋能中小企业。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E5%8A%9B%E5%B9%B3%E5%8F%B0.svg" alt="工业互联网助力平台"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>整合腾讯优势输出</li>
-<li>高度集成助推落地</li>
-<li>生态开放集结优选</li>
-<li>行业合作业务创新</li>
-</ul>
-<h2 id="4-百度智能云——工业互联网解决方案"><a href="#4-百度智能云——工业互联网解决方案" class="headerlink" title="4. 百度智能云——工业互联网解决方案"></a>4. 百度智能云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/baiducloudlogo.png" alt="baiducloudlogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>促进中小企业数字化转型，助力先进企业实现数据价值挖掘及工艺持续优化。百度联合行业生态伙伴共同赋能平台建设，百度提供PaaS能力，实现“使能支撑、资源支撑、生态支撑”，帮助形成工业APP生态体系、正向循环的双边效应。联合生态伙伴的行业实践经验，提供切实可行的行业SaaS服务，最终打造可落地的、有效的、先进的工业互联网平台</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84.png" alt="百度云工业互联网架构"></p>
-<h2 id="5-OneNET——工业物联网解决方案"><a href="#5-OneNET——工业物联网解决方案" class="headerlink" title="5. OneNET——工业物联网解决方案"></a>5. OneNET——工业物联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/onenetlogo.png" alt="OneNET"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>OneNET工业物联网平台为生产设备资产管理提供E2E工业物联网方案，从核心资产管理入手，通过传感器、大数据等能力为核心资产提供实时监控、产能管理、资产定位等能力，让企业管理更加清晰透明。同时提供资产购置、资产处理等资产管理的基本功能，涵盖了从资产开始到结束的整个管理流程，有效的结合了资产物联网和互联网两个信息维度，并提供管理能力。</p>
-<p><strong>(2) 场景设计</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E7%89%A9%E8%81%94%E7%BD%91%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1.jpg" alt="工业物联网场景设计"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>标准数据模型，安全稳固</li>
-<li>扩展性高，即插即用</li>
-<li>支持OPC UA框架</li>
-</ul>
-<h2 id="6-机智云——工业设备上云解决方案"><a href="#6-机智云——工业设备上云解决方案" class="headerlink" title="6. 机智云——工业设备上云解决方案"></a>6. 机智云——工业设备上云解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gizwitslogo.png" alt="gizwitslogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>实现设备物联和实时数据采集，为生产计划、设备运维、绩效管理、工艺改进等提供基础数据支撑和深入分析。对售后工业装备进行远程监控、在线运维和预测性维护需求，支持设备物联、设备管理、数据分析、远程维护、故障告警、工单管理等装备全生命周期信息化管理和售后服务流程化与信息化；开放API，支持集成自有管理系统，提供多维度数据统计分析，设备历史数据查看、统计分析，可基于数据挖掘和大数据建模（企业核心指标和业务逻辑）分析，实现故障预测、易损件更换提醒、运维方案智能推荐、耗能优化等，提供工业互联网边缘网关系统。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E5%A4%87%E4%B8%8A%E4%BA%91%E6%9E%B6%E6%9E%84.png" alt="工业设备上云架构"></p>
-<p><strong>(3) 方案优势</strong></p>
-<p>兼容多种工业协议、提供端到端设备上云一站式解决方案、低成本快速实现设备数据采集及应用</p>
-<ul>
-<li>平台应用：远程控制、实时监测、数据存储、数据分析、在线OTA、故障报警、语音接入、远程管理</li>
-<li>业务应用：预测维护、设备调度、定位跟踪、数据展示（BI）、智能决策、资产租赁、售后管理</li>
-<li>软硬兼容：RS485、RS232、CAN；ModBus、自定义类；iOS 、Android、微信、BS/CS系统</li>
-<li>增值服务：私有协议转换、系统对接、业务云开发、私有云部署、BI系统等定制开发，咨询培训</li>
-</ul>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -4011,6 +3660,91 @@
 <h3 id="4-2-开发难度"><a href="#4-2-开发难度" class="headerlink" title="4.2 开发难度"></a>4.2 开发难度</h3><p>从开发难度方面来看，考虑到阿里云能根据用户需要的功能模块提供可裁剪的设备接入SDK，移植起来比移动云要更为方便快捷，而且阿里云提供了详尽的服务文档以及丰富的应用案例，在一定程度上提高了开发效率。</p>
 <h3 id="4-3-应用开发"><a href="#4-3-应用开发" class="headerlink" title="4.3 应用开发"></a>4.3 应用开发</h3><p>从应用开发方面来看，阿里云提供了丰富的网页组件及相关控件，还有简洁易用的网页模板，大大降低了开发难度以及工作量，不需要额外租用服务器对网站应用进行托管，而移动云的网站应用托管服务已经不再进行维护和更新，不建议使用。</p>
 <p>综上所述，个人认为阿里云在各方面都有着优异的表现，而且阿里云在云平台市场占有率上也是遥遥领先，相当于移动云来说，阿里云无疑是更好的选择。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>物联网方案</title>
+    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="1-阿里云——机床设备管理解决方案"><a href="#1-阿里云——机床设备管理解决方案" class="headerlink" title="1. 阿里云——机床设备管理解决方案"></a>1. 阿里云——机床设备管理解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/aliyunlogo.png" alt="阿里云"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>采集机床体检数据，抽取共振点的转速-振幅，通过ET工业大脑对历史数据训练预测模型，预测机床运行中的异常设置和故障，适用于广泛的机械设备。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p>通过数控机床转速和主轴振幅数据的实时或定时采集，抽取共振点的转速-振幅，通过对历史数据训练预测模型，预测机床运行中的异常设置和故障。指导规避缺陷转速排产，减少次品率的发生、对主轴和道具的损耗。分析共振转速趋势，评估机床耗损情况，及时检修，减少经济损失。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%BA%8A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84.png" alt="机床设备管理解决方案架构"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>预警缺陷转速，指导排产</li>
+<li>预测异常设与故障</li>
+<li>分析评估耗损</li>
+</ul>
+<h2 id="2-华为云——工业互联网解决方案"><a href="#2-华为云——工业互联网解决方案" class="headerlink" title="2. 华为云——工业互联网解决方案"></a>2. 华为云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/huaweilogo.png" alt="huaweilogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>华为工业互联网平台FusionPlant，包含联接管理平台、工业智能体、工业应用平台三大部分。定位于做企业增量的智能决策系统，实现业务在云上敏捷开发，边缘可信运行。赋能行业合作伙伴深耕工业核心业务流，持续释放潜在业务价值</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网业务架构"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网技术架构"></p>
+<ul>
+<li>云网协同：依托华为领先的联接方案，如5G、NB-IoT、TSN、工业PON，满足企业在工厂内、外网络各类场景的连接需求</li>
+<li>边云协同：提供纳管海量分布式边缘节点，并能够将云上的丰富的服务、生态伙伴和客户的应用部署到边缘节点运行的能力</li>
+<li>工业数据湖：提供数据全生命周期一站式开发运营平台，提供数据集成、开发、治理、服务等功能，帮助企业快速构建全局数据运营能力</li>
+<li>全栈AI：提供从芯片、硬件、算子库、AI框架、通用AI开发平台、工业智能体的全栈方案，实现协同优化和多点创新</li>
+<li>安全可信：华为工业互联网整体方案在设备认证、隐私数据加密保护、业务运行的可靠性和可用性、安全启动等多个方面提供全方位保障</li>
+</ul>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>面向全要素、多类型的数据，实现数万级测点秒级实时采集</li>
+<li>云上敏捷开发，边缘可信运行</li>
+<li>围绕工业核心业务流，构建全局数据运营平台</li>
+<li>工艺机理结合数据智能，沉淀4大行业场景化模型</li>
+</ul>
+<h2 id="3-腾讯云——工业互联网助力平台"><a href="#3-腾讯云——工业互联网助力平台" class="headerlink" title="3. 腾讯云——工业互联网助力平台"></a>3. 腾讯云——工业互联网助力平台</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tencentlogo.png" alt="tencentlogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>提供云基础设施，公有云/专有云/混合云多种部署方式，集成物联网接入，中间件，微服务架构，开发工具套件，人工智能及大数据平台，运维平台，模型管理，企业微信，移动应用平台，安全，业务运营支撑系统等，助力工业互联网平台企业快速搭建工业互联网平台，聚焦工业 PaaS 及 SaaS，利用行业优势，推动应用业务创新，更多赋能中小企业。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E5%8A%9B%E5%B9%B3%E5%8F%B0.svg" alt="工业互联网助力平台"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>整合腾讯优势输出</li>
+<li>高度集成助推落地</li>
+<li>生态开放集结优选</li>
+<li>行业合作业务创新</li>
+</ul>
+<h2 id="4-百度智能云——工业互联网解决方案"><a href="#4-百度智能云——工业互联网解决方案" class="headerlink" title="4. 百度智能云——工业互联网解决方案"></a>4. 百度智能云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/baiducloudlogo.png" alt="baiducloudlogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>促进中小企业数字化转型，助力先进企业实现数据价值挖掘及工艺持续优化。百度联合行业生态伙伴共同赋能平台建设，百度提供PaaS能力，实现“使能支撑、资源支撑、生态支撑”，帮助形成工业APP生态体系、正向循环的双边效应。联合生态伙伴的行业实践经验，提供切实可行的行业SaaS服务，最终打造可落地的、有效的、先进的工业互联网平台</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84.png" alt="百度云工业互联网架构"></p>
+<h2 id="5-OneNET——工业物联网解决方案"><a href="#5-OneNET——工业物联网解决方案" class="headerlink" title="5. OneNET——工业物联网解决方案"></a>5. OneNET——工业物联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/onenetlogo.png" alt="OneNET"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>OneNET工业物联网平台为生产设备资产管理提供E2E工业物联网方案，从核心资产管理入手，通过传感器、大数据等能力为核心资产提供实时监控、产能管理、资产定位等能力，让企业管理更加清晰透明。同时提供资产购置、资产处理等资产管理的基本功能，涵盖了从资产开始到结束的整个管理流程，有效的结合了资产物联网和互联网两个信息维度，并提供管理能力。</p>
+<p><strong>(2) 场景设计</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E7%89%A9%E8%81%94%E7%BD%91%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1.jpg" alt="工业物联网场景设计"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>标准数据模型，安全稳固</li>
+<li>扩展性高，即插即用</li>
+<li>支持OPC UA框架</li>
+</ul>
+<h2 id="6-机智云——工业设备上云解决方案"><a href="#6-机智云——工业设备上云解决方案" class="headerlink" title="6. 机智云——工业设备上云解决方案"></a>6. 机智云——工业设备上云解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gizwitslogo.png" alt="gizwitslogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>实现设备物联和实时数据采集，为生产计划、设备运维、绩效管理、工艺改进等提供基础数据支撑和深入分析。对售后工业装备进行远程监控、在线运维和预测性维护需求，支持设备物联、设备管理、数据分析、远程维护、故障告警、工单管理等装备全生命周期信息化管理和售后服务流程化与信息化；开放API，支持集成自有管理系统，提供多维度数据统计分析，设备历史数据查看、统计分析，可基于数据挖掘和大数据建模（企业核心指标和业务逻辑）分析，实现故障预测、易损件更换提醒、运维方案智能推荐、耗能优化等，提供工业互联网边缘网关系统。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E5%A4%87%E4%B8%8A%E4%BA%91%E6%9E%B6%E6%9E%84.png" alt="工业设备上云架构"></p>
+<p><strong>(3) 方案优势</strong></p>
+<p>兼容多种工业协议、提供端到端设备上云一站式解决方案、低成本快速实现设备数据采集及应用</p>
+<ul>
+<li>平台应用：远程控制、实时监测、数据存储、数据分析、在线OTA、故障报警、语音接入、远程管理</li>
+<li>业务应用：预测维护、设备调度、定位跟踪、数据展示（BI）、智能决策、资产租赁、售后管理</li>
+<li>软硬兼容：RS485、RS232、CAN；ModBus、自定义类；iOS 、Android、微信、BS/CS系统</li>
+<li>增值服务：私有协议转换、系统对接、业务云开发、私有云部署、BI系统等定制开发，咨询培训</li>
+</ul>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -4993,6 +4727,272 @@
       <tags>
         <tag>技术</tag>
         <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站开发方案研究</title>
+    <url>/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<p><strong>任务描述</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <ol>
+<li>了解建站的基本概念及流程。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="2">
+<li>了解云服务器的选择。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="3">
+<li>了解开源网站系统(Discuz、WordPress)。 </li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="4">
+<li>了解本地建站，并基于WordPress+phpStudy搭建本地网站。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="5">
+<li>购买华为云耀云服务器(免费试用30天)，搭建服务器端环境。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="6">
+<li>参照本地建站，移植到服务器端，通过公网IP即可访问。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="7">
+<li>以管理员身份登陆后台，安装插件，设置用户注册、登陆后才可浏览。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="8">
+<li>了解HTML、CSS、JavaScript基础以及PHP语法特性。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="9">
+<li>设计平台体验页面的表单及样式，实现设备管理功能(设备列表、数据查询、命令下发)。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="10">
+<li>服务器端添加自定义页面模板，移植平台体验页面到服务器。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="11">
+<li>了解基于Layui的前端框架。</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"> <ol start="12">
+<li>了解基于vue框架的后台前端解决方案。</li>
+</ol>
+</li>
+</ul>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h2><p><strong>建站基本流程</strong></p>
+<ul>
+<li>购买域名</li>
+<li>域名备案</li>
+<li>购买云服务器</li>
+<li>搭建网站</li>
+<li>域名解析</li>
+</ul>
+<h3 id="1-1-网站搭建——域名"><a href="#1-1-网站搭建——域名" class="headerlink" title="1.1 网站搭建——域名"></a>1.1 网站搭建——域名</h3><p>域名就是浏览器中输入的网址，如<code>www.baidu.com</code>，一般来说www开头的为一级域名，也就是主域，每一个主域可以对应无数个子域名。域名和IP地址本身是没有关系的，而如果要绑定，就得用到DNS解析。当在浏览器输入网址访问时，浏览器首先会将域名解析为对应的IP地址，然后浏览器再发出字节的数据请求，服务器端收到数据请求后，再返回网站相关的数据代码(HTML)，浏览器接收后再将这些代码转化成我们可以浏览的网页格式。</p>
+<h3 id="2-1-网站搭建——服务器"><a href="#2-1-网站搭建——服务器" class="headerlink" title="2.1 网站搭建——服务器"></a>2.1 网站搭建——服务器</h3><p>服务器，是提供计算服务的设备，相当于一台长时间不关机且性能极其稳定的电脑，网站程序一直运行在这台电脑上，等待各个访问这台服务器的客户端的数据访问请求，服务器收到请求后会按一定数据格式返回网页数据代码(一般是HTML以及CSS和JavaScript等代码)，客户端的浏览器收到数据后，再将数据解析渲染成可供人浏览的网页数据。</p>
+<h4 id="2-1-1-虚拟空间"><a href="#2-1-1-虚拟空间" class="headerlink" title="2.1.1 虚拟空间"></a>2.1.1 虚拟空间</h4><p>虚拟主机是在服务器硬盘上划分出一部分存储空间，它共享的是服务器的IP和带宽，没有独立的资源和独立的操作系统，没有远程桌面功能，通常虚拟主机所支持的网站程序也是默认分配好的，没有办法由用户自己配置环境，功能相对单一。</p>
+<h4 id="2-1-2-云服务ECS-Elastic-Compute-Services"><a href="#2-1-2-云服务ECS-Elastic-Compute-Services" class="headerlink" title="2.1.2 云服务ECS(Elastic Compute Services)"></a>2.1.2 云服务ECS(Elastic Compute Services)</h4><p>云服务器ECS是阿里云提供的一种基础云计算服务，它是在集群服务器上划分出来的独立的内存、硬盘、带宽等资源搭建而成的一个虚拟服务器，有独立的IP和带宽，可以根据需求安装各版本操作系统以及配置各种网站运行环境，有远程桌面连接东西，是完全独立的。（虚拟主机是没有的）。</p>
+<p><strong>如何选择适合自己的云服务配置？</strong></p>
+<p>(1)服务器节点所在地域的选择</p>
+<p>建站需要考虑网站用户的访问速度，而影响网站访问速度的一个重要因素是服务器节点所在地域。也就是说如果服务器节点地域选的离你目标客户群地区越接近，那么你网站的访问速度就会越快。</p>
+<p>(2) 云服务器实例规格的选择</p>
+<p>普通企业网站，性能比较均衡的，可以选择通用型，通用网络增强型即可，推荐2核4G或8G以上配置</p>
+<p>(3) 云服务器操作系统的选择</p>
+<p>根据建站程序使用的语言选择对应系统</p>
+<p>Windows：asp、asp.net<br>Linux：php</p>
+<p>通过镜像市场，选择已经配置好的镜像，可以省去我们装服务器系统环境的时间。</p>
+<p>(4) 云服务器硬盘的选择</p>
+<p>一般会默认配置有40G系统盘，最好单独购买一块数据盘（20-50G），将网站程序部署在数据盘，防止系统盘出故障时，丢失网站数据。</p>
+<p>(5) 云服务器带宽的选择</p>
+<p>以日均两三百人访问为例，一般选择1-2M左右的带宽。</p>
+<p>云服务器的流量与带宽换算：</p>
+<p>带宽：流量 = 1：150，即1M带宽=150M流量</p>
+<h2 id="2-基于WordPress的本地网站搭建"><a href="#2-基于WordPress的本地网站搭建" class="headerlink" title="2. 基于WordPress的本地网站搭建"></a>2. 基于WordPress的本地网站搭建</h2><p><a href="https://cn.wordpress.org/download/">下载WordPress</a></p>
+<p><a href="https://www.xp.cn/download.html">下载phpStudy</a></p>
+<p>下载完成后，安装phpStudy，将下载好的WordPress解压后存放到phpStudy安装路径下的WWW文件夹下。</p>
+<h3 id="2-1-创建网站"><a href="#2-1-创建网站" class="headerlink" title="2.1 创建网站"></a>2.1 创建网站</h3><p>打开phpStudy，先启动web服务，再点击创建网站，填写基本信息</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99.png" alt="创建网站"></p>
+<p>填写完成后等待服务重启，然后点击管理，选择打开网站</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%82%B9%E5%87%BB%E7%AE%A1%E7%90%86.png" alt="点击管理"></p>
+<p>进入WordPress安装界面</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WordPress%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A2.png" alt="WordPress安装界面"></p>
+<p>先在phpStudy里创建一个数据库(首先把默认的root密码修改才能创建)</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="创建数据库"></p>
+<p>填写数据库信息</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%A1%AB%E5%86%99%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="填写数据库信息"></p>
+<p>点击提交</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%8E%B0%E5%9C%A8%E5%AE%89%E8%A3%85.png" alt="现在安装"></p>
+<p>填写网站基本信息</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%A1%AB%E5%86%99%E7%BD%91%E7%AB%99%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF.png" alt="填写网站基本信息"></p>
+<p>WordPress安装成功</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/WordPress%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="WordPress安装成功"></p>
+<p>点击登陆</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%82%B9%E5%87%BB%E7%99%BB%E9%99%86.png" alt="点击登陆"></p>
+<p>进入后台管理仪表盘</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E4%BB%AA%E8%A1%A8%E7%9B%98.png" alt="后台管理仪表盘"></p>
+<h1 id="华为云耀云服务器网站搭建"><a href="#华为云耀云服务器网站搭建" class="headerlink" title="华为云耀云服务器网站搭建"></a>华为云耀云服务器网站搭建</h1><h2 id="1-购买华为云耀云服务器"><a href="#1-购买华为云耀云服务器" class="headerlink" title="1.购买华为云耀云服务器"></a>1.购买华为云耀云服务器</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%95%E7%94%A8.png" alt="华为云耀云服务器"></p>
+<p>云耀云服务器控制台</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A7%E5%88%B6%E5%8F%B0.png" alt="云耀云服务器控制台"></p>
+<p>首先通过远程连接，连接到华为云耀云服务器。</p>
+<table>
+<thead>
+<tr>
+<th>IPAddress</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>121.36.201.57</td>
+<td>Adtech123456</td>
+</tr>
+</tbody></table>
+<p>在控制台点击公网IP，在访问控制中点击安全组，设置一下安全组规则</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E7%BD%AE%E5%AE%89%E5%85%A8%E7%BB%84%E8%A7%84%E5%88%99.png" alt="设置安全组规则"></p>
+<p>在服务器上安装phpStudy，放一个测试页面看下效果，记得把网站首页设置为测试的html文件</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/helloworld%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2.png" alt="helloworld测试页面"></p>
+<p>此时在服务器上的浏览器输入helloworld:802即可打开网站</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%8D%E5%8A%A1%E5%99%A8helloworld.png" alt="服务器helloworld"></p>
+<p>外网访问需要通过输入服务器地址:端口号的方式</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AEhelloworld.png" alt="外网访问helloworld"></p>
+<h2 id="2-搭建服务器上的WordPress"><a href="#2-搭建服务器上的WordPress" class="headerlink" title="2.搭建服务器上的WordPress"></a>2.搭建服务器上的WordPress</h2><p>将下载好的WordPress解压后得到的wordpress文件夹存放到phpStudy安装路径下的WWW文件夹下，重命名为adtechiot。</p>
+<h3 id="2-1-进入数据库管理"><a href="#2-1-进入数据库管理" class="headerlink" title="2.1 进入数据库管理"></a>2.1 进入数据库管理</h3><p>在phpStudy中安装phpMyadmin管理工具，安装完成后点击管理进入数据库管理登陆界面，用户名和密码为创建数据库时所设。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BB%E9%99%86%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86.png" alt="登陆数据库管理"></p>
+<p>将iot数据库下wp_options的siteurl和home的值修改为公网IP(121.36.201.57)</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BF%AE%E6%94%B9siteurl%E5%92%8Chome.png" alt="修改siteurl和home"></p>
+<h3 id="2-2-进入WordPress后台管理"><a href="#2-2-进入WordPress后台管理" class="headerlink" title="2.2 进入WordPress后台管理"></a>2.2 进入WordPress后台管理</h3><p>浏览器输入121.36.201.57/wp-admin可进入网站后台管理界面</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BB%E9%99%86%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86.png" alt="登陆后台管理"></p>
+<p>在设置的成员资格旁边勾选</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 任何人都可以注册</li>
+</ul>
+<p>新用户默认角色设置为订阅者。</p>
+<p>下载插件Registered Users Only，这是确保用户必须登陆后才能访问，安装后记得点击启用。</p>
+<p>下载插件WP SMTP，这是为了注册或忘记密码后能向用户发送邮件，安装完成后记得点击启用。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E7%BD%AESMTP.png" alt="设置SMTP"></p>
+<p>设置完后可以发一封测试邮件验证一下。</p>
+<p>现在可以直接在浏览器输入公网IP进行登陆或注册</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BC%97%E4%B8%BA%E5%85%B4%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0%E7%99%BB%E9%99%86%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png" alt="众为兴物联网平台登陆注册页面"></p>
+<p>尝试注册一个新用户</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%B3%A8%E5%86%8C%E6%96%B0%E7%94%A8%E6%88%B7.png" alt="注册新用户"></p>
+<p>收到确认邮件</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%94%B6%E5%88%B0%E7%A1%AE%E8%AE%A4%E9%82%AE%E4%BB%B6.png" alt="收到确认邮件"></p>
+<p>点击链接设置登陆密码就可以登陆了。</p>
+<table>
+<thead>
+<tr>
+<th align="left">用户名</th>
+<th align="left">登陆密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">user</td>
+<td align="left">adt123456</td>
+</tr>
+</tbody></table>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/user%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.png" alt="user登陆后界面"></p>
+<h2 id="3-设计平台体验页面"><a href="#3-设计平台体验页面" class="headerlink" title="3. 设计平台体验页面"></a>3. 设计平台体验页面</h2><p>平台体验页面的设备管理共包含设备列表、数据查询、下发命令三个功能。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B9%B3%E5%8F%B0%E4%BD%93%E9%AA%8C%E9%A1%B5%E9%9D%A2.png" alt="平台体验页面"></p>
+<h3 id="3-1-设备列表"><a href="#3-1-设备列表" class="headerlink" title="3.1 设备列表"></a>3.1 设备列表</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择设备列表即可查看该产品下所有设备的信息，包括设备名称、设备ID、设备状态以及最后在线时间。</p>
+<p>(1) mqtt设备列表</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="mqtt设备列表"></p>
+<p>(2)modbus设备列表</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="modbus设备列表"></p>
+<h3 id="3-2-数据查询"><a href="#3-2-数据查询" class="headerlink" title="3.2 数据查询"></a>3.2 数据查询</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择数据查询即可进入数据查询页面，用户通过选择要查询的设备名称-ID来查询该设备的数据列表，包括数据名称、数据值、创建时间以及最后更新时间(Modbus设备可以查看平台下发的命令)。</p>
+<p>(1) mqtt查询</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2.png" alt="mqtt数据查询"></p>
+<p>(2) modbus查询</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2.png" alt="modbus数据查询"></p>
+<h3 id="3-3-下发命令"><a href="#3-3-下发命令" class="headerlink" title="3.3 下发命令"></a>3.3 下发命令</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择数据查询即可进入下发命令页面。</p>
+<p>(1) MQTT产品</p>
+<p>用户通过选择设备名称-ID、消息质量(默认Qos0)、命令有效时间(默认为0)，输入要发送的命令来实现命令下发功能。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E5%91%BD%E4%BB%A4%E4%B8%8B%E5%8F%91%E7%95%8C%E9%9D%A2.png" alt="mqtt命令下发界面"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%B8%8B%E5%8F%91.png" alt="mqtt命令已下发"></p>
+<p>(2) MODBUS产品</p>
+<p>用户通过选择设备名称-ID、输入从机地址(01-ff)、功能号(01-04)、数据地址(0000-ffff)、数据长度(0001-ffff)来下发命令(命令经过CRC校验)。</p>
+<p>下发命令010300010001(此命令设备端已做处理，会响应)</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.png" alt="modbus下发命令界面"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E5%91%BD%E4%BB%A4%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="modbus命令已响应"></p>
+<p>下发命令010300030001(此命令设备端未做处理，命令状态为已下发)</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/modbus%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%B8%8B%E5%8F%91.png" alt="modbus命令已下发"></p>
+<p>下发命令给离线设备会出现离线提示</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF.png" alt="设备已离线"></p>
+<h2 id="4-添自定义页面模板"><a href="#4-添自定义页面模板" class="headerlink" title="4. 添自定义页面模板"></a>4. 添自定义页面模板</h2><p>在Wordpress的主题文件夹下，新建pages文件夹，将OneNetApi.php放到该文件夹下，<br>新建一个OneNetModel.php文件，内容如下：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="comment">/* template name: 你的页面模板命名 </span></span><br><span class="line"><span class="comment">description: template for Git theme </span></span><br><span class="line"><span class="comment">*/</span> </span><br><span class="line"><span class="title function_ invoke__">get_header</span>();<span class="comment">//网站头部 可注释</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!--这里放自定义php页面的内容--&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?</span></span><br><span class="line">php <span class="title function_ invoke__">get_footer</span>(); <span class="comment">//这是网站底部 可注释</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="OneNET应用托管服务-不建议使用，官方已停止维护"><a href="#OneNET应用托管服务-不建议使用，官方已停止维护" class="headerlink" title="OneNET应用托管服务(不建议使用，官方已停止维护)"></a>OneNET应用托管服务(不建议使用，官方已停止维护)</h1><p><strong>前提条件</strong></p>
+<p>在创建实例前，确保完成以下工作：</p>
+<ul>
+<li>注册平台账号并登陆。</li>
+<li>创建一个VPC专有网络，并在VPC下创建一个子网。</li>
+<li>创建弹性公网IP并进行对应云服务器的绑定。</li>
+<li>若云服务器的登陆凭证采用密钥对则需先创建密钥对。</li>
+</ul>
+<h2 id="1-创建VPC专有网络"><a href="#1-创建VPC专有网络" class="headerlink" title="1. 创建VPC专有网络"></a>1. 创建VPC专有网络</h2><p>填写基本信息，选择一个VPC网段，DNS暂不设置。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C.png" alt="创建专有网络"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C%E8%AF%A6%E6%83%85.png" alt="专有网络详情"></p>
+<h2 id="2-创建实例——云服务器"><a href="#2-创建实例——云服务器" class="headerlink" title="2. 创建实例——云服务器"></a>2. 创建实例——云服务器</h2><p>登陆凭证: Adtech123456</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B7%B2%E9%80%89%E4%BF%A1%E6%81%AF.png" alt="云服务器已选信息"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E5%A5%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E4%BE%8B.png" alt="创建好云服务器实例"></p>
+<h2 id="3-创建弹性公网IP并绑定云服务器"><a href="#3-创建弹性公网IP并绑定云服务器" class="headerlink" title="3. 创建弹性公网IP并绑定云服务器"></a>3. 创建弹性公网IP并绑定云服务器</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%88%9B%E5%BB%BA%E5%85%AC%E7%BD%91IP-1.png" alt="创建公网IP-1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%82%B9%E5%87%BB%E7%BB%91%E5%AE%9A.png" alt="点击绑定"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%BB%91%E5%AE%9A%E5%BC%B9%E6%80%A7%E5%85%AC%E7%BD%91IP.png" alt="绑定弹性公网IP"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%B2%E7%BB%91%E5%AE%9A%E5%85%AC%E7%BD%91IP.png" alt="已绑定公网IP"></p>
+<p>弹性公网IP:36.155.105.33</p>
+<h1 id="基于Layui的前端框架"><a href="#基于Layui的前端框架" class="headerlink" title="基于Layui的前端框架"></a>基于Layui的前端框架</h1><p>**layui(谐音: 类UI)**是一款采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写与组织形式，门槛极低，拿来即用。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h2><p><a href="http://www.layui.com/">官网首页</a></p>
+<p><a href="https://github.com/sentsin/layui/">Github</a></p>
+<p><a href="https://gitee.com/sentsin/layui">Gitee</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># npm安装		一般用于WebPack管理</span></span><br><span class="line">npm -i layui-src</span><br></pre></td></tr></table></figure>
+<h2 id="2-目录结构"><a href="#2-目录结构" class="headerlink" title="2 目录结构"></a>2 目录结构</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">├─css 			//css目录</span><br><span class="line">│  │─modules 		//模块css目录（一般如果模块相对较大，我们会单独提取，比如下面三个：）</span><br><span class="line">│  │  ├─laydate</span><br><span class="line">│  │  ├─layer</span><br><span class="line">│  │  └─layim</span><br><span class="line">│  └─layui.css 	//核心样式文件</span><br><span class="line">├─font  			//字体图标目录</span><br><span class="line">├─images 			//图片资源目录（目前只有layim和编辑器用到的GIF表情）</span><br><span class="line">│─lay 			//模块核心目录</span><br><span class="line">│  └─modules 		//各模块组件</span><br><span class="line">│─layui.js 		//基础核心库</span><br><span class="line">└─layui.all.js 	//包含layui.js和所有模块的合并文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-机器人设备列表"><a href="#3-机器人设备列表" class="headerlink" title="3 机器人设备列表"></a>3 机器人设备列表</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="机器人设备列表"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%9C%A8%E7%BA%BF.png" alt="机器人设备在线"></p>
+<h2 id="4-机器人设备详情"><a href="#4-机器人设备详情" class="headerlink" title="4 机器人设备详情"></a>4 机器人设备详情</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png" alt="机器人设备详情"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85%E5%9C%A8%E7%BA%BF.png" alt="机器人设备详情在线"></p>
+<h2 id="5-机器人数据流"><a href="#5-机器人数据流" class="headerlink" title="5 机器人数据流"></a>5 机器人数据流</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="机器人数据流"></p>
+<h2 id="6-机器人下发命令"><a href="#6-机器人下发命令" class="headerlink" title="6 机器人下发命令"></a>6 机器人下发命令</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4.png" alt="机器人下发命令"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="设备已响应"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%BB%A5%E4%B8%8B%E5%8F%91.png" alt="命令已以下发"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF(layui).png" alt="设备已离线"></p>
+<h2 id="7-设备历史数据导出"><a href="#7-设备历史数据导出" class="headerlink" title="7 设备历史数据导出"></a>7 设备历史数据导出</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81%E5%88%97%E8%A1%A8.png" alt="机器人数据流列表"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA.png" alt="机器人数据导出"></p>
+<h1 id="基于Vue框架的后台前端解决方案"><a href="#基于Vue框架的后台前端解决方案" class="headerlink" title="基于Vue框架的后台前端解决方案"></a>基于Vue框架的后台前端解决方案</h1><p><strong>vue-element-admin</strong>是一个后台前端解决方案，基于vue和element-ui实现，它使用了最新的前端技术栈，内置了 i18n 国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。</p>
+<p><strong>建议</strong></p>
+<p>**<code>vue-element-admin</code>**的定位是一个后台集成方案，不太适合当基础模板来进行二次开发。因为本项目集成了很多你可能用不到的功能，会造成不少的代码冗余。可以把 **<code>vue-element-admin</code>**当做工具箱或者集成方案仓库，在 **<code>vue-admin-template</code>**的基础上进行二次开发，想要什么功能或者组件就去 vue-element-admin 那里复制过来。</p>
+<p><strong>前提条件</strong></p>
+<p>需要在本地安装<a href="https://nodejs.org/dist/v12.16.2/">node</a>和<a href="https://git-scm.com/">git</a>。</p>
+<p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/PanJiaChen/vue-element-admin.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> vue-element-admin</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建议不要用 cnpm 安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题</span></span><br><span class="line">npm install --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地开发 启动项目</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+<p>(1) 登陆界面</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vue%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2.png" alt="vue登陆界面"></p>
+<p>(2) 后台界面</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vue%E6%95%B0%E6%8D%AE%E9%9D%A2%E6%9D%BF.png" alt="vue数据面板"></p>
+<p><strong>了解vue生态圈</strong></p>
+<ul>
+<li><a href="https://router.vuejs.org/">Vue Router</a>是vue官方的路由。可以帮你快速构建一个单页面或者多页面的项目</li>
+<li><a href="https://vuex.vuejs.org/">Vuex</a>是一个专为Vue.js应用程序开发的状态管理模式。采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。它能解决很多全局状态或者组件之间通信的问题。</li>
+<li><a href="https://vue-loader.vuejs.org/">Vue Loader</a> 是为 vue 文件定制的一个 webpack 的 loader，它允许你以一种名为单文件组件 (SFCs)的格式撰写 Vue 组件。它能在开发过程中使用热重载来保持状态，为每个组件模拟出 scoped CSS 等等功能。不过大部分情况下你不需要对它直接进行配置，脚手架都帮你封装好了。</li>
+<li><a href="https://vue-test-utils.vuejs.org/">Vue Test Utils</a> 是官方提供的一个单元测试工具。它能让你更方便的写单元测试。</li>
+<li><a href="https://github.com/vuejs/vue-devtools">Vue Dev-Tools Vue</a> 在浏览器下的调试工具。写 vue 必备的一个浏览器插件，能大大的提高你调试的效率。</li>
+<li><a href="https://cli.vuejs.org/">Vue CLI</a>是官方提供的一个 vue 项目脚手架，本项目也是基于它进行构建的。它帮你封装了大量的 webpack、babel 等其它配置，让你能花更少的精力在搭建环境上，从而能更专注于页面代码的编写。不过所有的脚手架都是针对大部分情况的，所以一些特殊的需求还是需要自己进行配置。建议先阅读一遍它的文档，对一些配置有一些基本的了解。</li>
+</ul>
+<h2 id="1-目录结构"><a href="#1-目录结构" class="headerlink" title="1. 目录结构"></a>1. 目录结构</h2><p>先从基础模板<strong>vue-admin-template</strong>开始。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">├── build                      // 构建相关  </span><br><span class="line">├── config                     // 配置相关</span><br><span class="line">├── src                        // 源代码</span><br><span class="line">│   ├── api                    // 所有请求</span><br><span class="line">│   ├── assets                 // 主题 字体等静态资源</span><br><span class="line">│   ├── components             // 全局公用组件</span><br><span class="line">│   ├── directive              // 全局指令</span><br><span class="line">│   ├── filtres                // 全局 filter</span><br><span class="line">│   ├── icons                  // 项目所有 svg icons</span><br><span class="line">│   ├── lang                   // 国际化 language</span><br><span class="line">│   ├── mock                   // 项目mock 模拟数据</span><br><span class="line">│   ├── router                 // 路由</span><br><span class="line">│   ├── store                  // 全局 store管理</span><br><span class="line">│   ├── styles                 // 全局样式</span><br><span class="line">│   ├── utils                  // 全局公用方法</span><br><span class="line">│   ├── vendor                 // 公用vendor</span><br><span class="line">│   ├── views                   // view</span><br><span class="line">│   ├── App.vue                // 入口页面</span><br><span class="line">│   ├── main.js                // 入口 加载组件 初始化等</span><br><span class="line">│   └── permission.js          // 权限管理</span><br><span class="line">├── static                     // 第三方不打包资源</span><br><span class="line">│   └── Tinymce                // 富文本</span><br><span class="line">├── .babelrc                   // babel-loader 配置</span><br><span class="line">├── eslintrc.js                // eslint 配置项</span><br><span class="line">├── .gitignore                 // git 忽略项</span><br><span class="line">├── favicon.ico                // favicon图标</span><br><span class="line">├── index.html                 // html模板</span><br><span class="line">└── package.json               // package.json</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-1-api和views"><a href="#1-1-api和views" class="headerlink" title="1.1 api和views"></a>1.1 api和views</h3><p>随着业务迭代，后台的api模块会越来越多，最好是根据业务模块来划分views，并将views和api模块一一对应，从而方便维护。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/api%E5%92%8Cviews.png" alt="api和views"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
 </search>
