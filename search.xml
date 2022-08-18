@@ -145,85 +145,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AnyCAD使用</title>
-    <url>/AnyCAD%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>C#</code> + <code>AnyCAD</code> 实现画点、线、圆及三维模型展示。</p>
-</blockquote>
-<h3 id="一-anycad-net-sdk-2020-09-30"><a href="#一-anycad-net-sdk-2020-09-30" class="headerlink" title="(一) anycad.net.sdk.2020.09.30"></a>(一) anycad.net.sdk.2020.09.30</h3><h4 id="1-1-准备引用"><a href="#1-1-准备引用" class="headerlink" title="1.1 准备引用"></a>1.1 准备引用</h4><p>去<a href="http://www.anycad.net/">AnyCAD官网</a>下载 <code>.net SDK</code>包，解压后复制所有bin文件夹下的dll文件到项目对应目录。</p>
-<p>这里以 <code>x64CPU</code> 的 <code>Release</code> 版本为例。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dO5GFEov2P6AWIl.png" alt="添加dll文件"></p>
-<h4 id="1-2-添加引用"><a href="#1-2-添加引用" class="headerlink" title="1.2 添加引用"></a>1.2 添加引用</h4><p>在解决方案资源管理器选中引用，单击右键添加引用，将 <code>AnyCAD.Exchange.Net</code>、<code>AnyCAD.Foundation.Net</code>、<code>AnyCAD.Presentation.Net</code> 这三个主要的添加进来。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oP3xtYrGmRXasKi.png" alt="添加引用"></p>
-<h4 id="1-3-界面设计"><a href="#1-3-界面设计" class="headerlink" title="1.3 界面设计"></a>1.3 界面设计</h4><p>界面设计暂时包含一个菜单栏和一个 <code>3D</code> 显示面板，菜单栏提供 <code>STEP</code>、<code>STL</code> 等 <code>3D</code> 模型文件的加载，模型显示、画点、线、圆的测试以及图形清除功能：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vr8D3qEV9SHWmgZ.png" alt="界面设计"></p>
-<h4 id="1-4-效果预览"><a href="#1-4-效果预览" class="headerlink" title="1.4 效果预览"></a>1.4 效果预览</h4><p>先看看运行效果预览：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/13Zdf9zsgFhjcyi.png" alt="运行效果预览"></p>
-<p>尝试导入一个 <code>STEP</code> 文件：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AOj28CSxFZs9ywo.png" alt="导入STEP文件效果"></p>
-<h4 id="1-5-三轴刀具轨迹"><a href="#1-5-三轴刀具轨迹" class="headerlink" title="1.5 三轴刀具轨迹"></a>1.5 三轴刀具轨迹</h4><p><img src="https://i.loli.net/2021/05/14/QualgLJE2OfKR4G.gif" alt="三轴刀具轨迹"></p>
-<h3 id="二-anycad-rapid-net-sample"><a href="#二-anycad-rapid-net-sample" class="headerlink" title="(二) anycad.rapid.net.sample"></a>(二) anycad.rapid.net.sample</h3><h4 id="2-1-下载vc-redist"><a href="#2-1-下载vc-redist" class="headerlink" title="2.1 下载vc_redist"></a>2.1 下载vc_redist</h4><p>在 <code>Windows</code>下，<code>AnyCAD Rapid</code> 使用基于 <code>VC++</code> 编译，运行时候依赖 <code>Vistual C++</code> 运行时库。因此，<code>64</code>位版本需要在客户机上安装<code>VC_Redist/x64/VC_redist.x64.exe</code>，<code>32</code> 位版本需要安装 <code>VC_Redist/x86/VC_redist.x86.exe</code>。</p>
-<h4 id="2-2-使用nuget添加程序集引用"><a href="#2-2-使用nuget添加程序集引用" class="headerlink" title="2.2 使用nuget添加程序集引用"></a>2.2 使用nuget添加程序集引用</h4><p><a href="https://www.nuget.org/packages/AnyCAD.Rapid.Net/">官网下载最新nuget</a>（<code>AnyCAD.Rapid.Net.2020.10.27.nupkg</code>）。</p>
-<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 程序包管理器设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/D9sxPKNbaZQneHv.png" alt="程序包管理器设置"></p>
-<p>编辑程序包源</p>
-<p>名称：<code>nuget</code><br>源：包含 <code>nupkg</code> 的本地路径</p>
-<p>点击更新后，确定</p>
-<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 管理解决方案的<code>NuGet</code>程序包</p>
-<p>在联机栏点击<code>nuget</code>，安装 <code>AnyCAD.Rapid.Net</code>，安装完成后如下图所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B7J1kIVKNaSUW8u.png" alt="管理NuGet程序包"></p>
-<h4 id="2-3-设置工程项目属性"><a href="#2-3-设置工程项目属性" class="headerlink" title="2.3 设置工程项目属性"></a>2.3 设置工程项目属性</h4><p>为满足三维应用程序的高性能要求，建议设置项目首选 <code>64</code> 位环境，即禁用首选 <code>32</code> 位选项，如下图所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/iH1mMKTjaoFXrCe.png" alt="设置工程项目属性"></p>
-<h4 id="2-4-SDK初始化"><a href="#2-4-SDK初始化" class="headerlink" title="2.4 SDK初始化"></a>2.4 SDK初始化</h4><p>在窗体设计中添加一个 <code>panel</code> 容器用来显示三维内容，只要在窗体的构造函数后添加几行代码就可以将三维控件添加到窗体容器中。</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">FormMain</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    <span class="comment">// 初始化, 指定三维控件的容器</span></span><br><span class="line">    <span class="keyword">this</span>.renderView = <span class="keyword">new</span> RenderControl();</span><br><span class="line">    <span class="keyword">this</span>.renderView.TabIndex = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">this</span>.panel1.Controls.Add(<span class="keyword">this</span>.renderView);</span><br><span class="line">    <span class="keyword">this</span>.renderView.Dock = DockStyle.Fill;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>三维界面渲染效果：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5eW9blyVoKrcZx1.png" alt="三维渲染效果"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AnyCAD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(四)</title>
-    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
-    <content><![CDATA[<blockquote>
-<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制电路原理图。</p>
-</blockquote>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
-<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
-<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
-<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
-<p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
-<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
-<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
-<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<blockquote>
@@ -265,6 +186,85 @@
         <tag>技术</tag>
         <tag>AltiumDesigner</tag>
         <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(四)</title>
+    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
+    <content><![CDATA[<blockquote>
+<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制电路原理图。</p>
+</blockquote>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
+<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
+<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
+<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
+<p>按照矩阵键盘逻辑进行电气连线：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
+<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
+<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
+<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AnyCAD使用</title>
+    <url>/AnyCAD%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p><code>C#</code> + <code>AnyCAD</code> 实现画点、线、圆及三维模型展示。</p>
+</blockquote>
+<h3 id="一-anycad-net-sdk-2020-09-30"><a href="#一-anycad-net-sdk-2020-09-30" class="headerlink" title="(一) anycad.net.sdk.2020.09.30"></a>(一) anycad.net.sdk.2020.09.30</h3><h4 id="1-1-准备引用"><a href="#1-1-准备引用" class="headerlink" title="1.1 准备引用"></a>1.1 准备引用</h4><p>去<a href="http://www.anycad.net/">AnyCAD官网</a>下载 <code>.net SDK</code>包，解压后复制所有bin文件夹下的dll文件到项目对应目录。</p>
+<p>这里以 <code>x64CPU</code> 的 <code>Release</code> 版本为例。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/dO5GFEov2P6AWIl.png" alt="添加dll文件"></p>
+<h4 id="1-2-添加引用"><a href="#1-2-添加引用" class="headerlink" title="1.2 添加引用"></a>1.2 添加引用</h4><p>在解决方案资源管理器选中引用，单击右键添加引用，将 <code>AnyCAD.Exchange.Net</code>、<code>AnyCAD.Foundation.Net</code>、<code>AnyCAD.Presentation.Net</code> 这三个主要的添加进来。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/oP3xtYrGmRXasKi.png" alt="添加引用"></p>
+<h4 id="1-3-界面设计"><a href="#1-3-界面设计" class="headerlink" title="1.3 界面设计"></a>1.3 界面设计</h4><p>界面设计暂时包含一个菜单栏和一个 <code>3D</code> 显示面板，菜单栏提供 <code>STEP</code>、<code>STL</code> 等 <code>3D</code> 模型文件的加载，模型显示、画点、线、圆的测试以及图形清除功能：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/vr8D3qEV9SHWmgZ.png" alt="界面设计"></p>
+<h4 id="1-4-效果预览"><a href="#1-4-效果预览" class="headerlink" title="1.4 效果预览"></a>1.4 效果预览</h4><p>先看看运行效果预览：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/13Zdf9zsgFhjcyi.png" alt="运行效果预览"></p>
+<p>尝试导入一个 <code>STEP</code> 文件：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/AOj28CSxFZs9ywo.png" alt="导入STEP文件效果"></p>
+<h4 id="1-5-三轴刀具轨迹"><a href="#1-5-三轴刀具轨迹" class="headerlink" title="1.5 三轴刀具轨迹"></a>1.5 三轴刀具轨迹</h4><p><img src="https://i.loli.net/2021/05/14/QualgLJE2OfKR4G.gif" alt="三轴刀具轨迹"></p>
+<h3 id="二-anycad-rapid-net-sample"><a href="#二-anycad-rapid-net-sample" class="headerlink" title="(二) anycad.rapid.net.sample"></a>(二) anycad.rapid.net.sample</h3><h4 id="2-1-下载vc-redist"><a href="#2-1-下载vc-redist" class="headerlink" title="2.1 下载vc_redist"></a>2.1 下载vc_redist</h4><p>在 <code>Windows</code>下，<code>AnyCAD Rapid</code> 使用基于 <code>VC++</code> 编译，运行时候依赖 <code>Vistual C++</code> 运行时库。因此，<code>64</code>位版本需要在客户机上安装<code>VC_Redist/x64/VC_redist.x64.exe</code>，<code>32</code> 位版本需要安装 <code>VC_Redist/x86/VC_redist.x86.exe</code>。</p>
+<h4 id="2-2-使用nuget添加程序集引用"><a href="#2-2-使用nuget添加程序集引用" class="headerlink" title="2.2 使用nuget添加程序集引用"></a>2.2 使用nuget添加程序集引用</h4><p><a href="https://www.nuget.org/packages/AnyCAD.Rapid.Net/">官网下载最新nuget</a>（<code>AnyCAD.Rapid.Net.2020.10.27.nupkg</code>）。</p>
+<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 程序包管理器设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/D9sxPKNbaZQneHv.png" alt="程序包管理器设置"></p>
+<p>编辑程序包源</p>
+<p>名称：<code>nuget</code><br>源：包含 <code>nupkg</code> 的本地路径</p>
+<p>点击更新后，确定</p>
+<p><code>Visual Studio 2013</code> 中点击工具 -&gt; <code>NuGet</code>程序包管理器 -&gt; 管理解决方案的<code>NuGet</code>程序包</p>
+<p>在联机栏点击<code>nuget</code>，安装 <code>AnyCAD.Rapid.Net</code>，安装完成后如下图所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/B7J1kIVKNaSUW8u.png" alt="管理NuGet程序包"></p>
+<h4 id="2-3-设置工程项目属性"><a href="#2-3-设置工程项目属性" class="headerlink" title="2.3 设置工程项目属性"></a>2.3 设置工程项目属性</h4><p>为满足三维应用程序的高性能要求，建议设置项目首选 <code>64</code> 位环境，即禁用首选 <code>32</code> 位选项，如下图所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/iH1mMKTjaoFXrCe.png" alt="设置工程项目属性"></p>
+<h4 id="2-4-SDK初始化"><a href="#2-4-SDK初始化" class="headerlink" title="2.4 SDK初始化"></a>2.4 SDK初始化</h4><p>在窗体设计中添加一个 <code>panel</code> 容器用来显示三维内容，只要在窗体的构造函数后添加几行代码就可以将三维控件添加到窗体容器中。</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">FormMain</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">    InitializeComponent();</span><br><span class="line">    <span class="comment">// 初始化, 指定三维控件的容器</span></span><br><span class="line">    <span class="keyword">this</span>.renderView = <span class="keyword">new</span> RenderControl();</span><br><span class="line">    <span class="keyword">this</span>.renderView.TabIndex = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">this</span>.panel1.Controls.Add(<span class="keyword">this</span>.renderView);</span><br><span class="line">    <span class="keyword">this</span>.renderView.Dock = DockStyle.Fill;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>三维界面渲染效果：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5eW9blyVoKrcZx1.png" alt="三维渲染效果"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AnyCAD</tag>
       </tags>
   </entry>
   <entry>
@@ -318,106 +318,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Chocolatey</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Flutter使用</title>
-    <url>/Flutter%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
-</blockquote>
-<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
-<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
-<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
-</ul>
-<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
-<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
-<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
-<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
-
-<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
-
-<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
-<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
-
-<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
-
-<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>再次运行<code>flutter doctor</code>。</p>
-<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
-<p>（2）选择Flutter SDK Path。</p>
-<p>（3）填写工程名。</p>
-<p>（4）填写工程路径。</p>
-<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
-<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
-<p>Application：应用名称</p>
-<p>User-permission：使用权限，必须包含网络访问权限。</p>
-<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
-<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
-<p>（2）查看构建配置</p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
-<p>defaultConfig:</p>
-<p>applicationId:指定始终唯一的appid</p>
-<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
-<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
-<p>（3）添加启动图标</p>
-<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
-<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
-<p>（4）APP签名</p>
-<p><strong>创建keystore</strong></p>
-<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
-<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725133511680.png" alt="image-20220725133511680"></p>
-<p><strong>引用应用程序中的keystore</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
-<p>storePassword=密钥库口令</p>
-<p>keyPassword=key的密钥口令</p>
-<p>keyAlias=key</p>
-<p>storeFile=<app_dir>/key.jks</p>
-<p><strong>在gradle中配置签名</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
-<p>在<code>”android &#123;“</code>前加上如下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
-
-<p>将</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>替换为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>（5）开启混淆</p>
-<p><strong>配置混淆</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>开启混淆压缩</strong></p>
-<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
-<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
-<p>修改后的<code>buildTypes</code>如下所示：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#x27;proguard-android.txt&#x27;), &#x27;proguard-rules.pro&#x27;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>（6）构建发布版apk</p>
-<p>进入应用程序目录</p>
-<p><code>cd &lt;app_dir&gt;</code></p>
-<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
-<p><code>flutter build apk</code></p>
-<p>安装<code>apk</code></p>
-<p><code>flutter install</code></p>
-<p>构建<code>apk</code>结果如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725134059854.png" alt="image-20220725134059854"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Flutter</tag>
       </tags>
   </entry>
   <entry>
@@ -771,6 +671,106 @@
       <tags>
         <tag>技术</tag>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Flutter使用</title>
+    <url>/Flutter%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
+</blockquote>
+<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
+<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
+</ul>
+<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
+<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
+<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
+<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
+
+<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+
+<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
+<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
+
+<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
+
+<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>再次运行<code>flutter doctor</code>。</p>
+<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
+<p>（2）选择Flutter SDK Path。</p>
+<p>（3）填写工程名。</p>
+<p>（4）填写工程路径。</p>
+<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
+<p>Application：应用名称</p>
+<p>User-permission：使用权限，必须包含网络访问权限。</p>
+<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
+<p>（2）查看构建配置</p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
+<p>defaultConfig:</p>
+<p>applicationId:指定始终唯一的appid</p>
+<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
+<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
+<p>（3）添加启动图标</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
+<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
+<p>（4）APP签名</p>
+<p><strong>创建keystore</strong></p>
+<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
+<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725133511680.png" alt="image-20220725133511680"></p>
+<p><strong>引用应用程序中的keystore</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
+<p>storePassword=密钥库口令</p>
+<p>keyPassword=key的密钥口令</p>
+<p>keyAlias=key</p>
+<p>storeFile=<app_dir>/key.jks</p>
+<p><strong>在gradle中配置签名</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
+<p>在<code>”android &#123;“</code>前加上如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
+
+<p>将</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>替换为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（5）开启混淆</p>
+<p><strong>配置混淆</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>开启混淆压缩</strong></p>
+<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
+<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
+<p>修改后的<code>buildTypes</code>如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#x27;proguard-android.txt&#x27;), &#x27;proguard-rules.pro&#x27;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>（6）构建发布版apk</p>
+<p>进入应用程序目录</p>
+<p><code>cd &lt;app_dir&gt;</code></p>
+<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
+<p><code>flutter build apk</code></p>
+<p>安装<code>apk</code></p>
+<p><code>flutter install</code></p>
+<p>构建<code>apk</code>结果如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220725134059854.png" alt="image-20220725134059854"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Flutter</tag>
       </tags>
   </entry>
   <entry>
@@ -1283,45 +1283,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Proteus 7 Professional安装</title>
-    <url>/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
-<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
-<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
-<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
-<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
-<p>破解成功后关闭破解软件。</p>
-<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
-<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
-<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
-<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
-<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Proteus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>OneNET Studio与IoT Studio对比分析</title>
     <url>/OneNET%20Studio%E4%B8%8EIoT%20Studio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h2 id="1-OneNET-Studio"><a href="#1-OneNET-Studio" class="headerlink" title="1 OneNET Studio"></a>1 OneNET Studio</h2><h3 id="1-1-平台架构"><a href="#1-1-平台架构" class="headerlink" title="1.1 平台架构"></a>1.1 平台架构</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OneNET%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNET Studio 架构图"></p>
@@ -1606,69 +1567,42 @@
       </tags>
   </entry>
   <entry>
-    <title>Xilinx静态库制作与使用</title>
-    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
-<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
-<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
-<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
-<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
-<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
-<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
+    <title>Proteus 7 Professional安装</title>
+    <url>/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/458QRftqZEcGkSK.png" alt="第一次安装无许可证"></p>
+<p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/nRVjekbTDv41mwg.png" alt="选择key文件"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/o58BI1DvgwiVdq4.png" alt="安装许可证"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/GpAK6Y8vwZjINiL.png" alt="选择是"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/FAbQw2XC3tyYGkT.png" alt="关闭许可证管理"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9EhDytl7bciqU6K.png" alt="有密钥则继续"></p>
+<h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Ncf6Whx1gpSJVoO.png" alt="选择安装路径"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/JUPHrkMmXxTZGNz.png" alt="选择功能"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/35Ab92KfhJCzBgi.png" alt="选择程序目录"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gHd8LJcQn5wCmEb.png" alt="安装结束"></p>
+<h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
+<p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/rgwUdlPTMkVOWZC.png" alt="破解"></p>
+<p>破解成功后关闭破解软件。</p>
+<h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
+<p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/C5hVlEw4rb9AUIJ.png" alt="备份DLL"></p>
+<p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
+<p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/Z8ODywC2Qjn9mWF.png" alt="运行预览"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/VRbTG1e5UDwXhgr.png" alt="忽略错误"></p>
+<p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Xilinx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>uniCloud使用</title>
-    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
-</blockquote>
-<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
-<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
-<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
-<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
-<p>编辑云函数内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
-<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
-<p>可以在web控制台查看上传的云函数：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
-<p>修改 <code>pages/index/index.vue</code> ：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
-<p><code>uni.callFunction</code> 的好处：</p>
-<ul>
-<li>更安全，黑客攻击都找不到URL入口。</li>
-<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
-<li>自带 <code>uni-id</code> 的token。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>uni-app</tag>
+        <tag>Proteus</tag>
       </tags>
   </entry>
   <entry>
@@ -2333,6 +2267,72 @@
       </tags>
   </entry>
   <entry>
+    <title>Xilinx静态库制作与使用</title>
+    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
+<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708163746945.png" alt="image-20210708163746945"></p>
+<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164029278.png" alt="image-20210708164029278"></p>
+<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708164328218.png" alt="image-20210708164328218"></p>
+<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165413594.png" alt="image-20210708165413594"></p>
+<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165553501.png" alt="image-20210708165553501"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165756141.png" alt="image-20210708165756141"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165825669.png" alt="image-20210708165825669"></p>
+<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708165934672.png" alt="image-20210708165934672"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210708170136647.png" alt="image-20210708170136647"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Xilinx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>uniCloud使用</title>
+    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
+</blockquote>
+<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722141823663.png" alt="image-20210722141823663"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142059284.png" alt="image-20210722142059284"></p>
+<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142538030.png" alt="image-20210722142538030"></p>
+<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142752925.png" alt="image-20210722142752925"></p>
+<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210722142947924.png" alt="image-20210722142947924"></p>
+<p>编辑云函数内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723110217961.png" alt="image-20210723110217961"></p>
+<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144113032.png" alt="image-20210723144113032"></p>
+<p>可以在web控制台查看上传的云函数：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723144319826.png" alt="image-20210723144319826"></p>
+<p>修改 <code>pages/index/index.vue</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210723145059296.png" alt="image-20210723145059296"></p>
+<p><code>uni.callFunction</code> 的好处：</p>
+<ul>
+<li>更安全，黑客攻击都找不到URL入口。</li>
+<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
+<li>自带 <code>uni-id</code> 的token。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>uni-app</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>uniCloud通讯录实战</title>
     <url>/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/</url>
     <content><![CDATA[<h3 id="1-新建uni-app项目——通讯录"><a href="#1-新建uni-app项目——通讯录" class="headerlink" title="1 新建uni-app项目——通讯录"></a>1 新建uni-app项目——通讯录</h3><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有HBuilder账户，可以根据提示去注册）：</p>
@@ -2485,78 +2485,23 @@
       </tags>
   </entry>
   <entry>
-    <title>博达工业云与阿里云对比</title>
-    <url>/%E5%8D%9A%E8%BE%BE%E5%B7%A5%E4%B8%9A%E4%BA%91%E4%B8%8E%E9%98%BF%E9%87%8C%E4%BA%91%E5%AF%B9%E6%AF%94/</url>
-    <content><![CDATA[<h2 id="1-博达工业云"><a href="#1-博达工业云" class="headerlink" title="1. 博达工业云"></a>1. 博达工业云</h2><h3 id="1-1-平台概况"><a href="#1-1-平台概况" class="headerlink" title="1.1 平台概况"></a>1.1 平台概况</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B9%B3%E5%8F%B0%E6%A6%82%E5%86%B5.png" alt="平台概况"></p>
-<h3 id="1-2-监控大屏"><a href="#1-2-监控大屏" class="headerlink" title="1.2 监控大屏"></a>1.2 监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="监控大屏"></p>
-<h3 id="1-3-云组态"><a href="#1-3-云组态" class="headerlink" title="1.3 云组态"></a>1.3 云组态</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E7%BB%84%E6%80%81.png" alt="云组态"></p>
-<h3 id="1-4-设备监测"><a href="#1-4-设备监测" class="headerlink" title="1.4  设备监测"></a>1.4  设备监测</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220730110123738.png" alt="image-20220730110123738"></p>
-<h3 id="1-5-报警中心"><a href="#1-5-报警中心" class="headerlink" title="1.5 报警中心"></a>1.5 报警中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%8A%A5%E8%AD%A6%E4%B8%AD%E5%BF%83.png" alt="报警中心"></p>
-<h3 id="1-6-数据中心"><a href="#1-6-数据中心" class="headerlink" title="1.6 数据中心"></a>1.6 数据中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.png" alt="数据中心"></p>
-<h3 id="1-7-项目管理"><a href="#1-7-项目管理" class="headerlink" title="1.7 项目管理"></a>1.7 项目管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86.png" alt="项目管理"></p>
-<h3 id="1-8-设备管理"><a href="#1-8-设备管理" class="headerlink" title="1.8 设备管理"></a>1.8 设备管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.png" alt="设备管理"></p>
-<h3 id="1-9-OTA管理"><a href="#1-9-OTA管理" class="headerlink" title="1.9 OTA管理"></a>1.9 OTA管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OTA%E7%AE%A1%E7%90%86.png" alt="OTA管理"></p>
-<h3 id="1-10-视频监控"><a href="#1-10-视频监控" class="headerlink" title="1.10 视频监控"></a>1.10 视频监控</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%A7%86%E9%A2%91%E7%9B%91%E6%8E%A7.png" alt="视频监控"></p>
-<h3 id="1-11-用户中心"><a href="#1-11-用户中心" class="headerlink" title="1.11 用户中心"></a>1.11 用户中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%94%A8%E6%88%B7%E4%B8%AD%E5%BF%83.png" alt="用户中心"></p>
-<h2 id="2-阿里云"><a href="#2-阿里云" class="headerlink" title="2. 阿里云"></a>2. 阿里云</h2><h3 id="2-1-温室监控大屏"><a href="#2-1-温室监控大屏" class="headerlink" title="2.1 温室监控大屏"></a>2.1 温室监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%B8%A9%E5%AE%A4%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="温室监控大屏"></p>
-<h3 id="2-2-树莓派搭建机房监控应用"><a href="#2-2-树莓派搭建机房监控应用" class="headerlink" title="2.2 树莓派搭建机房监控应用"></a>2.2 树莓派搭建机房监控应用</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
-<h2 id="3-对比与分析"><a href="#3-对比与分析" class="headerlink" title="3. 对比与分析"></a>3. 对比与分析</h2><h3 id="3-1-关于应用开发"><a href="#3-1-关于应用开发" class="headerlink" title="3.1 关于应用开发"></a>3.1 关于应用开发</h3><p>博达工业云与阿里云都提供web可视化开发，都需要将组件绑定对应的数据流。</p>
-<p>阿里云提供移动可视化开发，支持生成HTML5应用并绑定域名发布，但部分手机存在兼容性问题。</p>
-<p>博达工业云提供微信公众号、Android/IOS APP，需要了解博达的APP开发方式。</p>
-<p>阿里云提供个人组件开发，博达工业云可能需要开放相关接口才能进行个人组件开发。</p>
-<h3 id="3-2-关于设备接入"><a href="#3-2-关于设备接入" class="headerlink" title="3.2 关于设备接入"></a>3.2 关于设备接入</h3><p>阿里云物联网平台目前支持MQTT、CoAP、HTTP接入，如果要使用modbus，需要使用边缘计算平台并创建对应实例。</p>
-<p>目前还不了解博达工业云的设备接入方式，是否必须使用物联网硬件？是否提供设备接入相关API？</p>
-<h3 id="3-3-关于设备安全认证"><a href="#3-3-关于设备安全认证" class="headerlink" title="3.3 关于设备安全认证"></a>3.3 关于设备安全认证</h3><p>阿里云提供IoT设备身份认证ID²（Internet Device ID）。</p>
-<p>ID²是一种物联网设备的可信身份标识，具备不可篡改、不可伪造、全球唯一的安全属性。</p>
-<p>目前还不了解博达工业云的设备安全认证方面的功能，是否能实现设备自注册，以及由平台来自动分配设备ID，保证设备ID唯一。</p>
-<p>关于设备安全认证，最好是能烧录到设备的一个固定地址，设置为只读。</p>
-<h3 id="3-4-关于角色管理"><a href="#3-4-关于角色管理" class="headerlink" title="3.4 关于角色管理"></a>3.4 关于角色管理</h3><p>博达工业云提供详细的角色权限管理，包含平台概况、监控大屏、云组态、在线监测等等。</p>
-<p>阿里云需要开通账号功能才可以进行权限管理，目前暂不了解其是否具有更详细的权限管理功能。</p>
-<h3 id="3-5-关于网站应用"><a href="#3-5-关于网站应用" class="headerlink" title="3.5 关于网站应用"></a>3.5 关于网站应用</h3><p>阿里云为个人开发者和企业用户提供了物联网应用开发以及后台项目管理，界面具有普适性。</p>
-<p>博达工业云提供私有化部署，界面可定制。</p>
-<p>考虑到数据的可迁移性，最好是能采用类似博达的后台前端管理方案，当需要更换服务器时，能更好地迁移网站数据。</p>
-<h3 id="3-6-关于云平台选择及兼容性"><a href="#3-6-关于云平台选择及兼容性" class="headerlink" title="3.6 关于云平台选择及兼容性"></a>3.6 关于云平台选择及兼容性</h3><p>目前云平台众多，虽然数据传输方面采用的协议都大同小异，但是在接入平台时，各家云平台是互不兼容的，这是由于各家云平台服务器地址不同、设备认证方式不同。</p>
-<p>而如果要使用某一家云平台自带的可视化开发时，那么必须先创建对应的产品，设备接入方面也必须要与这家云平台做适配。</p>
-<h3 id="3-7-关于边缘计算"><a href="#3-7-关于边缘计算" class="headerlink" title="3.7 关于边缘计算"></a>3.7 关于边缘计算</h3><p>博达暂不支持边缘计算。</p>
-<p>阿里云提供边缘计算服务。</p>
-<h3 id="3-8-关于文件管理"><a href="#3-8-关于文件管理" class="headerlink" title="3.8 关于文件管理"></a>3.8 关于文件管理</h3><p>博达不支持文件传输，OTA固件升级仅针对智能网关。</p>
-<p>阿里云支持文件传输，一个账号下的总容量上限为1G。</p>
+    <title>倍福ET2000侦听器使用</title>
+    <url>/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
+<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
+<p>Uplink X5——电脑网口(WireShark)</p>
+<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214113727262.png" alt="image-20220214113727262"></p>
+<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114512693.png" alt="image-20220214114512693"></p>
+<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114641411.png" alt="image-20220214114641411"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114110642.png" alt="image-20220214114110642"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-</blockquote>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
+        <tag>WireShark</tag>
       </tags>
   </entry>
   <entry>
@@ -2603,26 +2548,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Keil</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>倍福ET2000侦听器使用</title>
-    <url>/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
-<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
-<p>Uplink X5——电脑网口(WireShark)</p>
-<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214113727262.png" alt="image-20220214113727262"></p>
-<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114512693.png" alt="image-20220214114512693"></p>
-<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114641411.png" alt="image-20220214114641411"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20220214114110642.png" alt="image-20220214114110642"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>WireShark</tag>
       </tags>
   </entry>
   <entry>
@@ -2713,6 +2638,81 @@
       <tags>
         <tag>技术</tag>
         <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博达工业云与阿里云对比</title>
+    <url>/%E5%8D%9A%E8%BE%BE%E5%B7%A5%E4%B8%9A%E4%BA%91%E4%B8%8E%E9%98%BF%E9%87%8C%E4%BA%91%E5%AF%B9%E6%AF%94/</url>
+    <content><![CDATA[<h2 id="1-博达工业云"><a href="#1-博达工业云" class="headerlink" title="1. 博达工业云"></a>1. 博达工业云</h2><h3 id="1-1-平台概况"><a href="#1-1-平台概况" class="headerlink" title="1.1 平台概况"></a>1.1 平台概况</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B9%B3%E5%8F%B0%E6%A6%82%E5%86%B5.png" alt="平台概况"></p>
+<h3 id="1-2-监控大屏"><a href="#1-2-监控大屏" class="headerlink" title="1.2 监控大屏"></a>1.2 监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="监控大屏"></p>
+<h3 id="1-3-云组态"><a href="#1-3-云组态" class="headerlink" title="1.3 云组态"></a>1.3 云组态</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E4%BA%91%E7%BB%84%E6%80%81.png" alt="云组态"></p>
+<h3 id="1-4-设备监测"><a href="#1-4-设备监测" class="headerlink" title="1.4  设备监测"></a>1.4  设备监测</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220730110123738.png" alt="image-20220730110123738"></p>
+<h3 id="1-5-报警中心"><a href="#1-5-报警中心" class="headerlink" title="1.5 报警中心"></a>1.5 报警中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%8A%A5%E8%AD%A6%E4%B8%AD%E5%BF%83.png" alt="报警中心"></p>
+<h3 id="1-6-数据中心"><a href="#1-6-数据中心" class="headerlink" title="1.6 数据中心"></a>1.6 数据中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.png" alt="数据中心"></p>
+<h3 id="1-7-项目管理"><a href="#1-7-项目管理" class="headerlink" title="1.7 项目管理"></a>1.7 项目管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86.png" alt="项目管理"></p>
+<h3 id="1-8-设备管理"><a href="#1-8-设备管理" class="headerlink" title="1.8 设备管理"></a>1.8 设备管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.png" alt="设备管理"></p>
+<h3 id="1-9-OTA管理"><a href="#1-9-OTA管理" class="headerlink" title="1.9 OTA管理"></a>1.9 OTA管理</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OTA%E7%AE%A1%E7%90%86.png" alt="OTA管理"></p>
+<h3 id="1-10-视频监控"><a href="#1-10-视频监控" class="headerlink" title="1.10 视频监控"></a>1.10 视频监控</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%A7%86%E9%A2%91%E7%9B%91%E6%8E%A7.png" alt="视频监控"></p>
+<h3 id="1-11-用户中心"><a href="#1-11-用户中心" class="headerlink" title="1.11 用户中心"></a>1.11 用户中心</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%94%A8%E6%88%B7%E4%B8%AD%E5%BF%83.png" alt="用户中心"></p>
+<h2 id="2-阿里云"><a href="#2-阿里云" class="headerlink" title="2. 阿里云"></a>2. 阿里云</h2><h3 id="2-1-温室监控大屏"><a href="#2-1-温室监控大屏" class="headerlink" title="2.1 温室监控大屏"></a>2.1 温室监控大屏</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%B8%A9%E5%AE%A4%E7%9B%91%E6%8E%A7%E5%A4%A7%E5%B1%8F.png" alt="温室监控大屏"></p>
+<h3 id="2-2-树莓派搭建机房监控应用"><a href="#2-2-树莓派搭建机房监控应用" class="headerlink" title="2.2 树莓派搭建机房监控应用"></a>2.2 树莓派搭建机房监控应用</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
+<h2 id="3-对比与分析"><a href="#3-对比与分析" class="headerlink" title="3. 对比与分析"></a>3. 对比与分析</h2><h3 id="3-1-关于应用开发"><a href="#3-1-关于应用开发" class="headerlink" title="3.1 关于应用开发"></a>3.1 关于应用开发</h3><p>博达工业云与阿里云都提供web可视化开发，都需要将组件绑定对应的数据流。</p>
+<p>阿里云提供移动可视化开发，支持生成HTML5应用并绑定域名发布，但部分手机存在兼容性问题。</p>
+<p>博达工业云提供微信公众号、Android/IOS APP，需要了解博达的APP开发方式。</p>
+<p>阿里云提供个人组件开发，博达工业云可能需要开放相关接口才能进行个人组件开发。</p>
+<h3 id="3-2-关于设备接入"><a href="#3-2-关于设备接入" class="headerlink" title="3.2 关于设备接入"></a>3.2 关于设备接入</h3><p>阿里云物联网平台目前支持MQTT、CoAP、HTTP接入，如果要使用modbus，需要使用边缘计算平台并创建对应实例。</p>
+<p>目前还不了解博达工业云的设备接入方式，是否必须使用物联网硬件？是否提供设备接入相关API？</p>
+<h3 id="3-3-关于设备安全认证"><a href="#3-3-关于设备安全认证" class="headerlink" title="3.3 关于设备安全认证"></a>3.3 关于设备安全认证</h3><p>阿里云提供IoT设备身份认证ID²（Internet Device ID）。</p>
+<p>ID²是一种物联网设备的可信身份标识，具备不可篡改、不可伪造、全球唯一的安全属性。</p>
+<p>目前还不了解博达工业云的设备安全认证方面的功能，是否能实现设备自注册，以及由平台来自动分配设备ID，保证设备ID唯一。</p>
+<p>关于设备安全认证，最好是能烧录到设备的一个固定地址，设置为只读。</p>
+<h3 id="3-4-关于角色管理"><a href="#3-4-关于角色管理" class="headerlink" title="3.4 关于角色管理"></a>3.4 关于角色管理</h3><p>博达工业云提供详细的角色权限管理，包含平台概况、监控大屏、云组态、在线监测等等。</p>
+<p>阿里云需要开通账号功能才可以进行权限管理，目前暂不了解其是否具有更详细的权限管理功能。</p>
+<h3 id="3-5-关于网站应用"><a href="#3-5-关于网站应用" class="headerlink" title="3.5 关于网站应用"></a>3.5 关于网站应用</h3><p>阿里云为个人开发者和企业用户提供了物联网应用开发以及后台项目管理，界面具有普适性。</p>
+<p>博达工业云提供私有化部署，界面可定制。</p>
+<p>考虑到数据的可迁移性，最好是能采用类似博达的后台前端管理方案，当需要更换服务器时，能更好地迁移网站数据。</p>
+<h3 id="3-6-关于云平台选择及兼容性"><a href="#3-6-关于云平台选择及兼容性" class="headerlink" title="3.6 关于云平台选择及兼容性"></a>3.6 关于云平台选择及兼容性</h3><p>目前云平台众多，虽然数据传输方面采用的协议都大同小异，但是在接入平台时，各家云平台是互不兼容的，这是由于各家云平台服务器地址不同、设备认证方式不同。</p>
+<p>而如果要使用某一家云平台自带的可视化开发时，那么必须先创建对应的产品，设备接入方面也必须要与这家云平台做适配。</p>
+<h3 id="3-7-关于边缘计算"><a href="#3-7-关于边缘计算" class="headerlink" title="3.7 关于边缘计算"></a>3.7 关于边缘计算</h3><p>博达暂不支持边缘计算。</p>
+<p>阿里云提供边缘计算服务。</p>
+<h3 id="3-8-关于文件管理"><a href="#3-8-关于文件管理" class="headerlink" title="3.8 关于文件管理"></a>3.8 关于文件管理</h3><p>博达不支持文件传输，OTA固件升级仅针对智能网关。</p>
+<p>阿里云支持文件传输，一个账号下的总容量上限为1G。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+</blockquote>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/p1.jpg" alt="p1"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/image-20210625141958297.png" alt="image-20210625141958297"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -2874,114 +2874,47 @@
       </tags>
   </entry>
   <entry>
-    <title>物联网应用开发调研</title>
-    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/</url>
-    <content><![CDATA[<h2 id="阿里云——IoT-Studio"><a href="#阿里云——IoT-Studio" class="headerlink" title="阿里云——IoT Studio"></a>阿里云——IoT Studio</h2><h3 id="1-产品简介"><a href="#1-产品简介" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>物联网应用开发（IoT Studio）是阿里云针对物联网场景提供的生产力工具，提供了Web可视化开发、业务逻辑开发与物联网数据分析等一系列便捷的物联网开发工具，可覆盖各个物联网行业核心应用场景，加速物联网SaaS(Software-as-a-Service， 软件即服务)构建。</p>
-<p><strong>架构图</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91IoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="阿里云IoTStudio架构图"></p>
-<h3 id="2-功能特点"><a href="#2-功能特点" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
-<li><p><strong>可视化搭建</strong></p>
-<p>  IoT Studio提供可视化搭建能力，您可以通过拖拽、配置操作，快速完成设备数据监控相关的Web应用、API服务的开发。您可以专注于核心业务，从传统开发的繁琐细节中脱身，有效提升开发效率。</p>
-</li>
-<li><p><strong>与设备管理无缝集成</strong></p>
-<p>  设备相关的属性、服务、事件等数据均可从物联网平台设备接入和管理模块中直接获取，IoT Studio与物联网平台无缝打通，大大降低物联网开发工作量。</p>
-</li>
-<li><p><strong>丰富的开发资源</strong></p>
-<p>  各开发平台均拥有数量众多的组件和丰富的API。随着产品迭代升级，组件库会愈加丰富，IoT Studio帮助您提升开发效率。</p>
-</li>
-<li><p><strong>组件开发</strong></p>
-<p>  IoT Studio提供了组件开发能力，您可以开发、发布和管理自己研发的组件，并将其发布到Web可视化工作台中用于可视化页面搭建。大大满足开发者的需求，提升组件丰富性，为可视化搭建提供无限可能。</p>
-</li>
-<li><p><strong>无需部署</strong></p>
-<p>  使用IoT Studio，应用服务开发完毕后，直接托管在云端，支持直接预览、使用。无需部署即可交付使用，免除您额外购买服务器等产品的烦恼。</p>
-</li>
-</ul>
-<p><strong>使用限制</strong></p>
-<p>IoT Studio目前处于公测期间，公测期间产品免费试用，产品使用的最终规格以未来商业化调整规格为准。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/IoTStudio%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6.png" alt="IoTStudio使用限制"></p>
-<h3 id="3-场景应用案例——树莓派搭建机房监控应用"><a href="#3-场景应用案例——树莓派搭建机房监控应用" class="headerlink" title="3. 场景应用案例——树莓派搭建机房监控应用"></a>3. 场景应用案例——树莓派搭建机房监控应用</h3><p>通过使用树莓派（Raspberry Pi 4）、DHT11温湿度传感器设备和物联网应用开发（IoT Studio）平台，构建一个服务器机房的实时动态环境温湿度检测系统</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
-<h2 id="华为云——IoT开发者服务"><a href="#华为云——IoT开发者服务" class="headerlink" title="华为云——IoT开发者服务"></a>华为云——IoT开发者服务</h2><h3 id="1-产品简介-1"><a href="#1-产品简介-1" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>IoT开发者服务（IoT Studio，原OceanBooster），是华为物联网针对物联网应用提供的应用开发平台，可涵盖物联网行业的核心应用场景，集Web在线开发、微服务开发和第三方应用推荐等一系列的便利物联网开发工具于一体，是个人开发者的孵化器，行业客户的应用托管平台。</p>
-<p><strong>架构图</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BAIoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="华为IoTStudio架构图"></p>
-<h3 id="2-功能特点-1"><a href="#2-功能特点-1" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
-<li><p><strong>应用快速构建</strong></p>
-<p>  通过拖拽、配置方式，快速简单完成WEB应用开发，大大降低物联网应用研发成本，满足企业应用快速上线要求 。</p>
-</li>
-<li><p><strong>灵活报表</strong></p>
-<p>  可通过多数据源，多维度，多条件，多形态的数据灵活定义各类图表和报表，并提供支持亿级的数据预处理能力 。</p>
-</li>
-<li><p><strong>多样化发布方式</strong></p>
-<p>  通过自动生成物联网通用组件代码，提供被嵌入能力，可无缝嵌入企业自有应用，开发者只需开发和维护业务逻辑部分代码，降低应用运维成本 。</p>
-</li>
-<li><p><strong>多级管理能力</strong></p>
-<p>  提供分权分域能力，满足企业跨地域，多层级的管理诉求 。</p>
-</li>
-</ul>
-<h3 id="3-场景应用案例——电梯行业"><a href="#3-场景应用案例——电梯行业" class="headerlink" title="3. 场景应用案例——电梯行业"></a>3. 场景应用案例——电梯行业</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E7%94%B5%E6%A2%AF%E8%A1%8C%E4%B8%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF.png" alt="华为云电梯行业应用场景"></p>
-<h2 id="移动云——OneNET-Studio"><a href="#移动云——OneNET-Studio" class="headerlink" title="移动云——OneNET Studio"></a>移动云——OneNET Studio</h2><h3 id="1-产品简介-2"><a href="#1-产品简介-2" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>OneNET Studio 定位新一代物联网中台，向下接入设备，向上承载应用。整合产业链上下游，向下整合终端设备接入与管理，向上延展物联网一站式应用开发，横向聚合增值能力，提供智能化数据分析，形成端到端完整链路物联网解决方案体系，打造物联网生态环境。</p>
-<p><strong>架构图</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OneNETStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNETStudio架构图"></p>
-<h3 id="2-功能特点-2"><a href="#2-功能特点-2" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><p><strong>设备接入与管理</strong></p>
-<p>适用于设备生产商、设备方案商，提供各行业的物模型，实现设备极速上云。</p>
-<ul>
-<li><p><strong>统一设备接入</strong></p>
-<p>  提供MQTT、CoAP和泛协议标准接入SDK，支持直连、网关、云云对接等多种方式接入，随用随选。</p>
-</li>
-<li><p><strong>统一物模型</strong></p>
-<p>  提供灵活的物模型定义及多行业标准模版，构建标准化数据模型，解决数据碎片化，简化设备与应用开发。</p>
-</li>
-<li><p><strong>自动生成SDK</strong></p>
-<p>  根据定义的物模型功能点，平台自动生成SDK，降低嵌入式开发的代码量，缩短产品开发周期，实现设备快速接入。</p>
-</li>
-<li><p><strong>设备管理</strong></p>
-<p>  提供高度匹配设备全生命周期的管理工具，方便用户在测试、生产、交付、售后等不同阶段的管理需求。</p>
-</li>
-<li><p><strong>设备转移</strong></p>
-<p>  提供跨用户的设备转移功能，转移双方需实名认证。</p>
-</li>
-<li><p><strong>全链路日志</strong></p>
-<p>  开放核心服务全链路日志，支持24小时不间断监控，便于用户追踪实时消息和定位问题。</p>
-</li>
-<li><p><strong>在线调试</strong></p>
-<p>  提供设备模拟及真实设备调试功能，与可完全解耦设备及应用开发工作，快速实现设备与平台的交互调试，帮助用户进行投产前的功能验证。</p>
-</li>
-</ul>
-<p><strong>应用开发</strong></p>
-<p>适用于项目集成商、解决方案提供商，提供便捷的资源管理及应用开发、调试能力，实现项目的灵活配置，快速集成。</p>
-<ul>
-<li><p><strong>一站式开发</strong></p>
-<p>  面向行业场景，提供项目管理与应用开发工具，实现跨用户跨产品的资源整合，加速项目集成。</p>
-</li>
-<li><p><strong>统一能力网关</strong></p>
-<p>  提供统一网关能力支撑增值服务一体化，聚合LBS定位、智能语音等增值能力，提供多种物联网增值能力API。</p>
-</li>
-<li><p><strong>消息通信</strong></p>
-<p>  提供HTTP推送、消息队列MQ通信组件，实现平台与应用服务器的高效实时数据通信。</p>
-</li>
-<li><p><strong>边缘计算</strong> </p>
-<p>  边缘侧物联网设备接入和管理，时延低至10ms内。</p>
-</li>
-<li><p><strong>人工智能</strong> </p>
-<p>  提供20余种智能化开箱即用AI能力，支持核心能力场景化。</p>
-</li>
-<li><p><strong>视频能力</strong> </p>
-<p>  支持视频类应用开发，提供远程设备控制、视频推流、视频分发、视频云存储、视频回放等核心能力。</p>
-</li>
-<li><p><strong>数据可视化</strong> </p>
-<p>  提供丰富的可视化组件和免编程、拖拽式编辑方式，助力用户无缝对接海量数据，搭建可视化大屏应用。</p>
-</li>
-</ul>
-<h3 id="3-场景应用案例——设备预测性维护解决方案"><a href="#3-场景应用案例——设备预测性维护解决方案" class="headerlink" title="3. 场景应用案例——设备预测性维护解决方案"></a>3. 场景应用案例——设备预测性维护解决方案</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="设备预测性维护解决方案"></p>
-<h2 id="移动云——View"><a href="#移动云——View" class="headerlink" title="移动云——View"></a>移动云——View</h2><p><a href="https://open.iot.10086.cn/app_editor/#/view?pid=291489&id=72560&is_model=0">智能家居应用</a></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/view%E4%BA%A7%E5%93%81%E4%BB%B7%E6%A0%BC.png" alt="view产品价格"></p>
+    <title>基于阿里云OSS+PicGo的个人图床搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>gitee搭建的图床因为外链访问过多而无法访问了，无奈之下只好选择使用阿里云的OSS服务。</p>
+</blockquote>
+<h3 id="1-购买阿里云OSS资源包"><a href="#1-购买阿里云OSS资源包" class="headerlink" title="1 购买阿里云OSS资源包"></a>1 购买阿里云OSS资源包</h3><p>在<a href="https://cn.aliyun.com/">阿里云官网</a>选择产品，然后点击存储-&gt;对象存储OSS：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531113049503.png" alt="image-20220531113049503"></p>
+<p>点击立即开通，勾选对象存储OSS服务协议，开通后选择对应的套餐。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531103825336.png" alt="image-20220531103825336"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531104002828.png" alt="image-20220531104002828"></p>
+<h3 id="2-创建子用户"><a href="#2-创建子用户" class="headerlink" title="2 创建子用户"></a>2 创建子用户</h3><p>主账号的权限太大了，仅作为图床使用的话，最好是能建一个子用户。</p>
+<p>在阿里云OSS管理控制台点击自己的头像，然后点击访问控制，在左侧导航栏点击用户，然后点击创建用户：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531110202436.png" alt="image-20220531110202436"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531110629548.png" alt="image-20220531110629548"></p>
+<p>通过验证后，成功创建子用户：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531110807637.png" alt="image-20220531110807637"></p>
+<p>创建成功后，需要及时保存AccessKey等信息。</p>
+<h3 id="3-添加子用户权限"><a href="#3-添加子用户权限" class="headerlink" title="3 添加子用户权限"></a>3 添加子用户权限</h3><p>保存AccessKey等信息后，点击用户，然后点击添加权限：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111029765.png" alt="image-20220531111029765"></p>
+<p>选择系统策略的AliyunOSSFullAccess：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111226611.png" alt="image-20220531111226611"></p>
+<h3 id="4-创建Bucket"><a href="#4-创建Bucket" class="headerlink" title="4 创建Bucket"></a>4 创建Bucket</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531104151971.png" alt="image-20220531104151971"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111555487.png" alt="image-20220531111555487"></p>
+<p>记住访问域名：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111718193.png" alt="image-20220531111718193"></p>
+<h3 id="5-设置PicGo"><a href="#5-设置PicGo" class="headerlink" title="5 设置PicGo"></a>5 设置PicGo</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531112033720.png" alt="image-20220531112033720"></p>
+<h3 id="6-设置Typora"><a href="#6-设置Typora" class="headerlink" title="6 设置Typora"></a>6 设置Typora</h3><p>点击文件-&gt;偏好设置-&gt;图像，上传服务选择PicGo，PicGo路径设置为PicGo的安装路径，点击验证图片上传选项。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531112851465.png" alt="image-20220531112851465"></p>
+<h3 id="7-迁移数据"><a href="#7-迁移数据" class="headerlink" title="7 迁移数据"></a>7 迁移数据</h3><p>在Gitee上下载图床仓库压缩包到本地后解压，在OSS管理控制台选择文件管理，并点击上传文件，选择扫描文件夹，然后点击上传文件：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531114103295.png" alt="image-20220531114103295"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531114525359.png" alt="image-20220531114525359"></p>
+<p>上传成功后，只需要替换之前失效的图片链接地址即可。</p>
+<p>将之前的<code>gitee.com/gentletk/picbed/raw/master</code>替换为<code>gentletk.oss-cn-shenzhen.aliyuncs.com</code>。</p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>IoT</tag>
+        <tag>PicGo</tag>
+        <tag>OSS</tag>
       </tags>
   </entry>
   <entry>
@@ -3038,50 +2971,6 @@
       </categories>
       <tags>
         <tag>树莓派</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于阿里云OSS+PicGo的个人图床搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>gitee搭建的图床因为外链访问过多而无法访问了，无奈之下只好选择使用阿里云的OSS服务。</p>
-</blockquote>
-<h3 id="1-购买阿里云OSS资源包"><a href="#1-购买阿里云OSS资源包" class="headerlink" title="1 购买阿里云OSS资源包"></a>1 购买阿里云OSS资源包</h3><p>在<a href="https://cn.aliyun.com/">阿里云官网</a>选择产品，然后点击存储-&gt;对象存储OSS：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531113049503.png" alt="image-20220531113049503"></p>
-<p>点击立即开通，勾选对象存储OSS服务协议，开通后选择对应的套餐。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531103825336.png" alt="image-20220531103825336"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531104002828.png" alt="image-20220531104002828"></p>
-<h3 id="2-创建子用户"><a href="#2-创建子用户" class="headerlink" title="2 创建子用户"></a>2 创建子用户</h3><p>主账号的权限太大了，仅作为图床使用的话，最好是能建一个子用户。</p>
-<p>在阿里云OSS管理控制台点击自己的头像，然后点击访问控制，在左侧导航栏点击用户，然后点击创建用户：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531110202436.png" alt="image-20220531110202436"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531110629548.png" alt="image-20220531110629548"></p>
-<p>通过验证后，成功创建子用户：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531110807637.png" alt="image-20220531110807637"></p>
-<p>创建成功后，需要及时保存AccessKey等信息。</p>
-<h3 id="3-添加子用户权限"><a href="#3-添加子用户权限" class="headerlink" title="3 添加子用户权限"></a>3 添加子用户权限</h3><p>保存AccessKey等信息后，点击用户，然后点击添加权限：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111029765.png" alt="image-20220531111029765"></p>
-<p>选择系统策略的AliyunOSSFullAccess：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111226611.png" alt="image-20220531111226611"></p>
-<h3 id="4-创建Bucket"><a href="#4-创建Bucket" class="headerlink" title="4 创建Bucket"></a>4 创建Bucket</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531104151971.png" alt="image-20220531104151971"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111555487.png" alt="image-20220531111555487"></p>
-<p>记住访问域名：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531111718193.png" alt="image-20220531111718193"></p>
-<h3 id="5-设置PicGo"><a href="#5-设置PicGo" class="headerlink" title="5 设置PicGo"></a>5 设置PicGo</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531112033720.png" alt="image-20220531112033720"></p>
-<h3 id="6-设置Typora"><a href="#6-设置Typora" class="headerlink" title="6 设置Typora"></a>6 设置Typora</h3><p>点击文件-&gt;偏好设置-&gt;图像，上传服务选择PicGo，PicGo路径设置为PicGo的安装路径，点击验证图片上传选项。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531112851465.png" alt="image-20220531112851465"></p>
-<h3 id="7-迁移数据"><a href="#7-迁移数据" class="headerlink" title="7 迁移数据"></a>7 迁移数据</h3><p>在Gitee上下载图床仓库压缩包到本地后解压，在OSS管理控制台选择文件管理，并点击上传文件，选择扫描文件夹，然后点击上传文件：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531114103295.png" alt="image-20220531114103295"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/image-20220531114525359.png" alt="image-20220531114525359"></p>
-<p>上传成功后，只需要替换之前失效的图片链接地址即可。</p>
-<p>将之前的<code>gitee.com/gentletk/picbed/raw/master</code>替换为<code>gentletk.oss-cn-shenzhen.aliyuncs.com</code>。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>PicGo</tag>
-        <tag>OSS</tag>
       </tags>
   </entry>
   <entry>
@@ -3556,205 +3445,6 @@
       </tags>
   </entry>
   <entry>
-    <title>移动云物联网预研及阿里云开发对比分析</title>
-    <url>/%E7%A7%BB%E5%8A%A8%E4%BA%91%E7%89%A9%E8%81%94%E7%BD%91%E9%A2%84%E7%A0%94%E5%8F%8A%E9%98%BF%E9%87%8C%E4%BA%91%E5%BC%80%E5%8F%91%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h2 id="1-移动云物联网预研总体架构"><a href="#1-移动云物联网预研总体架构" class="headerlink" title="1 移动云物联网预研总体架构"></a>1 移动云物联网预研总体架构</h2><p>本方案采用Layui作为前端框架，选用了华为云耀云服务器存储网站应用，用户可通过访问公网IP的方式浏览网站，网站页面根据用户选择的功能定时与OneNET云端进行数据交互。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/layui%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91.png" alt="layui网页开发"></p>
-<h2 id="2-移动云物联网预研项目过程"><a href="#2-移动云物联网预研项目过程" class="headerlink" title="2 移动云物联网预研项目过程"></a>2 移动云物联网预研项目过程</h2><h3 id="2-1-网站应用部分——华为云服务器"><a href="#2-1-网站应用部分——华为云服务器" class="headerlink" title="2.1 网站应用部分——华为云服务器"></a>2.1 网站应用部分——华为云服务器</h3><ol>
-<li>购买华为云耀云服务器</li>
-</ol>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%95%E7%94%A8.png" alt="华为云耀云服务器"></p>
-<ol start="2">
-<li><a href="http://www.layui.com/">获取Layui</a></li>
-</ol>
-<p>**layui(谐音: 类UI)**是一款采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写与组织形式，门槛极低，拿来即用。</p>
-<p><a href="http://www.layui.com/">官网首页</a></p>
-<p><a href="https://github.com/sentsin/layui/">Github</a></p>
-<p><a href="https://gitee.com/sentsin/layui">Gitee</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># npm安装		一般用于WebPack管理</span></span><br><span class="line">npm -i layui-src</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>设计网页结构</li>
-</ol>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8%E8%AE%BE%E8%AE%A1.png" alt="机器人设备列表设计"></p>
-<h3 id="2-2-数据存储部分——OneNET移动云"><a href="#2-2-数据存储部分——OneNET移动云" class="headerlink" title="2.2 数据存储部分——OneNET移动云"></a>2.2 数据存储部分——OneNET移动云</h3><p>数据存储部分采用中国移动物联网开放平台——OneNET。</p>
-<p>资源模型如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%B5%84%E6%BA%90%E6%A8%A1%E5%9E%8B.png" alt="资源模型"></p>
-<ul>
-<li><p><strong>产品(product)</strong></p>
-<p>  用户的最大资源集为产品，产品下资源包括设备、设备数据、设备权限、数据触发服务以及基于设备数据的应用等多种资源，用户可以创建多个产品。</p>
-</li>
-<li><p><strong>设备(device)</strong></p>
-<p>  设备为真实终端在平台的映射，真实终端连接平台时，需要与平台设备建立一一对应关系，终端上传的数据被存储在数据流中，设备可以拥有一个或者多个数据流。</p>
-</li>
-<li><p><strong>数据流与数据点</strong></p>
-<p>  数据流用于存储设备的某一类属性数据，例如温度，湿度，坐标等信息；平台要求设备上传并存储数据时，必须以key-value的格式上传数据，其中key即为数据流名称，value为实际存储的数据点，value格式可以为int、float、string、json等多种自定义格式。</p>
-</li>
-<li><p><strong>APIkey</strong></p>
-<p>  APIkey为用户进行API调用时的密钥，用户访问产品资源时，必须使用该产品目录下对应的APIkey。</p>
-</li>
-<li><p><strong>触发器(trigger)</strong></p>
-<p>  触发器为产品目录下的消息服务，可以进行基于数据流的简单逻辑判断并触发HTTP请求或者邮件。</p>
-</li>
-<li><p><strong>应用(application)</strong></p>
-<p>  应用编辑服务，支持用户以拖拽控件并关联设备数据流的方式，生成简易网页展示应用。</p>
-</li>
-</ul>
-<h3 id="2-3-设备接入部分——AMC1600E-QC410"><a href="#2-3-设备接入部分——AMC1600E-QC410" class="headerlink" title="2.3 设备接入部分——AMC1600E/QC410"></a>2.3 设备接入部分——AMC1600E/QC410</h3><p>基于OneNET平台的开发流程如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%A7%BB%E5%8A%A8%E4%BA%91%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.png" alt="移动云开发流程"></p>
-<p>基于mqtt协议的设备端接入流程如下所示：</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B.png" alt="mqtt接入流程"></p>
-<h2 id="3-移动云物联网预研项目成果"><a href="#3-移动云物联网预研项目成果" class="headerlink" title="3 移动云物联网预研项目成果"></a>3 移动云物联网预研项目成果</h2><h3 id="3-1-机器人设备列表页面"><a href="#3-1-机器人设备列表页面" class="headerlink" title="3.1 机器人设备列表页面"></a>3.1 机器人设备列表页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="机器人设备列表"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%9C%A8%E7%BA%BF.png" alt="机器人设备在线"></p>
-<h3 id="3-2-机器人设备详情页面"><a href="#3-2-机器人设备详情页面" class="headerlink" title="3.2 机器人设备详情页面"></a>3.2 机器人设备详情页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png" alt="机器人设备详情"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85%E5%9C%A8%E7%BA%BF.png" alt="机器人设备详情在线"></p>
-<h3 id="3-3-机器人数据流页面"><a href="#3-3-机器人数据流页面" class="headerlink" title="3.3 机器人数据流页面"></a>3.3 机器人数据流页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="机器人数据流"></p>
-<h3 id="3-4-机器人下发命令页面"><a href="#3-4-机器人下发命令页面" class="headerlink" title="3.4 机器人下发命令页面"></a>3.4 机器人下发命令页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4.png" alt="机器人下发命令"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="设备已响应"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%BB%A5%E4%B8%8B%E5%8F%91.png" alt="命令已以下发"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF(layui).png" alt="设备已离线"></p>
-<h3 id="3-5-设备历史数据导出页面"><a href="#3-5-设备历史数据导出页面" class="headerlink" title="3.5 设备历史数据导出页面"></a>3.5 设备历史数据导出页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81%E5%88%97%E8%A1%A8.png" alt="机器人数据流列表"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA.png" alt="机器人数据导出"></p>
-<h2 id="4-移动云与阿里云对比分析"><a href="#4-移动云与阿里云对比分析" class="headerlink" title="4 移动云与阿里云对比分析"></a>4 移动云与阿里云对比分析</h2><p>下面是阿里云和移动云的平台组成部分：</p>
-<table>
-<thead>
-<tr>
-<th>组件项</th>
-<th>阿里云</th>
-<th>中移动</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>小程序平台</td>
-<td>支付宝、淘宝、天猫等全家桶</td>
-<td>无</td>
-</tr>
-<tr>
-<td>物联网应用平台</td>
-<td>IoT Studio<br>飞燕智能家庭<br>飞凤物联平台<br>飞象工业互联</td>
-<td>应用定制</td>
-</tr>
-<tr>
-<td>数据接入平台</td>
-<td>物联网开发平台</td>
-<td>OneNET物联平台</td>
-</tr>
-<tr>
-<td>嵌入式OS</td>
-<td>AliOS Things</td>
-<td>OneOS</td>
-</tr>
-<tr>
-<td>边缘计算</td>
-<td>边缘计算系统<br>边缘一体机</td>
-<td>OneEdge5G边缘计算</td>
-</tr>
-<tr>
-<td>芯片模组</td>
-<td>平头哥芯片系列</td>
-<td>各种通信模组</td>
-</tr>
-</tbody></table>
-<p>下面我从三个方面简单分析一下移动云与阿里云的优缺点：</p>
-<h3 id="4-1-功能与操作习惯"><a href="#4-1-功能与操作习惯" class="headerlink" title="4.1 功能与操作习惯"></a>4.1 功能与操作习惯</h3><p>从功能和操作习惯上来看，移动云与阿里云很相似，包括物模型的概念也是参考了阿里云的设计，平台上相关关键词的命名也基本一样，但阿里云的功能要更为完善一些，提供的服务也更为全面。</p>
-<h3 id="4-2-开发难度"><a href="#4-2-开发难度" class="headerlink" title="4.2 开发难度"></a>4.2 开发难度</h3><p>从开发难度方面来看，考虑到阿里云能根据用户需要的功能模块提供可裁剪的设备接入SDK，移植起来比移动云要更为方便快捷，而且阿里云提供了详尽的服务文档以及丰富的应用案例，在一定程度上提高了开发效率。</p>
-<h3 id="4-3-应用开发"><a href="#4-3-应用开发" class="headerlink" title="4.3 应用开发"></a>4.3 应用开发</h3><p>从应用开发方面来看，阿里云提供了丰富的网页组件及相关控件，还有简洁易用的网页模板，大大降低了开发难度以及工作量，不需要额外租用服务器对网站应用进行托管，而移动云的网站应用托管服务已经不再进行维护和更新，不建议使用。</p>
-<p>综上所述，个人认为阿里云在各方面都有着优异的表现，而且阿里云在云平台市场占有率上也是遥遥领先，相当于移动云来说，阿里云无疑是更好的选择。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网方案</title>
-    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h2 id="1-阿里云——机床设备管理解决方案"><a href="#1-阿里云——机床设备管理解决方案" class="headerlink" title="1. 阿里云——机床设备管理解决方案"></a>1. 阿里云——机床设备管理解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/aliyunlogo.png" alt="阿里云"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>采集机床体检数据，抽取共振点的转速-振幅，通过ET工业大脑对历史数据训练预测模型，预测机床运行中的异常设置和故障，适用于广泛的机械设备。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p>通过数控机床转速和主轴振幅数据的实时或定时采集，抽取共振点的转速-振幅，通过对历史数据训练预测模型，预测机床运行中的异常设置和故障。指导规避缺陷转速排产，减少次品率的发生、对主轴和道具的损耗。分析共振转速趋势，评估机床耗损情况，及时检修，减少经济损失。</p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%BA%8A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84.png" alt="机床设备管理解决方案架构"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>预警缺陷转速，指导排产</li>
-<li>预测异常设与故障</li>
-<li>分析评估耗损</li>
-</ul>
-<h2 id="2-华为云——工业互联网解决方案"><a href="#2-华为云——工业互联网解决方案" class="headerlink" title="2. 华为云——工业互联网解决方案"></a>2. 华为云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/huaweilogo.png" alt="huaweilogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>华为工业互联网平台FusionPlant，包含联接管理平台、工业智能体、工业应用平台三大部分。定位于做企业增量的智能决策系统，实现业务在云上敏捷开发，边缘可信运行。赋能行业合作伙伴深耕工业核心业务流，持续释放潜在业务价值</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网业务架构"></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网技术架构"></p>
-<ul>
-<li>云网协同：依托华为领先的联接方案，如5G、NB-IoT、TSN、工业PON，满足企业在工厂内、外网络各类场景的连接需求</li>
-<li>边云协同：提供纳管海量分布式边缘节点，并能够将云上的丰富的服务、生态伙伴和客户的应用部署到边缘节点运行的能力</li>
-<li>工业数据湖：提供数据全生命周期一站式开发运营平台，提供数据集成、开发、治理、服务等功能，帮助企业快速构建全局数据运营能力</li>
-<li>全栈AI：提供从芯片、硬件、算子库、AI框架、通用AI开发平台、工业智能体的全栈方案，实现协同优化和多点创新</li>
-<li>安全可信：华为工业互联网整体方案在设备认证、隐私数据加密保护、业务运行的可靠性和可用性、安全启动等多个方面提供全方位保障</li>
-</ul>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>面向全要素、多类型的数据，实现数万级测点秒级实时采集</li>
-<li>云上敏捷开发，边缘可信运行</li>
-<li>围绕工业核心业务流，构建全局数据运营平台</li>
-<li>工艺机理结合数据智能，沉淀4大行业场景化模型</li>
-</ul>
-<h2 id="3-腾讯云——工业互联网助力平台"><a href="#3-腾讯云——工业互联网助力平台" class="headerlink" title="3. 腾讯云——工业互联网助力平台"></a>3. 腾讯云——工业互联网助力平台</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tencentlogo.png" alt="tencentlogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>提供云基础设施，公有云/专有云/混合云多种部署方式，集成物联网接入，中间件，微服务架构，开发工具套件，人工智能及大数据平台，运维平台，模型管理，企业微信，移动应用平台，安全，业务运营支撑系统等，助力工业互联网平台企业快速搭建工业互联网平台，聚焦工业 PaaS 及 SaaS，利用行业优势，推动应用业务创新，更多赋能中小企业。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E5%8A%9B%E5%B9%B3%E5%8F%B0.svg" alt="工业互联网助力平台"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>整合腾讯优势输出</li>
-<li>高度集成助推落地</li>
-<li>生态开放集结优选</li>
-<li>行业合作业务创新</li>
-</ul>
-<h2 id="4-百度智能云——工业互联网解决方案"><a href="#4-百度智能云——工业互联网解决方案" class="headerlink" title="4. 百度智能云——工业互联网解决方案"></a>4. 百度智能云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/baiducloudlogo.png" alt="baiducloudlogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>促进中小企业数字化转型，助力先进企业实现数据价值挖掘及工艺持续优化。百度联合行业生态伙伴共同赋能平台建设，百度提供PaaS能力，实现“使能支撑、资源支撑、生态支撑”，帮助形成工业APP生态体系、正向循环的双边效应。联合生态伙伴的行业实践经验，提供切实可行的行业SaaS服务，最终打造可落地的、有效的、先进的工业互联网平台</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84.png" alt="百度云工业互联网架构"></p>
-<h2 id="5-OneNET——工业物联网解决方案"><a href="#5-OneNET——工业物联网解决方案" class="headerlink" title="5. OneNET——工业物联网解决方案"></a>5. OneNET——工业物联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/onenetlogo.png" alt="OneNET"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>OneNET工业物联网平台为生产设备资产管理提供E2E工业物联网方案，从核心资产管理入手，通过传感器、大数据等能力为核心资产提供实时监控、产能管理、资产定位等能力，让企业管理更加清晰透明。同时提供资产购置、资产处理等资产管理的基本功能，涵盖了从资产开始到结束的整个管理流程，有效的结合了资产物联网和互联网两个信息维度，并提供管理能力。</p>
-<p><strong>(2) 场景设计</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E7%89%A9%E8%81%94%E7%BD%91%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1.jpg" alt="工业物联网场景设计"></p>
-<p><strong>(3) 方案优势</strong></p>
-<ul>
-<li>标准数据模型，安全稳固</li>
-<li>扩展性高，即插即用</li>
-<li>支持OPC UA框架</li>
-</ul>
-<h2 id="6-机智云——工业设备上云解决方案"><a href="#6-机智云——工业设备上云解决方案" class="headerlink" title="6. 机智云——工业设备上云解决方案"></a>6. 机智云——工业设备上云解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gizwitslogo.png" alt="gizwitslogo"></p>
-<p><strong>(1) 方案简介</strong></p>
-<p>实现设备物联和实时数据采集，为生产计划、设备运维、绩效管理、工艺改进等提供基础数据支撑和深入分析。对售后工业装备进行远程监控、在线运维和预测性维护需求，支持设备物联、设备管理、数据分析、远程维护、故障告警、工单管理等装备全生命周期信息化管理和售后服务流程化与信息化；开放API，支持集成自有管理系统，提供多维度数据统计分析，设备历史数据查看、统计分析，可基于数据挖掘和大数据建模（企业核心指标和业务逻辑）分析，实现故障预测、易损件更换提醒、运维方案智能推荐、耗能优化等，提供工业互联网边缘网关系统。</p>
-<p><strong>(2) 方案架构</strong></p>
-<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E5%A4%87%E4%B8%8A%E4%BA%91%E6%9E%B6%E6%9E%84.png" alt="工业设备上云架构"></p>
-<p><strong>(3) 方案优势</strong></p>
-<p>兼容多种工业协议、提供端到端设备上云一站式解决方案、低成本快速实现设备数据采集及应用</p>
-<ul>
-<li>平台应用：远程控制、实时监测、数据存储、数据分析、在线OTA、故障报警、语音接入、远程管理</li>
-<li>业务应用：预测维护、设备调度、定位跟踪、数据展示（BI）、智能决策、资产租赁、售后管理</li>
-<li>软硬兼容：RS485、RS232、CAN；ModBus、自定义类；iOS 、Android、微信、BS/CS系统</li>
-<li>增值服务：私有协议转换、系统对接、业务云开发、私有云部署、BI系统等定制开发，咨询培训</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站开发方案研究</title>
     <url>/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<p><strong>任务描述</strong></p>
@@ -4018,6 +3708,316 @@
         <tag>技术</tag>
         <tag>IoT</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>物联网应用开发调研</title>
+    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/</url>
+    <content><![CDATA[<h2 id="阿里云——IoT-Studio"><a href="#阿里云——IoT-Studio" class="headerlink" title="阿里云——IoT Studio"></a>阿里云——IoT Studio</h2><h3 id="1-产品简介"><a href="#1-产品简介" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>物联网应用开发（IoT Studio）是阿里云针对物联网场景提供的生产力工具，提供了Web可视化开发、业务逻辑开发与物联网数据分析等一系列便捷的物联网开发工具，可覆盖各个物联网行业核心应用场景，加速物联网SaaS(Software-as-a-Service， 软件即服务)构建。</p>
+<p><strong>架构图</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91IoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="阿里云IoTStudio架构图"></p>
+<h3 id="2-功能特点"><a href="#2-功能特点" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
+<li><p><strong>可视化搭建</strong></p>
+<p>  IoT Studio提供可视化搭建能力，您可以通过拖拽、配置操作，快速完成设备数据监控相关的Web应用、API服务的开发。您可以专注于核心业务，从传统开发的繁琐细节中脱身，有效提升开发效率。</p>
+</li>
+<li><p><strong>与设备管理无缝集成</strong></p>
+<p>  设备相关的属性、服务、事件等数据均可从物联网平台设备接入和管理模块中直接获取，IoT Studio与物联网平台无缝打通，大大降低物联网开发工作量。</p>
+</li>
+<li><p><strong>丰富的开发资源</strong></p>
+<p>  各开发平台均拥有数量众多的组件和丰富的API。随着产品迭代升级，组件库会愈加丰富，IoT Studio帮助您提升开发效率。</p>
+</li>
+<li><p><strong>组件开发</strong></p>
+<p>  IoT Studio提供了组件开发能力，您可以开发、发布和管理自己研发的组件，并将其发布到Web可视化工作台中用于可视化页面搭建。大大满足开发者的需求，提升组件丰富性，为可视化搭建提供无限可能。</p>
+</li>
+<li><p><strong>无需部署</strong></p>
+<p>  使用IoT Studio，应用服务开发完毕后，直接托管在云端，支持直接预览、使用。无需部署即可交付使用，免除您额外购买服务器等产品的烦恼。</p>
+</li>
+</ul>
+<p><strong>使用限制</strong></p>
+<p>IoT Studio目前处于公测期间，公测期间产品免费试用，产品使用的最终规格以未来商业化调整规格为准。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/IoTStudio%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6.png" alt="IoTStudio使用限制"></p>
+<h3 id="3-场景应用案例——树莓派搭建机房监控应用"><a href="#3-场景应用案例——树莓派搭建机房监控应用" class="headerlink" title="3. 场景应用案例——树莓派搭建机房监控应用"></a>3. 场景应用案例——树莓派搭建机房监控应用</h3><p>通过使用树莓派（Raspberry Pi 4）、DHT11温湿度传感器设备和物联网应用开发（IoT Studio）平台，构建一个服务器机房的实时动态环境温湿度检测系统</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
+<h2 id="华为云——IoT开发者服务"><a href="#华为云——IoT开发者服务" class="headerlink" title="华为云——IoT开发者服务"></a>华为云——IoT开发者服务</h2><h3 id="1-产品简介-1"><a href="#1-产品简介-1" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>IoT开发者服务（IoT Studio，原OceanBooster），是华为物联网针对物联网应用提供的应用开发平台，可涵盖物联网行业的核心应用场景，集Web在线开发、微服务开发和第三方应用推荐等一系列的便利物联网开发工具于一体，是个人开发者的孵化器，行业客户的应用托管平台。</p>
+<p><strong>架构图</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BAIoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="华为IoTStudio架构图"></p>
+<h3 id="2-功能特点-1"><a href="#2-功能特点-1" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
+<li><p><strong>应用快速构建</strong></p>
+<p>  通过拖拽、配置方式，快速简单完成WEB应用开发，大大降低物联网应用研发成本，满足企业应用快速上线要求 。</p>
+</li>
+<li><p><strong>灵活报表</strong></p>
+<p>  可通过多数据源，多维度，多条件，多形态的数据灵活定义各类图表和报表，并提供支持亿级的数据预处理能力 。</p>
+</li>
+<li><p><strong>多样化发布方式</strong></p>
+<p>  通过自动生成物联网通用组件代码，提供被嵌入能力，可无缝嵌入企业自有应用，开发者只需开发和维护业务逻辑部分代码，降低应用运维成本 。</p>
+</li>
+<li><p><strong>多级管理能力</strong></p>
+<p>  提供分权分域能力，满足企业跨地域，多层级的管理诉求 。</p>
+</li>
+</ul>
+<h3 id="3-场景应用案例——电梯行业"><a href="#3-场景应用案例——电梯行业" class="headerlink" title="3. 场景应用案例——电梯行业"></a>3. 场景应用案例——电梯行业</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E7%94%B5%E6%A2%AF%E8%A1%8C%E4%B8%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF.png" alt="华为云电梯行业应用场景"></p>
+<h2 id="移动云——OneNET-Studio"><a href="#移动云——OneNET-Studio" class="headerlink" title="移动云——OneNET Studio"></a>移动云——OneNET Studio</h2><h3 id="1-产品简介-2"><a href="#1-产品简介-2" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>OneNET Studio 定位新一代物联网中台，向下接入设备，向上承载应用。整合产业链上下游，向下整合终端设备接入与管理，向上延展物联网一站式应用开发，横向聚合增值能力，提供智能化数据分析，形成端到端完整链路物联网解决方案体系，打造物联网生态环境。</p>
+<p><strong>架构图</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/OneNETStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNETStudio架构图"></p>
+<h3 id="2-功能特点-2"><a href="#2-功能特点-2" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><p><strong>设备接入与管理</strong></p>
+<p>适用于设备生产商、设备方案商，提供各行业的物模型，实现设备极速上云。</p>
+<ul>
+<li><p><strong>统一设备接入</strong></p>
+<p>  提供MQTT、CoAP和泛协议标准接入SDK，支持直连、网关、云云对接等多种方式接入，随用随选。</p>
+</li>
+<li><p><strong>统一物模型</strong></p>
+<p>  提供灵活的物模型定义及多行业标准模版，构建标准化数据模型，解决数据碎片化，简化设备与应用开发。</p>
+</li>
+<li><p><strong>自动生成SDK</strong></p>
+<p>  根据定义的物模型功能点，平台自动生成SDK，降低嵌入式开发的代码量，缩短产品开发周期，实现设备快速接入。</p>
+</li>
+<li><p><strong>设备管理</strong></p>
+<p>  提供高度匹配设备全生命周期的管理工具，方便用户在测试、生产、交付、售后等不同阶段的管理需求。</p>
+</li>
+<li><p><strong>设备转移</strong></p>
+<p>  提供跨用户的设备转移功能，转移双方需实名认证。</p>
+</li>
+<li><p><strong>全链路日志</strong></p>
+<p>  开放核心服务全链路日志，支持24小时不间断监控，便于用户追踪实时消息和定位问题。</p>
+</li>
+<li><p><strong>在线调试</strong></p>
+<p>  提供设备模拟及真实设备调试功能，与可完全解耦设备及应用开发工作，快速实现设备与平台的交互调试，帮助用户进行投产前的功能验证。</p>
+</li>
+</ul>
+<p><strong>应用开发</strong></p>
+<p>适用于项目集成商、解决方案提供商，提供便捷的资源管理及应用开发、调试能力，实现项目的灵活配置，快速集成。</p>
+<ul>
+<li><p><strong>一站式开发</strong></p>
+<p>  面向行业场景，提供项目管理与应用开发工具，实现跨用户跨产品的资源整合，加速项目集成。</p>
+</li>
+<li><p><strong>统一能力网关</strong></p>
+<p>  提供统一网关能力支撑增值服务一体化，聚合LBS定位、智能语音等增值能力，提供多种物联网增值能力API。</p>
+</li>
+<li><p><strong>消息通信</strong></p>
+<p>  提供HTTP推送、消息队列MQ通信组件，实现平台与应用服务器的高效实时数据通信。</p>
+</li>
+<li><p><strong>边缘计算</strong> </p>
+<p>  边缘侧物联网设备接入和管理，时延低至10ms内。</p>
+</li>
+<li><p><strong>人工智能</strong> </p>
+<p>  提供20余种智能化开箱即用AI能力，支持核心能力场景化。</p>
+</li>
+<li><p><strong>视频能力</strong> </p>
+<p>  支持视频类应用开发，提供远程设备控制、视频推流、视频分发、视频云存储、视频回放等核心能力。</p>
+</li>
+<li><p><strong>数据可视化</strong> </p>
+<p>  提供丰富的可视化组件和免编程、拖拽式编辑方式，助力用户无缝对接海量数据，搭建可视化大屏应用。</p>
+</li>
+</ul>
+<h3 id="3-场景应用案例——设备预测性维护解决方案"><a href="#3-场景应用案例——设备预测性维护解决方案" class="headerlink" title="3. 场景应用案例——设备预测性维护解决方案"></a>3. 场景应用案例——设备预测性维护解决方案</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="设备预测性维护解决方案"></p>
+<h2 id="移动云——View"><a href="#移动云——View" class="headerlink" title="移动云——View"></a>移动云——View</h2><p><a href="https://open.iot.10086.cn/app_editor/#/view?pid=291489&id=72560&is_model=0">智能家居应用</a></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/view%E4%BA%A7%E5%93%81%E4%BB%B7%E6%A0%BC.png" alt="view产品价格"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>物联网方案</title>
+    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="1-阿里云——机床设备管理解决方案"><a href="#1-阿里云——机床设备管理解决方案" class="headerlink" title="1. 阿里云——机床设备管理解决方案"></a>1. 阿里云——机床设备管理解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/aliyunlogo.png" alt="阿里云"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>采集机床体检数据，抽取共振点的转速-振幅，通过ET工业大脑对历史数据训练预测模型，预测机床运行中的异常设置和故障，适用于广泛的机械设备。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p>通过数控机床转速和主轴振幅数据的实时或定时采集，抽取共振点的转速-振幅，通过对历史数据训练预测模型，预测机床运行中的异常设置和故障。指导规避缺陷转速排产，减少次品率的发生、对主轴和道具的损耗。分析共振转速趋势，评估机床耗损情况，及时检修，减少经济损失。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%BA%8A%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84.png" alt="机床设备管理解决方案架构"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>预警缺陷转速，指导排产</li>
+<li>预测异常设与故障</li>
+<li>分析评估耗损</li>
+</ul>
+<h2 id="2-华为云——工业互联网解决方案"><a href="#2-华为云——工业互联网解决方案" class="headerlink" title="2. 华为云——工业互联网解决方案"></a>2. 华为云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/huaweilogo.png" alt="huaweilogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>华为工业互联网平台FusionPlant，包含联接管理平台、工业智能体、工业应用平台三大部分。定位于做企业增量的智能决策系统，实现业务在云上敏捷开发，边缘可信运行。赋能行业合作伙伴深耕工业核心业务流，持续释放潜在业务价值</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网业务架构"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84.png" alt="华为工业互联网技术架构"></p>
+<ul>
+<li>云网协同：依托华为领先的联接方案，如5G、NB-IoT、TSN、工业PON，满足企业在工厂内、外网络各类场景的连接需求</li>
+<li>边云协同：提供纳管海量分布式边缘节点，并能够将云上的丰富的服务、生态伙伴和客户的应用部署到边缘节点运行的能力</li>
+<li>工业数据湖：提供数据全生命周期一站式开发运营平台，提供数据集成、开发、治理、服务等功能，帮助企业快速构建全局数据运营能力</li>
+<li>全栈AI：提供从芯片、硬件、算子库、AI框架、通用AI开发平台、工业智能体的全栈方案，实现协同优化和多点创新</li>
+<li>安全可信：华为工业互联网整体方案在设备认证、隐私数据加密保护、业务运行的可靠性和可用性、安全启动等多个方面提供全方位保障</li>
+</ul>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>面向全要素、多类型的数据，实现数万级测点秒级实时采集</li>
+<li>云上敏捷开发，边缘可信运行</li>
+<li>围绕工业核心业务流，构建全局数据运营平台</li>
+<li>工艺机理结合数据智能，沉淀4大行业场景化模型</li>
+</ul>
+<h2 id="3-腾讯云——工业互联网助力平台"><a href="#3-腾讯云——工业互联网助力平台" class="headerlink" title="3. 腾讯云——工业互联网助力平台"></a>3. 腾讯云——工业互联网助力平台</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/tencentlogo.png" alt="tencentlogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>提供云基础设施，公有云/专有云/混合云多种部署方式，集成物联网接入，中间件，微服务架构，开发工具套件，人工智能及大数据平台，运维平台，模型管理，企业微信，移动应用平台，安全，业务运营支撑系统等，助力工业互联网平台企业快速搭建工业互联网平台，聚焦工业 PaaS 及 SaaS，利用行业优势，推动应用业务创新，更多赋能中小企业。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%8A%A9%E5%8A%9B%E5%B9%B3%E5%8F%B0.svg" alt="工业互联网助力平台"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>整合腾讯优势输出</li>
+<li>高度集成助推落地</li>
+<li>生态开放集结优选</li>
+<li>行业合作业务创新</li>
+</ul>
+<h2 id="4-百度智能云——工业互联网解决方案"><a href="#4-百度智能云——工业互联网解决方案" class="headerlink" title="4. 百度智能云——工业互联网解决方案"></a>4. 百度智能云——工业互联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/baiducloudlogo.png" alt="baiducloudlogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>促进中小企业数字化转型，助力先进企业实现数据价值挖掘及工艺持续优化。百度联合行业生态伙伴共同赋能平台建设，百度提供PaaS能力，实现“使能支撑、资源支撑、生态支撑”，帮助形成工业APP生态体系、正向循环的双边效应。联合生态伙伴的行业实践经验，提供切实可行的行业SaaS服务，最终打造可落地的、有效的、先进的工业互联网平台</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%99%BE%E5%BA%A6%E4%BA%91%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84.png" alt="百度云工业互联网架构"></p>
+<h2 id="5-OneNET——工业物联网解决方案"><a href="#5-OneNET——工业物联网解决方案" class="headerlink" title="5. OneNET——工业物联网解决方案"></a>5. OneNET——工业物联网解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/onenetlogo.png" alt="OneNET"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>OneNET工业物联网平台为生产设备资产管理提供E2E工业物联网方案，从核心资产管理入手，通过传感器、大数据等能力为核心资产提供实时监控、产能管理、资产定位等能力，让企业管理更加清晰透明。同时提供资产购置、资产处理等资产管理的基本功能，涵盖了从资产开始到结束的整个管理流程，有效的结合了资产物联网和互联网两个信息维度，并提供管理能力。</p>
+<p><strong>(2) 场景设计</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E7%89%A9%E8%81%94%E7%BD%91%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1.jpg" alt="工业物联网场景设计"></p>
+<p><strong>(3) 方案优势</strong></p>
+<ul>
+<li>标准数据模型，安全稳固</li>
+<li>扩展性高，即插即用</li>
+<li>支持OPC UA框架</li>
+</ul>
+<h2 id="6-机智云——工业设备上云解决方案"><a href="#6-机智云——工业设备上云解决方案" class="headerlink" title="6. 机智云——工业设备上云解决方案"></a>6. 机智云——工业设备上云解决方案</h2><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/gizwitslogo.png" alt="gizwitslogo"></p>
+<p><strong>(1) 方案简介</strong></p>
+<p>实现设备物联和实时数据采集，为生产计划、设备运维、绩效管理、工艺改进等提供基础数据支撑和深入分析。对售后工业装备进行远程监控、在线运维和预测性维护需求，支持设备物联、设备管理、数据分析、远程维护、故障告警、工单管理等装备全生命周期信息化管理和售后服务流程化与信息化；开放API，支持集成自有管理系统，提供多维度数据统计分析，设备历史数据查看、统计分析，可基于数据挖掘和大数据建模（企业核心指标和业务逻辑）分析，实现故障预测、易损件更换提醒、运维方案智能推荐、耗能优化等，提供工业互联网边缘网关系统。</p>
+<p><strong>(2) 方案架构</strong></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E5%A4%87%E4%B8%8A%E4%BA%91%E6%9E%B6%E6%9E%84.png" alt="工业设备上云架构"></p>
+<p><strong>(3) 方案优势</strong></p>
+<p>兼容多种工业协议、提供端到端设备上云一站式解决方案、低成本快速实现设备数据采集及应用</p>
+<ul>
+<li>平台应用：远程控制、实时监测、数据存储、数据分析、在线OTA、故障报警、语音接入、远程管理</li>
+<li>业务应用：预测维护、设备调度、定位跟踪、数据展示（BI）、智能决策、资产租赁、售后管理</li>
+<li>软硬兼容：RS485、RS232、CAN；ModBus、自定义类；iOS 、Android、微信、BS/CS系统</li>
+<li>增值服务：私有协议转换、系统对接、业务云开发、私有云部署、BI系统等定制开发，咨询培训</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>移动云物联网预研及阿里云开发对比分析</title>
+    <url>/%E7%A7%BB%E5%8A%A8%E4%BA%91%E7%89%A9%E8%81%94%E7%BD%91%E9%A2%84%E7%A0%94%E5%8F%8A%E9%98%BF%E9%87%8C%E4%BA%91%E5%BC%80%E5%8F%91%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h2 id="1-移动云物联网预研总体架构"><a href="#1-移动云物联网预研总体架构" class="headerlink" title="1 移动云物联网预研总体架构"></a>1 移动云物联网预研总体架构</h2><p>本方案采用Layui作为前端框架，选用了华为云耀云服务器存储网站应用，用户可通过访问公网IP的方式浏览网站，网站页面根据用户选择的功能定时与OneNET云端进行数据交互。</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/layui%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91.png" alt="layui网页开发"></p>
+<h2 id="2-移动云物联网预研项目过程"><a href="#2-移动云物联网预研项目过程" class="headerlink" title="2 移动云物联网预研项目过程"></a>2 移动云物联网预研项目过程</h2><h3 id="2-1-网站应用部分——华为云服务器"><a href="#2-1-网站应用部分——华为云服务器" class="headerlink" title="2.1 网站应用部分——华为云服务器"></a>2.1 网站应用部分——华为云服务器</h3><ol>
+<li>购买华为云耀云服务器</li>
+</ol>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%95%E7%94%A8.png" alt="华为云耀云服务器"></p>
+<ol start="2">
+<li><a href="http://www.layui.com/">获取Layui</a></li>
+</ol>
+<p>**layui(谐音: 类UI)**是一款采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写与组织形式，门槛极低，拿来即用。</p>
+<p><a href="http://www.layui.com/">官网首页</a></p>
+<p><a href="https://github.com/sentsin/layui/">Github</a></p>
+<p><a href="https://gitee.com/sentsin/layui">Gitee</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># npm安装		一般用于WebPack管理</span></span><br><span class="line">npm -i layui-src</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>设计网页结构</li>
+</ol>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8%E8%AE%BE%E8%AE%A1.png" alt="机器人设备列表设计"></p>
+<h3 id="2-2-数据存储部分——OneNET移动云"><a href="#2-2-数据存储部分——OneNET移动云" class="headerlink" title="2.2 数据存储部分——OneNET移动云"></a>2.2 数据存储部分——OneNET移动云</h3><p>数据存储部分采用中国移动物联网开放平台——OneNET。</p>
+<p>资源模型如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%B5%84%E6%BA%90%E6%A8%A1%E5%9E%8B.png" alt="资源模型"></p>
+<ul>
+<li><p><strong>产品(product)</strong></p>
+<p>  用户的最大资源集为产品，产品下资源包括设备、设备数据、设备权限、数据触发服务以及基于设备数据的应用等多种资源，用户可以创建多个产品。</p>
+</li>
+<li><p><strong>设备(device)</strong></p>
+<p>  设备为真实终端在平台的映射，真实终端连接平台时，需要与平台设备建立一一对应关系，终端上传的数据被存储在数据流中，设备可以拥有一个或者多个数据流。</p>
+</li>
+<li><p><strong>数据流与数据点</strong></p>
+<p>  数据流用于存储设备的某一类属性数据，例如温度，湿度，坐标等信息；平台要求设备上传并存储数据时，必须以key-value的格式上传数据，其中key即为数据流名称，value为实际存储的数据点，value格式可以为int、float、string、json等多种自定义格式。</p>
+</li>
+<li><p><strong>APIkey</strong></p>
+<p>  APIkey为用户进行API调用时的密钥，用户访问产品资源时，必须使用该产品目录下对应的APIkey。</p>
+</li>
+<li><p><strong>触发器(trigger)</strong></p>
+<p>  触发器为产品目录下的消息服务，可以进行基于数据流的简单逻辑判断并触发HTTP请求或者邮件。</p>
+</li>
+<li><p><strong>应用(application)</strong></p>
+<p>  应用编辑服务，支持用户以拖拽控件并关联设备数据流的方式，生成简易网页展示应用。</p>
+</li>
+</ul>
+<h3 id="2-3-设备接入部分——AMC1600E-QC410"><a href="#2-3-设备接入部分——AMC1600E-QC410" class="headerlink" title="2.3 设备接入部分——AMC1600E/QC410"></a>2.3 设备接入部分——AMC1600E/QC410</h3><p>基于OneNET平台的开发流程如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E7%A7%BB%E5%8A%A8%E4%BA%91%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.png" alt="移动云开发流程"></p>
+<p>基于mqtt协议的设备端接入流程如下所示：</p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/mqtt%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B.png" alt="mqtt接入流程"></p>
+<h2 id="3-移动云物联网预研项目成果"><a href="#3-移动云物联网预研项目成果" class="headerlink" title="3 移动云物联网预研项目成果"></a>3 移动云物联网预研项目成果</h2><h3 id="3-1-机器人设备列表页面"><a href="#3-1-机器人设备列表页面" class="headerlink" title="3.1 机器人设备列表页面"></a>3.1 机器人设备列表页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="机器人设备列表"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%9C%A8%E7%BA%BF.png" alt="机器人设备在线"></p>
+<h3 id="3-2-机器人设备详情页面"><a href="#3-2-机器人设备详情页面" class="headerlink" title="3.2 机器人设备详情页面"></a>3.2 机器人设备详情页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png" alt="机器人设备详情"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85%E5%9C%A8%E7%BA%BF.png" alt="机器人设备详情在线"></p>
+<h3 id="3-3-机器人数据流页面"><a href="#3-3-机器人数据流页面" class="headerlink" title="3.3 机器人数据流页面"></a>3.3 机器人数据流页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="机器人数据流"></p>
+<h3 id="3-4-机器人下发命令页面"><a href="#3-4-机器人下发命令页面" class="headerlink" title="3.4 机器人下发命令页面"></a>3.4 机器人下发命令页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4.png" alt="机器人下发命令"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="设备已响应"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%BB%A5%E4%B8%8B%E5%8F%91.png" alt="命令已以下发"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF(layui).png" alt="设备已离线"></p>
+<h3 id="3-5-设备历史数据导出页面"><a href="#3-5-设备历史数据导出页面" class="headerlink" title="3.5 设备历史数据导出页面"></a>3.5 设备历史数据导出页面</h3><p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81%E5%88%97%E8%A1%A8.png" alt="机器人数据流列表"></p>
+<p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/images/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA.png" alt="机器人数据导出"></p>
+<h2 id="4-移动云与阿里云对比分析"><a href="#4-移动云与阿里云对比分析" class="headerlink" title="4 移动云与阿里云对比分析"></a>4 移动云与阿里云对比分析</h2><p>下面是阿里云和移动云的平台组成部分：</p>
+<table>
+<thead>
+<tr>
+<th>组件项</th>
+<th>阿里云</th>
+<th>中移动</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>小程序平台</td>
+<td>支付宝、淘宝、天猫等全家桶</td>
+<td>无</td>
+</tr>
+<tr>
+<td>物联网应用平台</td>
+<td>IoT Studio<br>飞燕智能家庭<br>飞凤物联平台<br>飞象工业互联</td>
+<td>应用定制</td>
+</tr>
+<tr>
+<td>数据接入平台</td>
+<td>物联网开发平台</td>
+<td>OneNET物联平台</td>
+</tr>
+<tr>
+<td>嵌入式OS</td>
+<td>AliOS Things</td>
+<td>OneOS</td>
+</tr>
+<tr>
+<td>边缘计算</td>
+<td>边缘计算系统<br>边缘一体机</td>
+<td>OneEdge5G边缘计算</td>
+</tr>
+<tr>
+<td>芯片模组</td>
+<td>平头哥芯片系列</td>
+<td>各种通信模组</td>
+</tr>
+</tbody></table>
+<p>下面我从三个方面简单分析一下移动云与阿里云的优缺点：</p>
+<h3 id="4-1-功能与操作习惯"><a href="#4-1-功能与操作习惯" class="headerlink" title="4.1 功能与操作习惯"></a>4.1 功能与操作习惯</h3><p>从功能和操作习惯上来看，移动云与阿里云很相似，包括物模型的概念也是参考了阿里云的设计，平台上相关关键词的命名也基本一样，但阿里云的功能要更为完善一些，提供的服务也更为全面。</p>
+<h3 id="4-2-开发难度"><a href="#4-2-开发难度" class="headerlink" title="4.2 开发难度"></a>4.2 开发难度</h3><p>从开发难度方面来看，考虑到阿里云能根据用户需要的功能模块提供可裁剪的设备接入SDK，移植起来比移动云要更为方便快捷，而且阿里云提供了详尽的服务文档以及丰富的应用案例，在一定程度上提高了开发效率。</p>
+<h3 id="4-3-应用开发"><a href="#4-3-应用开发" class="headerlink" title="4.3 应用开发"></a>4.3 应用开发</h3><p>从应用开发方面来看，阿里云提供了丰富的网页组件及相关控件，还有简洁易用的网页模板，大大降低了开发难度以及工作量，不需要额外租用服务器对网站应用进行托管，而移动云的网站应用托管服务已经不再进行维护和更新，不建议使用。</p>
+<p>综上所述，个人认为阿里云在各方面都有着优异的表现，而且阿里云在云平台市场占有率上也是遥遥领先，相当于移动云来说，阿里云无疑是更好的选择。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
       </tags>
   </entry>
   <entry>
