@@ -1,0 +1,860 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>butterfly主题安装 | 云</title><meta name="keywords" content="技术,Hexo"><meta name="author" content="GentleTK,1144626145@qq.com"><meta name="copyright" content="GentleTK"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文简单介绍一下butterfly主题的安装过程。  1 安装butterflyGit安装butterflyGitee安装butterflynpm安装butterfly鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令进行安装： 1git clone -b master https:&#x2F;&#x2F;github.com&#x2F;jerryc127&#x2F;hexo-theme-butterfly.git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="butterfly主题安装">
+<meta property="og:url" content="https://gentletk.gitee.io/butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/index.html">
+<meta property="og:site_name" content="云">
+<meta property="og:description" content="本文简单介绍一下butterfly主题的安装过程。  1 安装butterflyGit安装butterflyGitee安装butterflynpm安装butterfly鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令进行安装： 1git clone -b master https:&#x2F;&#x2F;github.com&#x2F;jerryc127&#x2F;hexo-theme-butterfly.git">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gentletk.gitee.io/img/cover2.jpg">
+<meta property="article:published_time" content="2020-03-01T06:57:43.000Z">
+<meta property="article:modified_time" content="2020-03-01T07:50:11.000Z">
+<meta property="article:author" content="GentleTK">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gentletk.gitee.io/img/cover2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://gentletk.gitee.io/butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//s4.cnzz.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><script async="async" data-pjax="data-pjax" src="https://s4.cnzz.com/z_stat.php?id=1278636399&amp;web_id=1278636399"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":150,"position":"top","messagePrev":"请注意，本文更新于","messageNext":"天前，其中某些内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: GentleTK","link":"链接: ","source":"来源: 云","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://unpkg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://unpkg.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js',
+      css: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-03-01 15:50:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/lovetimer.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="云" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=1144626145&amp;s=640" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover2.jpg')"><nav id="nav"><span id="blog_name"><!--a#site-name(href=url_for('/')) #[=config.title]--></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">butterfly主题安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-03-01T06:57:43.000Z" title="发表于 2020-03-01 14:57:43">2020-03-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-03-01T07:50:11.000Z" title="更新于 2020-03-01 15:50:11">2020-03-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/" data-flag-title="butterfly主题安装"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span class="leancloud-visitors-count"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>本文简单介绍一下butterfly主题的安装过程。</p>
+</blockquote>
+<h2 id="1-安装butterfly"><a href="#1-安装butterfly" class="headerlink" title="1 安装butterfly"></a>1 安装butterfly</h2><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Git安装butterfly</button></li><li class="tab"><button type="button" data-href="#-2">Gitee安装butterfly</button></li><li class="tab"><button type="button" data-href="#-3">npm安装butterfly</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><div class="note warning flat"><p>Hexo版本必须在5.0.0以上!</p>
+</div>
+鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令进行安装：
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-butterfly</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h2 id="2-应用butterfly"><a href="#2-应用butterfly" class="headerlink" title="2 应用butterfly"></a>2 应用butterfly</h2><p>在博客根目录下修改站点配置文件<code>_config.yml</code>，将主题应用为<code>butterfly</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3 安装插件"></a>3 安装插件</h2><p><code>butterfly</code>主题需要<code>pug</code>及<code>stylus</code>的渲染器，打开终端，在博客根目录下输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-配置模板"><a href="#4-配置模板" class="headerlink" title="4 配置模板"></a>4 配置模板</h2><p>在博客根目录下打开<code>scaffolds</code>文件夹，对<code>page.md</code>和<code>post.md</code>文件进行修改。</p>
+<p>修改<code>page.md</code>文件如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">type:</span><br><span class="line">comments:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aside:</span></span><br><span class="line"><span class="emphasis">aplayer: </span></span><br><span class="line"><span class="emphasis">highlight_</span>shrink:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p><code>page.md</code>各参数描述如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">title</td>
+<td align="left">页面标题</td>
+</tr>
+<tr>
+<td align="left">date</td>
+<td align="left">创建日期</td>
+</tr>
+<tr>
+<td align="left">updated</td>
+<td align="left">更新日期</td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="left">类型，如标签(tag)、分类(categories)、友情链接(link)</td>
+</tr>
+<tr>
+<td align="left">comments</td>
+<td align="left">显示页面评论，默认显示</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">页面描述</td>
+</tr>
+<tr>
+<td align="left">keywords</td>
+<td align="left">页面关键字</td>
+</tr>
+<tr>
+<td align="left">top_img</td>
+<td align="left">页面顶部图</td>
+</tr>
+<tr>
+<td align="left">mathjax</td>
+<td align="left">数学公式mathjax</td>
+</tr>
+<tr>
+<td align="left">katex</td>
+<td align="left">数学公式katex</td>
+</tr>
+<tr>
+<td align="left">aside</td>
+<td align="left">侧边栏</td>
+</tr>
+<tr>
+<td align="left">aplayer</td>
+<td align="left">音乐播放器</td>
+</tr>
+<tr>
+<td align="left">highlight_shrink</td>
+<td align="left">代码块是否展开</td>
+</tr>
+</tbody></table>
+<p>修改<code>post.md</code>文件如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">updated:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">comments:</span></span><br><span class="line"><span class="emphasis">cover:</span></span><br><span class="line"><span class="emphasis">toc:</span></span><br><span class="line"><span class="emphasis">toc_</span>number:</span><br><span class="line">copyright:</span><br><span class="line">copyright<span class="emphasis">_author:</span></span><br><span class="line"><span class="emphasis">copyright_</span>author<span class="emphasis">_href:</span></span><br><span class="line"><span class="emphasis">copyright_</span>url:</span><br><span class="line">copyright<span class="emphasis">_info:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aplayer: </span></span><br><span class="line"><span class="emphasis">highlight_</span>shrink:</span><br><span class="line">aside:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p><code>post.md</code>各参数描述如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">title</td>
+<td align="left">文章标题</td>
+</tr>
+<tr>
+<td align="left">date</td>
+<td align="left">创建日期</td>
+</tr>
+<tr>
+<td align="left">updated</td>
+<td align="left">更新日期</td>
+</tr>
+<tr>
+<td align="left">tags</td>
+<td align="left">标签，如[‘技术’,’Hexo’]</td>
+</tr>
+<tr>
+<td align="left">categories</td>
+<td align="left">分类，如技术</td>
+</tr>
+<tr>
+<td align="left">keywords</td>
+<td align="left">文章关键字</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">文章描述</td>
+</tr>
+<tr>
+<td align="left">top_img</td>
+<td align="left">文章顶部图</td>
+</tr>
+<tr>
+<td align="left">cover</td>
+<td align="left">文章缩略图</td>
+</tr>
+<tr>
+<td align="left">comments</td>
+<td align="left">显示文章评论，默认显示</td>
+</tr>
+<tr>
+<td align="left">toc</td>
+<td align="left">显示目录</td>
+</tr>
+<tr>
+<td align="left">toc_number</td>
+<td align="left">显示目录标题序号</td>
+</tr>
+<tr>
+<td align="left">copyright</td>
+<td align="left">显示版权</td>
+</tr>
+<tr>
+<td align="left">copyright_author</td>
+<td align="left">文章作者</td>
+</tr>
+<tr>
+<td align="left">copyright_author_href</td>
+<td align="left">文章作者链接</td>
+</tr>
+<tr>
+<td align="left">copyright_url</td>
+<td align="left">文章链接</td>
+</tr>
+<tr>
+<td align="left">copyright_info</td>
+<td align="left">版权声明文字</td>
+</tr>
+<tr>
+<td align="left">mathjax</td>
+<td align="left">数学公式mathjax</td>
+</tr>
+<tr>
+<td align="left">katex</td>
+<td align="left">数学公式katex</td>
+</tr>
+<tr>
+<td align="left">aside</td>
+<td align="left">侧边栏</td>
+</tr>
+<tr>
+<td align="left">aplayer</td>
+<td align="left">音乐播放器</td>
+</tr>
+<tr>
+<td align="left">highlight_shrink</td>
+<td align="left">代码块是否展开</td>
+</tr>
+</tbody></table>
+<h2 id="5-主题配置"><a href="#5-主题配置" class="headerlink" title="5 主题配置"></a>5 主题配置</h2><h3 id="5-1-导航目录配置"><a href="#5-1-导航目录配置" class="headerlink" title="5.1 导航目录配置"></a>5.1 导航目录配置</h3><h4 id="5-1-1-创建导航目录页面"><a href="#5-1-1-创建导航目录页面" class="headerlink" title="5.1.1 创建导航目录页面"></a>5.1.1 创建导航目录页面</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">创建归档页面</button></li><li class="tab"><button type="button" data-href="#-2">创建标签页面</button></li><li class="tab"><button type="button" data-href="#-3">创建分类页面</button></li><li class="tab"><button type="button" data-href="#-4">创建友情链接页面</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令创建归档页面：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page archives</span><br></pre></td></tr></table></figure>
+<p>对博客根目录<code>source/archives</code>下的<code>index.md</code>文件进行如下修改：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 归档</span><br><span class="line">date: 2021-04-01 17:31:05</span><br><span class="line">type: &quot;archives&quot;</span><br><span class="line">top<span class="emphasis">_img: https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/cover/cover1.jpg</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令创建标签页面：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>对博客根目录<code>source/tags</code>下的<code>index.md</code>文件进行如下修改：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2021-04-01 17:31:05</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">top<span class="emphasis">_img: https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/cover/cover1.jpg</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令创建分类页面：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>对博客根目录<code>source/categories</code>下的<code>index.md</code>文件进行如下修改：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: 2021-04-01 17:30:53</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">top<span class="emphasis">_img: https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/cover/cover1.jpg</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令创建友情链接页面：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page link</span><br></pre></td></tr></table></figure>
+<p>对博客根目录<code>source/link</code>下的<code>index.md</code>文件进行如下修改：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 友情链接</span><br><span class="line">date: 2021-04-06 09:48:00</span><br><span class="line">type: &quot;link&quot;</span><br><span class="line">top<span class="emphasis">_img: https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/cover/cover1.jpg</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="5-1-2-配置导航目录页面"><a href="#5-1-2-配置导航目录页面" class="headerlink" title="5.1.2 配置导航目录页面"></a>5.1.2 配置导航目录页面</h4><p>对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置导航目录如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导航目录设置</span></span><br><span class="line"><span class="comment"># 格式: name: link || icon</span></span><br><span class="line"><span class="comment"># 子菜单</span></span><br><span class="line"><span class="comment"># name || icon:</span></span><br><span class="line"><span class="comment">#   name || link || icon</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="string">主页:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fas</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="string">归档:</span> <span class="string">/archives</span> <span class="string">||</span> <span class="string">fas</span> <span class="string">fa-archive</span></span><br><span class="line">  <span class="string">标签:</span> <span class="string">/tags</span> <span class="string">||</span> <span class="string">fas</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="string">分类:</span> <span class="string">/categories</span> <span class="string">||</span> <span class="string">fas</span> <span class="string">fa-folder-open</span></span><br><span class="line">  <span class="string">友情链接:</span> <span class="string">/link</span> <span class="string">||</span> <span class="string">fas</span> <span class="string">fa-link</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-代码块配置"><a href="#5-2-代码块配置" class="headerlink" title="5.2 代码块配置"></a>5.2 代码块配置</h3><p>对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置代码块如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 代码块设置</span></span><br><span class="line"><span class="attr">highlight_theme:</span> <span class="string">mac</span>          <span class="comment"># darker / pale night / light / ocean / mac / mac light / false</span></span><br><span class="line"><span class="attr">highlight_copy:</span> <span class="literal">true</span>          <span class="comment"># 复制代码按钮</span></span><br><span class="line"><span class="attr">highlight_lang:</span> <span class="literal">true</span>          <span class="comment"># 显示代码语言</span></span><br><span class="line"><span class="attr">highlight_shrink:</span> <span class="literal">false</span>       <span class="comment"># true: 默认折叠代码  false: 默认展开代码  none: 展开代码并隐藏展开按钮</span></span><br><span class="line"><span class="attr">highlight_height_limit:</span> <span class="literal">false</span> <span class="comment"># 代码高度：px</span></span><br><span class="line"><span class="attr">code_word_wrap:</span> <span class="literal">false</span>         <span class="comment"># true: 代码自动换行(无滚动条)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-3-复制配置"><a href="#5-3-复制配置" class="headerlink" title="5.3 复制配置"></a>5.3 复制配置</h3><p>对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置复制如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 复制设置</span></span><br><span class="line"><span class="attr">copy:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>      <span class="comment"># 开启复制设置</span></span><br><span class="line">  <span class="attr">copyright:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span>    <span class="comment"># 复制内容后加上版权信息</span></span><br><span class="line">    <span class="attr">limit_count:</span> <span class="number">50</span> <span class="comment"># 复制字数限制(超过限制就会加上版权信息)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-4-社交图标配置"><a href="#5-4-社交图标配置" class="headerlink" title="5.4 社交图标配置"></a>5.4 社交图标配置</h3><p>对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置社交图标如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 社交图标设置</span></span><br><span class="line"><span class="comment"># 格式:</span></span><br><span class="line"><span class="comment">#   icon: link || the description</span></span><br><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">fab fa-github:</span> <span class="string">https://github.com/YourGitHubUserName</span> <span class="string">||</span> <span class="string">Github</span></span><br><span class="line">  <span class="attr">fab fa-qq:</span> <span class="string">http://wpa.qq.com/msgrd?v=3&amp;uin=YourQQNumber&amp;site=qq&amp;menu=yes</span> <span class="string">||</span> <span class="string">QQ</span></span><br><span class="line">  <span class="attr">fab fa-weixin:</span> <span class="string">https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/qrcode/weixin.jpg</span> <span class="string">||</span> <span class="string">WeChat</span></span><br><span class="line">  <span class="attr">fas fa-envelope:</span> <span class="string">mailto:YourEmailAddress</span> <span class="string">||</span> <span class="string">Email</span></span><br><span class="line">  <span class="attr">fas fa-rss:</span> <span class="string">/atom.xml</span></span><br></pre></td></tr></table></figure>
+
+<div class="note info flat"><p>订阅需要安装安装<code>hexo-generator-feed</code>插件。</p>
+</div>
+
+<p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令安装订阅插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，对博客根目录下的<code>_config.yml</code>进行修改，添加如下配置：</p>
+<div class="note warning flat"><p>注意，是博客根目录下的<code>_config.yml</code>!</p>
+</div>
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 订阅</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-5-本地搜索配置"><a href="#5-5-本地搜索配置" class="headerlink" title="5.5 本地搜索配置"></a>5.5 本地搜索配置</h3><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令安装本地搜索插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，对博客根目录下的<code>_config.yml</code>进行修改，添加如下配置：</p>
+<div class="note warning flat"><p>注意，是博客根目录下的<code>_config.yml</code>!</p>
+</div>
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地搜索</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">    <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">    <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-6-字数统计配置"><a href="#5-6-字数统计配置" class="headerlink" title="5.6 字数统计配置"></a>5.6 字数统计配置</h3><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令安装字数统计插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置字数统计如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 字数统计</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-7-文章过期提醒配置"><a href="#5-7-文章过期提醒配置" class="headerlink" title="5.7 文章过期提醒配置"></a>5.7 文章过期提醒配置</h3><p>对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置文章过期提醒如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章过期提醒设置</span></span><br><span class="line"><span class="comment"># limit_day: 距离更新时间多少天才显示提醒</span></span><br><span class="line"><span class="comment"># style: flat 样式(simple/flat)</span></span><br><span class="line"><span class="attr">noticeOutdate:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">flat</span> </span><br><span class="line">  <span class="attr">limit_day:</span> <span class="number">150</span> </span><br><span class="line">  <span class="attr">position:</span> <span class="string">top</span></span><br><span class="line">  <span class="attr">message_prev:</span> <span class="string">请注意，本文更新于</span></span><br><span class="line">  <span class="attr">message_next:</span> <span class="string">天前，其中某些内容可能已经过时。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-8-评论系统配置"><a href="#5-8-评论系统配置" class="headerlink" title="5.8 评论系统配置"></a>5.8 评论系统配置</h3><p><code>Valine</code>是一款快速、简洁且高效的无后端评论系统，使用<code>Valine</code>需要前往<a target="_blank" rel="noopener" href="https://www.leancloud.cn/">LeanCloud</a>进行注册并登陆，进入控制台后点击创建应用</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85.assets/image-20210625150013397.png" alt="image-20210625150013397"></p>
+<p>点击创建好的应用，在左侧导航栏选择设置，点击应用凭证查看<code>AppID</code>和<code>AppKey</code>。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85.assets/image-20210625150120739.png" alt="image-20210625150120739"></p>
+<p>获取<code>AppID</code>和<code>AppKey</code>后，对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置评论系统为<code>Valine</code>：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 评论系统设置</span></span><br><span class="line"><span class="comment"># use: 双评论系统设置，第一个为默认评论系统</span></span><br><span class="line"><span class="comment">#   -  评论系统选择: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo</span></span><br><span class="line"><span class="comment"># text: 按钮旁显示评论系统名称</span></span><br><span class="line"><span class="comment"># lazyload: 懒加载，开启后，只有滚动到评论位置时才会加载评论所需要的资源，评论数不显示</span></span><br><span class="line"><span class="comment"># count: 文章顶部显示评论数</span></span><br><span class="line"><span class="comment"># card_post_count: 主页文章卡片显示评论数</span></span><br><span class="line"><span class="attr">comments:</span></span><br><span class="line">  <span class="attr">use:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Valine</span></span><br><span class="line">    <span class="comment">#- Disqus</span></span><br><span class="line">  <span class="attr">text:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">lazyload:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">card_post_count:</span> <span class="literal">true</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># valine</span></span><br><span class="line"><span class="comment"># https://valine.js.org</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">appId:</span> 								                                  <span class="comment"># leancloud application app id</span></span><br><span class="line">  <span class="attr">appKey:</span> 							                                      <span class="comment"># leancloud application app key</span></span><br><span class="line">  <span class="attr">tagMeta:</span> <span class="string">博主,小伙伴,访客</span>                                               <span class="comment"># 评论者标识</span></span><br><span class="line">  <span class="attr">master:</span> 									                              <span class="comment"># 博主md5加密邮箱</span></span><br><span class="line">  <span class="attr">nickPlaceholder:</span> <span class="string">QQ号(输入QQ会自动补全邮箱)</span>                             <span class="comment"># 昵称占位符  </span></span><br><span class="line">  <span class="attr">mailPlaceholder:</span> <span class="string">邮箱</span>                                                   <span class="comment"># 邮箱占位符  </span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">填写QQ可以及时收到回复哦(●\&#x27;◡\&#x27;●)~</span>                         <span class="comment"># 评论区占位符</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">monsterid</span>                                                       <span class="comment"># 默认头像样式 https://valine.js.org/#/avatar</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail</span>                                                   <span class="comment"># 评论者信息(昵称，邮箱，链接)</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span>                                                            <span class="comment"># 评论列表每页最大数目</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-CN</span>                                                             <span class="comment"># 语言设置(zh-CN/zh-TW/en/ja)</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">true</span>                                                          <span class="comment"># 是否记录评论者IP</span></span><br><span class="line">  <span class="attr">bg:</span> 																	  <span class="comment"># 评论区背景图</span></span><br><span class="line">  <span class="attr">emojiCDN:</span> <span class="string">https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/emoji/</span> <span class="comment"># emoji CDN</span></span><br><span class="line">  <span class="attr">enableQQ:</span> <span class="literal">true</span>                                                          <span class="comment"># 允许获取QQ头像</span></span><br><span class="line">  <span class="attr">requiredFields:</span> <span class="string">nick,mail</span>                                               <span class="comment"># 必填项(nick/mail)</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span>                                                           <span class="comment"># 文章访问量统计</span></span><br><span class="line">  <span class="attr">option:</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># CDN</span></span><br><span class="line"><span class="comment"># 设置Valine的CDN为魔改后的</span></span><br><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment">#valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js</span></span><br><span class="line">  <span class="attr">valine:</span> <span class="string">https://cdn.jsdelivr.net/gh/GentleTK/cdn-source@latest/js/Valine.min.js</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-9-音乐播放器配置"><a href="#5-9-音乐播放器配置" class="headerlink" title="5.9 音乐播放器配置"></a>5.9 音乐播放器配置</h3><h4 id="5-9-1-安装插件"><a href="#5-9-1-安装插件" class="headerlink" title="5.9.1 安装插件"></a>5.9.1 安装插件</h4><p>鼠标右键单击选择Git Bash，打开终端，在博客根目录下输入以下命令安装音乐播放器插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-9-2-引入MeingJS"><a href="#5-9-2-引入MeingJS" class="headerlink" title="5.9.2 引入MeingJS"></a>5.9.2 引入MeingJS</h4><p>安装完成后，对博客根目录下的<code>_config.yml</code>进行修改，添加如下配置：</p>
+<div class="note warning flat"><p>注意，是博客根目录下的<code>_config.yml</code>!</p>
+</div>
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 音乐播放器</span></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">  <span class="attr">meting:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">asset_inject:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-9-3-插入代码"><a href="#5-9-3-插入代码" class="headerlink" title="5.9.3 插入代码"></a>5.9.3 插入代码</h4><p>然后对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置主題的<code>aplayerInject</code>如下并插入代码：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Inject the css and script (aplayer/meting)</span></span><br><span class="line"><span class="attr">aplayerInject:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">true</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel=&quot;stylesheet&quot; href=&quot;/xxx.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&lt;div</span> <span class="string">class=&quot;aplayer</span> <span class="literal">no</span><span class="string">-destroy&quot;</span> <span class="string">data-id=&quot;NetEasePlaylistID&quot;</span> <span class="string">data-server=&quot;netease&quot;</span> <span class="string">data-type=&quot;playlist&quot;</span> <span class="string">data-fixed=&quot;true&quot;</span> <span class="string">data-mini=&quot;true&quot;</span> <span class="string">data-listFolded=&quot;false&quot;</span> <span class="string">data-order=&quot;random&quot;</span> <span class="string">data-preload=&quot;none&quot;</span> <span class="string">data-autoplay=&quot;true&quot;</span> <span class="string">muted&gt;&lt;/div&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中参数的描述如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="left">选项</th>
+<th align="left">默认值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">data-id</td>
+<td align="left">必须值</td>
+<td align="left">歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td>
+</tr>
+<tr>
+<td align="left">data-server</td>
+<td align="left">必须值</td>
+<td align="left">音乐平台: netease, tencent, kugou, xiami, baidu</td>
+</tr>
+<tr>
+<td align="left">data-type</td>
+<td align="left">必须值</td>
+<td align="left">song, playlist, album, search, artist</td>
+</tr>
+<tr>
+<td align="left">data-fixed</td>
+<td align="left">false</td>
+<td align="left">开启固定模式</td>
+</tr>
+<tr>
+<td align="left">data-mini</td>
+<td align="left">false</td>
+<td align="left">开启迷你模式</td>
+</tr>
+<tr>
+<td align="left">data-listfolded</td>
+<td align="left">false</td>
+<td align="left">指定音乐播放列表是否折叠</td>
+</tr>
+<tr>
+<td align="left">data-order</td>
+<td align="left">list</td>
+<td align="left">列表播放模式： list, random</td>
+</tr>
+<tr>
+<td align="left">data-preload</td>
+<td align="left">auto</td>
+<td align="left">音乐文件预载入模式，可选项： none, metadata, auto</td>
+</tr>
+<tr>
+<td align="left">data-autoplay</td>
+<td align="left">true</td>
+<td align="left">自动播放，移动端浏览器暂时不支持此功能</td>
+</tr>
+<tr>
+<td align="left">data-loop</td>
+<td align="left">all</td>
+<td align="left">列表循环模式：all, one,none</td>
+</tr>
+<tr>
+<td align="left">data-volume</td>
+<td align="left">0.7</td>
+<td align="left">播放器音量</td>
+</tr>
+<tr>
+<td align="left">data-lrctype</td>
+<td align="left">0</td>
+<td align="left">歌词格式类型</td>
+</tr>
+<tr>
+<td align="left">data-storagename</td>
+<td align="left">metingjs</td>
+<td align="left">LocalStorage 中存储播放器设定的键名</td>
+</tr>
+<tr>
+<td align="left">data-mutex</td>
+<td align="left">true</td>
+<td align="left">该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td>
+</tr>
+<tr>
+<td align="left">data-listmaxheight</td>
+<td align="left">340px</td>
+<td align="left">播放列表的最大长度</td>
+</tr>
+<tr>
+<td align="left">data-theme</td>
+<td align="left">#ad7a86</td>
+<td align="left">播放器风格色彩设置</td>
+</tr>
+</tbody></table>
+<div class="note info flat"><p>如果想在页面跳转后，音乐不会中断，需要设置博客根目录下<code>themes</code>下的<code>_config.yml</code>文件中的<code>pjax</code>为<code>true</code>。</p>
+</div>
+
+<h3 id="5-10-标签外挂配置"><a href="#5-10-标签外挂配置" class="headerlink" title="5.10 标签外挂配置"></a>5.10 标签外挂配置</h3><p>对博客根目录下<code>themes</code>下的<code>_config.yml</code>进行编辑，设置标签外挂如下：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Note (Bootstrap Callout)</span></span><br><span class="line"><span class="comment"># style: simple/modern/flat/disable</span></span><br><span class="line"><span class="attr">note:</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">flat</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">border_radius:</span> <span class="number">3</span></span><br><span class="line">  <span class="attr">light_bg_offset:</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-10-1-default提示块标签"><a href="#5-10-1-default提示块标签" class="headerlink" title="5.10.1 default提示块标签"></a>5.10.1 default提示块标签</h4><ol>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default simple %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default simple"><p>default 提示块标签</p>
+</div></li>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default modern %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default modern"><p>default 提示块标签</p>
+</div></li>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default flat %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default flat"><p>default 提示块标签</p>
+</div></li>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default disable %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default disable flat"><p>default 提示块标签</p>
+</div></li>
+</ol>
+<h4 id="5-10-2-primary提示块标签"><a href="#5-10-2-primary提示块标签" class="headerlink" title="5.10.2 primary提示块标签"></a>5.10.2 primary提示块标签</h4><ol>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary simple %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary simple"><p>primary提示块标签</p>
+</div></li>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary modern %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary modern"><p>primary提示块标签</p>
+</div></li>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary flat %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary flat"><p>primary提示块标签</p>
+</div></li>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary disable %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary disable flat"><p>primary提示块标签</p>
+</div></li>
+</ol>
+<h4 id="5-10-3-success提示块标签"><a href="#5-10-3-success提示块标签" class="headerlink" title="5.10.3 success提示块标签"></a>5.10.3 success提示块标签</h4><ol>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success simple %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success simple"><p>success提示块标签</p>
+</div></li>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success modern %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success modern"><p>success提示块标签</p>
+</div></li>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success flat %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success flat"><p>success提示块标签</p>
+</div></li>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note success disable %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success disable flat"><p>success提示块标签</p>
+</div></li>
+</ol>
+<h4 id="5-10-4-info提示块标签"><a href="#5-10-4-info提示块标签" class="headerlink" title="5.10.4 info提示块标签"></a>5.10.4 info提示块标签</h4><ol>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info simple %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info simple"><p>info提示块标签签</p>
+</div></li>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info modern %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info modern"><p>info提示块标签签</p>
+</div></li>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info flat %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info flat"><p>info提示块标签签</p>
+</div></li>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note info disable %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info disable flat"><p>info提示块标签签</p>
+</div></li>
+</ol>
+<h4 id="5-10-5-warning提示块标签"><a href="#5-10-5-warning提示块标签" class="headerlink" title="5.10.5 warning提示块标签"></a>5.10.5 warning提示块标签</h4><ol>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note warning simple %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning simple"><p>warning提示块标签</p>
+</div></li>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note warning modern %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning modern"><p>warning提示块标签</p>
+</div></li>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note warning flat %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning flat"><p>warning提示块标签</p>
+</div></li>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note warning disable %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning disable flat"><p>warning提示块标签</p>
+</div></li>
+</ol>
+<h4 id="5-10-6-danger提示块标签"><a href="#5-10-6-danger提示块标签" class="headerlink" title="5.10.6 danger提示块标签"></a>5.10.6 danger提示块标签</h4><ol>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger simple %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger simple"><p>danger提示块标签</p>
+</div></li>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger modern %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger modern"><p>danger提示块标签</p>
+</div></li>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger flat %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger flat"><p>danger提示块标签</p>
+</div></li>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger disable %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger disable flat"><p>danger提示块标签</p>
+</div></li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:1144626145@qq.com">GentleTK</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gentletk.gitee.io/butterfly%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/">https://gentletk.gitee.io/butterfly主题安装/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gentletk.gitee.io" target="_blank">云</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a></div><div class="post_share"><div class="social-share" data-image="/img/cover2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">基于树莓派的智能箱包开发环境搭建</div></div></a></div><div class="next-post pull-right"><a href="/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover13.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">基于Hexo的免费个人网站</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Hexo介绍/" title="Hexo介绍"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-02-23</div><div class="title">Hexo介绍</div></div></a></div><div><a href="/基于Hexo的免费个人网站/" title="基于Hexo的免费个人网站"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover13.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-02-23</div><div class="title">基于Hexo的免费个人网站</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(一)/" title="AltiumDesigner绘制PCB(一)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover12.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-26</div><div class="title">AltiumDesigner绘制PCB(一)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(二)/" title="AltiumDesigner绘制PCB(二)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-27</div><div class="title">AltiumDesigner绘制PCB(二)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(四)/" title="AltiumDesigner绘制PCB(四)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-29</div><div class="title">AltiumDesigner绘制PCB(四)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(五)/" title="AltiumDesigner绘制PCB(五)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-30</div><div class="title">AltiumDesigner绘制PCB(五)</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=1144626145&amp;s=640" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">GentleTK</div><div class="author-info__description">面朝大海，春暖花开</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/GentleTK"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/GentleTK" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1144626145&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/img/weixin.jpg" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="mailto:1144626145@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">有问题请联系我(●'◡'●)~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85butterfly"><span class="toc-text">1 安装butterfly</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%BA%94%E7%94%A8butterfly"><span class="toc-text">2 应用butterfly</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-text">3 安装插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF"><span class="toc-text">4 配置模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-text">5 主题配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E5%AF%BC%E8%88%AA%E7%9B%AE%E5%BD%95%E9%85%8D%E7%BD%AE"><span class="toc-text">5.1 导航目录配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-1-%E5%88%9B%E5%BB%BA%E5%AF%BC%E8%88%AA%E7%9B%AE%E5%BD%95%E9%A1%B5%E9%9D%A2"><span class="toc-text">5.1.1 创建导航目录页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-2-%E9%85%8D%E7%BD%AE%E5%AF%BC%E8%88%AA%E7%9B%AE%E5%BD%95%E9%A1%B5%E9%9D%A2"><span class="toc-text">5.1.2 配置导航目录页面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E4%BB%A3%E7%A0%81%E5%9D%97%E9%85%8D%E7%BD%AE"><span class="toc-text">5.2 代码块配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E5%A4%8D%E5%88%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">5.3 复制配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-%E7%A4%BE%E4%BA%A4%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE"><span class="toc-text">5.4 社交图标配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E9%85%8D%E7%BD%AE"><span class="toc-text">5.5 本地搜索配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-6-%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E9%85%8D%E7%BD%AE"><span class="toc-text">5.6 字数统计配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-7-%E6%96%87%E7%AB%A0%E8%BF%87%E6%9C%9F%E6%8F%90%E9%86%92%E9%85%8D%E7%BD%AE"><span class="toc-text">5.7 文章过期提醒配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-8-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE"><span class="toc-text">5.8 评论系统配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-9-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="toc-text">5.9 音乐播放器配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-9-1-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-text">5.9.1 安装插件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-9-2-%E5%BC%95%E5%85%A5MeingJS"><span class="toc-text">5.9.2 引入MeingJS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-9-3-%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81"><span class="toc-text">5.9.3 插入代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-10-%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82%E9%85%8D%E7%BD%AE"><span class="toc-text">5.10 标签外挂配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-10-1-default%E6%8F%90%E7%A4%BA%E5%9D%97%E6%A0%87%E7%AD%BE"><span class="toc-text">5.10.1 default提示块标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-10-2-primary%E6%8F%90%E7%A4%BA%E5%9D%97%E6%A0%87%E7%AD%BE"><span class="toc-text">5.10.2 primary提示块标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-10-3-success%E6%8F%90%E7%A4%BA%E5%9D%97%E6%A0%87%E7%AD%BE"><span class="toc-text">5.10.3 success提示块标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-10-4-info%E6%8F%90%E7%A4%BA%E5%9D%97%E6%A0%87%E7%AD%BE"><span class="toc-text">5.10.4 info提示块标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-10-5-warning%E6%8F%90%E7%A4%BA%E5%9D%97%E6%A0%87%E7%AD%BE"><span class="toc-text">5.10.5 warning提示块标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-10-6-danger%E6%8F%90%E7%A4%BA%E5%9D%97%E6%A0%87%E7%AD%BE"><span class="toc-text">5.10.6 danger提示块标签</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" title="基于阿里云OSS+PicGo的个人图床搭建"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于阿里云OSS+PicGo的个人图床搭建"/></a><div class="content"><a class="title" href="/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" title="基于阿里云OSS+PicGo的个人图床搭建">基于阿里云OSS+PicGo的个人图床搭建</a><time datetime="2022-05-31T02:28:23.000Z" title="发表于 2022-05-31 10:28:23">2022-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="Chocolatey安装与使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Chocolatey安装与使用"/></a><div class="content"><a class="title" href="/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="Chocolatey安装与使用">Chocolatey安装与使用</a><time datetime="2022-05-06T06:43:29.000Z" title="发表于 2022-05-06 14:43:29">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/" title="倍福ET2000侦听器使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="倍福ET2000侦听器使用"/></a><div class="content"><a class="title" href="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/" title="倍福ET2000侦听器使用">倍福ET2000侦听器使用</a><time datetime="2022-02-14T01:06:18.000Z" title="发表于 2022-02-14 09:06:18">2022-02-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/" title="MQTT剩余长度计算"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MQTT剩余长度计算"/></a><div class="content"><a class="title" href="/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/" title="MQTT剩余长度计算">MQTT剩余长度计算</a><time datetime="2022-01-21T01:22:57.000Z" title="发表于 2022-01-21 09:22:57">2022-01-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Vue%E5%9F%BA%E7%A1%80/" title="Vue基础"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue基础"/></a><div class="content"><a class="title" href="/Vue%E5%9F%BA%E7%A1%80/" title="Vue基础">Vue基础</a><time datetime="2021-08-20T06:43:39.000Z" title="发表于 2021-08-20 14:43:39">2021-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Flutter%E4%BD%BF%E7%94%A8/" title="Flutter使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Flutter使用"/></a><div class="content"><a class="title" href="/Flutter%E4%BD%BF%E7%94%A8/" title="Flutter使用">Flutter使用</a><time datetime="2021-08-12T08:54:28.000Z" title="发表于 2021-08-12 16:54:28">2021-08-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/" title="uniCloud通讯录实战"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniCloud通讯录实战"/></a><div class="content"><a class="title" href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/" title="uniCloud通讯录实战">uniCloud通讯录实战</a><time datetime="2021-07-23T06:57:27.000Z" title="发表于 2021-07-23 14:57:27">2021-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/uniCloud%E4%BD%BF%E7%94%A8/" title="uniCloud使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniCloud使用"/></a><div class="content"><a class="title" href="/uniCloud%E4%BD%BF%E7%94%A8/" title="uniCloud使用">uniCloud使用</a><time datetime="2021-07-22T06:12:02.000Z" title="发表于 2021-07-22 14:12:02">2021-07-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/cover2.jpg')"><div id="footer-wrap"><div class="copyright">Copyrights &copy;2020 - 2024 By GentleTK</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">Hexo</a><span class="footer-separator">&nbsp;|&nbsp;</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">Butterfly</a></div><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">粤ICP备12009483号</a></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/pangu/4.0.7/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'EvdIAz6pVj5WbRnlr6o4ChHL-gzGzoHsz',
+      appKey: 'vrHqOHmDzLOpzbLmrSRrzvrj',
+      tagMeta: '博主,小伙伴,访客'.split(','),		
+      master: 'cfa6df64c867ad4d29c979198f77760f',
+      metaPlaceholder: {"nick":"QQ号(输入QQ会自动补全邮箱)","mail":"邮箱"},
+      placeholder: '填写QQ可以及时收到回复哦(●\'◡\'●)~',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '/img/emoji/',
+      emojiMaps: {
+        "侧目":"qq/qq-102.gif",
+        "斜眼笑":"qq/qq-103.gif",
+        "托腮":"qq/qq-104.gif",
+        "小纠结":"qq/qq-105.gif",
+        "笑哭":"qq/qq-106.gif",
+        "喷血":"qq/qq-107.gif",
+        "鼓掌":"qq/qq-1.gif",
+        "呲牙":"qq/qq-2.gif",
+        "憨笑":"qq/qq-3.gif",
+        "坏笑":"qq/qq-4.gif",
+        "偷笑":"qq/qq-5.gif",
+        "害羞":"qq/qq-6.gif",
+        "可爱":"qq/qq-7.gif",
+        "奋斗":"qq/qq-8.gif",
+        "抠鼻":"qq/qq-9.gif",
+        "吓":"qq/qq-10.gif",
+        "惊讶":"qq/qq-11.gif",
+        "惊恐":"qq/qq-12.gif",
+        "糗大了":"qq/qq-13.gif",
+        "尴尬":"qq/qq-14.gif",
+        "调皮":"qq/qq-15.gif",
+        "发呆":"qq/qq-16.gif",
+        "再见":"qq/qq-17.gif",
+        "微笑":"qq/qq-18.gif",
+        "左亲亲":"qq/qq-19.gif",
+        "疑问":"qq/qq-20.gif",
+        "委屈":"qq/qq-21.gif",
+        "抓狂":"qq/qq-22.gif",
+        "折磨":"qq/qq-23.gif",
+        "闭嘴":"qq/qq-24.gif",
+        "擦汗":"qq/qq-25.gif",
+        "冷汗":"qq/qq-26.gif",
+        "阴险":"qq/qq-27.gif",
+        "撇嘴":"qq/qq-28.gif",
+        "难过":"qq/qq-29.gif",
+        "快哭了":"qq/qq-30.gif",
+        "可怜":"qq/qq-31.gif",
+        "大哭":"qq/qq-32.gif",
+        "流泪":"qq/qq-33.gif",
+        "流汗":"qq/qq-34.gif",
+        "酷":"qq/qq-35.gif",
+        "得意":"qq/qq-36.gif",
+        "困":"qq/qq-37.gif",
+        "哈欠":"qq/qq-38.gif",
+        "睡":"qq/qq-39.gif",
+        "敲打":"qq/qq-40.gif",
+        "嘘":"qq/qq-41.gif",
+        "色":"qq/qq-42.gif",
+        "右哼哼":"qq/qq-43.gif",
+        "左哼哼":"qq/qq-44.gif",
+        "晕":"qq/qq-45.gif",
+        "发怒":"qq/qq-46.gif",
+        "吐":"qq/qq-47.gif",
+        "白眼":"qq/qq-48.gif",
+        "傲慢":"qq/qq-49.gif",
+        "鄙视":"qq/qq-50.gif",
+        "咒骂":"qq/qq-51.gif",
+        "饥饿":"qq/qq-52.gif",
+        "赞":"qq/qq-53.gif",
+        "踩":"qq/qq-54.gif",
+        "胜利":"qq/qq-55.gif",
+        "OK":"qq/qq-56.gif",
+        "NO":"qq/qq-57.gif",
+        "差劲":"qq/qq-58.gif",
+        "勾引":"qq/qq-59.gif",
+        "拳头":"qq/qq-60.gif",
+        "握手":"qq/qq-61.gif",
+        "抱拳":"qq/qq-62.gif",
+        "爱你":"qq/qq-63.gif",
+        "爱心":"qq/qq-64.gif",
+        "心碎":"qq/qq-65.gif",
+        "太阳":"qq/qq-66.gif",
+        "月亮":"qq/qq-67.gif",
+        "悠闲":"qq/qq-68.gif",
+        "爆筋":"qq/qq-69.gif",
+        "衰":"qq/qq-70.gif",
+        "骷髅":"qq/qq-71.gif",
+        "熊猫":"qq/qq-72.gif",
+        "猪头":"qq/qq-73.gif",
+        "足球":"qq/qq-74.gif",
+        "篮球":"qq/qq-75.gif",
+        "拥抱":"qq/qq-76.gif",
+        "玫瑰":"qq/qq-77.gif",
+        "凋谢":"qq/qq-78.gif",
+        "嗨皮牛耶":"qq/qq-79.gif",
+        "双喜":"qq/qq-80.gif",
+        "闪电":"qq/qq-81.gif",
+        "蛋糕":"qq/qq-82.gif",
+        "礼物":"qq/qq-83.gif",
+        "炸弹":"qq/qq-84.gif",
+        "菜刀":"qq/qq-85.gif",
+        "刀":"qq/qq-86.gif",
+        "香蕉":"qq/qq-87.gif",
+        "西瓜":"qq/qq-88.gif",
+        "米饭":"qq/qq-89.gif",
+        "面条":"qq/qq-90.gif",
+        "啤酒":"qq/qq-91.gif",
+        "咖啡":"qq/qq-92.gif",
+        "飞机":"qq/qq-93.gif",
+        "风车":"qq/qq-94.gif",
+        "喝彩":"qq/qq-95.gif",
+        "钞票":"qq/qq-96.gif",
+        "祈祷":"qq/qq-97.gif",
+        "雨伞":"qq/qq-98.gif",
+        "药丸":"qq/qq-99.gif",
+        "纸巾":"qq/qq-100.gif",
+        "便便":"qq/qq-101.gif",
+      },
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('/js/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}
+</script><style>/*鼠标放置，头像旋转*/
+img.vimg {
+  transition: all 1s   /* 旋转时间为 1s */
+}
+img.vimg:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}</style></div><div class="aplayer no-destroy" data-id="6722535004" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script src="/js/lovetimer.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://unpkg.zhimg.com/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://unpkg.zhimg.com/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://unpkg.com/butterfly-extsrc@1.1.2/dist/click-heart.min.js" async="async" mobile="true"></script><script>((window.gitter = {}).chat = {}).options = {
+  disableDefaultChat: true,
+};
+document.addEventListener('gitter-sidecar-ready', (e) => {
+  const GitterChat = e.detail.Chat
+  let chat
+
+  function initGitter () {
+    chat = new GitterChat({
+      room: 'GentleTK/mychatroom',
+      activationElement: '#chat_btn'
+    });
+  }
+
+  initGitter()
+
+  if (true) {
+    document.addEventListener('pjax:complete', () => {
+      chat.destroy()
+      initGitter()
+    })
+  }
+
+})</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://npm.elemecdn.com/js-heo@1.0.12/metingjs/Meting.min.js"></script><script src="https://npm.elemecdn.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script></div></body></html>

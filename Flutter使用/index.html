@@ -1,0 +1,512 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flutter使用 | 云</title><meta name="keywords" content="技术,Flutter"><meta name="author" content="GentleTK,1144626145@qq.com"><meta name="copyright" content="GentleTK"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文主要介绍Google的开源UI框架——Flutter的简单使用教程。  1 安装前提 Git for Windows Android Studio   2 获取 Flutter SDKFlutter_Windows_2.0.6-stable.zip 解压后将 flutter 目录拷贝到D盘或其他路径。 3 设置环境变量在高级系统设置中选择环境变量，在 Path 中添加Flutter SDK的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flutter使用">
+<meta property="og:url" content="https://gentletk.gitee.io/Flutter%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:site_name" content="云">
+<meta property="og:description" content="本文主要介绍Google的开源UI框架——Flutter的简单使用教程。  1 安装前提 Git for Windows Android Studio   2 获取 Flutter SDKFlutter_Windows_2.0.6-stable.zip 解压后将 flutter 目录拷贝到D盘或其他路径。 3 设置环境变量在高级系统设置中选择环境变量，在 Path 中添加Flutter SDK的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gentletk.gitee.io/img/cover7.jpg">
+<meta property="article:published_time" content="2021-08-12T08:54:28.000Z">
+<meta property="article:modified_time" content="2021-08-12T08:54:28.000Z">
+<meta property="article:author" content="GentleTK">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="Flutter">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gentletk.gitee.io/img/cover7.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://gentletk.gitee.io/Flutter%E4%BD%BF%E7%94%A8/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//s4.cnzz.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><script async="async" data-pjax="data-pjax" src="https://s4.cnzz.com/z_stat.php?id=1278636399&amp;web_id=1278636399"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":150,"position":"top","messagePrev":"请注意，本文更新于","messageNext":"天前，其中某些内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: GentleTK","link":"链接: ","source":"来源: 云","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://unpkg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://unpkg.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js',
+      css: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-08-12 16:54:28'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/lovetimer.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="云" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=1144626145&amp;s=640" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover7.jpg')"><nav id="nav"><span id="blog_name"><!--a#site-name(href=url_for('/')) #[=config.title]--></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Flutter使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-12T08:54:28.000Z" title="发表于 2021-08-12 16:54:28">2021-08-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-08-12T08:54:28.000Z" title="更新于 2021-08-12 16:54:28">2021-08-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">993</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/Flutter%E4%BD%BF%E7%94%A8/" data-flag-title="Flutter使用"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span class="leancloud-visitors-count"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/Flutter%E4%BD%BF%E7%94%A8/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/Flutter%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
+</blockquote>
+<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
+</ul>
+<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a target="_blank" rel="noopener" href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
+<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
+<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
+<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
+
+<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+
+<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
+<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
+
+<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
+
+<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>再次运行<code>flutter doctor</code>。</p>
+<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
+<p>（2）选择Flutter SDK Path。</p>
+<p>（3）填写工程名。</p>
+<p>（4）填写工程路径。</p>
+<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
+<p>Application：应用名称</p>
+<p>User-permission：使用权限，必须包含网络访问权限。</p>
+<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
+<p>（2）查看构建配置</p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
+<p>defaultConfig:</p>
+<p>applicationId:指定始终唯一的appid</p>
+<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
+<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
+<p>（3）添加启动图标</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
+<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
+<p>（4）APP签名</p>
+<p><strong>创建keystore</strong></p>
+<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
+<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="Flutter%E4%BD%BF%E7%94%A8.assets/image-20220725133511680.png" alt="image-20220725133511680"></p>
+<p><strong>引用应用程序中的keystore</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
+<p>storePassword=密钥库口令</p>
+<p>keyPassword=key的密钥口令</p>
+<p>keyAlias=key</p>
+<p>storeFile=<app_dir>/key.jks</p>
+<p><strong>在gradle中配置签名</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
+<p>在<code>”android &#123;“</code>前加上如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
+
+<p>将</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>替换为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（5）开启混淆</p>
+<p><strong>配置混淆</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>开启混淆压缩</strong></p>
+<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
+<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
+<p>修改后的<code>buildTypes</code>如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>（6）构建发布版apk</p>
+<p>进入应用程序目录</p>
+<p><code>cd &lt;app_dir&gt;</code></p>
+<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
+<p><code>flutter build apk</code></p>
+<p>安装<code>apk</code></p>
+<p><code>flutter install</code></p>
+<p>构建<code>apk</code>结果如下所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="Flutter%E4%BD%BF%E7%94%A8.assets/image-20220725134059854.png" alt="image-20220725134059854"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:1144626145@qq.com">GentleTK</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gentletk.gitee.io/Flutter%E4%BD%BF%E7%94%A8/">https://gentletk.gitee.io/Flutter使用/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gentletk.gitee.io" target="_blank">云</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a class="post-meta__tags" href="/tags/Flutter/">Flutter</a></div><div class="post_share"><div class="social-share" data-image="/img/cover7.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Vue%E5%9F%BA%E7%A1%80/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover6.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vue基础</div></div></a></div><div class="next-post pull-right"><a href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">uniCloud通讯录实战</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/AltiumDesigner绘制PCB(一)/" title="AltiumDesigner绘制PCB(一)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover12.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-26</div><div class="title">AltiumDesigner绘制PCB(一)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(二)/" title="AltiumDesigner绘制PCB(二)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-27</div><div class="title">AltiumDesigner绘制PCB(二)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(四)/" title="AltiumDesigner绘制PCB(四)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-29</div><div class="title">AltiumDesigner绘制PCB(四)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(五)/" title="AltiumDesigner绘制PCB(五)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-30</div><div class="title">AltiumDesigner绘制PCB(五)</div></div></a></div><div><a href="/AltiumDesigner绘制PCB(三)/" title="AltiumDesigner绘制PCB(三)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover12.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-28</div><div class="title">AltiumDesigner绘制PCB(三)</div></div></a></div><div><a href="/Chocolatey安装与使用/" title="Chocolatey安装与使用"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-06</div><div class="title">Chocolatey安装与使用</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=1144626145&amp;s=640" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">GentleTK</div><div class="author-info__description">面朝大海，春暖花开</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/GentleTK"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/GentleTK" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1144626145&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/img/weixin.jpg" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="mailto:1144626145@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">有问题请联系我(●'◡'●)~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90"><span class="toc-text">1 安装前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%8E%B7%E5%8F%96-Flutter-SDK"><span class="toc-text">2 获取 Flutter SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">3 设置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%BF%90%E8%A1%8C-flutter-doctor"><span class="toc-text">4 运行 flutter doctor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85"><span class="toc-text">5 安装依赖包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="toc-text">6 创建工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-Android%E6%9E%84%E5%BB%BA%E5%8F%91%E5%B8%83"><span class="toc-text">7 Android构建发布</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" title="基于阿里云OSS+PicGo的个人图床搭建"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于阿里云OSS+PicGo的个人图床搭建"/></a><div class="content"><a class="title" href="/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" title="基于阿里云OSS+PicGo的个人图床搭建">基于阿里云OSS+PicGo的个人图床搭建</a><time datetime="2022-05-31T02:28:23.000Z" title="发表于 2022-05-31 10:28:23">2022-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="Chocolatey安装与使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Chocolatey安装与使用"/></a><div class="content"><a class="title" href="/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="Chocolatey安装与使用">Chocolatey安装与使用</a><time datetime="2022-05-06T06:43:29.000Z" title="发表于 2022-05-06 14:43:29">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/" title="倍福ET2000侦听器使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="倍福ET2000侦听器使用"/></a><div class="content"><a class="title" href="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/" title="倍福ET2000侦听器使用">倍福ET2000侦听器使用</a><time datetime="2022-02-14T01:06:18.000Z" title="发表于 2022-02-14 09:06:18">2022-02-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/" title="MQTT剩余长度计算"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MQTT剩余长度计算"/></a><div class="content"><a class="title" href="/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/" title="MQTT剩余长度计算">MQTT剩余长度计算</a><time datetime="2022-01-21T01:22:57.000Z" title="发表于 2022-01-21 09:22:57">2022-01-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Vue%E5%9F%BA%E7%A1%80/" title="Vue基础"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue基础"/></a><div class="content"><a class="title" href="/Vue%E5%9F%BA%E7%A1%80/" title="Vue基础">Vue基础</a><time datetime="2021-08-20T06:43:39.000Z" title="发表于 2021-08-20 14:43:39">2021-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Flutter%E4%BD%BF%E7%94%A8/" title="Flutter使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Flutter使用"/></a><div class="content"><a class="title" href="/Flutter%E4%BD%BF%E7%94%A8/" title="Flutter使用">Flutter使用</a><time datetime="2021-08-12T08:54:28.000Z" title="发表于 2021-08-12 16:54:28">2021-08-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/" title="uniCloud通讯录实战"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniCloud通讯录实战"/></a><div class="content"><a class="title" href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/" title="uniCloud通讯录实战">uniCloud通讯录实战</a><time datetime="2021-07-23T06:57:27.000Z" title="发表于 2021-07-23 14:57:27">2021-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/uniCloud%E4%BD%BF%E7%94%A8/" title="uniCloud使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniCloud使用"/></a><div class="content"><a class="title" href="/uniCloud%E4%BD%BF%E7%94%A8/" title="uniCloud使用">uniCloud使用</a><time datetime="2021-07-22T06:12:02.000Z" title="发表于 2021-07-22 14:12:02">2021-07-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/cover7.jpg')"><div id="footer-wrap"><div class="copyright">Copyrights &copy;2020 - 2024 By GentleTK</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">Hexo</a><span class="footer-separator">&nbsp;|&nbsp;</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">Butterfly</a></div><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">粤ICP备12009483号</a></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/pangu/4.0.7/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'EvdIAz6pVj5WbRnlr6o4ChHL-gzGzoHsz',
+      appKey: 'vrHqOHmDzLOpzbLmrSRrzvrj',
+      tagMeta: '博主,小伙伴,访客'.split(','),		
+      master: 'cfa6df64c867ad4d29c979198f77760f',
+      metaPlaceholder: {"nick":"QQ号(输入QQ会自动补全邮箱)","mail":"邮箱"},
+      placeholder: '填写QQ可以及时收到回复哦(●\'◡\'●)~',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '/img/emoji/',
+      emojiMaps: {
+        "侧目":"qq/qq-102.gif",
+        "斜眼笑":"qq/qq-103.gif",
+        "托腮":"qq/qq-104.gif",
+        "小纠结":"qq/qq-105.gif",
+        "笑哭":"qq/qq-106.gif",
+        "喷血":"qq/qq-107.gif",
+        "鼓掌":"qq/qq-1.gif",
+        "呲牙":"qq/qq-2.gif",
+        "憨笑":"qq/qq-3.gif",
+        "坏笑":"qq/qq-4.gif",
+        "偷笑":"qq/qq-5.gif",
+        "害羞":"qq/qq-6.gif",
+        "可爱":"qq/qq-7.gif",
+        "奋斗":"qq/qq-8.gif",
+        "抠鼻":"qq/qq-9.gif",
+        "吓":"qq/qq-10.gif",
+        "惊讶":"qq/qq-11.gif",
+        "惊恐":"qq/qq-12.gif",
+        "糗大了":"qq/qq-13.gif",
+        "尴尬":"qq/qq-14.gif",
+        "调皮":"qq/qq-15.gif",
+        "发呆":"qq/qq-16.gif",
+        "再见":"qq/qq-17.gif",
+        "微笑":"qq/qq-18.gif",
+        "左亲亲":"qq/qq-19.gif",
+        "疑问":"qq/qq-20.gif",
+        "委屈":"qq/qq-21.gif",
+        "抓狂":"qq/qq-22.gif",
+        "折磨":"qq/qq-23.gif",
+        "闭嘴":"qq/qq-24.gif",
+        "擦汗":"qq/qq-25.gif",
+        "冷汗":"qq/qq-26.gif",
+        "阴险":"qq/qq-27.gif",
+        "撇嘴":"qq/qq-28.gif",
+        "难过":"qq/qq-29.gif",
+        "快哭了":"qq/qq-30.gif",
+        "可怜":"qq/qq-31.gif",
+        "大哭":"qq/qq-32.gif",
+        "流泪":"qq/qq-33.gif",
+        "流汗":"qq/qq-34.gif",
+        "酷":"qq/qq-35.gif",
+        "得意":"qq/qq-36.gif",
+        "困":"qq/qq-37.gif",
+        "哈欠":"qq/qq-38.gif",
+        "睡":"qq/qq-39.gif",
+        "敲打":"qq/qq-40.gif",
+        "嘘":"qq/qq-41.gif",
+        "色":"qq/qq-42.gif",
+        "右哼哼":"qq/qq-43.gif",
+        "左哼哼":"qq/qq-44.gif",
+        "晕":"qq/qq-45.gif",
+        "发怒":"qq/qq-46.gif",
+        "吐":"qq/qq-47.gif",
+        "白眼":"qq/qq-48.gif",
+        "傲慢":"qq/qq-49.gif",
+        "鄙视":"qq/qq-50.gif",
+        "咒骂":"qq/qq-51.gif",
+        "饥饿":"qq/qq-52.gif",
+        "赞":"qq/qq-53.gif",
+        "踩":"qq/qq-54.gif",
+        "胜利":"qq/qq-55.gif",
+        "OK":"qq/qq-56.gif",
+        "NO":"qq/qq-57.gif",
+        "差劲":"qq/qq-58.gif",
+        "勾引":"qq/qq-59.gif",
+        "拳头":"qq/qq-60.gif",
+        "握手":"qq/qq-61.gif",
+        "抱拳":"qq/qq-62.gif",
+        "爱你":"qq/qq-63.gif",
+        "爱心":"qq/qq-64.gif",
+        "心碎":"qq/qq-65.gif",
+        "太阳":"qq/qq-66.gif",
+        "月亮":"qq/qq-67.gif",
+        "悠闲":"qq/qq-68.gif",
+        "爆筋":"qq/qq-69.gif",
+        "衰":"qq/qq-70.gif",
+        "骷髅":"qq/qq-71.gif",
+        "熊猫":"qq/qq-72.gif",
+        "猪头":"qq/qq-73.gif",
+        "足球":"qq/qq-74.gif",
+        "篮球":"qq/qq-75.gif",
+        "拥抱":"qq/qq-76.gif",
+        "玫瑰":"qq/qq-77.gif",
+        "凋谢":"qq/qq-78.gif",
+        "嗨皮牛耶":"qq/qq-79.gif",
+        "双喜":"qq/qq-80.gif",
+        "闪电":"qq/qq-81.gif",
+        "蛋糕":"qq/qq-82.gif",
+        "礼物":"qq/qq-83.gif",
+        "炸弹":"qq/qq-84.gif",
+        "菜刀":"qq/qq-85.gif",
+        "刀":"qq/qq-86.gif",
+        "香蕉":"qq/qq-87.gif",
+        "西瓜":"qq/qq-88.gif",
+        "米饭":"qq/qq-89.gif",
+        "面条":"qq/qq-90.gif",
+        "啤酒":"qq/qq-91.gif",
+        "咖啡":"qq/qq-92.gif",
+        "飞机":"qq/qq-93.gif",
+        "风车":"qq/qq-94.gif",
+        "喝彩":"qq/qq-95.gif",
+        "钞票":"qq/qq-96.gif",
+        "祈祷":"qq/qq-97.gif",
+        "雨伞":"qq/qq-98.gif",
+        "药丸":"qq/qq-99.gif",
+        "纸巾":"qq/qq-100.gif",
+        "便便":"qq/qq-101.gif",
+      },
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('/js/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}
+</script><style>/*鼠标放置，头像旋转*/
+img.vimg {
+  transition: all 1s   /* 旋转时间为 1s */
+}
+img.vimg:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}</style></div><div class="aplayer no-destroy" data-id="6722535004" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script src="/js/lovetimer.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://unpkg.zhimg.com/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://unpkg.zhimg.com/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://unpkg.com/butterfly-extsrc@1.1.2/dist/click-heart.min.js" async="async" mobile="true"></script><script>((window.gitter = {}).chat = {}).options = {
+  disableDefaultChat: true,
+};
+document.addEventListener('gitter-sidecar-ready', (e) => {
+  const GitterChat = e.detail.Chat
+  let chat
+
+  function initGitter () {
+    chat = new GitterChat({
+      room: 'GentleTK/mychatroom',
+      activationElement: '#chat_btn'
+    });
+  }
+
+  initGitter()
+
+  if (true) {
+    document.addEventListener('pjax:complete', () => {
+      chat.destroy()
+      initGitter()
+    })
+  }
+
+})</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://npm.elemecdn.com/js-heo@1.0.12/metingjs/Meting.min.js"></script><script src="https://npm.elemecdn.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /home/
+Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+Allow: /link/
+Allow: /about/
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://gentletk.gitee.io/sitemap.xml
+Sitemap: https://gentletk.gitee.io/baidusitemap.xml

@@ -1,0 +1,678 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>网站开发方案研究 | 云</title><meta name="keywords" content="技术,IoT,Vue"><meta name="author" content="GentleTK,1144626145@qq.com"><meta name="copyright" content="GentleTK"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="任务描述    了解建站的基本概念及流程。     了解云服务器的选择。     了解开源网站系统(Discuz、WordPress)。      了解本地建站，并基于WordPress+phpStudy搭建本地网站。     购买华为云耀云服务器(免费试用30天)，搭建服务器端环境。     参照本地建站，移植到服务器端，通过公网IP即可访问。     以管理员身份登陆后台，安装插件，设置用户注">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网站开发方案研究">
+<meta property="og:url" content="https://gentletk.gitee.io/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/index.html">
+<meta property="og:site_name" content="云">
+<meta property="og:description" content="任务描述    了解建站的基本概念及流程。     了解云服务器的选择。     了解开源网站系统(Discuz、WordPress)。      了解本地建站，并基于WordPress+phpStudy搭建本地网站。     购买华为云耀云服务器(免费试用30天)，搭建服务器端环境。     参照本地建站，移植到服务器端，通过公网IP即可访问。     以管理员身份登陆后台，安装插件，设置用户注">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gentletk.gitee.io/img/cover10.jpg">
+<meta property="article:published_time" content="2021-03-29T08:43:58.000Z">
+<meta property="article:modified_time" content="2021-03-29T08:43:58.000Z">
+<meta property="article:author" content="GentleTK">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="IoT">
+<meta property="article:tag" content="Vue">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gentletk.gitee.io/img/cover10.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://gentletk.gitee.io/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//s4.cnzz.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><script async="async" data-pjax="data-pjax" src="https://s4.cnzz.com/z_stat.php?id=1278636399&amp;web_id=1278636399"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":150,"position":"top","messagePrev":"请注意，本文更新于","messageNext":"天前，其中某些内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: GentleTK","link":"链接: ","source":"来源: 云","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://unpkg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://unpkg.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js',
+      css: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-29 16:43:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/lovetimer.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="云" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=1144626145&amp;s=640" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover10.jpg')"><nav id="nav"><span id="blog_name"><!--a#site-name(href=url_for('/')) #[=config.title]--></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">网站开发方案研究</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-29T08:43:58.000Z" title="发表于 2021-03-29 16:43:58">2021-03-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-29T08:43:58.000Z" title="更新于 2021-03-29 16:43:58">2021-03-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/" data-flag-title="网站开发方案研究"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span class="leancloud-visitors-count"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>任务描述</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <ol>
+<li>了解建站的基本概念及流程。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="2">
+<li>了解云服务器的选择。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="3">
+<li>了解开源网站系统(Discuz、WordPress)。 </li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="4">
+<li>了解本地建站，并基于WordPress+phpStudy搭建本地网站。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="5">
+<li>购买华为云耀云服务器(免费试用30天)，搭建服务器端环境。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="6">
+<li>参照本地建站，移植到服务器端，通过公网IP即可访问。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="7">
+<li>以管理员身份登陆后台，安装插件，设置用户注册、登陆后才可浏览。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="8">
+<li>了解HTML、CSS、JavaScript基础以及PHP语法特性。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="9">
+<li>设计平台体验页面的表单及样式，实现设备管理功能(设备列表、数据查询、命令下发)。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="10">
+<li>服务器端添加自定义页面模板，移植平台体验页面到服务器。</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> <ol start="11">
+<li>了解基于Layui的前端框架。</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"> <ol start="12">
+<li>了解基于vue框架的后台前端解决方案。</li>
+</ol>
+</li>
+</ul>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h2><p><strong>建站基本流程</strong></p>
+<ul>
+<li>购买域名</li>
+<li>域名备案</li>
+<li>购买云服务器</li>
+<li>搭建网站</li>
+<li>域名解析</li>
+</ul>
+<h3 id="1-1-网站搭建——域名"><a href="#1-1-网站搭建——域名" class="headerlink" title="1.1 网站搭建——域名"></a>1.1 网站搭建——域名</h3><p>域名就是浏览器中输入的网址，如<code>www.baidu.com</code>，一般来说www开头的为一级域名，也就是主域，每一个主域可以对应无数个子域名。域名和IP地址本身是没有关系的，而如果要绑定，就得用到DNS解析。当在浏览器输入网址访问时，浏览器首先会将域名解析为对应的IP地址，然后浏览器再发出字节的数据请求，服务器端收到数据请求后，再返回网站相关的数据代码(HTML)，浏览器接收后再将这些代码转化成我们可以浏览的网页格式。</p>
+<h3 id="2-1-网站搭建——服务器"><a href="#2-1-网站搭建——服务器" class="headerlink" title="2.1 网站搭建——服务器"></a>2.1 网站搭建——服务器</h3><p>服务器，是提供计算服务的设备，相当于一台长时间不关机且性能极其稳定的电脑，网站程序一直运行在这台电脑上，等待各个访问这台服务器的客户端的数据访问请求，服务器收到请求后会按一定数据格式返回网页数据代码(一般是HTML以及CSS和JavaScript等代码)，客户端的浏览器收到数据后，再将数据解析渲染成可供人浏览的网页数据。</p>
+<h4 id="2-1-1-虚拟空间"><a href="#2-1-1-虚拟空间" class="headerlink" title="2.1.1 虚拟空间"></a>2.1.1 虚拟空间</h4><p>虚拟主机是在服务器硬盘上划分出一部分存储空间，它共享的是服务器的IP和带宽，没有独立的资源和独立的操作系统，没有远程桌面功能，通常虚拟主机所支持的网站程序也是默认分配好的，没有办法由用户自己配置环境，功能相对单一。</p>
+<h4 id="2-1-2-云服务ECS-Elastic-Compute-Services"><a href="#2-1-2-云服务ECS-Elastic-Compute-Services" class="headerlink" title="2.1.2 云服务ECS(Elastic Compute Services)"></a>2.1.2 云服务ECS(Elastic Compute Services)</h4><p>云服务器ECS是阿里云提供的一种基础云计算服务，它是在集群服务器上划分出来的独立的内存、硬盘、带宽等资源搭建而成的一个虚拟服务器，有独立的IP和带宽，可以根据需求安装各版本操作系统以及配置各种网站运行环境，有远程桌面连接东西，是完全独立的。（虚拟主机是没有的）。</p>
+<p><strong>如何选择适合自己的云服务配置？</strong></p>
+<p>(1)服务器节点所在地域的选择</p>
+<p>建站需要考虑网站用户的访问速度，而影响网站访问速度的一个重要因素是服务器节点所在地域。也就是说如果服务器节点地域选的离你目标客户群地区越接近，那么你网站的访问速度就会越快。</p>
+<p>(2) 云服务器实例规格的选择</p>
+<p>普通企业网站，性能比较均衡的，可以选择通用型，通用网络增强型即可，推荐2核4G或8G以上配置</p>
+<p>(3) 云服务器操作系统的选择</p>
+<p>根据建站程序使用的语言选择对应系统</p>
+<p>Windows：asp、asp.net<br>Linux：php</p>
+<p>通过镜像市场，选择已经配置好的镜像，可以省去我们装服务器系统环境的时间。</p>
+<p>(4) 云服务器硬盘的选择</p>
+<p>一般会默认配置有40G系统盘，最好单独购买一块数据盘（20-50G），将网站程序部署在数据盘，防止系统盘出故障时，丢失网站数据。</p>
+<p>(5) 云服务器带宽的选择</p>
+<p>以日均两三百人访问为例，一般选择1-2M左右的带宽。</p>
+<p>云服务器的流量与带宽换算：</p>
+<p>带宽：流量 = 1：150，即1M带宽=150M流量</p>
+<h2 id="2-基于WordPress的本地网站搭建"><a href="#2-基于WordPress的本地网站搭建" class="headerlink" title="2. 基于WordPress的本地网站搭建"></a>2. 基于WordPress的本地网站搭建</h2><p><a target="_blank" rel="noopener" href="https://cn.wordpress.org/download/">下载WordPress</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.xp.cn/download.html">下载phpStudy</a></p>
+<p>下载完成后，安装phpStudy，将下载好的WordPress解压后存放到phpStudy安装路径下的WWW文件夹下。</p>
+<h3 id="2-1-创建网站"><a href="#2-1-创建网站" class="headerlink" title="2.1 创建网站"></a>2.1 创建网站</h3><p>打开phpStudy，先启动web服务，再点击创建网站，填写基本信息</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99.png" alt="创建网站"></p>
+<p>填写完成后等待服务重启，然后点击管理，选择打开网站</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%82%B9%E5%87%BB%E7%AE%A1%E7%90%86.png" alt="点击管理"></p>
+<p>进入WordPress安装界面</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/WordPress%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A2.png" alt="WordPress安装界面"></p>
+<p>先在phpStudy里创建一个数据库(首先把默认的root密码修改才能创建)</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="创建数据库"></p>
+<p>填写数据库信息</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%A1%AB%E5%86%99%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="填写数据库信息"></p>
+<p>点击提交</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%8E%B0%E5%9C%A8%E5%AE%89%E8%A3%85.png" alt="现在安装"></p>
+<p>填写网站基本信息</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%A1%AB%E5%86%99%E7%BD%91%E7%AB%99%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF.png" alt="填写网站基本信息"></p>
+<p>WordPress安装成功</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/WordPress%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="WordPress安装成功"></p>
+<p>点击登陆</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%82%B9%E5%87%BB%E7%99%BB%E9%99%86.png" alt="点击登陆"></p>
+<p>进入后台管理仪表盘</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E4%BB%AA%E8%A1%A8%E7%9B%98.png" alt="后台管理仪表盘"></p>
+<h1 id="华为云耀云服务器网站搭建"><a href="#华为云耀云服务器网站搭建" class="headerlink" title="华为云耀云服务器网站搭建"></a>华为云耀云服务器网站搭建</h1><h2 id="1-购买华为云耀云服务器"><a href="#1-购买华为云耀云服务器" class="headerlink" title="1.购买华为云耀云服务器"></a>1.购买华为云耀云服务器</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%95%E7%94%A8.png" alt="华为云耀云服务器"></p>
+<p>云耀云服务器控制台</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A7%E5%88%B6%E5%8F%B0.png" alt="云耀云服务器控制台"></p>
+<p>首先通过远程连接，连接到华为云耀云服务器。</p>
+<table>
+<thead>
+<tr>
+<th>IPAddress</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>121.36.201.57</td>
+<td>Adtech123456</td>
+</tr>
+</tbody></table>
+<p>在控制台点击公网IP，在访问控制中点击安全组，设置一下安全组规则</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E8%AE%BE%E7%BD%AE%E5%AE%89%E5%85%A8%E7%BB%84%E8%A7%84%E5%88%99.png" alt="设置安全组规则"></p>
+<p>在服务器上安装phpStudy，放一个测试页面看下效果，记得把网站首页设置为测试的html文件</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/helloworld%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2.png" alt="helloworld测试页面"></p>
+<p>此时在服务器上的浏览器输入helloworld:802即可打开网站</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%8D%E5%8A%A1%E5%99%A8helloworld.png" alt="服务器helloworld"></p>
+<p>外网访问需要通过输入服务器地址:端口号的方式</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AEhelloworld.png" alt="外网访问helloworld"></p>
+<h2 id="2-搭建服务器上的WordPress"><a href="#2-搭建服务器上的WordPress" class="headerlink" title="2.搭建服务器上的WordPress"></a>2.搭建服务器上的WordPress</h2><p>将下载好的WordPress解压后得到的wordpress文件夹存放到phpStudy安装路径下的WWW文件夹下，重命名为adtechiot。</p>
+<h3 id="2-1-进入数据库管理"><a href="#2-1-进入数据库管理" class="headerlink" title="2.1 进入数据库管理"></a>2.1 进入数据库管理</h3><p>在phpStudy中安装phpMyadmin管理工具，安装完成后点击管理进入数据库管理登陆界面，用户名和密码为创建数据库时所设。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%99%BB%E9%99%86%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86.png" alt="登陆数据库管理"></p>
+<p>将iot数据库下wp_options的siteurl和home的值修改为公网IP(121.36.201.57)</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E4%BF%AE%E6%94%B9siteurl%E5%92%8Chome.png" alt="修改siteurl和home"></p>
+<h3 id="2-2-进入WordPress后台管理"><a href="#2-2-进入WordPress后台管理" class="headerlink" title="2.2 进入WordPress后台管理"></a>2.2 进入WordPress后台管理</h3><p>浏览器输入121.36.201.57/wp-admin可进入网站后台管理界面</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%99%BB%E9%99%86%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86.png" alt="登陆后台管理"></p>
+<p>在设置的成员资格旁边勾选</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 任何人都可以注册</li>
+</ul>
+<p>新用户默认角色设置为订阅者。</p>
+<p>下载插件Registered Users Only，这是确保用户必须登陆后才能访问，安装后记得点击启用。</p>
+<p>下载插件WP SMTP，这是为了注册或忘记密码后能向用户发送邮件，安装完成后记得点击启用。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E8%AE%BE%E7%BD%AESMTP.png" alt="设置SMTP"></p>
+<p>设置完后可以发一封测试邮件验证一下。</p>
+<p>现在可以直接在浏览器输入公网IP进行登陆或注册</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E4%BC%97%E4%B8%BA%E5%85%B4%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0%E7%99%BB%E9%99%86%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png" alt="众为兴物联网平台登陆注册页面"></p>
+<p>尝试注册一个新用户</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%B3%A8%E5%86%8C%E6%96%B0%E7%94%A8%E6%88%B7.png" alt="注册新用户"></p>
+<p>收到确认邮件</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%94%B6%E5%88%B0%E7%A1%AE%E8%AE%A4%E9%82%AE%E4%BB%B6.png" alt="收到确认邮件"></p>
+<p>点击链接设置登陆密码就可以登陆了。</p>
+<table>
+<thead>
+<tr>
+<th align="left">用户名</th>
+<th align="left">登陆密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">user</td>
+<td align="left">adt123456</td>
+</tr>
+</tbody></table>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/user%E7%99%BB%E9%99%86%E5%90%8E%E7%95%8C%E9%9D%A2.png" alt="user登陆后界面"></p>
+<h2 id="3-设计平台体验页面"><a href="#3-设计平台体验页面" class="headerlink" title="3. 设计平台体验页面"></a>3. 设计平台体验页面</h2><p>平台体验页面的设备管理共包含设备列表、数据查询、下发命令三个功能。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%B9%B3%E5%8F%B0%E4%BD%93%E9%AA%8C%E9%A1%B5%E9%9D%A2.png" alt="平台体验页面"></p>
+<h3 id="3-1-设备列表"><a href="#3-1-设备列表" class="headerlink" title="3.1 设备列表"></a>3.1 设备列表</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择设备列表即可查看该产品下所有设备的信息，包括设备名称、设备ID、设备状态以及最后在线时间。</p>
+<p>(1) mqtt设备列表</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/mqtt%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="mqtt设备列表"></p>
+<p>(2)modbus设备列表</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/modbus%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="modbus设备列表"></p>
+<h3 id="3-2-数据查询"><a href="#3-2-数据查询" class="headerlink" title="3.2 数据查询"></a>3.2 数据查询</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择数据查询即可进入数据查询页面，用户通过选择要查询的设备名称-ID来查询该设备的数据列表，包括数据名称、数据值、创建时间以及最后更新时间(Modbus设备可以查看平台下发的命令)。</p>
+<p>(1) mqtt查询</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/mqtt%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2.png" alt="mqtt数据查询"></p>
+<p>(2) modbus查询</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/modbus%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2.png" alt="modbus数据查询"></p>
+<h3 id="3-3-下发命令"><a href="#3-3-下发命令" class="headerlink" title="3.3 下发命令"></a>3.3 下发命令</h3><p>用户通过下拉列表选择产品类型，在设备管理中选择数据查询即可进入下发命令页面。</p>
+<p>(1) MQTT产品</p>
+<p>用户通过选择设备名称-ID、消息质量(默认Qos0)、命令有效时间(默认为0)，输入要发送的命令来实现命令下发功能。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/mqtt%E5%91%BD%E4%BB%A4%E4%B8%8B%E5%8F%91%E7%95%8C%E9%9D%A2.png" alt="mqtt命令下发界面"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/mqtt%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%B8%8B%E5%8F%91.png" alt="mqtt命令已下发"></p>
+<p>(2) MODBUS产品</p>
+<p>用户通过选择设备名称-ID、输入从机地址(01-ff)、功能号(01-04)、数据地址(0000-ffff)、数据长度(0001-ffff)来下发命令(命令经过CRC校验)。</p>
+<p>下发命令010300010001(此命令设备端已做处理，会响应)</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/modbus%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4%E7%95%8C%E9%9D%A2.png" alt="modbus下发命令界面"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/modbus%E5%91%BD%E4%BB%A4%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="modbus命令已响应"></p>
+<p>下发命令010300030001(此命令设备端未做处理，命令状态为已下发)</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/modbus%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%B8%8B%E5%8F%91.png" alt="modbus命令已下发"></p>
+<p>下发命令给离线设备会出现离线提示</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF.png" alt="设备已离线"></p>
+<h2 id="4-添自定义页面模板"><a href="#4-添自定义页面模板" class="headerlink" title="4. 添自定义页面模板"></a>4. 添自定义页面模板</h2><p>在Wordpress的主题文件夹下，新建pages文件夹，将OneNetApi.php放到该文件夹下，<br>新建一个OneNetModel.php文件，内容如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="comment">/* template name: 你的页面模板命名 </span></span><br><span class="line"><span class="comment">description: template for Git theme </span></span><br><span class="line"><span class="comment">*/</span> </span><br><span class="line">get_header();<span class="comment">//网站头部 可注释</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;!--这里放自定义php页面的内容--&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?</span></span><br><span class="line">php get_footer(); <span class="comment">//这是网站底部 可注释</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="OneNET应用托管服务-不建议使用，官方已停止维护"><a href="#OneNET应用托管服务-不建议使用，官方已停止维护" class="headerlink" title="OneNET应用托管服务(不建议使用，官方已停止维护)"></a>OneNET应用托管服务(不建议使用，官方已停止维护)</h1><p><strong>前提条件</strong></p>
+<p>在创建实例前，确保完成以下工作：</p>
+<ul>
+<li>注册平台账号并登陆。</li>
+<li>创建一个VPC专有网络，并在VPC下创建一个子网。</li>
+<li>创建弹性公网IP并进行对应云服务器的绑定。</li>
+<li>若云服务器的登陆凭证采用密钥对则需先创建密钥对。</li>
+</ul>
+<h2 id="1-创建VPC专有网络"><a href="#1-创建VPC专有网络" class="headerlink" title="1. 创建VPC专有网络"></a>1. 创建VPC专有网络</h2><p>填写基本信息，选择一个VPC网段，DNS暂不设置。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%88%9B%E5%BB%BA%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C.png" alt="创建专有网络"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C%E8%AF%A6%E6%83%85.png" alt="专有网络详情"></p>
+<h2 id="2-创建实例——云服务器"><a href="#2-创建实例——云服务器" class="headerlink" title="2. 创建实例——云服务器"></a>2. 创建实例——云服务器</h2><p>登陆凭证: Adtech123456</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B7%B2%E9%80%89%E4%BF%A1%E6%81%AF.png" alt="云服务器已选信息"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%88%9B%E5%BB%BA%E5%A5%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E4%BE%8B.png" alt="创建好云服务器实例"></p>
+<h2 id="3-创建弹性公网IP并绑定云服务器"><a href="#3-创建弹性公网IP并绑定云服务器" class="headerlink" title="3. 创建弹性公网IP并绑定云服务器"></a>3. 创建弹性公网IP并绑定云服务器</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%88%9B%E5%BB%BA%E5%85%AC%E7%BD%91IP-1.png" alt="创建公网IP-1"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%82%B9%E5%87%BB%E7%BB%91%E5%AE%9A.png" alt="点击绑定"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E7%BB%91%E5%AE%9A%E5%BC%B9%E6%80%A7%E5%85%AC%E7%BD%91IP.png" alt="绑定弹性公网IP"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%B7%B2%E7%BB%91%E5%AE%9A%E5%85%AC%E7%BD%91IP.png" alt="已绑定公网IP"></p>
+<p>弹性公网IP:36.155.105.33</p>
+<h1 id="基于Layui的前端框架"><a href="#基于Layui的前端框架" class="headerlink" title="基于Layui的前端框架"></a>基于Layui的前端框架</h1><p>**layui(谐音: 类UI)**是一款采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写与组织形式，门槛极低，拿来即用。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h2><p><a target="_blank" rel="noopener" href="http://www.layui.com/">官网首页</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/sentsin/layui/">Github</a></p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/sentsin/layui">Gitee</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm安装		一般用于WebPack管理</span></span><br><span class="line">npm -i layui-src</span><br></pre></td></tr></table></figure>
+<h2 id="2-目录结构"><a href="#2-目录结构" class="headerlink" title="2 目录结构"></a>2 目录结构</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">├─css 			//css目录</span><br><span class="line">│  │─modules 		//模块css目录（一般如果模块相对较大，我们会单独提取，比如下面三个：）</span><br><span class="line">│  │  ├─laydate</span><br><span class="line">│  │  ├─layer</span><br><span class="line">│  │  └─layim</span><br><span class="line">│  └─layui.css 	//核心样式文件</span><br><span class="line">├─font  			//字体图标目录</span><br><span class="line">├─images 			//图片资源目录（目前只有layim和编辑器用到的GIF表情）</span><br><span class="line">│─lay 			//模块核心目录</span><br><span class="line">│  └─modules 		//各模块组件</span><br><span class="line">│─layui.js 		//基础核心库</span><br><span class="line">└─layui.all.js 	//包含layui.js和所有模块的合并文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-机器人设备列表"><a href="#3-机器人设备列表" class="headerlink" title="3 机器人设备列表"></a>3 机器人设备列表</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8.png" alt="机器人设备列表"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%9C%A8%E7%BA%BF.png" alt="机器人设备在线"></p>
+<h2 id="4-机器人设备详情"><a href="#4-机器人设备详情" class="headerlink" title="4 机器人设备详情"></a>4 机器人设备详情</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png" alt="机器人设备详情"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85%E5%9C%A8%E7%BA%BF.png" alt="机器人设备详情在线"></p>
+<h2 id="5-机器人数据流"><a href="#5-机器人数据流" class="headerlink" title="5 机器人数据流"></a>5 机器人数据流</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="机器人数据流"></p>
+<h2 id="6-机器人下发命令"><a href="#6-机器人下发命令" class="headerlink" title="6 机器人下发命令"></a>6 机器人下发命令</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4.png" alt="机器人下发命令"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E8%AE%BE%E5%A4%87%E5%B7%B2%E5%93%8D%E5%BA%94.png" alt="设备已响应"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E5%91%BD%E4%BB%A4%E5%B7%B2%E4%BB%A5%E4%B8%8B%E5%8F%91.png" alt="命令已以下发"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E8%AE%BE%E5%A4%87%E5%B7%B2%E7%A6%BB%E7%BA%BF(layui).png" alt="设备已离线"></p>
+<h2 id="7-设备历史数据导出"><a href="#7-设备历史数据导出" class="headerlink" title="7 设备历史数据导出"></a>7 设备历史数据导出</h2><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81%E5%88%97%E8%A1%A8.png" alt="机器人数据流列表"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA.png" alt="机器人数据导出"></p>
+<h1 id="基于Vue框架的后台前端解决方案"><a href="#基于Vue框架的后台前端解决方案" class="headerlink" title="基于Vue框架的后台前端解决方案"></a>基于Vue框架的后台前端解决方案</h1><p><strong>vue-element-admin</strong>是一个后台前端解决方案，基于vue和element-ui实现，它使用了最新的前端技术栈，内置了 i18n 国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。</p>
+<p><strong>建议</strong></p>
+<p>**<code>vue-element-admin</code>**的定位是一个后台集成方案，不太适合当基础模板来进行二次开发。因为本项目集成了很多你可能用不到的功能，会造成不少的代码冗余。可以把 **<code>vue-element-admin</code>**当做工具箱或者集成方案仓库，在 **<code>vue-admin-template</code>**的基础上进行二次开发，想要什么功能或者组件就去 vue-element-admin 那里复制过来。</p>
+<p><strong>前提条件</strong></p>
+<p>需要在本地安装<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v12.16.2/">node</a>和<a target="_blank" rel="noopener" href="https://git-scm.com/">git</a>。</p>
+<p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 克隆项目</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/PanJiaChen/vue-element-admin.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> vue-element-admin</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建议不要用 cnpm 安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题</span></span><br><span class="line">npm install --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地开发 启动项目</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+<p>(1) 登陆界面</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/vue%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2.png" alt="vue登陆界面"></p>
+<p>(2) 后台界面</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/vue%E6%95%B0%E6%8D%AE%E9%9D%A2%E6%9D%BF.png" alt="vue数据面板"></p>
+<p><strong>了解vue生态圈</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://router.vuejs.org/">Vue Router</a>是vue官方的路由。可以帮你快速构建一个单页面或者多页面的项目</li>
+<li><a target="_blank" rel="noopener" href="https://vuex.vuejs.org/">Vuex</a>是一个专为Vue.js应用程序开发的状态管理模式。采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。它能解决很多全局状态或者组件之间通信的问题。</li>
+<li><a target="_blank" rel="noopener" href="https://vue-loader.vuejs.org/">Vue Loader</a> 是为 vue 文件定制的一个 webpack 的 loader，它允许你以一种名为单文件组件 (SFCs)的格式撰写 Vue 组件。它能在开发过程中使用热重载来保持状态，为每个组件模拟出 scoped CSS 等等功能。不过大部分情况下你不需要对它直接进行配置，脚手架都帮你封装好了。</li>
+<li><a target="_blank" rel="noopener" href="https://vue-test-utils.vuejs.org/">Vue Test Utils</a> 是官方提供的一个单元测试工具。它能让你更方便的写单元测试。</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-devtools">Vue Dev-Tools Vue</a> 在浏览器下的调试工具。写 vue 必备的一个浏览器插件，能大大的提高你调试的效率。</li>
+<li><a target="_blank" rel="noopener" href="https://cli.vuejs.org/">Vue CLI</a>是官方提供的一个 vue 项目脚手架，本项目也是基于它进行构建的。它帮你封装了大量的 webpack、babel 等其它配置，让你能花更少的精力在搭建环境上，从而能更专注于页面代码的编写。不过所有的脚手架都是针对大部分情况的，所以一些特殊的需求还是需要自己进行配置。建议先阅读一遍它的文档，对一些配置有一些基本的了解。</li>
+</ul>
+<h2 id="1-目录结构"><a href="#1-目录结构" class="headerlink" title="1. 目录结构"></a>1. 目录结构</h2><p>先从基础模板<strong>vue-admin-template</strong>开始。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">├── build                      // 构建相关  </span><br><span class="line">├── config                     // 配置相关</span><br><span class="line">├── src                        // 源代码</span><br><span class="line">│   ├── api                    // 所有请求</span><br><span class="line">│   ├── assets                 // 主题 字体等静态资源</span><br><span class="line">│   ├── components             // 全局公用组件</span><br><span class="line">│   ├── directive              // 全局指令</span><br><span class="line">│   ├── filtres                // 全局 filter</span><br><span class="line">│   ├── icons                  // 项目所有 svg icons</span><br><span class="line">│   ├── lang                   // 国际化 language</span><br><span class="line">│   ├── mock                   // 项目mock 模拟数据</span><br><span class="line">│   ├── router                 // 路由</span><br><span class="line">│   ├── store                  // 全局 store管理</span><br><span class="line">│   ├── styles                 // 全局样式</span><br><span class="line">│   ├── utils                  // 全局公用方法</span><br><span class="line">│   ├── vendor                 // 公用vendor</span><br><span class="line">│   ├── views                   // view</span><br><span class="line">│   ├── App.vue                // 入口页面</span><br><span class="line">│   ├── main.js                // 入口 加载组件 初始化等</span><br><span class="line">│   └── permission.js          // 权限管理</span><br><span class="line">├── static                     // 第三方不打包资源</span><br><span class="line">│   └── Tinymce                // 富文本</span><br><span class="line">├── .babelrc                   // babel-loader 配置</span><br><span class="line">├── eslintrc.js                // eslint 配置项</span><br><span class="line">├── .gitignore                 // git 忽略项</span><br><span class="line">├── favicon.ico                // favicon图标</span><br><span class="line">├── index.html                 // html模板</span><br><span class="line">└── package.json               // package.json</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-1-api和views"><a href="#1-1-api和views" class="headerlink" title="1.1 api和views"></a>1.1 api和views</h3><p>随着业务迭代，后台的api模块会越来越多，最好是根据业务模块来划分views，并将views和api模块一一对应，从而方便维护。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.assets/api%E5%92%8Cviews.png" alt="api和views"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:1144626145@qq.com">GentleTK</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gentletk.gitee.io/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/">https://gentletk.gitee.io/网站开发方案研究/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gentletk.gitee.io" target="_blank">云</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a class="post-meta__tags" href="/tags/IoT/">IoT</a><a class="post-meta__tags" href="/tags/Vue/">Vue</a></div><div class="post_share"><div class="social-share" data-image="/img/cover10.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E7%A7%BB%E5%8A%A8%E4%BA%91%E7%89%A9%E8%81%94%E7%BD%91%E9%A2%84%E7%A0%94%E5%8F%8A%E9%98%BF%E9%87%8C%E4%BA%91%E5%BC%80%E5%8F%91%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover8.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">移动云物联网预研及阿里云开发对比分析</div></div></a></div><div class="next-post pull-right"><a href="/Doxygen%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover9.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Doxygen使用教程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/MQTT介绍/" title="MQTT介绍"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-04-01</div><div class="title">MQTT介绍</div></div></a></div><div><a href="/MQTT剩余长度计算/" title="MQTT剩余长度计算"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-21</div><div class="title">MQTT剩余长度计算</div></div></a></div><div><a href="/OneNET Studio与IoT Studio对比分析/" title="OneNET Studio与IoT Studio对比分析"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-09</div><div class="title">OneNET Studio与IoT Studio对比分析</div></div></a></div><div><a href="/Vue基础/" title="Vue基础"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-20</div><div class="title">Vue基础</div></div></a></div><div><a href="/博达工业云与阿里云对比/" title="博达工业云与阿里云对比"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-31</div><div class="title">博达工业云与阿里云对比</div></div></a></div><div><a href="/出差电子流应用实战/" title="出差电子流应用实战"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-17</div><div class="title">出差电子流应用实战</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=1144626145&amp;s=640" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">GentleTK</div><div class="author-info__description">面朝大海，春暖花开</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/GentleTK"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/GentleTK" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1144626145&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/img/weixin.jpg" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a><a class="social-icon" href="mailto:1144626145@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">有问题请联系我(●'◡'●)~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">1. 基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E5%9F%9F%E5%90%8D"><span class="toc-text">1.1 网站搭建——域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">2.1 网站搭建——服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E8%99%9A%E6%8B%9F%E7%A9%BA%E9%97%B4"><span class="toc-text">2.1.1 虚拟空间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E4%BA%91%E6%9C%8D%E5%8A%A1ECS-Elastic-Compute-Services"><span class="toc-text">2.1.2 云服务ECS(Elastic Compute Services)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%9F%BA%E4%BA%8EWordPress%E7%9A%84%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA"><span class="toc-text">2. 基于WordPress的本地网站搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99"><span class="toc-text">2.1 创建网站</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA"><span class="toc-text">华为云耀云服务器网站搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%B4%AD%E4%B9%B0%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%80%80%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">1.购买华为云耀云服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84WordPress"><span class="toc-text">2.搭建服务器上的WordPress</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E8%BF%9B%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86"><span class="toc-text">2.1 进入数据库管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E8%BF%9B%E5%85%A5WordPress%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86"><span class="toc-text">2.2 进入WordPress后台管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%AE%BE%E8%AE%A1%E5%B9%B3%E5%8F%B0%E4%BD%93%E9%AA%8C%E9%A1%B5%E9%9D%A2"><span class="toc-text">3. 设计平台体验页面</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8"><span class="toc-text">3.1 设备列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2"><span class="toc-text">3.2 数据查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4"><span class="toc-text">3.3 下发命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%B7%BB%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2%E6%A8%A1%E6%9D%BF"><span class="toc-text">4. 添自定义页面模板</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OneNET%E5%BA%94%E7%94%A8%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1-%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%AE%98%E6%96%B9%E5%B7%B2%E5%81%9C%E6%AD%A2%E7%BB%B4%E6%8A%A4"><span class="toc-text">OneNET应用托管服务(不建议使用，官方已停止维护)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BAVPC%E4%B8%93%E6%9C%89%E7%BD%91%E7%BB%9C"><span class="toc-text">1. 创建VPC专有网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B%E2%80%94%E2%80%94%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">2. 创建实例——云服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%88%9B%E5%BB%BA%E5%BC%B9%E6%80%A7%E5%85%AC%E7%BD%91IP%E5%B9%B6%E7%BB%91%E5%AE%9A%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">3. 创建弹性公网IP并绑定云服务器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8ELayui%E7%9A%84%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6"><span class="toc-text">基于Layui的前端框架</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD"><span class="toc-text">1 下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">2 目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8"><span class="toc-text">3 机器人设备列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85"><span class="toc-text">4 机器人设备详情</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="toc-text">5 机器人数据流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8B%E5%8F%91%E5%91%BD%E4%BB%A4"><span class="toc-text">6 机器人下发命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E8%AE%BE%E5%A4%87%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA"><span class="toc-text">7 设备历史数据导出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8EVue%E6%A1%86%E6%9E%B6%E7%9A%84%E5%90%8E%E5%8F%B0%E5%89%8D%E7%AB%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">基于Vue框架的后台前端解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">1. 目录结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-api%E5%92%8Cviews"><span class="toc-text">1.1 api和views</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" title="基于阿里云OSS+PicGo的个人图床搭建"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于阿里云OSS+PicGo的个人图床搭建"/></a><div class="content"><a class="title" href="/%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/" title="基于阿里云OSS+PicGo的个人图床搭建">基于阿里云OSS+PicGo的个人图床搭建</a><time datetime="2022-05-31T02:28:23.000Z" title="发表于 2022-05-31 10:28:23">2022-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="Chocolatey安装与使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Chocolatey安装与使用"/></a><div class="content"><a class="title" href="/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="Chocolatey安装与使用">Chocolatey安装与使用</a><time datetime="2022-05-06T06:43:29.000Z" title="发表于 2022-05-06 14:43:29">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/" title="倍福ET2000侦听器使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="倍福ET2000侦听器使用"/></a><div class="content"><a class="title" href="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/" title="倍福ET2000侦听器使用">倍福ET2000侦听器使用</a><time datetime="2022-02-14T01:06:18.000Z" title="发表于 2022-02-14 09:06:18">2022-02-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/" title="MQTT剩余长度计算"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MQTT剩余长度计算"/></a><div class="content"><a class="title" href="/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/" title="MQTT剩余长度计算">MQTT剩余长度计算</a><time datetime="2022-01-21T01:22:57.000Z" title="发表于 2022-01-21 09:22:57">2022-01-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Vue%E5%9F%BA%E7%A1%80/" title="Vue基础"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue基础"/></a><div class="content"><a class="title" href="/Vue%E5%9F%BA%E7%A1%80/" title="Vue基础">Vue基础</a><time datetime="2021-08-20T06:43:39.000Z" title="发表于 2021-08-20 14:43:39">2021-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Flutter%E4%BD%BF%E7%94%A8/" title="Flutter使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Flutter使用"/></a><div class="content"><a class="title" href="/Flutter%E4%BD%BF%E7%94%A8/" title="Flutter使用">Flutter使用</a><time datetime="2021-08-12T08:54:28.000Z" title="发表于 2021-08-12 16:54:28">2021-08-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/" title="uniCloud通讯录实战"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniCloud通讯录实战"/></a><div class="content"><a class="title" href="/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/" title="uniCloud通讯录实战">uniCloud通讯录实战</a><time datetime="2021-07-23T06:57:27.000Z" title="发表于 2021-07-23 14:57:27">2021-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/uniCloud%E4%BD%BF%E7%94%A8/" title="uniCloud使用"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/cover14.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniCloud使用"/></a><div class="content"><a class="title" href="/uniCloud%E4%BD%BF%E7%94%A8/" title="uniCloud使用">uniCloud使用</a><time datetime="2021-07-22T06:12:02.000Z" title="发表于 2021-07-22 14:12:02">2021-07-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/cover10.jpg')"><div id="footer-wrap"><div class="copyright">Copyrights &copy;2020 - 2024 By GentleTK</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">Hexo</a><span class="footer-separator">&nbsp;|&nbsp;</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">Butterfly</a></div><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/" style="text-decoration:none;" onmouseout="this.style.color='white';" onmouseover="this.style.color='gray';">粤ICP备12009483号</a></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/pangu/4.0.7/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'EvdIAz6pVj5WbRnlr6o4ChHL-gzGzoHsz',
+      appKey: 'vrHqOHmDzLOpzbLmrSRrzvrj',
+      tagMeta: '博主,小伙伴,访客'.split(','),		
+      master: 'cfa6df64c867ad4d29c979198f77760f',
+      metaPlaceholder: {"nick":"QQ号(输入QQ会自动补全邮箱)","mail":"邮箱"},
+      placeholder: '填写QQ可以及时收到回复哦(●\'◡\'●)~',
+      avatar: 'monsterid',
+      meta: 'nick,mail'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '/img/emoji/',
+      emojiMaps: {
+        "侧目":"qq/qq-102.gif",
+        "斜眼笑":"qq/qq-103.gif",
+        "托腮":"qq/qq-104.gif",
+        "小纠结":"qq/qq-105.gif",
+        "笑哭":"qq/qq-106.gif",
+        "喷血":"qq/qq-107.gif",
+        "鼓掌":"qq/qq-1.gif",
+        "呲牙":"qq/qq-2.gif",
+        "憨笑":"qq/qq-3.gif",
+        "坏笑":"qq/qq-4.gif",
+        "偷笑":"qq/qq-5.gif",
+        "害羞":"qq/qq-6.gif",
+        "可爱":"qq/qq-7.gif",
+        "奋斗":"qq/qq-8.gif",
+        "抠鼻":"qq/qq-9.gif",
+        "吓":"qq/qq-10.gif",
+        "惊讶":"qq/qq-11.gif",
+        "惊恐":"qq/qq-12.gif",
+        "糗大了":"qq/qq-13.gif",
+        "尴尬":"qq/qq-14.gif",
+        "调皮":"qq/qq-15.gif",
+        "发呆":"qq/qq-16.gif",
+        "再见":"qq/qq-17.gif",
+        "微笑":"qq/qq-18.gif",
+        "左亲亲":"qq/qq-19.gif",
+        "疑问":"qq/qq-20.gif",
+        "委屈":"qq/qq-21.gif",
+        "抓狂":"qq/qq-22.gif",
+        "折磨":"qq/qq-23.gif",
+        "闭嘴":"qq/qq-24.gif",
+        "擦汗":"qq/qq-25.gif",
+        "冷汗":"qq/qq-26.gif",
+        "阴险":"qq/qq-27.gif",
+        "撇嘴":"qq/qq-28.gif",
+        "难过":"qq/qq-29.gif",
+        "快哭了":"qq/qq-30.gif",
+        "可怜":"qq/qq-31.gif",
+        "大哭":"qq/qq-32.gif",
+        "流泪":"qq/qq-33.gif",
+        "流汗":"qq/qq-34.gif",
+        "酷":"qq/qq-35.gif",
+        "得意":"qq/qq-36.gif",
+        "困":"qq/qq-37.gif",
+        "哈欠":"qq/qq-38.gif",
+        "睡":"qq/qq-39.gif",
+        "敲打":"qq/qq-40.gif",
+        "嘘":"qq/qq-41.gif",
+        "色":"qq/qq-42.gif",
+        "右哼哼":"qq/qq-43.gif",
+        "左哼哼":"qq/qq-44.gif",
+        "晕":"qq/qq-45.gif",
+        "发怒":"qq/qq-46.gif",
+        "吐":"qq/qq-47.gif",
+        "白眼":"qq/qq-48.gif",
+        "傲慢":"qq/qq-49.gif",
+        "鄙视":"qq/qq-50.gif",
+        "咒骂":"qq/qq-51.gif",
+        "饥饿":"qq/qq-52.gif",
+        "赞":"qq/qq-53.gif",
+        "踩":"qq/qq-54.gif",
+        "胜利":"qq/qq-55.gif",
+        "OK":"qq/qq-56.gif",
+        "NO":"qq/qq-57.gif",
+        "差劲":"qq/qq-58.gif",
+        "勾引":"qq/qq-59.gif",
+        "拳头":"qq/qq-60.gif",
+        "握手":"qq/qq-61.gif",
+        "抱拳":"qq/qq-62.gif",
+        "爱你":"qq/qq-63.gif",
+        "爱心":"qq/qq-64.gif",
+        "心碎":"qq/qq-65.gif",
+        "太阳":"qq/qq-66.gif",
+        "月亮":"qq/qq-67.gif",
+        "悠闲":"qq/qq-68.gif",
+        "爆筋":"qq/qq-69.gif",
+        "衰":"qq/qq-70.gif",
+        "骷髅":"qq/qq-71.gif",
+        "熊猫":"qq/qq-72.gif",
+        "猪头":"qq/qq-73.gif",
+        "足球":"qq/qq-74.gif",
+        "篮球":"qq/qq-75.gif",
+        "拥抱":"qq/qq-76.gif",
+        "玫瑰":"qq/qq-77.gif",
+        "凋谢":"qq/qq-78.gif",
+        "嗨皮牛耶":"qq/qq-79.gif",
+        "双喜":"qq/qq-80.gif",
+        "闪电":"qq/qq-81.gif",
+        "蛋糕":"qq/qq-82.gif",
+        "礼物":"qq/qq-83.gif",
+        "炸弹":"qq/qq-84.gif",
+        "菜刀":"qq/qq-85.gif",
+        "刀":"qq/qq-86.gif",
+        "香蕉":"qq/qq-87.gif",
+        "西瓜":"qq/qq-88.gif",
+        "米饭":"qq/qq-89.gif",
+        "面条":"qq/qq-90.gif",
+        "啤酒":"qq/qq-91.gif",
+        "咖啡":"qq/qq-92.gif",
+        "飞机":"qq/qq-93.gif",
+        "风车":"qq/qq-94.gif",
+        "喝彩":"qq/qq-95.gif",
+        "钞票":"qq/qq-96.gif",
+        "祈祷":"qq/qq-97.gif",
+        "雨伞":"qq/qq-98.gif",
+        "药丸":"qq/qq-99.gif",
+        "纸巾":"qq/qq-100.gif",
+        "便便":"qq/qq-101.gif",
+      },
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('/js/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}
+</script><style>/*鼠标放置，头像旋转*/
+img.vimg {
+  transition: all 1s   /* 旋转时间为 1s */
+}
+img.vimg:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}</style></div><div class="aplayer no-destroy" data-id="6722535004" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script src="/js/lovetimer.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://unpkg.zhimg.com/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://unpkg.zhimg.com/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://unpkg.com/butterfly-extsrc@1.1.2/dist/click-heart.min.js" async="async" mobile="true"></script><script>((window.gitter = {}).chat = {}).options = {
+  disableDefaultChat: true,
+};
+document.addEventListener('gitter-sidecar-ready', (e) => {
+  const GitterChat = e.detail.Chat
+  let chat
+
+  function initGitter () {
+    chat = new GitterChat({
+      room: 'GentleTK/mychatroom',
+      activationElement: '#chat_btn'
+    });
+  }
+
+  initGitter()
+
+  if (true) {
+    document.addEventListener('pjax:complete', () => {
+      chat.destroy()
+      initGitter()
+    })
+  }
+
+})</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://npm.elemecdn.com/js-heo@1.0.12/metingjs/Meting.min.js"></script><script src="https://npm.elemecdn.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script></div></body></html>

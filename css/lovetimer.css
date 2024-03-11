@@ -1,0 +1,26 @@
+div#runtime {
+    width: 300px;
+    margin: auto;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(228, 41, 41, 0.7);
+  }
+
+  .avatar {
+    width: 50px;
+    border-radius: 100%;
+  }
+
+  .loveTimerDiv {
+    text-align: center;
+  }
+
+  @keyframes heartAnimate{ 
+    0% {transform:scale(1);}                  
+    50% {transform: scale(1.2);}             
+    100% { transform:scale(1);}               
+  }
+  #myheart{
+     color:red;                             
+    animation: heartAnimate 1s infinite;     
+  }
