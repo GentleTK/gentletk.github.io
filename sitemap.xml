@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gentletk.gitee.io/music/index.html</loc>
+    
+    <lastmod>2024-03-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/link/index.html</loc>
+    
+    <lastmod>2024-03-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gentletk.gitee.io/about/index.html</loc>
+    
+    <lastmod>2024-03-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gentletk.gitee.io/tags/index.html</loc>
     
     <lastmod>2024-03-11</lastmod>
@@ -19,27 +40,6 @@
     <loc>https://gentletk.gitee.io/categories/index.html</loc>
     
     <lastmod>2024-03-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/about/index.html</loc>
-    
-    <lastmod>2024-03-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/music/index.html</loc>
-    
-    <lastmod>2022-06-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gentletk.gitee.io/link/index.html</loc>
-    
-    <lastmod>2022-06-01</lastmod>
     
   </url>
   
