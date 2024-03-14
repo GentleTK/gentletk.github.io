@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AltiumDesigner绘制PCB(二)</title>
+    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
+    <content><![CDATA[<blockquote>
+<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
+</blockquote>
+<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
+<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/Ak6T1Loav7pwCeM.png" alt="Ak6T1Loav7pwCeM"></p>
+<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/OoD2ecpvxLwJ1Xk.png" alt="OoD2ecpvxLwJ1Xk"></p>
+<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/PjRWET5muaNZJMe.png" alt="PjRWET5muaNZJMe"></p>
+<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/Hb9TnQvqxljZPRf.png" alt="Hb9TnQvqxljZPRf"></p>
+<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/g9b5HVcyjaoYwz2.png" alt="g9b5HVcyjaoYwz2"></p>
+<p>依次放置完四个管脚后如下所示：</p>
+<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
+</div>
+
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/dlexgSWCA5Zrj8J.png" alt="dlexgSWCA5Zrj8J"></p>
+<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
+<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/OKLRxamBQgvJ3eb.png" alt="OKLRxamBQgvJ3eb"></p>
+<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/exGT4ZkXwQpYJmr.png" alt="exGT4ZkXwQpYJmr"></p>
+<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/NH6Tb25f7DjKGny.png" alt="NH6Tb25f7DjKGny"></p>
+<p>绘制好<code>8Pin</code>排针后如下所示：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/zRvOnoSQKArIxkU.png" alt="zRvOnoSQKArIxkU"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AltiumDesigner绘制PCB(一)</title>
     <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%80)/</url>
     <content><![CDATA[<blockquote>
@@ -62,47 +103,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(二)</title>
-    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/</url>
-    <content><![CDATA[<blockquote>
-<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家为元器件绘制原理图，了解器件原理图的概念。</p>
-</blockquote>
-<h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1 基本概念"></a>1 基本概念</h2><p>器件的原理图是对器件外形的提炼和简化，绘制电路图会更加简洁美观。</p>
-<h2 id="2-绘制流程"><a href="#2-绘制流程" class="headerlink" title="2 绘制流程"></a>2 绘制流程</h2><p>下面为按键绘制原理图，选中<code>matrixKeyboard.SchLib</code>进入原理图绘制界面，在左侧导航栏下点击<code>SCH Library</code>进入器件列表：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/Ak6T1Loav7pwCeM.png" alt="Ak6T1Loav7pwCeM"></p>
-<p>单击<code>Component_1</code>进入编辑，在<code>Altium Designer</code>顶部导航栏点击<img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/OoD2ecpvxLwJ1Xk.png" alt="OoD2ecpvxLwJ1Xk"></p>
-<p>在这里可以选择画笔来绘制需要的器件外形，也可以直接使用放置矩形来作为按键的外形：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/PjRWET5muaNZJMe.png" alt="PjRWET5muaNZJMe"></p>
-<p>放置矩形后可以添加一个圆圈表示按钮(当然，也可以不加)，然后再为按键添加四个引脚，点击绘图工具，选择放置管脚：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/Hb9TnQvqxljZPRf.png" alt="Hb9TnQvqxljZPRf"></p>
-<p>当出现管脚时，按一下<kbd>Tab</kbd>键，进入管脚属性设置界面：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/g9b5HVcyjaoYwz2.png" alt="g9b5HVcyjaoYwz2"></p>
-<p>依次放置完四个管脚后如下所示：</p>
-<div class="note warning flat"><p><strong>注意：</strong><br>如果出现管脚无法靠近矩形的情况，可以点击顶部导航栏的网格设置捕捉栅格大小为<code>1Grid</code>。</p>
-</div>
-
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/dlexgSWCA5Zrj8J.png" alt="dlexgSWCA5Zrj8J"></p>
-<p>到这里，一个按键的原理图就算是基本绘制完成了，不过还要修改一下器件属性。</p>
-<p>在左侧导航栏的<code>SCH Library</code>中双击<code>Component_1</code>进入器件属性修改界面：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/OKLRxamBQgvJ3eb.png" alt="OKLRxamBQgvJ3eb"></p>
-<p>修改完成并保存后，可以在右侧导航栏查看原理图库：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/exGT4ZkXwQpYJmr.png" alt="exGT4ZkXwQpYJmr"></p>
-<p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针，在左侧导航栏点击添加：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/NH6Tb25f7DjKGny.png" alt="NH6Tb25f7DjKGny"></p>
-<p>绘制好<code>8Pin</code>排针后如下所示：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%8C)/zRvOnoSQKArIxkU.png" alt="zRvOnoSQKArIxkU"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<blockquote>
@@ -134,41 +134,6 @@
 <p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/pImieX1fORoVF4c.png" alt="pImieX1fORoVF4c"></p>
 <p>按照以上方法，可以再绘制一个<code>8Pin</code>的排针封装，在左侧导航栏单击右键选择新建空白元件，绘制完后如下所示：</p>
 <p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/tUdA57sG6MQpLNe.png" alt="tUdA57sG6MQpLNe"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AltiumDesigner绘制PCB(四)</title>
-    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
-    <content><![CDATA[<blockquote>
-<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制电路原理图。</p>
-</blockquote>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/AUlHNsS3fpkVK7F.png" alt="AUlHNsS3fpkVK7F"></p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/wt5XpZWainBqvYR.png" alt="wt5XpZWainBqvYR"></p>
-<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/tTvRw8IhcEFyasZ.png" alt="tTvRw8IhcEFyasZ"></p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/fmSuU6dZcxNlKnz.png" alt="fmSuU6dZcxNlKnz"></p>
-<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/PWHhlV4XtxUoc3g.png" alt="PWHhlV4XtxUoc3g"></p>
-<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/zhNWYklindSxs5w.png" alt="zhNWYklindSxs5w"></p>
-<p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/dA9Tyip3WlS8nqJ.png" alt="dA9Tyip3WlS8nqJ"></p>
-<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/DmiQFYlruTRgw6S.png" alt="DmiQFYlruTRgw6S"></p>
-<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/R4EcFtSrJHqhGCW.png" alt="R4EcFtSrJHqhGCW"></p>
-<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/LO8HoyjZGwBvM6h.png" alt="LO8HoyjZGwBvM6h"></p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -221,6 +186,68 @@
         <tag>技术</tag>
         <tag>AltiumDesigner</tag>
         <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(四)</title>
+    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
+    <content><![CDATA[<blockquote>
+<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制电路原理图。</p>
+</blockquote>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/AUlHNsS3fpkVK7F.png" alt="AUlHNsS3fpkVK7F"></p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/wt5XpZWainBqvYR.png" alt="wt5XpZWainBqvYR"></p>
+<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/tTvRw8IhcEFyasZ.png" alt="tTvRw8IhcEFyasZ"></p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/fmSuU6dZcxNlKnz.png" alt="fmSuU6dZcxNlKnz"></p>
+<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/PWHhlV4XtxUoc3g.png" alt="PWHhlV4XtxUoc3g"></p>
+<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/zhNWYklindSxs5w.png" alt="zhNWYklindSxs5w"></p>
+<p>按照矩阵键盘逻辑进行电气连线：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/dA9Tyip3WlS8nqJ.png" alt="dA9Tyip3WlS8nqJ"></p>
+<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/DmiQFYlruTRgw6S.png" alt="DmiQFYlruTRgw6S"></p>
+<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/R4EcFtSrJHqhGCW.png" alt="R4EcFtSrJHqhGCW"></p>
+<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/LO8HoyjZGwBvM6h.png" alt="LO8HoyjZGwBvM6h"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anaconda下安装opencv</title>
+    <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+
+<p>遇到如下问题</p>
+<p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/bFIkV72TXKwZH6a.png" alt="bFIkV72TXKwZH6a"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/8kdh7YQUlROzbTt.png" alt="8kdh7YQUlROzbTt"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -291,33 +318,6 @@
       <tags>
         <tag>技术</tag>
         <tag>Chocolatey</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/bFIkV72TXKwZH6a.png" alt="bFIkV72TXKwZH6a"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/8kdh7YQUlROzbTt.png" alt="8kdh7YQUlROzbTt"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1284,7 +1284,7 @@
   </entry>
   <entry>
     <title>OneNET Studio与IoT Studio对比分析</title>
-    <url>/OneNET%20Studio%E4%B8%8EIoT%20Studio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
+    <url>/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h2 id="1-OneNET-Studio"><a href="#1-OneNET-Studio" class="headerlink" title="1 OneNET Studio"></a>1 OneNET Studio</h2><h3 id="1-1-平台架构"><a href="#1-1-平台架构" class="headerlink" title="1.1 平台架构"></a>1.1 平台架构</h3><p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNET Studio 架构图"></p>
 <h3 id="1-2-平台功能"><a href="#1-2-平台功能" class="headerlink" title="1.2 平台功能"></a>1.2 平台功能</h3><h4 id="1-2-1-设备接入与管理"><a href="#1-2-1-设备接入与管理" class="headerlink" title="1.2.1 设备接入与管理"></a>1.2.1 设备接入与管理</h4><ol>
 <li><p><strong>设备接入流程</strong><br><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B.png" alt="OneNET Studio 设备接入流程"></p>
@@ -1499,7 +1499,7 @@
   </entry>
   <entry>
     <title>Proteus 7 Professional安装</title>
-    <url>/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <url>/Proteus7Professional%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/QWU9bpsO2PJI5wN.png" alt="QWU9bpsO2PJI5wN"></p>
 <h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/gaerE4dZs1k8i6R.png" alt="gaerE4dZs1k8i6R"></p>
 <h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/1dTnpNSIkCe6cqj.png" alt="1dTnpNSIkCe6cqj"></p>
@@ -2289,50 +2289,6 @@
       </tags>
   </entry>
   <entry>
-    <title>uniCloud使用</title>
-    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
-</blockquote>
-<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722141823663.png" alt="image-20210722141823663"></p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142059284.png" alt="image-20210722142059284"></p>
-<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142538030.png" alt="image-20210722142538030"></p>
-<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142752925.png" alt="image-20210722142752925"></p>
-<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142947924.png" alt="image-20210722142947924"></p>
-<p>编辑云函数内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723110217961.png" alt="image-20210723110217961"></p>
-<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723144113032.png" alt="image-20210723144113032"></p>
-<p>可以在web控制台查看上传的云函数：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723144319826.png" alt="image-20210723144319826"></p>
-<p>修改 <code>pages/index/index.vue</code> ：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
-<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723145059296.png" alt="image-20210723145059296"></p>
-<p><code>uni.callFunction</code> 的好处：</p>
-<ul>
-<li>更安全，黑客攻击都找不到URL入口。</li>
-<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
-<li>自带 <code>uni-id</code> 的token。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>uni-app</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>uniCloud通讯录实战</title>
     <url>/uniCloud%E9%80%9A%E8%AE%AF%E5%BD%95%E5%AE%9E%E6%88%98/</url>
     <content><![CDATA[<h3 id="1-新建uni-app项目——通讯录"><a href="#1-新建uni-app项目——通讯录" class="headerlink" title="1 新建uni-app项目——通讯录"></a>1 新建uni-app项目——通讯录</h3><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有HBuilder账户，可以根据提示去注册）：</p>
@@ -2452,6 +2408,50 @@
       <tags>
         <tag>技术</tag>
         <tag>Vercel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>uniCloud使用</title>
+    <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p><code>uni-app</code> 是是一个使用 <a href="https://vuejs.org/">Vue.js</a> 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。</p>
+</blockquote>
+<h2 id="1-创建uni-app项目"><a href="#1-创建uni-app项目" class="headerlink" title="1 创建uni-app项目"></a>1 创建uni-app项目</h2><p>在 <code>HBuilder</code> 选择文件，新建（如果提示需要安装插件，按照提示安装即可，稍后会要求登陆，如果没有 <code>HBuilder</code> 账户，可以根据提示去注册）：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722141823663.png" alt="image-20210722141823663"></p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142059284.png" alt="image-20210722142059284"></p>
+<h2 id="2-创建云服务空间"><a href="#2-创建云服务空间" class="headerlink" title="2 创建云服务空间"></a>2 创建云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择打开 <code>uniCloud Web 控制台</code>，根据提示创建云服务空间：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142538030.png" alt="image-20210722142538030"></p>
+<h2 id="3-关联云服务空间"><a href="#3-关联云服务空间" class="headerlink" title="3 关联云服务空间"></a>3 关联云服务空间</h2><p>在 <code>uniCloud</code> 目录上单击右键，选择 <code>关联云服务空间或项目</code>，选择刚刚创建好的云服务空间：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142752925.png" alt="image-20210722142752925"></p>
+<h2 id="4-新建云函数"><a href="#4-新建云函数" class="headerlink" title="4 新建云函数"></a>4 新建云函数</h2><p>在 <code>uniCloud/cloudfunctions</code> 目录上单击右键，选择新建云函数：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210722142947924.png" alt="image-20210722142947924"></p>
+<p>编辑云函数内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"><span class="built_in">exports</span>.<span class="property">main</span> = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;hello uni-app!&quot;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-本地运行云函数"><a href="#5-本地运行云函数" class="headerlink" title="5 本地运行云函数"></a>5 本地运行云函数</h2><p><kbd>CTRL</kbd>+<kbd>R</kbd>，选择 <code>本地运行云函数</code>（如果提示要安装插件，根据提示要求安装即可，如果提示参数不正确，可以点击manifest.json，看是否有appid，如果没有，那就重新获取下appid）：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723110217961.png" alt="image-20210723110217961"></p>
+<h2 id="6-上传至云端并运行"><a href="#6-上传至云端并运行" class="headerlink" title="6 上传至云端并运行"></a>6 上传至云端并运行</h2><p>在 <code>uniCloud/cloudfunctions/test</code> 目录上单击右键，选择上传并运行：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723144113032.png" alt="image-20210723144113032"></p>
+<p>可以在web控制台查看上传的云函数：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723144319826.png" alt="image-20210723144319826"></p>
+<p>修改 <code>pages/index/index.vue</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;view class=&quot;content&quot;&gt;</span><br><span class="line">		&lt;image class=&quot;logo&quot; src=&quot;/static/logo.png&quot;&gt;&lt;/image&gt;</span><br><span class="line">		&lt;view class=&quot;text-area&quot;&gt;</span><br><span class="line">			&lt;text class=&quot;title&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/text&gt;</span><br><span class="line">		&lt;/view&gt;</span><br><span class="line">	&lt;/view&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	export default &#123;</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				title: &#x27;Hello&#x27;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		onLoad() &#123;</span><br><span class="line">			uniCloud.callFunction(&#123;</span><br><span class="line">				name:&quot;test&quot;,</span><br><span class="line">				success: (e) =&gt; &#123;</span><br><span class="line">					this.title = e</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;,</span><br><span class="line">		methods: &#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	.content &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		flex-direction: column;</span><br><span class="line">		align-items: center;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.logo &#123;</span><br><span class="line">		height: 200rpx;</span><br><span class="line">		width: 200rpx;</span><br><span class="line">		margin-top: 200rpx;</span><br><span class="line">		margin-left: auto;</span><br><span class="line">		margin-right: auto;</span><br><span class="line">		margin-bottom: 50rpx;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.text-area &#123;</span><br><span class="line">		display: flex;</span><br><span class="line">		justify-content: center;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.title &#123;</span><br><span class="line">		font-size: 36rpx;</span><br><span class="line">		color: #8f8f94;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运行到内置浏览器（如果提示要安装插件，按照提示安装即可）：</p>
+<p><img src="/uniCloud%E4%BD%BF%E7%94%A8/image-20210723145059296.png" alt="image-20210723145059296"></p>
+<p><code>uni.callFunction</code> 的好处：</p>
+<ul>
+<li>更安全，黑客攻击都找不到URL入口。</li>
+<li>无需URL，即无需域名，如果是只做APP和小程序，也就无需购买和备案域名。</li>
+<li>自带 <code>uni-id</code> 的token。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>uni-app</tag>
       </tags>
   </entry>
   <entry>
