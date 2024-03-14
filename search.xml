@@ -103,50 +103,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(五)</title>
-    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
-    <content><![CDATA[<blockquote>
-<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制<code>PCB</code>图。</p>
-</blockquote>
-<h2 id="1-排版布局"><a href="#1-排版布局" class="headerlink" title="1 排版布局"></a>1 排版布局</h2><p>在<code>PCB</code>图中选中元器件，利用对齐工具进行排版布局：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/qHTZbIGE5NYaQUA.png" alt="qHTZbIGE5NYaQUA"></p>
-<p>然后再添加四个焊盘作为铜柱通孔，点击焊盘后按一下<kbd>Tab</kbd>键，修改焊盘属性中的开孔尺寸为<code>3mm</code>，X、Y尺寸为<code>3.5mm</code>。</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/cirO52LBTKUxMGt.png" alt="cirO52LBTKUxMGt"></p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/Pisuthy6HAlrEZp.png" alt="Pisuthy6HAlrEZp"></p>
-<h2 id="2-定义板子形状"><a href="#2-定义板子形状" class="headerlink" title="2 定义板子形状"></a>2 定义板子形状</h2><p>在底部选择<code>Keep-Out Layer</code>，再点击顶部导航栏的画笔(放置线条)，将所有元件框起来后，按住<code>shift</code>键选中四根线条：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/vl4gOo8nxQXNAde.png" alt="vl4gOo8nxQXNAde"></p>
-<p>然后点击顶部导航的设计，选择板子形状，点击按照选择对象定义：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/oQJIAXR3gupLMtm.png" alt="oQJIAXR3gupLMtm"></p>
-<h2 id="3-电气走线"><a href="#3-电气走线" class="headerlink" title="3 电气走线"></a>3 电气走线</h2><p>下面就根据白色引导线去进行电气连接，在底部导航栏选择<code>Bottom Layer(底层)</code>，然后使用<code>PT</code>快捷键(英文键盘模式下，先按<kbd>P</kbd>再按<kbd>T</kbd>)进行走线(点击焊盘后按一下<kbd>Tab</kbd>键可以编辑线宽，设定最小线宽为<code>10mil</code>，优先线宽为<code>50mil</code>，最大线宽为<code>100mil</code>，一般来说走线越宽越好)：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/RsjkFKyqTAcIrPU.png" alt="RsjkFKyqTAcIrPU"></p>
-<h2 id="4-铺铜操作"><a href="#4-铺铜操作" class="headerlink" title="4 铺铜操作"></a>4 铺铜操作</h2><p>为了方便腐蚀，我们一般会对电路板进行铺铜，这样能减小腐蚀面积，能更快地腐蚀完毕，首先单击选中一个铜柱焊盘，选择选项，编辑网络，添加一个<code>GND</code>网络标号，双击铜柱焊盘，把焊盘属性中的网络选择为<code>GND</code>(其余三个铜柱焊盘也需要选择为<code>GND</code>网络)：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/TXsFeMNumrkUItY.png" alt="TXsFeMNumrkUItY"></p>
-<p>然后点击顶部导航栏的放置多边形平面：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/6CfG1lsMqIDO7xc.png" alt="6CfG1lsMqIDO7xc"></p>
-<p>直接点击确定后，依次点击板子四个边角，将板子整个框选起来：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/UYzLE6XGjeA9qsd.png" alt="UYzLE6XGjeA9qsd"></p>
-<h2 id="5-3D预览"><a href="#5-3D预览" class="headerlink" title="5 3D预览"></a>5 3D预览</h2><p>按<code>3</code>看一下<code>3D</code>预览效果：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/AolkVOJEQ5rLvDi.png" alt="AolkVOJEQ5rLvDi"></p>
-<h2 id="6-打印设置"><a href="#6-打印设置" class="headerlink" title="6 打印设置"></a>6 打印设置</h2><p>在顶部导航栏选择文件，页面设置，缩放模式选择<code>Scaled Print</code>，缩放比例为<code>1.00</code>：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/JoAak14q2XIrMbn.png" alt="JoAak14q2XIrMbn"></p>
-<p>然后点击高级，进入页面高级设置：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/VvYs1LwEnlPpI3f.png" alt="VvYs1LwEnlPpI3f"></p>
-<p>在这里可以删掉多余的层，只保留需要的，如果有焊盘，则需要勾选孔，由于我们绘制的矩阵键盘都是插件，所以无需勾选镜像，如果是有顶层贴片元件，则需要勾选镜像。</p>
-<p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
-<p>点击顶部导航栏的生成当前文件的打印预览：</p>
-<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/TCtPavL6XH9MdnD.png" alt="TCtPavL6XH9MdnD"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(三)</title>
     <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%B8%89)/</url>
     <content><![CDATA[<blockquote>
@@ -224,56 +180,47 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/bFIkV72TXKwZH6a.png" alt="bFIkV72TXKwZH6a"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/8kdh7YQUlROzbTt.png" alt="8kdh7YQUlROzbTt"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chocolatey安装与使用</title>
-    <url>/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <title>AltiumDesigner绘制PCB(五)</title>
+    <url>/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<blockquote>
-<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
+<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制<code>PCB</code>图。</p>
 </blockquote>
-<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://community.chocolatey.org/install.ps1&#x27;))</span><br></pre></td></tr></table></figure>
-
-<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
-
+<h2 id="1-排版布局"><a href="#1-排版布局" class="headerlink" title="1 排版布局"></a>1 排版布局</h2><p>在<code>PCB</code>图中选中元器件，利用对齐工具进行排版布局：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/qHTZbIGE5NYaQUA.png" alt="qHTZbIGE5NYaQUA"></p>
+<p>然后再添加四个焊盘作为铜柱通孔，点击焊盘后按一下<kbd>Tab</kbd>键，修改焊盘属性中的开孔尺寸为<code>3mm</code>，X、Y尺寸为<code>3.5mm</code>。</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/cirO52LBTKUxMGt.png" alt="cirO52LBTKUxMGt"></p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/Pisuthy6HAlrEZp.png" alt="Pisuthy6HAlrEZp"></p>
+<h2 id="2-定义板子形状"><a href="#2-定义板子形状" class="headerlink" title="2 定义板子形状"></a>2 定义板子形状</h2><p>在底部选择<code>Keep-Out Layer</code>，再点击顶部导航栏的画笔(放置线条)，将所有元件框起来后，按住<code>shift</code>键选中四根线条：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/vl4gOo8nxQXNAde.png" alt="vl4gOo8nxQXNAde"></p>
+<p>然后点击顶部导航的设计，选择板子形状，点击按照选择对象定义：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/oQJIAXR3gupLMtm.png" alt="oQJIAXR3gupLMtm"></p>
+<h2 id="3-电气走线"><a href="#3-电气走线" class="headerlink" title="3 电气走线"></a>3 电气走线</h2><p>下面就根据白色引导线去进行电气连接，在底部导航栏选择<code>Bottom Layer(底层)</code>，然后使用<code>PT</code>快捷键(英文键盘模式下，先按<kbd>P</kbd>再按<kbd>T</kbd>)进行走线(点击焊盘后按一下<kbd>Tab</kbd>键可以编辑线宽，设定最小线宽为<code>10mil</code>，优先线宽为<code>50mil</code>，最大线宽为<code>100mil</code>，一般来说走线越宽越好)：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/RsjkFKyqTAcIrPU.png" alt="RsjkFKyqTAcIrPU"></p>
+<h2 id="4-铺铜操作"><a href="#4-铺铜操作" class="headerlink" title="4 铺铜操作"></a>4 铺铜操作</h2><p>为了方便腐蚀，我们一般会对电路板进行铺铜，这样能减小腐蚀面积，能更快地腐蚀完毕，首先单击选中一个铜柱焊盘，选择选项，编辑网络，添加一个<code>GND</code>网络标号，双击铜柱焊盘，把焊盘属性中的网络选择为<code>GND</code>(其余三个铜柱焊盘也需要选择为<code>GND</code>网络)：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/TXsFeMNumrkUItY.png" alt="TXsFeMNumrkUItY"></p>
+<p>然后点击顶部导航栏的放置多边形平面：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/6CfG1lsMqIDO7xc.png" alt="6CfG1lsMqIDO7xc"></p>
+<p>直接点击确定后，依次点击板子四个边角，将板子整个框选起来：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/UYzLE6XGjeA9qsd.png" alt="UYzLE6XGjeA9qsd"></p>
+<h2 id="5-3D预览"><a href="#5-3D预览" class="headerlink" title="5 3D预览"></a>5 3D预览</h2><p>按<code>3</code>看一下<code>3D</code>预览效果：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/AolkVOJEQ5rLvDi.png" alt="AolkVOJEQ5rLvDi"></p>
+<h2 id="6-打印设置"><a href="#6-打印设置" class="headerlink" title="6 打印设置"></a>6 打印设置</h2><p>在顶部导航栏选择文件，页面设置，缩放模式选择<code>Scaled Print</code>，缩放比例为<code>1.00</code>：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/JoAak14q2XIrMbn.png" alt="JoAak14q2XIrMbn"></p>
+<p>然后点击高级，进入页面高级设置：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/VvYs1LwEnlPpI3f.png" alt="VvYs1LwEnlPpI3f"></p>
+<p>在这里可以删掉多余的层，只保留需要的，如果有焊盘，则需要勾选孔，由于我们绘制的矩阵键盘都是插件，所以无需勾选镜像，如果是有顶层贴片元件，则需要勾选镜像。</p>
+<p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
+<p>点击顶部导航栏的生成当前文件的打印预览：</p>
+<p><img src="/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/TCtPavL6XH9MdnD.png" alt="TCtPavL6XH9MdnD"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Chocolatey</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
       </tags>
   </entry>
   <entry>
@@ -321,103 +268,56 @@
       </tags>
   </entry>
   <entry>
-    <title>Flutter使用</title>
-    <url>/Flutter%E4%BD%BF%E7%94%A8/</url>
+    <title>Chocolatey安装与使用</title>
+    <url>/Chocolatey%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
-<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
+<p>Chocolatey是Windows下的包管理器，通过命令方式即可完成软件的搜索、安装、更新、卸载等所有操作，最重要的是Chocolatey支持配置统一环境，通过<code>dev-package.config</code>就可以配置一个团队统一的开发环境，软件和版本都可以统一，可避免由于开发环境不一致带来的各种问题，而且Chocolatey提供了一个refreshenv命令，可快速生效环境变量。</p>
 </blockquote>
-<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
-<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
-<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
-</ul>
-<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
-<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
-<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
-<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
+<h3 id="1-Chocolatey-的安装"><a href="#1-Chocolatey-的安装" class="headerlink" title="1 Chocolatey 的安装"></a>1 Chocolatey 的安装</h3><h4 id="1-1-cmd"><a href="#1-1-cmd" class="headerlink" title="1.1 cmd"></a>1.1 cmd</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>cmd</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@<span class="string">&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class="string">&quot;iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://chocolatey.org/install.ps1&#x27;))&quot;</span> &amp;&amp; SET <span class="string">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+<h4 id="1-2-Windows-PowerShell"><a href="#1-2-Windows-PowerShell" class="headerlink" title="1.2 Windows PowerShell"></a>1.2 Windows PowerShell</h4><p><kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#x27;https://community.chocolatey.org/install.ps1&#x27;))</span><br></pre></td></tr></table></figure>
 
-<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
-<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
+<h4 id="1-3-install-psl"><a href="#1-3-install-psl" class="headerlink" title="1.3 install.psl"></a>1.3 install.psl</h4><p>在本地新建<code>install.psl</code>文件，打开<a href="https://chocolatey.org/install.ps1">https://chocolatey.org/install.ps1</a>，复制内容到本地<code>install.psl</code>文件，<kbd>Win</kbd>+<kbd>R</kbd>打开运行框，输入<code>powershell</code>后，按下<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>进入管理员模式，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">install.psl</span><br></pre></td></tr></table></figure>
 
-<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
+<h3 id="2-Chocolatey-的使用"><a href="#2-Chocolatey-的使用" class="headerlink" title="2 Chocolatey 的使用"></a>2 Chocolatey 的使用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">choco -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查找软件</span></span><br><span class="line">choco search XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 详细信息</span></span><br><span class="line"><span class="comment"># choco info XXX</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 升级软件</span></span><br><span class="line">choco upgrade XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">choco uninstall XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出包</span></span><br><span class="line">choco list -lo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看本地安装的软件包</span></span><br><span class="line">choco list --local-only</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置统一环境 [XXX为配置文件名]</span></span><br><span class="line">choco install XXX.config</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出Windows系统已安装的软件</span></span><br><span class="line">choco list -li  OR choco list -lai</span><br></pre></td></tr></table></figure>
 
-<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>再次运行<code>flutter doctor</code>。</p>
-<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
-<p>（2）选择Flutter SDK Path。</p>
-<p>（3）填写工程名。</p>
-<p>（4）填写工程路径。</p>
-<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
-<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
-<p>Application：应用名称</p>
-<p>User-permission：使用权限，必须包含网络访问权限。</p>
-<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
-<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
-<p>（2）查看构建配置</p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
-<p>defaultConfig:</p>
-<p>applicationId:指定始终唯一的appid</p>
-<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
-<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
-<p>（3）添加启动图标</p>
-<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
-<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
-<p>（4）APP签名</p>
-<p><strong>创建keystore</strong></p>
-<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
-<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
-<p><img src="/Flutter%E4%BD%BF%E7%94%A8/image-20220725133511680.png" alt="image-20220725133511680"></p>
-<p><strong>引用应用程序中的keystore</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
-<p>storePassword=密钥库口令</p>
-<p>keyPassword=key的密钥口令</p>
-<p>keyAlias=key</p>
-<p>storeFile=<app_dir>/key.jks</p>
-<p><strong>在gradle中配置签名</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
-<p>在<code>”android &#123;“</code>前加上如下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
-
-<p>将</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>替换为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>（5）开启混淆</p>
-<p><strong>配置混淆</strong></p>
-<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>开启混淆压缩</strong></p>
-<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
-<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
-<p>修改后的<code>buildTypes</code>如下所示：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#x27;proguard-android.txt&#x27;), &#x27;proguard-rules.pro&#x27;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>（6）构建发布版apk</p>
-<p>进入应用程序目录</p>
-<p><code>cd &lt;app_dir&gt;</code></p>
-<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
-<p><code>flutter build apk</code></p>
-<p>安装<code>apk</code></p>
-<p><code>flutter install</code></p>
-<p>构建<code>apk</code>结果如下所示：</p>
-<p><img src="/Flutter%E4%BD%BF%E7%94%A8/image-20220725134059854.png" alt="image-20220725134059854"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Flutter</tag>
+        <tag>Chocolatey</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anaconda下安装opencv</title>
+    <url>/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+
+<p>遇到如下问题</p>
+<p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/bFIkV72TXKwZH6a.png" alt="bFIkV72TXKwZH6a"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/8kdh7YQUlROzbTt.png" alt="8kdh7YQUlROzbTt"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -549,6 +449,106 @@
       <tags>
         <tag>技术</tag>
         <tag>Doxygen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Flutter使用</title>
+    <url>/Flutter%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>本文主要介绍Google的开源UI框架——Flutter的简单使用教程。</p>
+</blockquote>
+<h2 id="1-安装前提"><a href="#1-安装前提" class="headerlink" title="1 安装前提"></a>1 安装前提</h2><ul>
+<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li><a href="https://developer.android.google.cn/studio?hl=zh-cn">Android Studio</a> </li>
+</ul>
+<h2 id="2-获取-Flutter-SDK"><a href="#2-获取-Flutter-SDK" class="headerlink" title="2 获取 Flutter SDK"></a>2 获取 Flutter SDK</h2><p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_2.0.6-stable.zip">Flutter_Windows_2.0.6-stable.zip</a></p>
+<p>解压后将 <code>flutter</code> 目录拷贝到D盘或其他路径。</p>
+<h2 id="3-设置环境变量"><a href="#3-设置环境变量" class="headerlink" title="3 设置环境变量"></a>3 设置环境变量</h2><p>在高级系统设置中选择环境变量，在 <code>Path</code> 中添加Flutter SDK的路径，比如<code>D:\flutter\bin</code>。</p>
+<h2 id="4-运行-flutter-doctor"><a href="#4-运行-flutter-doctor" class="headerlink" title="4 运行 flutter doctor"></a>4 运行 flutter doctor</h2><p>按照提示运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor --android-licenses</span><br></pre></td></tr></table></figure>
+
+<p>按照提示一直输入 <code>y</code> 即可，然后再次运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+
+<p>提示 <code>No issues found!</code> 说明环境配置正确了。</p>
+<h2 id="5-安装依赖包"><a href="#5-安装依赖包" class="headerlink" title="5 安装依赖包"></a>5 安装依赖包</h2><p>如果工程使用了依赖包，可以运行以下命令来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter packages get</span><br></pre></td></tr></table></figure>
+
+<p>Flutter 启动调试工具报错，可能是调试工具没有安装并激活，可以运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter pub global activate devtools</span><br></pre></td></tr></table></figure>
+
+<p>当运行<code>flutter doctor</code>后出现<code>Android Studio not installed</code>时，需要指定<code>Android Studio</code>的安装路径，需要运行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">flutter config --android-studio-dir <span class="string">&quot;YourAndroidStudioInstallPath&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>再次运行<code>flutter doctor</code>。</p>
+<h2 id="6-创建工程"><a href="#6-创建工程" class="headerlink" title="6 创建工程"></a>6 创建工程</h2><p>（1）<code>File</code>-&gt;<code>New Flutter Project</code>-&gt;<code>Flutter App</code>。</p>
+<p>（2）选择Flutter SDK Path。</p>
+<p>（3）填写工程名。</p>
+<p>（4）填写工程路径。</p>
+<h2 id="7-Android构建发布"><a href="#7-Android构建发布" class="headerlink" title="7 Android构建发布"></a>7 Android构建发布</h2><p>（1）检查APP Manifest</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main</code>路径下查看<code>AndroidManifest.xml</code>文件，验证这些值是否正确，特别是：</p>
+<p>Application：应用名称</p>
+<p>User-permission：使用权限，必须包含网络访问权限。</p>
+<p>若没有加入网络权限，则在<code>&lt;application</code>上添加以下内容：</p>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code></p>
+<p>（2）查看构建配置</p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下查看<code>build.gradle</code>文件，验证这些值是否正确，特别是：</p>
+<p>defaultConfig:</p>
+<p>applicationId:指定始终唯一的appid</p>
+<p>versionCode &amp; versionName:指定应用程序版本号和版本字符串</p>
+<p>minSdkVersion &amp; targetSdkVersion:指定最低的API运行级别以及应用程序运行的API级别。 </p>
+<p>（3）添加启动图标</p>
+<p>在<code>&lt;app_dir&gt;/android/app/src/main/res/</code>路径下，将图标文件放入使用配置限定名命名的文件夹中，默认使用<code>mipmap</code>文件夹演示正确的命名约定。</p>
+<p>在<code>AndroidManifest.xml</code>文件中，将<code>android:icon</code>属性更新为引用上一步中的图标，如<code>android:icon=”mipmap/ic_launcher”</code>。</p>
+<p>（4）APP签名</p>
+<p><strong>创建keystore</strong></p>
+<p>在命令行窗口进入<code>&lt;app_dir&gt;</code>路径，输入以下指令，根据提示输入对应信息，生成密钥结构如下所示：</p>
+<p><code>keytool -genkey -v -keystore ./key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></p>
+<p><img src="/Flutter%E4%BD%BF%E7%94%A8/image-20220725133511680.png" alt="image-20220725133511680"></p>
+<p><strong>引用应用程序中的keystore</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/</code>在创建一个名为<code>key.properties</code>的文件，其中包含对密钥库的引用：</p>
+<p>storePassword=密钥库口令</p>
+<p>keyPassword=key的密钥口令</p>
+<p>keyAlias=key</p>
+<p>storeFile=<app_dir>/key.jks</p>
+<p><strong>在gradle中配置签名</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下编辑<code>build.gradle</code>文件，</p>
+<p>在<code>”android &#123;“</code>前加上如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def keystorePropertiesFile = rootProject.file(<span class="string">&quot;key.properties&quot;</span>)</span><br><span class="line"></span><br><span class="line">def keystoreProperties = new Properties()</span><br><span class="line"></span><br><span class="line">keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></pre></td></tr></table></figure>
+
+<p>将</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    // TODO: Add your own signing config <span class="keyword">for</span> the release build.</span><br><span class="line"></span><br><span class="line">​    // Signing with the debug keys <span class="keyword">for</span> now, so `flutter run --release` works.</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.debug</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>替换为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    keyAlias keystoreProperties[<span class="string">&#x27;keyAlias&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    keyPassword keystoreProperties[<span class="string">&#x27;keyPassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">​    storeFile file(keystoreProperties[<span class="string">&#x27;storeFile&#x27;</span>])</span><br><span class="line"></span><br><span class="line">​    storePassword keystoreProperties[<span class="string">&#x27;storePassword&#x27;</span>]</span><br><span class="line"></span><br><span class="line">  &#125;&#125;buildTypes &#123;</span><br><span class="line"></span><br><span class="line">  release &#123;</span><br><span class="line"></span><br><span class="line">​    signingConfig signingConfigs.release</span><br><span class="line"></span><br><span class="line">  &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（5）开启混淆</p>
+<p><strong>配置混淆</strong></p>
+<p>在<code>&lt;app_dir&gt;/android/app/</code>路径下创建一个名为<code>proguard-rules.pro</code>的文件，并加入以下规则：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\<span class="comment">#Flutter Wrapper</span></span><br><span class="line"></span><br><span class="line">-keep class io.flutter.app.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugin.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.util.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.view.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.** &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keep class io.flutter.plugins.** &#123; *; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>开启混淆压缩</strong></p>
+<p>在<code>&lt;app_dir&gt;/app/build.gradle</code>文件中，定位到<code>buildTypes</code>块</p>
+<p>在<code>release</code>配置中将<code>minifyEnabled</code>和<code>useProguard</code>设为<code>true</code>，并将混淆文件指向<code>proguard-rules.pro</code></p>
+<p>修改后的<code>buildTypes</code>如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;</span><br><span class="line">       release &#123;</span><br><span class="line">           signingConfig signingConfigs.release</span><br><span class="line">           minifyEnabled true</span><br><span class="line">           useProguard true</span><br><span class="line">           proguardFiles getDefaultProguardFile(&#x27;proguard-android.txt&#x27;), &#x27;proguard-rules.pro&#x27;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>（6）构建发布版apk</p>
+<p>进入应用程序目录</p>
+<p><code>cd &lt;app_dir&gt;</code></p>
+<p>构建<code>apk</code>（构建好的<code>apk</code>位于<code>&lt;app_dir&gt;/build/app/outputs/apk/app-release.apk</code>）</p>
+<p><code>flutter build apk</code></p>
+<p>安装<code>apk</code></p>
+<p><code>flutter install</code></p>
+<p>构建<code>apk</code>结果如下所示：</p>
+<p><img src="/Flutter%E4%BD%BF%E7%94%A8/image-20220725134059854.png" alt="image-20220725134059854"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Flutter</tag>
       </tags>
   </entry>
   <entry>
@@ -1022,6 +1022,99 @@
       </tags>
   </entry>
   <entry>
+    <title>MQTT剩余长度计算</title>
+    <url>/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256*1024*1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
+<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
+<thead>
+<tr>
+<th>bit7</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>进位标志</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+<td>数据</td>
+</tr>
+</tbody></table>
+<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
+<table>
+<thead>
+<tr>
+<th>进位标志</th>
+<th>bit6</th>
+<th>bit5</th>
+<th>bit4</th>
+<th>bit3</th>
+<th>bit2</th>
+<th>bit1</th>
+<th>bit0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1(有进位)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
+<table>
+<thead>
+<tr>
+<th>bit14</th>
+<th>bit13</th>
+<th>bit12</th>
+<th>bit11</th>
+<th>bit10</th>
+<th>bit9</th>
+<th>bit8</th>
+<th>bit7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="type">static</span> int32 <span class="title function_">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span><br><span class="line">&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>MQTT</tag>
+        <tag>IoT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法测试</title>
     <url>/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h2 id="1-标题测试"><a href="#1-标题测试" class="headerlink" title="1 标题测试"></a>1 标题测试</h2><p><code>Markdown</code>有<code>1-6</code>级标题，效果如下所示：</p>
@@ -1190,104 +1283,11 @@
       </tags>
   </entry>
   <entry>
-    <title>MQTT剩余长度计算</title>
-    <url>/MQTT%E5%89%A9%E4%BD%99%E9%95%BF%E5%BA%A6%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="1-剩余长度占用-1-4-个字节"><a href="#1-剩余长度占用-1-4-个字节" class="headerlink" title="1 剩余长度占用(1~4)个字节"></a>1 剩余长度占用(1~4)个字节</h2><p>剩余长度就是指后面跟了多少字节。<br>剩余长度一字节只用<code>bit0~bit6</code>这7位表示数据，用<code>bit7</code>表示进位标志，为<code>1</code>则说明有进位，为<code>0</code>则无进位。<br>1字节可表示的数据：<code>0~127个字节=128个</code><br>$$<br>2^7-1=127<br>$$<br>4字节可表示的数据：<code>0~268435455个字节=256*1024*1024=256M</code><br>$$<br>2^{28}-1=268435455<br>$$</p>
-<h2 id="2-剩余长度计算方法"><a href="#2-剩余长度计算方法" class="headerlink" title="2 剩余长度计算方法"></a>2 剩余长度计算方法</h2><table>
-<thead>
-<tr>
-<th>bit7</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>进位标志</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-<td>数据</td>
-</tr>
-</tbody></table>
-<p>假设剩余长度为500，转换为十六进制显示就是0X1F4，转换为二进制显示就是0001 1111 0100。<br>先看前7位 (111 0100)，因为前7位才是有效数据！<br>给bit7的进位标志置1：（表示产生进位了）</p>
-<table>
-<thead>
-<tr>
-<th>进位标志</th>
-<th>bit6</th>
-<th>bit5</th>
-<th>bit4</th>
-<th>bit3</th>
-<th>bit2</th>
-<th>bit1</th>
-<th>bit0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1(有进位)</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0XF4(1111 0100)。（500%128）|（0X80） = 116 | 0X80 = 0XF4<br>再看剩下的：</p>
-<table>
-<thead>
-<tr>
-<th>bit14</th>
-<th>bit13</th>
-<th>bit12</th>
-<th>bit11</th>
-<th>bit10</th>
-<th>bit9</th>
-<th>bit8</th>
-<th>bit7</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>所以剩余长度第一个字节就是0X03。（500/128=3） = 0X03<br>用数组remainBytes来存就是:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> ramainBytes[<span class="number">2</span>] = &#123;<span class="number">0XF4</span>, <span class="number">0X01</span>&#125;;</span><br><span class="line"><span class="comment">// 利用上面两个数据怎么算出剩余长度500？</span></span><br><span class="line"><span class="comment">// 0XF4 = 1111 0100</span></span><br><span class="line"><span class="comment">// 1.先把有进位的标志给去掉</span></span><br><span class="line"><span class="comment">// 	1111 0100 --&gt; 0111 0100 = 0X74 = 116</span></span><br><span class="line"><span class="comment">// 2.计算剩余长度</span></span><br><span class="line"><span class="comment">// 	0X03 = 3</span></span><br><span class="line"><span class="comment">// 	remainLength = 3 * 128 + 116 = 384 + 116 = 500</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-剩余长度计算函数"><a href="#3-剩余长度计算函数" class="headerlink" title="3 剩余长度计算函数"></a>3 剩余长度计算函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**************************************************</span></span><br><span class="line"><span class="comment"> * 功能: mqtt 协议层获取剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 参数: len:剩余内容长度</span></span><br><span class="line"><span class="comment"> *       buf:剩余内容指针</span></span><br><span class="line"><span class="comment"> * 返回: 剩余长度占用字节数</span></span><br><span class="line"><span class="comment"> * 备注：无</span></span><br><span class="line"><span class="comment"> * ************************************************/</span></span><br><span class="line"><span class="type">static</span> int32 <span class="title function_">MQTT_GetRemainBytes</span><span class="params">(uint32 len, uint8* buf)</span></span><br><span class="line">&#123;</span><br><span class="line">    uint32 bytes = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 假设len = 500</span></span><br><span class="line">    <span class="keyword">for</span> (bytes = <span class="number">1</span>; bytes &lt;= <span class="number">4</span>; bytes++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 1. *buf = len % 128 = 116</span></span><br><span class="line">        <span class="comment">// 2. len = len / 128 = 500 / 128 = 3</span></span><br><span class="line">        <span class="comment">// 4. *buf = len % 128 = 3 % 128 = 3 = 0X03</span></span><br><span class="line">        <span class="comment">// 5. buf[0] = 0XF4, buf[1] = 0X03</span></span><br><span class="line">        *buf = len % <span class="number">128</span>;</span><br><span class="line">        len /= <span class="number">128</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 剩余长度超过 1 字节, bit 置 1</span></span><br><span class="line">        <span class="comment">// 3.len &gt; 3, *buf = *buf | 0X80 = 116 | 0X80 = 0XF4</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            *buf |= <span class="number">0X80</span>;</span><br><span class="line">            buf++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> bytes;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>MQTT</tag>
-        <tag>IoT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>OneNET Studio与IoT Studio对比分析</title>
     <url>/OneNET%20Studio%E4%B8%8EIoT%20Studio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h2 id="1-OneNET-Studio"><a href="#1-OneNET-Studio" class="headerlink" title="1 OneNET Studio"></a>1 OneNET Studio</h2><h3 id="1-1-平台架构"><a href="#1-1-平台架构" class="headerlink" title="1.1 平台架构"></a>1.1 平台架构</h3><p>![OneNET Studio 架构图](OneNET Studio与IoT Studio对比分析/OneNET%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png)</p>
+    <content><![CDATA[<h2 id="1-OneNET-Studio"><a href="#1-OneNET-Studio" class="headerlink" title="1 OneNET Studio"></a>1 OneNET Studio</h2><h3 id="1-1-平台架构"><a href="#1-1-平台架构" class="headerlink" title="1.1 平台架构"></a>1.1 平台架构</h3><p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNET Studio 架构图"></p>
 <h3 id="1-2-平台功能"><a href="#1-2-平台功能" class="headerlink" title="1.2 平台功能"></a>1.2 平台功能</h3><h4 id="1-2-1-设备接入与管理"><a href="#1-2-1-设备接入与管理" class="headerlink" title="1.2.1 设备接入与管理"></a>1.2.1 设备接入与管理</h4><ol>
-<li><p><strong>设备接入流程</strong><br>![OneNET Studio 设备接入流程](OneNET Studio与IoT Studio对比分析/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B.png)</p>
+<li><p><strong>设备接入流程</strong><br><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B.png" alt="OneNET Studio 设备接入流程"></p>
 </li>
 <li><p><strong>创建产品</strong><br>产品是一组具有相同功能定义的设备集合，创建产品是使用平台的第一步，快速创建产品后可定义产品物模型、添加对应设备。产品列表用于自建产品及第三方授权产品的管理。</p>
 </li>
@@ -1339,7 +1339,7 @@
 <li><p><strong>转移设备</strong><br>OneNET Studio 支持跨用户的设备转移（转移双方需实名认证）。用户可通过选择指定设备和导入设备列表两种方式进行设备转移。在向他人转移设备时，需要正确获取目标用户在实名认证时输入的手机号（具体查看方式为：平台右上角头像-账号信息-用户手机）。</p>
 </li>
 </ol>
-<p>![OneNET Studio 设备转移流程图](OneNET Studio与IoT Studio对比分析/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E8%BD%AC%E7%A7%BB%E6%B5%81%E7%A8%8B%E5%9B%BE.png)</p>
+<p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E8%BD%AC%E7%A7%BB%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="OneNET Studio 设备转移流程图"></p>
 <ol start="7">
 <li><p><strong>文件管理</strong><br>平台提供文件管理功能，支持设备或应用通过HTTP方式，将文件上传至平台服务器存储。用户可对上传文件进行查看、下载等管理操作，同时也可基于存储的图片、文档等信息，进行灵活的业务开发。文件管理两种使用场景:</p>
 <ul>
@@ -1383,7 +1383,7 @@
 </li>
 </ol>
 <h4 id="1-2-2-应用开发"><a href="#1-2-2-应用开发" class="headerlink" title="1.2.2 应用开发"></a>1.2.2 应用开发</h4><ol>
-<li><strong>应用开发流程</strong><br>![OneNET Studio 应用开发流程图](OneNET Studio与IoT Studio对比分析/OneNET%20Studio%20%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E5%9B%BE.png)</li>
+<li><strong>应用开发流程</strong><br><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="OneNET Studio 应用开发流程图"></li>
 <li><strong>新建项目</strong><br>项目是应用开发的基础，是应用资源管理的最小单位，相当于设备接入管理中的创建产品。</li>
 <li><strong>添加设备</strong><br>项目实现跨用户跨产品的设备资源整合，用户可将当前账号下的不同类型设备（自主创建和他人转移）添加至项目中，进行统一管理及应用开发。目前每个设备只能归属于一个项目。</li>
 <li><strong>设备分组</strong><br>项目提供设备分组功能，用于在单个项目下实现自定义的设备资源组合及分组权限控制。例如某个市级智慧工地项目包含100个工地，每个工地可作为一个分组，通过分组的资源管理及权限控制，满足该项目的不同业务权限管理及区域监管功能。</li>
@@ -1391,7 +1391,7 @@
 </ol>
 <h4 id="1-2-3-运维监控"><a href="#1-2-3-运维监控" class="headerlink" title="1.2.3 运维监控"></a>1.2.3 运维监控</h4><ol>
 <li><p><strong>设备调试</strong><br>平台提供设备调试功能，解耦设备及应用开发工作。设备调试包括设备模拟器与应用模拟器两种类型，设备模拟器由平台在云端创建虚拟设备，按照真实设备接入流程进行上下行数据模拟，让应用在未获取真实设备的情况下即可进行开发，提升开发效率。应用模拟器则通过模拟应用调用云端API，完成对真实设备的下行功能测试。整体交互流程如图所示：</p>
-<p>![OneNET Studio 设备调试流程图](OneNET Studio与IoT Studio对比分析/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E8%B0%83%E8%AF%95%E6%B5%81%E7%A8%8B%E5%9B%BE.png)</p>
+<p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E8%AE%BE%E5%A4%87%E8%B0%83%E8%AF%95%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="OneNET Studio 设备调试流程图"></p>
 </li>
 <li><p><strong>API调试</strong><br>平台提供API调试功能，可快速检索和调用API。系统根据输入参数同步生成SDK的Demo代码，在调用结果页签下，可实时查看API请求和响应结果，同时支持历史执行记录查询及API调用地址、参数自动填充功能。</p>
 </li>
@@ -1399,12 +1399,12 @@
 </li>
 <li><p><strong>告警中心</strong><br>平台提供监控告警功能，用户可以针对自己关心的业务指标，在告警中心配置告警规则，当监控指标满足条件触发后，支持以告警列表、邮件等方式通知用户，帮助用户快速处理故障，避免业务损失。</p>
 </li>
-<li><p><strong>远程升级</strong><br>平台提供远程升级功能，用户可以通过平台管理升级包，添加设备升级任务，查看设备升级状态等，方便用户对设备进行升级等操作，升级流程如下：<br>![OneNET Studio 远程升级流程图](OneNET Studio与IoT Studio对比分析/OneNET%20Studio%20%E8%BF%9C%E7%A8%8B%E5%8D%87%E7%BA%A7%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)</p>
+<li><p><strong>远程升级</strong><br>平台提供远程升级功能，用户可以通过平台管理升级包，添加设备升级任务，查看设备升级状态等，方便用户对设备进行升级等操作，升级流程如下：<br><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/OneNET%20Studio%20%E8%BF%9C%E7%A8%8B%E5%8D%87%E7%BA%A7%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg" alt="OneNET Studio 远程升级流程图"></p>
 </li>
 </ol>
 <h4 id="1-2-4-数据可视化"><a href="#1-2-4-数据可视化" class="headerlink" title="1.2.4 数据可视化"></a>1.2.4 数据可视化</h4><p>OneNETView3.0全新上线，支持创建3D项目，免编程、可视化拖拽配置，集成汇总、转换能力的数据层，支持多种数据源接入，功能强大的数据过滤器可对杂乱数据进行多种逻辑加工，灵活的嵌入搭建，让2D/3D结合成为可能。</p>
 <p><a href="https://open.iot.10086.cn/view/main/#/share2d?id=5dc3c5fdf03f1e16d7b8975d&shareCode=1234">OneNET行业应用经典案例</a></p>
-<p>![image-20210709140712626](OneNET Studio与IoT Studio对比分析/image-20210709140712626.png)</p>
+<p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/image-20210709140712626.png" alt="image-20210709140712626"></p>
 <p><img src="https://gentletk.oss-cn-shenzhen.aliyuncs.com/%E7%88%B1%E6%9F%AF%E8%BF%AA5G%E6%99%BA%E6%85%A7%E5%B7%A5%E5%8E%82.png" alt="爱柯迪5G智慧工厂"></p>
 <h4 id="1-2-5-边缘计算"><a href="#1-2-5-边缘计算" class="headerlink" title="1.2.5 边缘计算"></a>1.2.5 边缘计算</h4><p>OneNET边缘IoT管理旨在打造多场景的边缘计算基础设施，实现将OneNET云端服务延伸至包括5G MEC在内的多种边缘场景。它支持运行在小到嵌入式终端大到边缘云计算基础设施中，并且可以在边缘端提供人工智能、大数据、物联网设备管理、工业终端协议适配、视频接入，海量时序数据存储等功能。</p>
 <h4 id="1-2-6-人工智能-AI"><a href="#1-2-6-人工智能-AI" class="headerlink" title="1.2.6 人工智能 AI"></a>1.2.6 人工智能 AI</h4><p>人工智能AI提供人脸识别、图像处理、图像识别、视频技术等全方位的人工智能创新服务，打造智能生态，丰富OneNET平台应用能力，为用户提供增值服务。</p>
@@ -1469,7 +1469,7 @@
 <td>当用户加入另一用户创建的角色后获得的key，每加入一个角色会产生一个key，该key可以操作用户所属角色的授权资源。 比如某角色的创建者创建了可以查看A产品，可以新增B产品的权限，那么加入该角色的用户则可以使用这个key进行A产品的查看以及B产品的新增操作。</td>
 </tr>
 </tbody></table>
-<h2 id="2-IoT-Studio"><a href="#2-IoT-Studio" class="headerlink" title="2 IoT Studio"></a>2 IoT Studio</h2><h3 id="2-1-平台架构"><a href="#2-1-平台架构" class="headerlink" title="2.1 平台架构"></a>2.1 平台架构</h3><p>![IoT Studio 架构图](OneNET Studio与IoT Studio对比分析/IoT%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png)</p>
+<h2 id="2-IoT-Studio"><a href="#2-IoT-Studio" class="headerlink" title="2 IoT Studio"></a>2 IoT Studio</h2><h3 id="2-1-平台架构"><a href="#2-1-平台架构" class="headerlink" title="2.1 平台架构"></a>2.1 平台架构</h3><p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/IoT%20Studio%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="IoT Studio 架构图"></p>
 <h3 id="2-2-平台功能"><a href="#2-2-平台功能" class="headerlink" title="2.2 平台功能"></a>2.2 平台功能</h3><h4 id="2-2-1-权限管理"><a href="#2-2-1-权限管理" class="headerlink" title="2.2.1 权限管理"></a>2.2.1 权限管理</h4><p>阿里云可通过创建RAM子用户的方式来访问物联网平台资源，RAM 的主要作用是控制账号系统的权限。通过使用 RAM，创建、管理子账号，并通过给子账号授予不同的权限，控制子账号对资源的操作权限。</p>
 <p>主要功能：</p>
 <ol>
@@ -1478,11 +1478,11 @@
 <li><strong>主账号可为RAM子用户分配读写权限</strong></li>
 </ol>
 <h4 id="2-2-2-Web可视化开发"><a href="#2-2-2-Web可视化开发" class="headerlink" title="2.2.2 Web可视化开发"></a>2.2.2 Web可视化开发</h4><p>Web可视化开发工作台是物联网应用开发（IoT Studio）中的工具。无需写代码，只需在编辑器中，拖拽组件到画布上，再配置组件的显示样式、数据源及交互动作，以可视化的方式进行Web应用开发。适用于开发状态监控面板、设备管理后台、设备数据分析报表等，支持绑定域名发布。</p>
-<p>![image-20210709134651001](OneNET Studio与IoT Studio对比分析/image-20210709134651001.png)</p>
+<p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/image-20210709134651001.png" alt="image-20210709134651001"></p>
 <h4 id="2-2-3-业务逻辑开发"><a href="#2-2-3-业务逻辑开发" class="headerlink" title="2.2.3 业务逻辑开发"></a>2.2.3 业务逻辑开发</h4><p>物联网应用开发（IoT Studio）提供了物联网业务逻辑的开发工具，支持通过编排服务节点的方式快速完成简单的物联网业务逻辑的设计，主要用于设备联动、数据处理、API的生成以及生成APP的后端服务。</p>
-<p>![image-20210709135618864](OneNET Studio与IoT Studio对比分析/image-20210709135618864.png)</p>
+<p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/image-20210709135618864.png" alt="image-20210709135618864"></p>
 <h4 id="2-2-4-移动可视化开发"><a href="#2-2-4-移动可视化开发" class="headerlink" title="2.2.4 移动可视化开发"></a>2.2.4 移动可视化开发</h4><p>移动可视化开发是物联网应用开发（IoT Studio）提供的开发工具。无需写代码，只需在编辑器中，拖拽组件到画布上，再配置组件显示样式、数据源和动作。目前支持生成HTML5应用，并绑定域名发布。适用于开发设备控制App、工业监测App等，支持扫码访问。</p>
-<p>![image-20210709134720697](OneNET Studio与IoT Studio对比分析/image-20210709134720697.png)</p>
+<p><img src="/OneNETStudio%E4%B8%8EIoTStudio%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90/image-20210709134720697.png" alt="image-20210709134720697"></p>
 <h4 id="2-2-5-组件开发"><a href="#2-2-5-组件开发" class="headerlink" title="2.2.5 组件开发"></a>2.2.5 组件开发</h4><p>IoT Studio提供了组件开发功能，便于开发者开发、发布和管理自己研发的组件，并将其发布到可视化工作台中用于可视化页面搭建。从而满足开发者的需求，提升组件丰富性，为可视化搭建提供无限可能。</p>
 <h2 id="3-对比分析"><a href="#3-对比分析" class="headerlink" title="3 对比分析"></a>3 对比分析</h2><h3 id="3-1-从权限管理方面来看"><a href="#3-1-从权限管理方面来看" class="headerlink" title="3.1 从权限管理方面来看"></a>3.1 从权限管理方面来看</h3><p>阿里云与中移动都采用的是“一主多副”的形式，开发者拥有一个主账号，可以为其他用户分配子账号，并为子账号授予需要的权限，主账号与子账号的资源是共享的。</p>
 <h3 id="3-2-从应用开发方面来看"><a href="#3-2-从应用开发方面来看" class="headerlink" title="3.2 从应用开发方面来看"></a>3.2 从应用开发方面来看</h3><p>阿里云的 IoT Studio 集成了Web可视化、移动可视化、业务逻辑(提供APP应用后端服务)，Web应用支持绑定域名发布，APP可通过扫码访问。</p>
@@ -1500,32 +1500,32 @@
   <entry>
     <title>Proteus 7 Professional安装</title>
     <url>/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p>![QWU9bpsO2PJI5wN](Proteus 7 Professional安装/QWU9bpsO2PJI5wN.png)</p>
-<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p>![gaerE4dZs1k8i6R](Proteus 7 Professional安装/gaerE4dZs1k8i6R.png)</p>
-<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p>![1dTnpNSIkCe6cqj](Proteus 7 Professional安装/1dTnpNSIkCe6cqj.png)</p>
-<p>![458QRftqZEcGkSK](Proteus 7 Professional安装/458QRftqZEcGkSK.png)</p>
+    <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/QWU9bpsO2PJI5wN.png" alt="QWU9bpsO2PJI5wN"></p>
+<h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/gaerE4dZs1k8i6R.png" alt="gaerE4dZs1k8i6R"></p>
+<h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/1dTnpNSIkCe6cqj.png" alt="1dTnpNSIkCe6cqj"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/458QRftqZEcGkSK.png" alt="458QRftqZEcGkSK"></p>
 <p><code>Key File</code>其实就是<code>LICENCE.lxk</code></p>
-<p>![nRVjekbTDv41mwg](Proteus 7 Professional安装/nRVjekbTDv41mwg.png)</p>
-<p>![o58BI1DvgwiVdq4](Proteus 7 Professional安装/o58BI1DvgwiVdq4.png)</p>
-<p>![GpAK6Y8vwZjINiL](Proteus 7 Professional安装/GpAK6Y8vwZjINiL.png)</p>
-<p>![FAbQw2XC3tyYGkT](Proteus 7 Professional安装/FAbQw2XC3tyYGkT.png)</p>
-<p>![9EhDytl7bciqU6K](Proteus 7 Professional安装/9EhDytl7bciqU6K.png)</p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/nRVjekbTDv41mwg.png" alt="nRVjekbTDv41mwg"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/o58BI1DvgwiVdq4.png" alt="o58BI1DvgwiVdq4"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/GpAK6Y8vwZjINiL.png" alt="GpAK6Y8vwZjINiL"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/FAbQw2XC3tyYGkT.png" alt="FAbQw2XC3tyYGkT"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/9EhDytl7bciqU6K.png" alt="9EhDytl7bciqU6K"></p>
 <h3 id="1-4-选择安装路径及功能"><a href="#1-4-选择安装路径及功能" class="headerlink" title="1.4 选择安装路径及功能"></a>1.4 选择安装路径及功能</h3><p>记住这个安装路径，比如我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p>![Ncf6Whx1gpSJVoO](Proteus 7 Professional安装/Ncf6Whx1gpSJVoO.png)</p>
-<p>![JUPHrkMmXxTZGNz](Proteus 7 Professional安装/JUPHrkMmXxTZGNz.png)</p>
-<p>![35Ab92KfhJCzBgi](Proteus 7 Professional安装/35Ab92KfhJCzBgi.png)</p>
-<p>![gHd8LJcQn5wCmEb](Proteus 7 Professional安装/gHd8LJcQn5wCmEb.png)</p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/Ncf6Whx1gpSJVoO.png" alt="Ncf6Whx1gpSJVoO"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/JUPHrkMmXxTZGNz.png" alt="JUPHrkMmXxTZGNz"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/35Ab92KfhJCzBgi.png" alt="35Ab92KfhJCzBgi"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/gHd8LJcQn5wCmEb.png" alt="gHd8LJcQn5wCmEb"></p>
 <h2 id="2-破解Proteus-7-Professional"><a href="#2-破解Proteus-7-Professional" class="headerlink" title="2 破解Proteus 7 Professional"></a>2 破解Proteus 7 Professional</h2><p>以管理员身份运行<code>Proteus Pro 7.8 SP2破解 1.0.exe</code>，记得要在浏览里选择安装路径。</p>
 <p>我的在D盘就是<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional</code></p>
-<p>![rgwUdlPTMkVOWZC](Proteus 7 Professional安装/rgwUdlPTMkVOWZC.png)</p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/rgwUdlPTMkVOWZC.png" alt="rgwUdlPTMkVOWZC"></p>
 <p>破解成功后关闭破解软件。</p>
 <h2 id="3-汉化Proteus-7-Professional"><a href="#3-汉化Proteus-7-Professional" class="headerlink" title="3 汉化Proteus 7 Professional"></a>3 汉化Proteus 7 Professional</h2><p>汉化需要替换安装路径<code>D:\Program Files (x86)\Labcenter Electronics\Proteus 7 Professional\BIN</code>下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件。</p>
 <p>首先在BIN目录下创建一个<code>DLLBackup</code>文件夹，将安装路径下的这两个文件拷贝到<code>DLLBackup</code>做一个备份：</p>
-<p>![C5hVlEw4rb9AUIJ](Proteus 7 Professional安装/C5hVlEw4rb9AUIJ.png)</p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/C5hVlEw4rb9AUIJ.png" alt="C5hVlEw4rb9AUIJ"></p>
 <p>备份后将汉化包下的<code>ARES.DLL</code>和<code>ISIS.DLL</code>两个文件拷贝到<code>BIN</code>目录下，替换掉原有的文件。</p>
 <p>最后找到<code>ISIS.EXE</code>文件，单击右键选择发送到桌面快捷方式，命名为<code>Proteus 7 Professional</code>，双击图标运行<code>Proteus 7 Professional</code>。</p>
-<p>![Z8ODywC2Qjn9mWF](Proteus 7 Professional安装/Z8ODywC2Qjn9mWF.png)</p>
-<p>![VRbTG1e5UDwXhgr](Proteus 7 Professional安装/VRbTG1e5UDwXhgr.png)</p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/Z8ODywC2Qjn9mWF.png" alt="Z8ODywC2Qjn9mWF"></p>
+<p><img src="/Proteus7Professional%E5%AE%89%E8%A3%85/VRbTG1e5UDwXhgr.png" alt="VRbTG1e5UDwXhgr"></p>
 <p>关闭软件，然后将“汉化报错.exe” 复制到BIN文件夹下以管理员身份运行，再次打开软件后就不会出现错误了。</p>
 ]]></content>
       <categories>
@@ -1816,6 +1816,28 @@
       <tags>
         <tag>技术</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xilinx静态库制作与使用</title>
+    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
+<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708163746945.png" alt="image-20210708163746945"></p>
+<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708164029278.png" alt="image-20210708164029278"></p>
+<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708164328218.png" alt="image-20210708164328218"></p>
+<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165413594.png" alt="image-20210708165413594"></p>
+<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165553501.png" alt="image-20210708165553501"></p>
+<p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165756141.png" alt="image-20210708165756141"></p>
+<p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165825669.png" alt="image-20210708165825669"></p>
+<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165934672.png" alt="image-20210708165934672"></p>
+<p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708170136647.png" alt="image-20210708170136647"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Xilinx</tag>
       </tags>
   </entry>
   <entry>
@@ -2267,28 +2289,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Xilinx静态库制作与使用</title>
-    <url>/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="1-新建静态库工程"><a href="#1-新建静态库工程" class="headerlink" title="1 新建静态库工程"></a>1 新建静态库工程</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/1.%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png" alt="1.新建工程"></p>
-<h3 id="2-新建源码目录"><a href="#2-新建源码目录" class="headerlink" title="2 新建源码目录"></a>2 新建源码目录</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708163746945.png" alt="image-20210708163746945"></p>
-<h3 id="3-设置工程属性"><a href="#3-设置工程属性" class="headerlink" title="3 设置工程属性"></a>3 设置工程属性</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708164029278.png" alt="image-20210708164029278"></p>
-<h3 id="4-生成静态库"><a href="#4-生成静态库" class="headerlink" title="4 生成静态库"></a>4 生成静态库</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708164328218.png" alt="image-20210708164328218"></p>
-<h3 id="5-新建测试工程"><a href="#5-新建测试工程" class="headerlink" title="5 新建测试工程"></a>5 新建测试工程</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165413594.png" alt="image-20210708165413594"></p>
-<h3 id="6-设置测试工程属性"><a href="#6-设置测试工程属性" class="headerlink" title="6 设置测试工程属性"></a>6 设置测试工程属性</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165553501.png" alt="image-20210708165553501"></p>
-<p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165756141.png" alt="image-20210708165756141"></p>
-<p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165825669.png" alt="image-20210708165825669"></p>
-<h3 id="7-生成可执行文件并运行"><a href="#7-生成可执行文件并运行" class="headerlink" title="7 生成可执行文件并运行"></a>7 生成可执行文件并运行</h3><p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708165934672.png" alt="image-20210708165934672"></p>
-<p><img src="/Xilinx%E9%9D%99%E6%80%81%E5%BA%93%E5%88%B6%E4%BD%9C%E4%B8%8E%E4%BD%BF%E7%94%A8/image-20210708170136647.png" alt="image-20210708170136647"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Xilinx</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>uniCloud使用</title>
     <url>/uniCloud%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
@@ -2455,26 +2455,6 @@
       </tags>
   </entry>
   <entry>
-    <title>倍福ET2000侦听器使用</title>
-    <url>/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
-<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
-<p>Uplink X5——电脑网口(WireShark)</p>
-<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214113727262.png" alt="image-20220214113727262"></p>
-<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
-<p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214114512693.png" alt="image-20220214114512693"></p>
-<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214114641411.png" alt="image-20220214114641411"></p>
-<p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214114110642.png" alt="image-20220214114110642"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>WireShark</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用批处理脚本修改hosts文件</title>
     <url>/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9hosts%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<blockquote>
@@ -2502,6 +2482,26 @@
       <tags>
         <tag>技术</tag>
         <tag>批处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>倍福ET2000侦听器使用</title>
+    <url>/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="1-连接ET2000"><a href="#1-连接ET2000" class="headerlink" title="1 连接ET2000"></a>1 连接ET2000</h2><p>将ET2000串接在网络中</p>
+<p>AMC1600E——ET2000 IN——ET2000OUT——路由器</p>
+<p>Uplink X5——电脑网口(WireShark)</p>
+<h2 id="2-打开WireShark"><a href="#2-打开WireShark" class="headerlink" title="2 打开WireShark"></a>2 打开WireShark</h2><h3 id="2-1-选择需要捕获的网口"><a href="#2-1-选择需要捕获的网口" class="headerlink" title="2.1 选择需要捕获的网口"></a>2.1 选择需要捕获的网口</h3><p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214113727262.png" alt="image-20220214113727262"></p>
+<h3 id="2-2-设置MQTT协议端口号"><a href="#2-2-设置MQTT协议端口号" class="headerlink" title="2.2 设置MQTT协议端口号"></a>2.2 设置MQTT协议端口号</h3><p>点击编辑，选择首选项，在Protocols找到MQTT，设置MQTT协议端口号为OneNET MQTT服务器端口号(6002)：</p>
+<p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214114512693.png" alt="image-20220214114512693"></p>
+<h3 id="2-3-运行程序，设置过滤规则为mqtt"><a href="#2-3-运行程序，设置过滤规则为mqtt" class="headerlink" title="2.3 运行程序，设置过滤规则为mqtt"></a>2.3 运行程序，设置过滤规则为mqtt</h3><p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214114641411.png" alt="image-20220214114641411"></p>
+<p><img src="/%E5%80%8D%E7%A6%8FET2000%E4%BE%A6%E5%90%AC%E5%99%A8%E4%BD%BF%E7%94%A8/image-20220214114110642.png" alt="image-20220214114110642"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>WireShark</tag>
       </tags>
   </entry>
   <entry>
@@ -2641,35 +2641,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于 Gitee + PicGo 的个人图床搭建</title>
-    <url>/%E5%9F%BA%E4%BA%8E%20Gitee%20+%20PicGo%20%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
-</blockquote>
-<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
-<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
-<p>生成令牌后需复制并保存好。</p>
-<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
-<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/p1.jpg" alt="p1"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/image-20210625141958297.png" alt="image-20210625141958297"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Gitee</tag>
-        <tag>PicGo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博达工业云与阿里云对比</title>
     <url>/%E5%8D%9A%E8%BE%BE%E5%B7%A5%E4%B8%9A%E4%BA%91%E4%B8%8E%E9%98%BF%E9%87%8C%E4%BA%91%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h2 id="1-博达工业云"><a href="#1-博达工业云" class="headerlink" title="1. 博达工业云"></a>1. 博达工业云</h2><h3 id="1-1-平台概况"><a href="#1-1-平台概况" class="headerlink" title="1.1 平台概况"></a>1.1 平台概况</h3><p><img src="/%E5%8D%9A%E8%BE%BE%E5%B7%A5%E4%B8%9A%E4%BA%91%E4%B8%8E%E9%98%BF%E9%87%8C%E4%BA%91%E5%AF%B9%E6%AF%94/%E5%B9%B3%E5%8F%B0%E6%A6%82%E5%86%B5.png" alt="平台概况"></p>
@@ -2716,45 +2687,32 @@
       </tags>
   </entry>
   <entry>
-    <title>基于jsDelivr+GitHub的免费CDN</title>
-    <url>/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
-    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
-<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
-<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/IQl75DGzUwhXtoJ.png" alt="IQl75DGzUwhXtoJ"></p>
-<p>复制红框中的仓库地址，然后克隆到本地：</p>
-<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/IQl75DGzUwhXtoJ.png" alt="IQl75DGzUwhXtoJ"></p>
-<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/i2Jt5wgfre1hUFj.png" alt="i2Jt5wgfre1hUFj"></p>
-<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/RolDteAfWsUTCzy.png" alt="RolDteAfWsUTCzy"></p>
-<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
-<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/8S6KcLkfHqQstI9.png" alt="8S6KcLkfHqQstI9"></p>
-<p>点击<code>Punlish release</code>进行发布：</p>
-<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/cuamzEKbwksPMSW.png" alt="cuamzEKbwksPMSW"></p>
-<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
-<li><p>获取指定版本的资源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure></li>
-<li><p>获取最新版本的资源</p>
-<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
-</div>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
-
-<p>以访问<code>emoji</code>表情包为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure></li>
-</ol>
+    <title>基于 Gitee + PicGo 的个人图床搭建</title>
+    <url>/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>最近发现 <a href="https://sm.ms/">sm.ms</a> 的图床有点不太稳定，很多图片都莫名其妙加载失败了，无奈下只有用 Gitee + PicGo 自己搭一个图床了。</p>
+</blockquote>
+<h3 id="1-新建Gitee仓库"><a href="#1-新建Gitee仓库" class="headerlink" title="1 新建Gitee仓库"></a>1 新建Gitee仓库</h3><p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/1.%E6%96%B0%E5%BB%BAGitee%E4%BB%93%E5%BA%93.png" alt="1.新建Gitee仓库"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/2.%E5%A1%AB%E5%86%99%E4%BB%93%E5%BA%93%E4%BF%A1%E6%81%AF.png" alt="2.填写仓库信息"></p>
+<h3 id="2-获取token"><a href="#2-获取token" class="headerlink" title="2 获取token"></a>2 获取token</h3><p>登录 Gitee 后点击头像，选择设置：</p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/3.%E9%80%89%E6%8B%A9%E8%AE%BE%E7%BD%AE.png" alt="3.选择设置"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/4.%E9%80%89%E6%8B%A9%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt="4.选择私人令牌"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/5.%E7%82%B9%E5%87%BB%E7%94%9F%E6%88%90%E6%96%B0%E4%BB%A4%E7%89%8C.png" alt="5.点击生成新令牌"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/6.%E5%8B%BE%E9%80%89projects.png" alt="6.勾选projects"></p>
+<p>生成令牌后需复制并保存好。</p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3 PicGo配置"></a>3 PicGo配置</h3><p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/7.%E9%80%89%E6%8B%A9%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" alt="7.选择插件设置"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/8.%E5%AE%89%E8%A3%85gitee-uploader.png" alt="8.安装gitee-uploader"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/9.%E5%A1%AB%E5%86%99Gitee%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE.png" alt="9.填写Gitee图床配置"></p>
+<h3 id="4-上传结果"><a href="#4-上传结果" class="headerlink" title="4 上传结果"></a>4 上传结果</h3><p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/p1.jpg" alt="p1"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EGitee+PicGo%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/image-20210625141958297.png" alt="image-20210625141958297"></p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>GitHub</tag>
-        <tag>jsDelivr</tag>
+        <tag>Gitee</tag>
+        <tag>PicGo</tag>
       </tags>
   </entry>
   <entry>
@@ -2874,6 +2832,48 @@
       </tags>
   </entry>
   <entry>
+    <title>基于jsDelivr+GitHub的免费CDN</title>
+    <url>/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/IQl75DGzUwhXtoJ.png" alt="IQl75DGzUwhXtoJ"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/IQl75DGzUwhXtoJ.png" alt="IQl75DGzUwhXtoJ"></p>
+<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/i2Jt5wgfre1hUFj.png" alt="i2Jt5wgfre1hUFj"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/RolDteAfWsUTCzy.png" alt="RolDteAfWsUTCzy"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/8S6KcLkfHqQstI9.png" alt="8S6KcLkfHqQstI9"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN/cuamzEKbwksPMSW.png" alt="cuamzEKbwksPMSW"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure></li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于树莓派的智能箱包开发环境搭建</title>
     <url>/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
@@ -2971,117 +2971,6 @@
         <tag>技术</tag>
         <tag>PicGo</tag>
         <tag>OSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网应用开发调研</title>
-    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/</url>
-    <content><![CDATA[<h2 id="阿里云——IoT-Studio"><a href="#阿里云——IoT-Studio" class="headerlink" title="阿里云——IoT Studio"></a>阿里云——IoT Studio</h2><h3 id="1-产品简介"><a href="#1-产品简介" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>物联网应用开发（IoT Studio）是阿里云针对物联网场景提供的生产力工具，提供了Web可视化开发、业务逻辑开发与物联网数据分析等一系列便捷的物联网开发工具，可覆盖各个物联网行业核心应用场景，加速物联网SaaS(Software-as-a-Service， 软件即服务)构建。</p>
-<p><strong>架构图</strong></p>
-<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/%E9%98%BF%E9%87%8C%E4%BA%91IoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="阿里云IoTStudio架构图"></p>
-<h3 id="2-功能特点"><a href="#2-功能特点" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
-<li><p><strong>可视化搭建</strong></p>
-<p>  IoT Studio提供可视化搭建能力，您可以通过拖拽、配置操作，快速完成设备数据监控相关的Web应用、API服务的开发。您可以专注于核心业务，从传统开发的繁琐细节中脱身，有效提升开发效率。</p>
-</li>
-<li><p><strong>与设备管理无缝集成</strong></p>
-<p>  设备相关的属性、服务、事件等数据均可从物联网平台设备接入和管理模块中直接获取，IoT Studio与物联网平台无缝打通，大大降低物联网开发工作量。</p>
-</li>
-<li><p><strong>丰富的开发资源</strong></p>
-<p>  各开发平台均拥有数量众多的组件和丰富的API。随着产品迭代升级，组件库会愈加丰富，IoT Studio帮助您提升开发效率。</p>
-</li>
-<li><p><strong>组件开发</strong></p>
-<p>  IoT Studio提供了组件开发能力，您可以开发、发布和管理自己研发的组件，并将其发布到Web可视化工作台中用于可视化页面搭建。大大满足开发者的需求，提升组件丰富性，为可视化搭建提供无限可能。</p>
-</li>
-<li><p><strong>无需部署</strong></p>
-<p>  使用IoT Studio，应用服务开发完毕后，直接托管在云端，支持直接预览、使用。无需部署即可交付使用，免除您额外购买服务器等产品的烦恼。</p>
-</li>
-</ul>
-<p><strong>使用限制</strong></p>
-<p>IoT Studio目前处于公测期间，公测期间产品免费试用，产品使用的最终规格以未来商业化调整规格为准。</p>
-<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/IoTStudio%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6.png" alt="IoTStudio使用限制"></p>
-<h3 id="3-场景应用案例——树莓派搭建机房监控应用"><a href="#3-场景应用案例——树莓派搭建机房监控应用" class="headerlink" title="3. 场景应用案例——树莓派搭建机房监控应用"></a>3. 场景应用案例——树莓派搭建机房监控应用</h3><p>通过使用树莓派（Raspberry Pi 4）、DHT11温湿度传感器设备和物联网应用开发（IoT Studio）平台，构建一个服务器机房的实时动态环境温湿度检测系统</p>
-<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
-<h2 id="华为云——IoT开发者服务"><a href="#华为云——IoT开发者服务" class="headerlink" title="华为云——IoT开发者服务"></a>华为云——IoT开发者服务</h2><h3 id="1-产品简介-1"><a href="#1-产品简介-1" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>IoT开发者服务（IoT Studio，原OceanBooster），是华为物联网针对物联网应用提供的应用开发平台，可涵盖物联网行业的核心应用场景，集Web在线开发、微服务开发和第三方应用推荐等一系列的便利物联网开发工具于一体，是个人开发者的孵化器，行业客户的应用托管平台。</p>
-<p><strong>架构图</strong></p>
-<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E5%8D%8E%E4%B8%BAIoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="华为IoTStudio架构图"></p>
-<h3 id="2-功能特点-1"><a href="#2-功能特点-1" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
-<li><p><strong>应用快速构建</strong></p>
-<p>  通过拖拽、配置方式，快速简单完成WEB应用开发，大大降低物联网应用研发成本，满足企业应用快速上线要求 。</p>
-</li>
-<li><p><strong>灵活报表</strong></p>
-<p>  可通过多数据源，多维度，多条件，多形态的数据灵活定义各类图表和报表，并提供支持亿级的数据预处理能力 。</p>
-</li>
-<li><p><strong>多样化发布方式</strong></p>
-<p>  通过自动生成物联网通用组件代码，提供被嵌入能力，可无缝嵌入企业自有应用，开发者只需开发和维护业务逻辑部分代码，降低应用运维成本 。</p>
-</li>
-<li><p><strong>多级管理能力</strong></p>
-<p>  提供分权分域能力，满足企业跨地域，多层级的管理诉求 。</p>
-</li>
-</ul>
-<h3 id="3-场景应用案例——电梯行业"><a href="#3-场景应用案例——电梯行业" class="headerlink" title="3. 场景应用案例——电梯行业"></a>3. 场景应用案例——电梯行业</h3><p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E7%94%B5%E6%A2%AF%E8%A1%8C%E4%B8%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF.png" alt="华为云电梯行业应用场景"></p>
-<h2 id="移动云——OneNET-Studio"><a href="#移动云——OneNET-Studio" class="headerlink" title="移动云——OneNET Studio"></a>移动云——OneNET Studio</h2><h3 id="1-产品简介-2"><a href="#1-产品简介-2" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>OneNET Studio 定位新一代物联网中台，向下接入设备，向上承载应用。整合产业链上下游，向下整合终端设备接入与管理，向上延展物联网一站式应用开发，横向聚合增值能力，提供智能化数据分析，形成端到端完整链路物联网解决方案体系，打造物联网生态环境。</p>
-<p><strong>架构图</strong></p>
-<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/OneNETStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNETStudio架构图"></p>
-<h3 id="2-功能特点-2"><a href="#2-功能特点-2" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><p><strong>设备接入与管理</strong></p>
-<p>适用于设备生产商、设备方案商，提供各行业的物模型，实现设备极速上云。</p>
-<ul>
-<li><p><strong>统一设备接入</strong></p>
-<p>  提供MQTT、CoAP和泛协议标准接入SDK，支持直连、网关、云云对接等多种方式接入，随用随选。</p>
-</li>
-<li><p><strong>统一物模型</strong></p>
-<p>  提供灵活的物模型定义及多行业标准模版，构建标准化数据模型，解决数据碎片化，简化设备与应用开发。</p>
-</li>
-<li><p><strong>自动生成SDK</strong></p>
-<p>  根据定义的物模型功能点，平台自动生成SDK，降低嵌入式开发的代码量，缩短产品开发周期，实现设备快速接入。</p>
-</li>
-<li><p><strong>设备管理</strong></p>
-<p>  提供高度匹配设备全生命周期的管理工具，方便用户在测试、生产、交付、售后等不同阶段的管理需求。</p>
-</li>
-<li><p><strong>设备转移</strong></p>
-<p>  提供跨用户的设备转移功能，转移双方需实名认证。</p>
-</li>
-<li><p><strong>全链路日志</strong></p>
-<p>  开放核心服务全链路日志，支持24小时不间断监控，便于用户追踪实时消息和定位问题。</p>
-</li>
-<li><p><strong>在线调试</strong></p>
-<p>  提供设备模拟及真实设备调试功能，与可完全解耦设备及应用开发工作，快速实现设备与平台的交互调试，帮助用户进行投产前的功能验证。</p>
-</li>
-</ul>
-<p><strong>应用开发</strong></p>
-<p>适用于项目集成商、解决方案提供商，提供便捷的资源管理及应用开发、调试能力，实现项目的灵活配置，快速集成。</p>
-<ul>
-<li><p><strong>一站式开发</strong></p>
-<p>  面向行业场景，提供项目管理与应用开发工具，实现跨用户跨产品的资源整合，加速项目集成。</p>
-</li>
-<li><p><strong>统一能力网关</strong></p>
-<p>  提供统一网关能力支撑增值服务一体化，聚合LBS定位、智能语音等增值能力，提供多种物联网增值能力API。</p>
-</li>
-<li><p><strong>消息通信</strong></p>
-<p>  提供HTTP推送、消息队列MQ通信组件，实现平台与应用服务器的高效实时数据通信。</p>
-</li>
-<li><p><strong>边缘计算</strong> </p>
-<p>  边缘侧物联网设备接入和管理，时延低至10ms内。</p>
-</li>
-<li><p><strong>人工智能</strong> </p>
-<p>  提供20余种智能化开箱即用AI能力，支持核心能力场景化。</p>
-</li>
-<li><p><strong>视频能力</strong> </p>
-<p>  支持视频类应用开发，提供远程设备控制、视频推流、视频分发、视频云存储、视频回放等核心能力。</p>
-</li>
-<li><p><strong>数据可视化</strong> </p>
-<p>  提供丰富的可视化组件和免编程、拖拽式编辑方式，助力用户无缝对接海量数据，搭建可视化大屏应用。</p>
-</li>
-</ul>
-<h3 id="3-场景应用案例——设备预测性维护解决方案"><a href="#3-场景应用案例——设备预测性维护解决方案" class="headerlink" title="3. 场景应用案例——设备预测性维护解决方案"></a>3. 场景应用案例——设备预测性维护解决方案</h3><p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E8%AE%BE%E5%A4%87%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="设备预测性维护解决方案"></p>
-<h2 id="移动云——View"><a href="#移动云——View" class="headerlink" title="移动云——View"></a>移动云——View</h2><p><a href="https://open.iot.10086.cn/app_editor/#/view?pid=291489&id=72560&is_model=0">智能家居应用</a></p>
-<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/view%E4%BA%A7%E5%93%81%E4%BB%B7%E6%A0%BC.png" alt="view产品价格"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>IoT</tag>
       </tags>
   </entry>
   <entry>
@@ -3553,6 +3442,117 @@
       <tags>
         <tag>技术</tag>
         <tag>EtherCAT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>物联网应用开发调研</title>
+    <url>/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/</url>
+    <content><![CDATA[<h2 id="阿里云——IoT-Studio"><a href="#阿里云——IoT-Studio" class="headerlink" title="阿里云——IoT Studio"></a>阿里云——IoT Studio</h2><h3 id="1-产品简介"><a href="#1-产品简介" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>物联网应用开发（IoT Studio）是阿里云针对物联网场景提供的生产力工具，提供了Web可视化开发、业务逻辑开发与物联网数据分析等一系列便捷的物联网开发工具，可覆盖各个物联网行业核心应用场景，加速物联网SaaS(Software-as-a-Service， 软件即服务)构建。</p>
+<p><strong>架构图</strong></p>
+<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/%E9%98%BF%E9%87%8C%E4%BA%91IoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="阿里云IoTStudio架构图"></p>
+<h3 id="2-功能特点"><a href="#2-功能特点" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
+<li><p><strong>可视化搭建</strong></p>
+<p>  IoT Studio提供可视化搭建能力，您可以通过拖拽、配置操作，快速完成设备数据监控相关的Web应用、API服务的开发。您可以专注于核心业务，从传统开发的繁琐细节中脱身，有效提升开发效率。</p>
+</li>
+<li><p><strong>与设备管理无缝集成</strong></p>
+<p>  设备相关的属性、服务、事件等数据均可从物联网平台设备接入和管理模块中直接获取，IoT Studio与物联网平台无缝打通，大大降低物联网开发工作量。</p>
+</li>
+<li><p><strong>丰富的开发资源</strong></p>
+<p>  各开发平台均拥有数量众多的组件和丰富的API。随着产品迭代升级，组件库会愈加丰富，IoT Studio帮助您提升开发效率。</p>
+</li>
+<li><p><strong>组件开发</strong></p>
+<p>  IoT Studio提供了组件开发能力，您可以开发、发布和管理自己研发的组件，并将其发布到Web可视化工作台中用于可视化页面搭建。大大满足开发者的需求，提升组件丰富性，为可视化搭建提供无限可能。</p>
+</li>
+<li><p><strong>无需部署</strong></p>
+<p>  使用IoT Studio，应用服务开发完毕后，直接托管在云端，支持直接预览、使用。无需部署即可交付使用，免除您额外购买服务器等产品的烦恼。</p>
+</li>
+</ul>
+<p><strong>使用限制</strong></p>
+<p>IoT Studio目前处于公测期间，公测期间产品免费试用，产品使用的最终规格以未来商业化调整规格为准。</p>
+<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/IoTStudio%E4%BD%BF%E7%94%A8%E9%99%90%E5%88%B6.png" alt="IoTStudio使用限制"></p>
+<h3 id="3-场景应用案例——树莓派搭建机房监控应用"><a href="#3-场景应用案例——树莓派搭建机房监控应用" class="headerlink" title="3. 场景应用案例——树莓派搭建机房监控应用"></a>3. 场景应用案例——树莓派搭建机房监控应用</h3><p>通过使用树莓派（Raspberry Pi 4）、DHT11温湿度传感器设备和物联网应用开发（IoT Studio）平台，构建一个服务器机房的实时动态环境温湿度检测系统</p>
+<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E6%9C%BA%E6%88%BF%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8.png" alt="树莓派搭建机房监控应用"></p>
+<h2 id="华为云——IoT开发者服务"><a href="#华为云——IoT开发者服务" class="headerlink" title="华为云——IoT开发者服务"></a>华为云——IoT开发者服务</h2><h3 id="1-产品简介-1"><a href="#1-产品简介-1" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>IoT开发者服务（IoT Studio，原OceanBooster），是华为物联网针对物联网应用提供的应用开发平台，可涵盖物联网行业的核心应用场景，集Web在线开发、微服务开发和第三方应用推荐等一系列的便利物联网开发工具于一体，是个人开发者的孵化器，行业客户的应用托管平台。</p>
+<p><strong>架构图</strong></p>
+<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E5%8D%8E%E4%B8%BAIoTStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="华为IoTStudio架构图"></p>
+<h3 id="2-功能特点-1"><a href="#2-功能特点-1" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><ul>
+<li><p><strong>应用快速构建</strong></p>
+<p>  通过拖拽、配置方式，快速简单完成WEB应用开发，大大降低物联网应用研发成本，满足企业应用快速上线要求 。</p>
+</li>
+<li><p><strong>灵活报表</strong></p>
+<p>  可通过多数据源，多维度，多条件，多形态的数据灵活定义各类图表和报表，并提供支持亿级的数据预处理能力 。</p>
+</li>
+<li><p><strong>多样化发布方式</strong></p>
+<p>  通过自动生成物联网通用组件代码，提供被嵌入能力，可无缝嵌入企业自有应用，开发者只需开发和维护业务逻辑部分代码，降低应用运维成本 。</p>
+</li>
+<li><p><strong>多级管理能力</strong></p>
+<p>  提供分权分域能力，满足企业跨地域，多层级的管理诉求 。</p>
+</li>
+</ul>
+<h3 id="3-场景应用案例——电梯行业"><a href="#3-场景应用案例——电梯行业" class="headerlink" title="3. 场景应用案例——电梯行业"></a>3. 场景应用案例——电梯行业</h3><p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E5%8D%8E%E4%B8%BA%E4%BA%91%E7%94%B5%E6%A2%AF%E8%A1%8C%E4%B8%9A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF.png" alt="华为云电梯行业应用场景"></p>
+<h2 id="移动云——OneNET-Studio"><a href="#移动云——OneNET-Studio" class="headerlink" title="移动云——OneNET Studio"></a>移动云——OneNET Studio</h2><h3 id="1-产品简介-2"><a href="#1-产品简介-2" class="headerlink" title="1. 产品简介"></a>1. 产品简介</h3><p>OneNET Studio 定位新一代物联网中台，向下接入设备，向上承载应用。整合产业链上下游，向下整合终端设备接入与管理，向上延展物联网一站式应用开发，横向聚合增值能力，提供智能化数据分析，形成端到端完整链路物联网解决方案体系，打造物联网生态环境。</p>
+<p><strong>架构图</strong></p>
+<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/OneNETStudio%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OneNETStudio架构图"></p>
+<h3 id="2-功能特点-2"><a href="#2-功能特点-2" class="headerlink" title="2. 功能特点"></a>2. 功能特点</h3><p><strong>设备接入与管理</strong></p>
+<p>适用于设备生产商、设备方案商，提供各行业的物模型，实现设备极速上云。</p>
+<ul>
+<li><p><strong>统一设备接入</strong></p>
+<p>  提供MQTT、CoAP和泛协议标准接入SDK，支持直连、网关、云云对接等多种方式接入，随用随选。</p>
+</li>
+<li><p><strong>统一物模型</strong></p>
+<p>  提供灵活的物模型定义及多行业标准模版，构建标准化数据模型，解决数据碎片化，简化设备与应用开发。</p>
+</li>
+<li><p><strong>自动生成SDK</strong></p>
+<p>  根据定义的物模型功能点，平台自动生成SDK，降低嵌入式开发的代码量，缩短产品开发周期，实现设备快速接入。</p>
+</li>
+<li><p><strong>设备管理</strong></p>
+<p>  提供高度匹配设备全生命周期的管理工具，方便用户在测试、生产、交付、售后等不同阶段的管理需求。</p>
+</li>
+<li><p><strong>设备转移</strong></p>
+<p>  提供跨用户的设备转移功能，转移双方需实名认证。</p>
+</li>
+<li><p><strong>全链路日志</strong></p>
+<p>  开放核心服务全链路日志，支持24小时不间断监控，便于用户追踪实时消息和定位问题。</p>
+</li>
+<li><p><strong>在线调试</strong></p>
+<p>  提供设备模拟及真实设备调试功能，与可完全解耦设备及应用开发工作，快速实现设备与平台的交互调试，帮助用户进行投产前的功能验证。</p>
+</li>
+</ul>
+<p><strong>应用开发</strong></p>
+<p>适用于项目集成商、解决方案提供商，提供便捷的资源管理及应用开发、调试能力，实现项目的灵活配置，快速集成。</p>
+<ul>
+<li><p><strong>一站式开发</strong></p>
+<p>  面向行业场景，提供项目管理与应用开发工具，实现跨用户跨产品的资源整合，加速项目集成。</p>
+</li>
+<li><p><strong>统一能力网关</strong></p>
+<p>  提供统一网关能力支撑增值服务一体化，聚合LBS定位、智能语音等增值能力，提供多种物联网增值能力API。</p>
+</li>
+<li><p><strong>消息通信</strong></p>
+<p>  提供HTTP推送、消息队列MQ通信组件，实现平台与应用服务器的高效实时数据通信。</p>
+</li>
+<li><p><strong>边缘计算</strong> </p>
+<p>  边缘侧物联网设备接入和管理，时延低至10ms内。</p>
+</li>
+<li><p><strong>人工智能</strong> </p>
+<p>  提供20余种智能化开箱即用AI能力，支持核心能力场景化。</p>
+</li>
+<li><p><strong>视频能力</strong> </p>
+<p>  支持视频类应用开发，提供远程设备控制、视频推流、视频分发、视频云存储、视频回放等核心能力。</p>
+</li>
+<li><p><strong>数据可视化</strong> </p>
+<p>  提供丰富的可视化组件和免编程、拖拽式编辑方式，助力用户无缝对接海量数据，搭建可视化大屏应用。</p>
+</li>
+</ul>
+<h3 id="3-场景应用案例——设备预测性维护解决方案"><a href="#3-场景应用案例——设备预测性维护解决方案" class="headerlink" title="3. 场景应用案例——设备预测性维护解决方案"></a>3. 场景应用案例——设备预测性维护解决方案</h3><p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/%E8%AE%BE%E5%A4%87%E9%A2%84%E6%B5%8B%E6%80%A7%E7%BB%B4%E6%8A%A4%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="设备预测性维护解决方案"></p>
+<h2 id="移动云——View"><a href="#移动云——View" class="headerlink" title="移动云——View"></a>移动云——View</h2><p><a href="https://open.iot.10086.cn/app_editor/#/view?pid=291489&id=72560&is_model=0">智能家居应用</a></p>
+<p><img src="/%E7%89%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E7%A0%94/images/view%E4%BA%A7%E5%93%81%E4%BB%B7%E6%A0%BC.png" alt="view产品价格"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>IoT</tag>
       </tags>
   </entry>
   <entry>
